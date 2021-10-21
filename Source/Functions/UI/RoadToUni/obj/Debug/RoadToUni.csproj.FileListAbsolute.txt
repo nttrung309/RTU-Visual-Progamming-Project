@@ -1,0 +1,10 @@
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\bin\Debug\RoadToUni.exe.config
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\bin\Debug\RoadToUni.exe
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\bin\Debug\RoadToUni.pdb
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\obj\Debug\RoadToUni.csproj.AssemblyReference.cache
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\obj\Debug\RoadToUni.Properties.Resources.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\obj\Debug\RoadToUni.csproj.GenerateResource.cache
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\obj\Debug\RoadToUni.csproj.CoreCompileInputs.cache
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\obj\Debug\RoadToUni.exe
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\obj\Debug\RoadToUni.pdb
+D:\Trung\#Study\CODE\LTTQ\Do_An\Project\RoadToUni\obj\Debug\RoadToUni.fMain.resources

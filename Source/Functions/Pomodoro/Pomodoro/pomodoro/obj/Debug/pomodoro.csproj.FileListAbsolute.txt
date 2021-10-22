@@ -1,0 +1,20 @@
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\bin\Debug\pomodoro.exe.config
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\bin\Debug\pomodoro.exe
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\bin\Debug\pomodoro.pdb
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\obj\Debug\pomodoro.fpomodoro.resources
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\obj\Debug\pomodoro.Properties.Resources.resources
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\obj\Debug\pomodoro.csproj.GenerateResource.cache
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\obj\Debug\pomodoro.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\obj\Debug\pomodoro.exe
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\obj\Debug\pomodoro.pdb
+C:\Users\ACER\Study\TAI LIEU NAM 2\IT008_LTTQ\Đồ án\Pomodoro\pomodoro\obj\Debug\pomodoro.csproj.AssemblyReference.cache
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\bin\Debug\pomodoro.exe.config
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\bin\Debug\pomodoro.exe
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\bin\Debug\pomodoro.pdb
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\obj\Debug\pomodoro.csproj.AssemblyReference.cache
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\obj\Debug\pomodoro.fpomodoro.resources
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\obj\Debug\pomodoro.Properties.Resources.resources
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\obj\Debug\pomodoro.csproj.GenerateResource.cache
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\obj\Debug\pomodoro.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\obj\Debug\pomodoro.exe
+C:\Users\ACER\Study\TAI LIEU NAM 2\doan\Pomodoro\pomodoro\obj\Debug\pomodoro.pdb

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace RoadToUni
 {
@@ -16,12 +18,15 @@ namespace RoadToUni
         public fMain()
         {
             InitializeComponent();
-            StartUp();
+            OnStartUp();
         }
-        private void StartUp()
+        private void OnStartUp()
         {
             btnHome_Click(btnHome, new EventArgs());
             btnMenu_Click(new object(), new EventArgs());
+
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
         private void ActiveButton(Object btnSender)
         {
@@ -57,11 +62,10 @@ namespace RoadToUni
                 {
                     currentBtn.BackColor = Color.LightBlue;
                 }
-
-                if (pnlMenu.Width == 60)
-                {
-                    btnMenu_Click(new object(), new EventArgs());
-                }
+            }
+            if (pnlMenu.Width == 60)
+            {
+                btnMenu_Click(new object(), new EventArgs());
             }
         }
         private void DeactiveButton()
@@ -86,22 +90,18 @@ namespace RoadToUni
         {
             ActiveButton(sender);
         }
-
         private void btnChoice_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
         }
-
         private void btnSetting_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
         }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
         }
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
             if(pnlMenu.Width != 60)
@@ -145,6 +145,53 @@ namespace RoadToUni
                     }
                 }
             }
+        }
+
+        //Drag Form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+        //Adjust when maximized by dragging
+        private void fMain_SizeChanged(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+            }
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

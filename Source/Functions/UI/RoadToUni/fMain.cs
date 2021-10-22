@@ -15,6 +15,10 @@ namespace RoadToUni
     public partial class fMain : Form
     {
         Button currentBtn;
+        Point lastPos;
+        bool maximizedByClick;
+        int lastWidth;
+        int lastHeight;
         public fMain()
         {
             InitializeComponent();
@@ -27,6 +31,9 @@ namespace RoadToUni
 
             this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+            lastPos = new Point(this.Location.X, this.Location.Y);
+            maximizedByClick = false;
         }
         private void ActiveButton(Object btnSender)
         {
@@ -154,25 +161,43 @@ namespace RoadToUni
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
+            lastPos = new Point(this.Location.X, this.Location.Y);
+            lastWidth = this.Width;
+            lastHeight = this.Height;
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        //Close Button
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        //Maximize Button
         private void btnMaximize_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
             {
+                maximizedByClick = true;
+                lastWidth = this.Width;
+                lastHeight = this.Height;
                 FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 this.WindowState = FormWindowState.Maximized;
             }
             else
             {
+                if (!maximizedByClick)
+                {
+                    this.Location = lastPos;
+                }
                 FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
                 this.WindowState = FormWindowState.Normal;
+                this.Width = lastWidth;
+                this.Height = lastHeight;
+                this.Width = lastWidth;
+                this.Height = lastHeight;
+                maximizedByClick = false;
             }
         }
         //Adjust when maximized by dragging
@@ -193,5 +218,6 @@ namespace RoadToUni
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
     }
 }

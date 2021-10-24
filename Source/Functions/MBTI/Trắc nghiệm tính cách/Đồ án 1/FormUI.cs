@@ -12,9 +12,12 @@ namespace Đồ_án_1
 {
     public partial class FormUI : Form
     {
+        static public bool DoubleBuffered;
+
         public FormUI()
         {
             InitializeComponent();
+            DoubleBuffered = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

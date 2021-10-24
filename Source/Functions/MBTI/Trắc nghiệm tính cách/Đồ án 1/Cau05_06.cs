@@ -21,7 +21,7 @@ namespace Đồ_án_1
         {
             if (((radioButton1.Checked == false) && (radioButton2.Checked == false)) || ((radioButton3.Checked == false) && (radioButton4.Checked == false)))
             {
-                MessageBox.Show("Có câu hỏi chưa được chọn");
+                MessageBox.Show("Có câu hỏi chưa được chọn", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -41,9 +41,10 @@ namespace Đồ_án_1
                 {
                     Cau01_02.d++;
                 }
-                this.Hide();
+                
                 Form frm5 = new Cau07_08();
                 frm5.Show();
+                this.Hide();
             }
         }
     }

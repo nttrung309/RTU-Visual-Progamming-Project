@@ -40,7 +40,6 @@ namespace Đồ_án_1
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -170,24 +169,15 @@ namespace Đồ_án_1
             this.radioButton4.Text = "Ít quan tâm đến thời gian và thường trễ hẹn.";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 643);
-            this.flowLayoutPanel1.TabIndex = 48;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(192, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 154);
+            this.panel1.Size = new System.Drawing.Size(1200, 154);
             this.panel1.TabIndex = 49;
             // 
             // label1
@@ -226,7 +216,6 @@ namespace Đồ_án_1
             this.Controls.Add(this.Cau1);
             this.Controls.Add(this.Cau2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cau07_08";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -255,7 +244,6 @@ namespace Đồ_án_1
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

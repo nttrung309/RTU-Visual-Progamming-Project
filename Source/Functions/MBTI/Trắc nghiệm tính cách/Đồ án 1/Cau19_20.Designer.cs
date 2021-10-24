@@ -41,7 +41,6 @@ namespace Đồ_án_1
             this.panel1 = new System.Windows.Forms.Panel();
             this.Next1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -188,24 +187,15 @@ namespace Đồ_án_1
             this.panel4.Size = new System.Drawing.Size(660, 116);
             this.panel4.TabIndex = 54;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 643);
-            this.flowLayoutPanel1.TabIndex = 55;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(192, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1008, 154);
+            this.panel2.Size = new System.Drawing.Size(1200, 154);
             this.panel2.TabIndex = 56;
             // 
             // label1
@@ -237,7 +227,6 @@ namespace Đồ_án_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1200, 643);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Next1);
             this.Controls.Add(this.panel4);
@@ -275,7 +264,6 @@ namespace Đồ_án_1
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Next1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

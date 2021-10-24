@@ -43,7 +43,6 @@ namespace Đồ_án_1
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -179,10 +178,10 @@ namespace Đồ_án_1
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(192, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1008, 154);
+            this.panel2.Size = new System.Drawing.Size(1200, 154);
             this.panel2.TabIndex = 56;
             // 
             // label5
@@ -209,15 +208,6 @@ namespace Đồ_án_1
             this.label6.TabIndex = 3;
             this.label6.Text = "Khám phá nghề nghiệp phù hợp qua tính cách của bạn";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 643);
-            this.flowLayoutPanel1.TabIndex = 57;
-            // 
             // Cau09_10
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -225,7 +215,6 @@ namespace Đồ_án_1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -262,6 +251,5 @@ namespace Đồ_án_1
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

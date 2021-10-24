@@ -24,12 +24,13 @@ namespace Đồ_án_1
         public Cau01_02()
         {
             InitializeComponent();
+            DoubleBuffered = true;
         }
         private void Next1_Click(object sender, EventArgs e)
         {
             if (((radioButton1.Checked == false) && (radioButton2.Checked == false)) || ((radioButton3.Checked == false) && (radioButton4.Checked == false)))
             {
-                MessageBox.Show("Có câu hỏi chưa được chọn");
+                MessageBox.Show("Có câu hỏi chưa được chọn","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
             { 
@@ -49,9 +50,10 @@ namespace Đồ_án_1
                 {
                     d++;
                 }
-                this.Hide();
+                
                 Form frm3 = new Cau03_04();
                 frm3.Show();
+                this.Hide();
             }
             
         }

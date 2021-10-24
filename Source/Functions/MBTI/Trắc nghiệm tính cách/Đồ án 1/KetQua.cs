@@ -189,6 +189,7 @@ namespace Đồ_án_1
             this.Close();
             Form frm = new FormUI();
             frm.Show();
+            this.Close();
         }
     }
 }

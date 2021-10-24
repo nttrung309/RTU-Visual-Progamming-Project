@@ -29,7 +29,6 @@ namespace Đồ_án_1
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -41,15 +40,6 @@ namespace Đồ_án_1
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(191, 643);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -58,7 +48,7 @@ namespace Đồ_án_1
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
             this.label1.Location = new System.Drawing.Point(446, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(496, 58);
+            this.label1.Size = new System.Drawing.Size(743, 87);
             this.label1.TabIndex = 0;
             this.label1.Text = "Trắc nghiệm tính cách";
             // 
@@ -69,16 +59,16 @@ namespace Đồ_án_1
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(191, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1009, 100);
+            this.panel1.Size = new System.Drawing.Size(1200, 100);
             this.panel1.TabIndex = 1;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(940, 0);
+            this.button4.Location = new System.Drawing.Point(1134, 0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(25, 25);
             this.button4.TabIndex = 6;
@@ -88,7 +78,7 @@ namespace Đồ_án_1
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(962, 0);
+            this.button3.Location = new System.Drawing.Point(1156, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(25, 25);
             this.button3.TabIndex = 5;
@@ -99,7 +89,7 @@ namespace Đồ_án_1
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(984, 0);
+            this.button1.Location = new System.Drawing.Point(1178, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(25, 25);
             this.button1.TabIndex = 4;
@@ -111,9 +101,9 @@ namespace Đồ_án_1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(643, 103);
+            this.label2.Location = new System.Drawing.Point(441, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(476, 24);
+            this.label2.Size = new System.Drawing.Size(718, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "Khám phá nghề nghiệp phù hợp qua tính cách của bạn";
             // 
@@ -123,7 +113,7 @@ namespace Đồ_án_1
             this.label3.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(276, 256);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(857, 156);
+            this.label3.Size = new System.Drawing.Size(1288, 236);
             this.label3.TabIndex = 3;
             this.label3.Text = "Bạn vẫn đang phân vân về công việc tương lai mà không biết nên\r\nhỏi ai, hay đơn g" +
     "iản chỉ đang tìm kiếm bản thân mình. \r\n\r\nHãy trả lời các câu hỏi MBTI sau đây để" +
@@ -142,7 +132,7 @@ namespace Đồ_án_1
             this.CheckButton.UseVisualStyleBackColor = false;
             this.CheckButton.Click += new System.EventHandler(this.CheckButton_Click);
             // 
-            // Form1
+            // FormUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -150,12 +140,11 @@ namespace Đồ_án_1
             this.Controls.Add(this.CheckButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label3);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "FormUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -166,8 +155,6 @@ namespace Đồ_án_1
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;

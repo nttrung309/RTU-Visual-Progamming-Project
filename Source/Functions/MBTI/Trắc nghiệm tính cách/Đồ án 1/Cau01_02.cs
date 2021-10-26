@@ -24,7 +24,7 @@ namespace Đồ_án_1
         public Cau01_02()
         {
             InitializeComponent();
-            DoubleBuffered = true;
+
         }
         private void Next1_Click(object sender, EventArgs e)
         {
@@ -50,10 +50,7 @@ namespace Đồ_án_1
                 {
                     d++;
                 }
-                
-                Form frm3 = new Cau03_04();
-                frm3.Show();
-                this.Hide();
+                Meow.SwitchForm(new Cau03_04());
             }
             
         }

@@ -16,7 +16,7 @@ namespace Đồ_án_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormUI());
+            Application.Run(new Meow());
         }
     }
 }

@@ -12,12 +12,10 @@ namespace Đồ_án_1
 {
     public partial class FormUI : Form
     {
-        static public bool DoubleBuffered;
 
         public FormUI()
         {
             InitializeComponent();
-            DoubleBuffered = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,9 +30,7 @@ namespace Đồ_án_1
 
         private void CheckButton_Click(object sender, EventArgs e)
         {
-            Form frm2 = new Cau01_02();
-            frm2.Show();
-            this.Hide();
+            Meow.SwitchForm(new Cau01_02());
         }
     }
 }

@@ -118,6 +118,12 @@
     <Compile Include="KetQua.Designer.cs">
       <DependentUpon>KetQua.cs</DependentUpon>
     </Compile>
+    <Compile Include="Meow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meow.Designer.cs">
+      <DependentUpon>Meow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cau03_04.resx">
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KetQua.resx">
       <DependentUpon>KetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meow.resx">
+      <DependentUpon>Meow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

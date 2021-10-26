@@ -41,10 +41,8 @@ namespace Đồ_án_1
                 {
                     Cau01_02.h++;
                 }
-                
-                Form frm = new KetQua();
-                frm.Show();
-                this.Hide();
+
+                Meow.SwitchForm(new KetQua());
             }
         }
     }

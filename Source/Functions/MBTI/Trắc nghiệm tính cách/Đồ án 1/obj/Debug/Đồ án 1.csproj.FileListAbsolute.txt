@@ -19,3 +19,4 @@ D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc n
 D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.CoreCompileInputs.cache
 D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
 D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb
+D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Meow.resources

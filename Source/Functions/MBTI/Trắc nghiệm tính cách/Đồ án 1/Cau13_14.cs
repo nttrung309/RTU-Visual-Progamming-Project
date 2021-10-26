@@ -40,10 +40,8 @@ namespace Đồ_án_1
                 {
                     Cau01_02.d++;
                 }
-                
-                Form frm3 = new Cau15_16();
-                frm3.Show();
-                this.Hide();
+
+                Meow.SwitchForm(new Cau15_16());
             }
     }
 }

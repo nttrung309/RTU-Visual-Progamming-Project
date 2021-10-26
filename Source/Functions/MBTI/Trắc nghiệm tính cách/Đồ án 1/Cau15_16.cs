@@ -41,9 +41,7 @@ namespace Đồ_án_1
                     Cau01_02.h++;
                 }
                 
-                Form frm3 = new Cau17_18();
-                frm3.Show();
-                this.Hide();
+                Meow.SwitchForm(new Cau17_18());
             }
         }
     }

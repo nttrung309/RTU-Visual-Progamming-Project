@@ -63,7 +63,7 @@ namespace WindowsFormsApp1
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Picture3_removebg_preview;
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources._5;
             this.pictureBox1.Location = new System.Drawing.Point(-20, 58);
             this.pictureBox1.MaximumSize = new System.Drawing.Size(1000, 1000);
             this.pictureBox1.Name = "pictureBox1";
@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.Picture4_removebg_preview;
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources._6;
             this.pictureBox2.Location = new System.Drawing.Point(289, 64);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(264, 280);
@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.Picture5_removebg_preview;
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources._7;
             this.pictureBox3.Location = new System.Drawing.Point(591, 57);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(270, 278);
@@ -102,7 +102,7 @@ namespace WindowsFormsApp1
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources.Picture6_removebg_preview;
+            this.pictureBox4.Image = global::WindowsFormsApp1.Properties.Resources._8;
             this.pictureBox4.Location = new System.Drawing.Point(867, 57);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(266, 278);
@@ -114,7 +114,7 @@ namespace WindowsFormsApp1
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.Picture9;
+            this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources._9;
             this.pictureBox5.Location = new System.Drawing.Point(185, -15);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(714, 71);
@@ -180,7 +180,7 @@ namespace WindowsFormsApp1
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.hinh_anh_background_nen_tim_hinh_khong_gian_034913582;
+            this.groupBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._222;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,7 +212,7 @@ namespace WindowsFormsApp1
             // 
             this.circleButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.circleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.circleButton1.Image = global::WindowsFormsApp1.Properties.Resources.Picture11;
+            this.circleButton1.Image = global::WindowsFormsApp1.Properties.Resources._11;
             this.circleButton1.Location = new System.Drawing.Point(458, 380);
             this.circleButton1.Name = "circleButton1";
             this.circleButton1.Size = new System.Drawing.Size(168, 154);
@@ -225,7 +225,7 @@ namespace WindowsFormsApp1
             // 
             this.circleButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.circleButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.circleButton3.Image = global::WindowsFormsApp1.Properties.Resources.Picture1_removebg_preview3;
+            this.circleButton3.Image = global::WindowsFormsApp1.Properties.Resources._3;
             this.circleButton3.Location = new System.Drawing.Point(-1, 575);
             this.circleButton3.Name = "circleButton3";
             this.circleButton3.Size = new System.Drawing.Size(86, 85);
@@ -237,7 +237,7 @@ namespace WindowsFormsApp1
             // 
             this.circleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.circleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.circleButton2.Image = global::WindowsFormsApp1.Properties.Resources.Picture10_removebg_preview2;
+            this.circleButton2.Image = global::WindowsFormsApp1.Properties.Resources._10;
             this.circleButton2.Location = new System.Drawing.Point(1078, 609);
             this.circleButton2.Name = "circleButton2";
             this.circleButton2.Size = new System.Drawing.Size(45, 43);
@@ -252,7 +252,7 @@ namespace WindowsFormsApp1
             this.circleButton4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.circleButton4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.circleButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.circleButton4.Image = global::WindowsFormsApp1.Properties.Resources.Picture2;
+            this.circleButton4.Image = global::WindowsFormsApp1.Properties.Resources._4444;
             this.circleButton4.Location = new System.Drawing.Point(906, 54);
             this.circleButton4.Name = "circleButton4";
             this.circleButton4.Size = new System.Drawing.Size(82, 86);
@@ -266,11 +266,11 @@ namespace WindowsFormsApp1
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.hinh_anh_background_nen_mau_nhat_cuc_dep_034913300;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1129, 654);
-            this.Controls.Add(this.circleButton1);
             this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.circleButton1);
             this.Controls.Add(this.circleButton3);
             this.Controls.Add(this.circleButton2);
             this.Controls.Add(this.label2);
@@ -320,10 +320,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ComboBox comboBox2;
         private CircleButton circleButton2;
         private CircleButton circleButton3;
-        private CircleButton circleButton4;
         private CircleButton circleButton1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private CircleButton circleButton4;
     }
 }
 

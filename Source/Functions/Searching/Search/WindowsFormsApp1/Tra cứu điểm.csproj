@@ -201,5 +201,50 @@
   <ItemGroup>
     <None Include="Resources\Untitled2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\4444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hình\13.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

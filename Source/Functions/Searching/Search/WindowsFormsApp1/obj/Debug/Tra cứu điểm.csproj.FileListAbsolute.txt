@@ -9,9 +9,14 @@ C:\Users\Admin\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Tra cứ
 C:\Users\Admin\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Tra cứu điểm.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Admin\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\ACER\source\repos\CLONE_GIT\RTU-Visual-Progamming-Project\Source\Functions\Searching\Search\WindowsFormsApp1\obj\Debug\Tra cứu điểm.csproj.AssemblyReference.cache
-C:\Users\ACER\source\repos\CLONE_GIT\RTU-Visual-Progamming-Project\Source\Functions\Searching\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\ACER\source\repos\CLONE_GIT\RTU-Visual-Progamming-Project\Source\Functions\Searching\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
-C:\Users\ACER\source\repos\CLONE_GIT\RTU-Visual-Progamming-Project\Source\Functions\Searching\Search\WindowsFormsApp1\obj\Debug\Tra cứu điểm.csproj.GenerateResource.cache
-C:\Users\ACER\source\repos\CLONE_GIT\RTU-Visual-Progamming-Project\Source\Functions\Searching\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\ACER\source\repos\CLONE_GIT\RTU-Visual-Progamming-Project\Source\Functions\Searching\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\Tra cứu điểm.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\Tra cứu điểm.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\Tra cứu điểm.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\Search\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         DataTable table2 = new DataTable();
         DataTable tabe = new DataTable();
     
-        string str = @"Data Source=LAPTOP-281DQ5C3\SQLEXPRESS;Initial Catalog=QuanLyDiemChuanDHQG;Integrated Security=True";
+        string str = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=databaseDiemChuan2020_2021_DHQGTPHCM(2);Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         int i,count=0;
         void loaddata()

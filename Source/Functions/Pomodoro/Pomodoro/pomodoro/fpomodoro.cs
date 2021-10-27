@@ -20,8 +20,8 @@ namespace pomodoro
             var path = new System.Drawing.Drawing2D.GraphicsPath();
             path.AddEllipse(0, 0, lbClock.Width + 1, lbClock.Height + 1);
             this.lbClock.Region = new Region(path);
-            //btnStart1.Enabled = false;
-            //btnStop1.Enabled = false;
+            btnStart1.Enabled = false;
+            btnStop1.Enabled = false;
         }
 
         private void btnPomodoro_Click(object sender, EventArgs e)

@@ -43,32 +43,37 @@ namespace pomodoro
             // 
             // btnPomodoro
             // 
-            this.btnPomodoro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnPomodoro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnPomodoro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnPomodoro.FlatAppearance.BorderSize = 20;
             this.btnPomodoro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
             this.btnPomodoro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPomodoro.Font = new System.Drawing.Font("Elephant", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPomodoro.ForeColor = System.Drawing.Color.DarkViolet;
+            this.btnPomodoro.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnPomodoro.Image = global::pomodoro.Properties.Resources.LogoBtnPomo;
+            this.btnPomodoro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPomodoro.Location = new System.Drawing.Point(29, 73);
             this.btnPomodoro.Name = "btnPomodoro";
             this.btnPomodoro.Size = new System.Drawing.Size(201, 60);
             this.btnPomodoro.TabIndex = 0;
-            this.btnPomodoro.Text = "Pomodoro";
+            this.btnPomodoro.Text = "      Pomodoro";
             this.btnPomodoro.UseVisualStyleBackColor = false;
             this.btnPomodoro.Click += new System.EventHandler(this.btnPomodoro_Click);
             // 
             // btnShortBreak
             // 
-            this.btnShortBreak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnShortBreak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnShortBreak.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnShortBreak.Font = new System.Drawing.Font("Elephant", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShortBreak.ForeColor = System.Drawing.Color.DarkViolet;
+            this.btnShortBreak.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnShortBreak.Image = global::pomodoro.Properties.Resources.LogoBtnShortBreak;
+            this.btnShortBreak.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnShortBreak.Location = new System.Drawing.Point(29, 158);
             this.btnShortBreak.Name = "btnShortBreak";
             this.btnShortBreak.Size = new System.Drawing.Size(201, 59);
             this.btnShortBreak.TabIndex = 1;
             this.btnShortBreak.Text = "Short Break";
+            this.btnShortBreak.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnShortBreak.UseVisualStyleBackColor = false;
             this.btnShortBreak.Click += new System.EventHandler(this.btnShortBreak_Click);
             // 
@@ -78,12 +83,15 @@ namespace pomodoro
             this.btnLongBreak.FlatAppearance.BorderSize = 4;
             this.btnLongBreak.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLongBreak.Font = new System.Drawing.Font("Elephant", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLongBreak.ForeColor = System.Drawing.Color.DarkViolet;
+            this.btnLongBreak.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnLongBreak.Image = global::pomodoro.Properties.Resources.LogoBtnLongBreak;
+            this.btnLongBreak.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLongBreak.Location = new System.Drawing.Point(29, 247);
             this.btnLongBreak.Name = "btnLongBreak";
             this.btnLongBreak.Size = new System.Drawing.Size(201, 57);
             this.btnLongBreak.TabIndex = 2;
             this.btnLongBreak.Text = "Long Break";
+            this.btnLongBreak.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLongBreak.UseVisualStyleBackColor = false;
             this.btnLongBreak.Click += new System.EventHandler(this.btnLongBreak_Click);
             // 
@@ -111,27 +119,32 @@ namespace pomodoro
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Agency FB", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(255, -3);
+            this.label1.Image = global::pomodoro.Properties.Resources.LogoTilteLeft;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(236, -2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(440, 81);
+            this.label1.Size = new System.Drawing.Size(510, 81);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Pomodoro Timer";
+            this.label1.Text = "     Pomodoro Timer";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnStop1
             // 
             this.btnStop1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStop1.BackColor = System.Drawing.Color.Firebrick;
+            this.btnStop1.BackColor = System.Drawing.Color.Crimson;
             this.btnStop1.FlatAppearance.BorderSize = 0;
             this.btnStop1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStop1.Font = new System.Drawing.Font("Cooper Black", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStop1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnStop1.Location = new System.Drawing.Point(558, 218);
+            this.btnStop1.Image = global::pomodoro.Properties.Resources.LogoStop;
+            this.btnStop1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStop1.Location = new System.Drawing.Point(558, 210);
             this.btnStop1.Name = "btnStop1";
-            this.btnStop1.Size = new System.Drawing.Size(220, 86);
+            this.btnStop1.Size = new System.Drawing.Size(202, 77);
             this.btnStop1.TabIndex = 8;
-            this.btnStop1.Text = "STOP";
+            this.btnStop1.Text = " STOP";
             this.btnStop1.UseVisualStyleBackColor = false;
             this.btnStop1.Click += new System.EventHandler(this.btnStop1_Click);
             // 
@@ -145,11 +158,13 @@ namespace pomodoro
             this.btnStart1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart1.Font = new System.Drawing.Font("Cooper Black", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart1.ForeColor = System.Drawing.Color.Tomato;
-            this.btnStart1.Location = new System.Drawing.Point(558, 96);
+            this.btnStart1.Image = global::pomodoro.Properties.Resources.logoStart;
+            this.btnStart1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStart1.Location = new System.Drawing.Point(558, 106);
             this.btnStart1.Name = "btnStart1";
-            this.btnStart1.Size = new System.Drawing.Size(220, 87);
+            this.btnStart1.Size = new System.Drawing.Size(202, 77);
             this.btnStart1.TabIndex = 7;
-            this.btnStart1.Text = "START";
+            this.btnStart1.Text = "   START";
             this.btnStart1.UseVisualStyleBackColor = false;
             this.btnStart1.Click += new System.EventHandler(this.btnStart1_Click);
             // 

@@ -95,5 +95,23 @@
   <ItemGroup>
     <None Include="Resources\Cool wallpaper1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoBtnPomo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoBtnShortBreak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoBtnLongBreak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoTilteLeft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoStop.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

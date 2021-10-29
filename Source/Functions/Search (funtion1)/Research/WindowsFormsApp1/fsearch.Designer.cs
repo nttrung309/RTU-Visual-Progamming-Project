@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class fsearch
     {
         /// <summary>
         /// Required designer variable.
@@ -29,61 +29,66 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cbNameUni = new System.Windows.Forms.ComboBox();
+            this.txbGrade = new System.Windows.Forms.TextBox();
+            this.lbGrade = new System.Windows.Forms.Label();
+            this.lbNameUni = new System.Windows.Forms.Label();
+            this.cbCombination = new System.Windows.Forms.ComboBox();
+            this.lbComb = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.dataGridViewResult = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbNameUni
             // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(279, 127);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(401, 28);
-            this.comboBox1.TabIndex = 0;
+            this.cbNameUni.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbNameUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNameUni.FormattingEnabled = true;
+            this.cbNameUni.Location = new System.Drawing.Point(327, 135);
+            this.cbNameUni.Name = "cbNameUni";
+            this.cbNameUni.Size = new System.Drawing.Size(426, 37);
+            this.cbNameUni.TabIndex = 0;
             // 
-            // textBox1
+            // txbGrade
             // 
-            this.textBox1.Location = new System.Drawing.Point(279, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 26);
-            this.textBox1.TabIndex = 1;
+            this.txbGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbGrade.Location = new System.Drawing.Point(328, 86);
+            this.txbGrade.Name = "txbGrade";
+            this.txbGrade.Size = new System.Drawing.Size(155, 35);
+            this.txbGrade.TabIndex = 1;
             // 
-            // label1
+            // lbGrade
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(91, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Nhập tổng điểm dự kiến \r\n";
+            this.lbGrade.AutoSize = true;
+            this.lbGrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGrade.Location = new System.Drawing.Point(91, 86);
+            this.lbGrade.Name = "lbGrade";
+            this.lbGrade.Size = new System.Drawing.Size(321, 32);
+            this.lbGrade.TabIndex = 2;
+            this.lbGrade.Text = "Nhập tổng điểm dự kiến \r\n";
             // 
-            // label2
+            // lbNameUni
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(91, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Chọn trường ";
+            this.lbNameUni.AutoSize = true;
+            this.lbNameUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameUni.Location = new System.Drawing.Point(91, 135);
+            this.lbNameUni.Name = "lbNameUni";
+            this.lbNameUni.Size = new System.Drawing.Size(178, 32);
+            this.lbNameUni.TabIndex = 3;
+            this.lbNameUni.Text = "Chọn trường ";
             // 
-            // comboBox2
+            // cbCombination
             // 
-            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox2.DropDownHeight = 120;
-            this.comboBox2.DropDownWidth = 120;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.IntegralHeight = false;
-            this.comboBox2.ItemHeight = 20;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbCombination.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbCombination.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbCombination.DropDownHeight = 120;
+            this.cbCombination.DropDownWidth = 120;
+            this.cbCombination.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCombination.FormattingEnabled = true;
+            this.cbCombination.IntegralHeight = false;
+            this.cbCombination.ItemHeight = 29;
+            this.cbCombination.Items.AddRange(new object[] {
             "A00 -- Toán, Vật lý, Hóa học",
             "A01 -- Toán, Vật lý, Tiếng Anh",
             "B00 -- Toán, Hóa học, Sinh học",
@@ -287,57 +292,57 @@ namespace WindowsFormsApp1
             "S00 -- Văn, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             "S01 -- Toán, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             ""});
-            this.comboBox2.Location = new System.Drawing.Point(279, 178);
-            this.comboBox2.MaxDropDownItems = 10;
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(401, 28);
-            this.comboBox2.TabIndex = 4;
+            this.cbCombination.Location = new System.Drawing.Point(328, 186);
+            this.cbCombination.MaxDropDownItems = 10;
+            this.cbCombination.Name = "cbCombination";
+            this.cbCombination.Size = new System.Drawing.Size(425, 37);
+            this.cbCombination.TabIndex = 4;
             // 
-            // label3
+            // lbComb
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(91, 186);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Chọn tổ hợp";
+            this.lbComb.AutoSize = true;
+            this.lbComb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbComb.Location = new System.Drawing.Point(91, 186);
+            this.lbComb.Name = "lbComb";
+            this.lbComb.Size = new System.Drawing.Size(169, 32);
+            this.lbComb.TabIndex = 5;
+            this.lbComb.Text = "Chọn tổ hợp";
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.Location = new System.Drawing.Point(520, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 68);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Tìm trường";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSearch.Location = new System.Drawing.Point(836, 106);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(206, 68);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.Text = "Tìm trường";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // dataGridViewResult
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 214);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(741, 231);
-            this.dataGridView1.TabIndex = 7;
+            this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResult.Location = new System.Drawing.Point(66, 255);
+            this.dataGridViewResult.Name = "dataGridViewResult";
+            this.dataGridViewResult.RowHeadersWidth = 62;
+            this.dataGridViewResult.RowTemplate.Height = 28;
+            this.dataGridViewResult.Size = new System.Drawing.Size(1001, 375);
+            this.dataGridViewResult.TabIndex = 7;
             // 
-            // Form1
+            // fsearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Name = "Form1";
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.ClientSize = new System.Drawing.Size(1138, 654);
+            this.Controls.Add(this.dataGridViewResult);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.lbComb);
+            this.Controls.Add(this.cbCombination);
+            this.Controls.Add(this.lbNameUni);
+            this.Controls.Add(this.lbGrade);
+            this.Controls.Add(this.txbGrade);
+            this.Controls.Add(this.cbNameUni);
+            this.Name = "fsearch";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,14 +350,14 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbNameUni;
+        private System.Windows.Forms.TextBox txbGrade;
+        private System.Windows.Forms.Label lbGrade;
+        private System.Windows.Forms.Label lbNameUni;
+        private System.Windows.Forms.ComboBox cbCombination;
+        private System.Windows.Forms.Label lbComb;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DataGridView dataGridViewResult;
     }
 }
 

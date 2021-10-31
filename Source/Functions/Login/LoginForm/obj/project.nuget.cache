@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "aJzP/7FKBJPtSy5q5jToIjP2btUQOU7ZTdazp60M5eyyNxfc7K8e1X4pZMi3z50oSM1D6Ov4mJF0zIYx7vTx8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ADMIN\\Documents\\VS Projects\\LoginForm\\LoginForm\\LoginForm\\LoginForm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.configuration.configurationmanager\\4.6.0\\system.configuration.configurationmanager.4.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.data.oledb\\4.6.0\\system.data.oledb.4.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.diagnostics.performancecounter\\4.6.0\\system.diagnostics.performancecounter.4.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.6.0\\system.security.cryptography.protecteddata.4.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.security.permissions\\4.6.0\\system.security.permissions.4.6.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.extensions\\4.6.0\\system.windows.extensions.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

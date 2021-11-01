@@ -46,21 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fMain.cs">
+    <Compile Include="Forms\CountDown\fCountDown.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fMain.Designer.cs">
-      <DependentUpon>fMain.cs</DependentUpon>
+    <Compile Include="Forms\CountDown\fCountDown.designer.cs">
+      <DependentUpon>fCountDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UI\fSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UI\fSetting.Designer.cs">
+      <DependentUpon>fSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fMain.resx">
-      <DependentUpon>fMain.cs</DependentUpon>
+    <Compile Include="Forms\UI\fUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UI\fUI.designer.cs">
+      <DependentUpon>fUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\CountDown\fCountDown.resx">
+      <DependentUpon>fCountDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UI\fSetting.resx">
+      <DependentUpon>fSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UI\fUI.resx">
+      <DependentUpon>fUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -112,6 +130,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdBackGround1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded_rec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdBackGround2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdBackGround3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdBackGround4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdBackGround5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdBackGround6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdBackGround7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

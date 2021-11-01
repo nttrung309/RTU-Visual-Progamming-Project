@@ -13,10 +13,10 @@ namespace RoadToUni
         /// </summary>
         [STAThread]
         static void Main()
-        {
+       {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fMain());
+            Application.Run(new Forms.UI.fUI());
         }
     }
 }

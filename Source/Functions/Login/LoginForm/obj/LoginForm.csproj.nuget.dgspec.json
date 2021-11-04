@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Documents\\VS Projects\\LoginForm\\LoginForm\\LoginForm\\LoginForm.csproj": {}
+    "C:\\Users\\ACER\\source\\repos\\CLONE_GIT\\RTU-Visual-Progamming-Project\\Source\\Functions\\Login\\LoginForm\\LoginForm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Documents\\VS Projects\\LoginForm\\LoginForm\\LoginForm\\LoginForm.csproj": {
+    "C:\\Users\\ACER\\source\\repos\\CLONE_GIT\\RTU-Visual-Progamming-Project\\Source\\Functions\\Login\\LoginForm\\LoginForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\VS Projects\\LoginForm\\LoginForm\\LoginForm\\LoginForm.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\source\\repos\\CLONE_GIT\\RTU-Visual-Progamming-Project\\Source\\Functions\\Login\\LoginForm\\LoginForm.csproj",
         "projectName": "LoginForm",
-        "projectPath": "C:\\Users\\ADMIN\\Documents\\VS Projects\\LoginForm\\LoginForm\\LoginForm\\LoginForm.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Documents\\VS Projects\\LoginForm\\LoginForm\\LoginForm\\obj\\",
+        "projectPath": "C:\\Users\\ACER\\source\\repos\\CLONE_GIT\\RTU-Visual-Progamming-Project\\Source\\Functions\\Login\\LoginForm\\LoginForm.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\source\\repos\\CLONE_GIT\\RTU-Visual-Progamming-Project\\Source\\Functions\\Login\\LoginForm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

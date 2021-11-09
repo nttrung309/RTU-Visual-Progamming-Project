@@ -45,9 +45,9 @@ namespace Đồ_án_1
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
@@ -56,11 +56,12 @@ namespace Đồ_án_1
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(446, 28);
+            this.label1.Location = new System.Drawing.Point(353, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(743, 87);
@@ -69,9 +70,10 @@ namespace Đồ_án_1
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(452, 103);
+            this.label2.Location = new System.Drawing.Point(362, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(718, 33);
@@ -80,10 +82,11 @@ namespace Đồ_án_1
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label3.Location = new System.Drawing.Point(357, 214);
+            this.label3.Location = new System.Drawing.Point(212, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 40);
             this.label3.TabIndex = 9;
@@ -91,8 +94,9 @@ namespace Đồ_án_1
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(264, 266);
+            this.label4.Location = new System.Drawing.Point(119, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(924, 95);
             this.label4.TabIndex = 10;
@@ -100,8 +104,9 @@ namespace Đồ_án_1
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(264, 361);
+            this.label5.Location = new System.Drawing.Point(119, 326);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(924, 58);
             this.label5.TabIndex = 11;
@@ -109,8 +114,9 @@ namespace Đồ_án_1
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(264, 479);
+            this.label6.Location = new System.Drawing.Point(119, 444);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(924, 97);
             this.label6.TabIndex = 12;
@@ -118,9 +124,10 @@ namespace Đồ_án_1
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(233, 214);
+            this.label7.Location = new System.Drawing.Point(88, 179);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(151, 40);
             this.label7.TabIndex = 13;
@@ -128,8 +135,9 @@ namespace Đồ_án_1
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(264, 419);
+            this.label8.Location = new System.Drawing.Point(119, 384);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(924, 60);
             this.label8.TabIndex = 14;
@@ -137,10 +145,11 @@ namespace Đồ_án_1
             // 
             // Next1
             // 
+            this.Next1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Next1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Next1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next1.ForeColor = System.Drawing.Color.Azure;
-            this.Next1.Location = new System.Drawing.Point(894, 594);
+            this.Next1.Location = new System.Drawing.Point(812, 562);
             this.Next1.Name = "Next1";
             this.Next1.Size = new System.Drawing.Size(126, 37);
             this.Next1.TabIndex = 50;
@@ -149,10 +158,11 @@ namespace Đồ_án_1
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(413, 594);
+            this.button2.Location = new System.Drawing.Point(260, 562);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 37);
             this.button2.TabIndex = 51;
@@ -163,7 +173,8 @@ namespace Đồ_án_1
             // KetQua
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1200, 643);
+            this.ClientSize = new System.Drawing.Size(1108, 611);
+            this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Next1);
             this.Controls.Add(this.label8);

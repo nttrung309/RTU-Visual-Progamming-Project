@@ -46,76 +46,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cau11_12.cs">
+    <Compile Include="FormQ\Cau11_12.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau11_12.Designer.cs">
+    <Compile Include="FormQ\Cau11_12.Designer.cs">
       <DependentUpon>Cau11_12.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau13_14.cs">
+    <Compile Include="FormQ\Cau13_14.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau13_14.Designer.cs">
+    <Compile Include="FormQ\Cau13_14.Designer.cs">
       <DependentUpon>Cau13_14.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau03_04.cs">
+    <Compile Include="FormQ\Cau03_04.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau03_04.Designer.cs">
+    <Compile Include="FormQ\Cau03_04.Designer.cs">
       <DependentUpon>Cau03_04.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau07_08.cs">
+    <Compile Include="FormQ\Cau07_08.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau07_08.Designer.cs">
+    <Compile Include="FormQ\Cau07_08.Designer.cs">
       <DependentUpon>Cau07_08.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau09_10.cs">
+    <Compile Include="FormQ\Cau09_10.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau09_10.Designer.cs">
+    <Compile Include="FormQ\Cau09_10.Designer.cs">
       <DependentUpon>Cau09_10.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau15_16.cs">
+    <Compile Include="FormQ\Cau15_16.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau15_16.Designer.cs">
+    <Compile Include="FormQ\Cau15_16.Designer.cs">
       <DependentUpon>Cau15_16.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau17_18.cs">
+    <Compile Include="FormQ\Cau17_18.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau17_18.Designer.cs">
+    <Compile Include="FormQ\Cau17_18.Designer.cs">
       <DependentUpon>Cau17_18.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau19_20.cs">
+    <Compile Include="FormQ\Cau19_20.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau19_20.Designer.cs">
+    <Compile Include="FormQ\Cau19_20.Designer.cs">
       <DependentUpon>Cau19_20.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau05_06.cs">
+    <Compile Include="FormQ\Cau05_06.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau05_06.Designer.cs">
+    <Compile Include="FormQ\Cau05_06.Designer.cs">
       <DependentUpon>Cau05_06.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUI.cs">
+    <Compile Include="UI\FormUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUI.Designer.cs">
+    <Compile Include="UI\FormUI.Designer.cs">
       <DependentUpon>FormUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cau01_02.cs">
+    <Compile Include="FormQ\Cau01_02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cau01_02.Designer.cs">
+    <Compile Include="FormQ\Cau01_02.Designer.cs">
       <DependentUpon>Cau01_02.cs</DependentUpon>
     </Compile>
-    <Compile Include="KetQua.cs">
+    <Compile Include="UI\KetQua.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KetQua.Designer.cs">
+    <Compile Include="UI\KetQua.Designer.cs">
       <DependentUpon>KetQua.cs</DependentUpon>
     </Compile>
     <Compile Include="Meow.cs">
@@ -126,40 +126,40 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cau03_04.resx">
+    <EmbeddedResource Include="FormQ\Cau03_04.resx">
       <DependentUpon>Cau03_04.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau05_06.resx">
+    <EmbeddedResource Include="FormQ\Cau05_06.resx">
       <DependentUpon>Cau05_06.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau07_08.resx">
+    <EmbeddedResource Include="FormQ\Cau07_08.resx">
       <DependentUpon>Cau07_08.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau09_10.resx">
+    <EmbeddedResource Include="FormQ\Cau09_10.resx">
       <DependentUpon>Cau09_10.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau11_12.resx">
+    <EmbeddedResource Include="FormQ\Cau11_12.resx">
       <DependentUpon>Cau11_12.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau13_14.resx">
+    <EmbeddedResource Include="FormQ\Cau13_14.resx">
       <DependentUpon>Cau13_14.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau15_16.resx">
+    <EmbeddedResource Include="FormQ\Cau15_16.resx">
       <DependentUpon>Cau15_16.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau17_18.resx">
+    <EmbeddedResource Include="FormQ\Cau17_18.resx">
       <DependentUpon>Cau17_18.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau19_20.resx">
+    <EmbeddedResource Include="FormQ\Cau19_20.resx">
       <DependentUpon>Cau19_20.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUI.resx">
+    <EmbeddedResource Include="UI\FormUI.resx">
       <DependentUpon>FormUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cau01_02.resx">
+    <EmbeddedResource Include="FormQ\Cau01_02.resx">
       <DependentUpon>Cau01_02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KetQua.resx">
+    <EmbeddedResource Include="UI\KetQua.resx">
       <DependentUpon>KetQua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Meow.resx">
@@ -173,6 +173,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -186,6 +187,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

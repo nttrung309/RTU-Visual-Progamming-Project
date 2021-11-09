@@ -18,16 +18,6 @@ namespace Đồ_án_1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CheckButton_Click(object sender, EventArgs e)
         {
             Meow.SwitchForm(new Cau01_02());

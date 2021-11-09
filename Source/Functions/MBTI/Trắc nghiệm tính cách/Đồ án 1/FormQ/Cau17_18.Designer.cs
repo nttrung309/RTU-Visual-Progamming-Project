@@ -1,7 +1,7 @@
 ﻿
 namespace Đồ_án_1
 {
-    partial class Cau15_16
+    partial class Cau17_18
     {
         /// <summary>
         /// Required designer variable.
@@ -50,151 +50,163 @@ namespace Đồ_án_1
             // 
             // radioButton2
             // 
+            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(26, 59);
+            this.radioButton2.Location = new System.Drawing.Point(22, 52);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(766, 44);
+            this.radioButton2.Size = new System.Drawing.Size(348, 44);
             this.radioButton2.TabIndex = 19;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Cảm thấy “ấm lòng” vì sự công nhận của sếp.";
+            this.radioButton2.Text = "Độc lập và kín đáo.";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
+            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(26, 5);
+            this.radioButton1.Location = new System.Drawing.Point(22, -2);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(772, 44);
+            this.radioButton1.Size = new System.Drawing.Size(414, 44);
             this.radioButton1.TabIndex = 18;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nguồn động viên chính là thành tích đạt được.";
+            this.radioButton1.Text = "Thoải mái và nhiệt tình.";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(465, 408);
+            this.label6.Location = new System.Drawing.Point(361, 380);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(437, 40);
+            this.label6.Size = new System.Drawing.Size(609, 40);
             this.label6.TabIndex = 43;
-            this.label6.Text = "Khi đưa ra quyết định bạn:";
+            this.label6.Text = "Bạn nhận thấy bản thân như thế nào:";
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(465, 256);
+            this.label5.Location = new System.Drawing.Point(361, 225);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(551, 40);
+            this.label5.Size = new System.Drawing.Size(583, 40);
             this.label5.TabIndex = 42;
-            this.label5.Text = "Khi được khen ngợi trong công ty:";
+            this.label5.Text = "Nhìn chung bạn có khuynh hướng …";
             // 
             // Cau1
             // 
+            this.Cau1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cau1.AutoSize = true;
             this.Cau1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cau1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Cau1.Location = new System.Drawing.Point(364, 256);
+            this.Cau1.Location = new System.Drawing.Point(260, 224);
             this.Cau1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Cau1.Name = "Cau1";
             this.Cau1.Size = new System.Drawing.Size(129, 44);
             this.Cau1.TabIndex = 41;
-            this.Cau1.Text = "Câu 15:";
+            this.Cau1.Text = "Câu 17:";
             // 
             // Cau2
             // 
+            this.Cau2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cau2.AutoSize = true;
             this.Cau2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cau2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Cau2.Location = new System.Drawing.Point(364, 407);
+            this.Cau2.Location = new System.Drawing.Point(260, 379);
             this.Cau2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Cau2.Name = "Cau2";
             this.Cau2.Size = new System.Drawing.Size(129, 44);
             this.Cau2.TabIndex = 40;
-            this.Cau2.Text = "Câu 16:";
+            this.Cau2.Text = "Câu 18:";
             // 
             // radioButton3
             // 
+            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(45, 5);
+            this.radioButton3.Location = new System.Drawing.Point(22, -1);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(576, 44);
+            this.radioButton3.Size = new System.Drawing.Size(710, 44);
             this.radioButton3.TabIndex = 20;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Quyết định mọi việc khá dễ dàng.";
+            this.radioButton3.Text = "Có óc thực tế - thấy điều cụ thể trước mắt.";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
+            this.radioButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(45, 59);
+            this.radioButton4.Location = new System.Drawing.Point(22, 53);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(600, 44);
+            this.radioButton4.Size = new System.Drawing.Size(735, 44);
             this.radioButton4.TabIndex = 21;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Có thể ra quyết định khá khó khăn.";
+            this.radioButton4.Text = "Có óc sáng tạo – thấy điều có thể làm được.";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.radioButton1);
             this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Location = new System.Drawing.Point(446, 303);
+            this.panel2.Location = new System.Drawing.Point(346, 275);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(682, 111);
-            this.panel2.TabIndex = 49;
+            this.panel2.TabIndex = 50;
             // 
             // Next1
             // 
+            this.Next1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Next1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Next1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next1.ForeColor = System.Drawing.Color.Azure;
-            this.Next1.Location = new System.Drawing.Point(944, 594);
+            this.Next1.Location = new System.Drawing.Point(850, 562);
             this.Next1.Name = "Next1";
             this.Next1.Size = new System.Drawing.Size(126, 37);
-            this.Next1.TabIndex = 48;
+            this.Next1.TabIndex = 49;
             this.Next1.Text = "Next";
             this.Next1.UseVisualStyleBackColor = false;
             this.Next1.Click += new System.EventHandler(this.Next1_Click);
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.Controls.Add(this.radioButton3);
             this.panel3.Controls.Add(this.radioButton4);
-            this.panel3.Location = new System.Drawing.Point(427, 454);
+            this.panel3.Location = new System.Drawing.Point(346, 426);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(660, 113);
-            this.panel3.TabIndex = 50;
+            this.panel3.Size = new System.Drawing.Size(660, 136);
+            this.panel3.TabIndex = 51;
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 154);
-            this.panel1.TabIndex = 51;
+            this.panel1.TabIndex = 52;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(446, 28);
+            this.label1.Location = new System.Drawing.Point(353, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(743, 87);
@@ -203,19 +215,21 @@ namespace Đồ_án_1
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(452, 103);
+            this.label2.Location = new System.Drawing.Point(362, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(718, 33);
             this.label2.TabIndex = 3;
             this.label2.Text = "Khám phá nghề nghiệp phù hợp qua tính cách của bạn";
             // 
-            // Cau15_16
+            // Cau17_18
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1200, 643);
+            this.ClientSize = new System.Drawing.Size(1108, 611);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Next1);
@@ -226,9 +240,9 @@ namespace Đồ_án_1
             this.Controls.Add(this.Cau2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Cau15_16";
+            this.Name = "Cau17_18";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cau15_16";
+            this.Text = "Cau17_18";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

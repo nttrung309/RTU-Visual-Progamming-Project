@@ -51,6 +51,7 @@ namespace Đồ_án_1
             // 
             // exit
             // 
+            this.exit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.exit.Location = new System.Drawing.Point(1452, 455);
             this.exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.exit.Name = "exit";
@@ -60,15 +61,17 @@ namespace Đồ_án_1
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Location = new System.Drawing.Point(405, 303);
+            this.panel1.Location = new System.Drawing.Point(301, 271);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(682, 107);
             this.panel1.TabIndex = 57;
             // 
             // radioButton1
             // 
+            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(67, 5);
@@ -82,6 +85,7 @@ namespace Đồ_án_1
             // 
             // radioButton2
             // 
+            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(67, 55);
@@ -95,10 +99,11 @@ namespace Đồ_án_1
             // 
             // Next1
             // 
+            this.Next1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Next1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Next1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next1.ForeColor = System.Drawing.Color.Azure;
-            this.Next1.Location = new System.Drawing.Point(944, 594);
+            this.Next1.Location = new System.Drawing.Point(850, 562);
             this.Next1.Name = "Next1";
             this.Next1.Size = new System.Drawing.Size(126, 37);
             this.Next1.TabIndex = 56;
@@ -108,15 +113,17 @@ namespace Đồ_án_1
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.Controls.Add(this.radioButton3);
             this.panel4.Controls.Add(this.radioButton4);
-            this.panel4.Location = new System.Drawing.Point(405, 457);
+            this.panel4.Location = new System.Drawing.Point(301, 425);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(660, 133);
             this.panel4.TabIndex = 58;
             // 
             // radioButton3
             // 
+            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(67, 5);
@@ -130,6 +137,7 @@ namespace Đồ_án_1
             // 
             // radioButton4
             // 
+            this.radioButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.Location = new System.Drawing.Point(67, 50);
@@ -144,9 +152,10 @@ namespace Đồ_án_1
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(465, 408);
+            this.label1.Location = new System.Drawing.Point(361, 376);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(411, 40);
@@ -155,10 +164,11 @@ namespace Đồ_án_1
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label3.Location = new System.Drawing.Point(364, 256);
+            this.label3.Location = new System.Drawing.Point(260, 224);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 44);
@@ -167,10 +177,11 @@ namespace Đồ_án_1
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label4.Location = new System.Drawing.Point(364, 407);
+            this.label4.Location = new System.Drawing.Point(260, 375);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 44);
@@ -179,9 +190,10 @@ namespace Đồ_án_1
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(465, 256);
+            this.label2.Location = new System.Drawing.Point(361, 225);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(555, 40);
@@ -190,22 +202,23 @@ namespace Đồ_án_1
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1200, 154);
+            this.panel2.Size = new System.Drawing.Size(1108, 154);
             this.panel2.TabIndex = 60;
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(446, 28);
+            this.label5.Location = new System.Drawing.Point(353, 9);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(743, 87);
@@ -214,9 +227,10 @@ namespace Đồ_án_1
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(452, 103);
+            this.label6.Location = new System.Drawing.Point(362, 96);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(718, 33);
@@ -226,7 +240,8 @@ namespace Đồ_án_1
             // Cau03_04
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1200, 643);
+            this.ClientSize = new System.Drawing.Size(1108, 611);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);

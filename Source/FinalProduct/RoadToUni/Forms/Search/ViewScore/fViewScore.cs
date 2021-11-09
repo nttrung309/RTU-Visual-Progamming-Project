@@ -22,7 +22,7 @@ namespace RoadToUni.Forms.Search.ViewScore
         DataTable table2 = new DataTable();
         DataTable tabe = new DataTable();
     
-        string str = @"Data Source=TRUNGNGUYEN\SQLEXPRESS;Initial Catalog=databaseDiemChuan;Integrated Security=True";
+        string str = @"Data Source=LAPTOP-281DQ5C3\SQLEXPRESS;Initial Catalog=QuanLyDiemChuanDHQG;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         int i,count=0;
         void loaddata()

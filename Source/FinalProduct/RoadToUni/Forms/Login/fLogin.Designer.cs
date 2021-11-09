@@ -63,15 +63,16 @@ namespace RoadToUni.Forms.Login
             this.pbxSlide.Image = global::RoadToUni.Properties.Resources.login_1;
             this.pbxSlide.ImageLocation = "";
             this.pbxSlide.Location = new System.Drawing.Point(0, 0);
+            this.pbxSlide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbxSlide.Name = "pbxSlide";
-            this.pbxSlide.Size = new System.Drawing.Size(503, 400);
+            this.pbxSlide.Size = new System.Drawing.Size(647, 533);
             this.pbxSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxSlide.TabIndex = 0;
             this.pbxSlide.TabStop = false;
             // 
             // btnLeftArrow
             // 
-            this.btnLeftArrow.BackColor = System.Drawing.Color.Transparent;
+            this.btnLeftArrow.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnLeftArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLeftArrow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLeftArrow.FlatAppearance.BorderSize = 0;
@@ -80,9 +81,10 @@ namespace RoadToUni.Forms.Login
             this.btnLeftArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLeftArrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLeftArrow.Image = global::RoadToUni.Properties.Resources.back_24px;
-            this.btnLeftArrow.Location = new System.Drawing.Point(1, 177);
+            this.btnLeftArrow.Location = new System.Drawing.Point(1, 236);
+            this.btnLeftArrow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLeftArrow.Name = "btnLeftArrow";
-            this.btnLeftArrow.Size = new System.Drawing.Size(20, 64);
+            this.btnLeftArrow.Size = new System.Drawing.Size(26, 85);
             this.btnLeftArrow.TabIndex = 1;
             this.btnLeftArrow.TabStop = false;
             this.btnLeftArrow.UseVisualStyleBackColor = false;
@@ -90,7 +92,7 @@ namespace RoadToUni.Forms.Login
             // 
             // btnRightArrow
             // 
-            this.btnRightArrow.BackColor = System.Drawing.Color.Transparent;
+            this.btnRightArrow.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnRightArrow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRightArrow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRightArrow.FlatAppearance.BorderSize = 0;
@@ -99,10 +101,11 @@ namespace RoadToUni.Forms.Login
             this.btnRightArrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRightArrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRightArrow.Image = global::RoadToUni.Properties.Resources.next_24px;
-            this.btnRightArrow.Location = new System.Drawing.Point(482, 177);
+            this.btnRightArrow.Location = new System.Drawing.Point(620, 236);
+            this.btnRightArrow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRightArrow.Name = "btnRightArrow";
             this.btnRightArrow.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnRightArrow.Size = new System.Drawing.Size(20, 64);
+            this.btnRightArrow.Size = new System.Drawing.Size(26, 85);
             this.btnRightArrow.TabIndex = 2;
             this.btnRightArrow.TabStop = false;
             this.btnRightArrow.UseVisualStyleBackColor = false;
@@ -119,10 +122,11 @@ namespace RoadToUni.Forms.Login
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnClose.Image = global::RoadToUni.Properties.Resources.close_window_26px;
-            this.btnClose.Location = new System.Drawing.Point(753, 12);
+            this.btnClose.Location = new System.Drawing.Point(968, 16);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.Size = new System.Drawing.Size(45, 47);
             this.btnClose.TabIndex = 3;
             this.btnClose.TabStop = false;
             this.btnClose.UseVisualStyleBackColor = false;
@@ -139,10 +143,11 @@ namespace RoadToUni.Forms.Login
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMinimize.Image = global::RoadToUni.Properties.Resources.minimize_window_26px;
-            this.btnMinimize.Location = new System.Drawing.Point(712, 12);
+            this.btnMinimize.Location = new System.Drawing.Point(915, 16);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnMinimize.Size = new System.Drawing.Size(35, 35);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 47);
             this.btnMinimize.TabIndex = 5;
             this.btnMinimize.TabStop = false;
             this.btnMinimize.UseVisualStyleBackColor = false;
@@ -156,9 +161,10 @@ namespace RoadToUni.Forms.Login
             this.pnlImageSlider.Controls.Add(this.rbtn3);
             this.pnlImageSlider.Controls.Add(this.rbtn2);
             this.pnlImageSlider.Controls.Add(this.rbtn1);
-            this.pnlImageSlider.Location = new System.Drawing.Point(210, 382);
+            this.pnlImageSlider.Location = new System.Drawing.Point(270, 509);
+            this.pnlImageSlider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlImageSlider.Name = "pnlImageSlider";
-            this.pnlImageSlider.Size = new System.Drawing.Size(82, 17);
+            this.pnlImageSlider.Size = new System.Drawing.Size(105, 23);
             this.pnlImageSlider.TabIndex = 6;
             // 
             // rbtn5
@@ -166,9 +172,10 @@ namespace RoadToUni.Forms.Login
             this.rbtn5.AutoSize = true;
             this.rbtn5.BackColor = System.Drawing.Color.Transparent;
             this.rbtn5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rbtn5.Location = new System.Drawing.Point(66, 2);
+            this.rbtn5.Location = new System.Drawing.Point(85, 3);
+            this.rbtn5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn5.Name = "rbtn5";
-            this.rbtn5.Size = new System.Drawing.Size(14, 13);
+            this.rbtn5.Size = new System.Drawing.Size(21, 20);
             this.rbtn5.TabIndex = 11;
             this.rbtn5.UseVisualStyleBackColor = false;
             this.rbtn5.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
@@ -178,9 +185,10 @@ namespace RoadToUni.Forms.Login
             this.rbtn4.AutoSize = true;
             this.rbtn4.BackColor = System.Drawing.Color.Transparent;
             this.rbtn4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rbtn4.Location = new System.Drawing.Point(50, 2);
+            this.rbtn4.Location = new System.Drawing.Point(64, 3);
+            this.rbtn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn4.Name = "rbtn4";
-            this.rbtn4.Size = new System.Drawing.Size(14, 13);
+            this.rbtn4.Size = new System.Drawing.Size(21, 20);
             this.rbtn4.TabIndex = 10;
             this.rbtn4.UseVisualStyleBackColor = false;
             this.rbtn4.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
@@ -190,9 +198,10 @@ namespace RoadToUni.Forms.Login
             this.rbtn3.AutoSize = true;
             this.rbtn3.BackColor = System.Drawing.Color.Transparent;
             this.rbtn3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rbtn3.Location = new System.Drawing.Point(34, 2);
+            this.rbtn3.Location = new System.Drawing.Point(44, 3);
+            this.rbtn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn3.Name = "rbtn3";
-            this.rbtn3.Size = new System.Drawing.Size(14, 13);
+            this.rbtn3.Size = new System.Drawing.Size(21, 20);
             this.rbtn3.TabIndex = 9;
             this.rbtn3.UseVisualStyleBackColor = false;
             // 
@@ -201,9 +210,10 @@ namespace RoadToUni.Forms.Login
             this.rbtn2.AutoSize = true;
             this.rbtn2.BackColor = System.Drawing.Color.Transparent;
             this.rbtn2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rbtn2.Location = new System.Drawing.Point(18, 2);
+            this.rbtn2.Location = new System.Drawing.Point(23, 3);
+            this.rbtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn2.Name = "rbtn2";
-            this.rbtn2.Size = new System.Drawing.Size(14, 13);
+            this.rbtn2.Size = new System.Drawing.Size(21, 20);
             this.rbtn2.TabIndex = 8;
             this.rbtn2.UseVisualStyleBackColor = false;
             this.rbtn2.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
@@ -213,9 +223,10 @@ namespace RoadToUni.Forms.Login
             this.rbtn1.AutoSize = true;
             this.rbtn1.BackColor = System.Drawing.Color.Transparent;
             this.rbtn1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rbtn1.Location = new System.Drawing.Point(2, 2);
+            this.rbtn1.Location = new System.Drawing.Point(3, 3);
+            this.rbtn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn1.Name = "rbtn1";
-            this.rbtn1.Size = new System.Drawing.Size(14, 13);
+            this.rbtn1.Size = new System.Drawing.Size(21, 20);
             this.rbtn1.TabIndex = 7;
             this.rbtn1.UseVisualStyleBackColor = false;
             this.rbtn1.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
@@ -230,9 +241,10 @@ namespace RoadToUni.Forms.Login
             // 
             this.pbxLogo.Cursor = System.Windows.Forms.Cursors.Default;
             this.pbxLogo.Image = global::RoadToUni.Properties.Resources.image_psd__1_;
-            this.pbxLogo.Location = new System.Drawing.Point(605, 44);
+            this.pbxLogo.Location = new System.Drawing.Point(703, 65);
+            this.pbxLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(100, 84);
+            this.pbxLogo.Size = new System.Drawing.Size(278, 132);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxLogo.TabIndex = 7;
             this.pbxLogo.TabStop = false;
@@ -240,50 +252,55 @@ namespace RoadToUni.Forms.Login
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(568, 162);
+            this.lblUsername.Location = new System.Drawing.Point(724, 212);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(87, 21);
+            this.lblUsername.Size = new System.Drawing.Size(129, 32);
             this.lblUsername.TabIndex = 8;
             this.lblUsername.Text = "Username";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(568, 186);
+            this.txtUsername.Location = new System.Drawing.Point(730, 248);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(179, 23);
+            this.txtUsername.Size = new System.Drawing.Size(229, 26);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(568, 239);
+            this.txtPassword.Location = new System.Drawing.Point(730, 319);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(179, 23);
+            this.txtPassword.Size = new System.Drawing.Size(229, 26);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPassword.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(568, 215);
+            this.lblPassword.Location = new System.Drawing.Point(724, 283);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(81, 21);
+            this.lblPassword.Size = new System.Drawing.Size(123, 32);
             this.lblPassword.TabIndex = 10;
             this.lblPassword.Text = "Password";
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnLogin.BackColor = System.Drawing.Color.YellowGreen;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Leelawadee", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnLogin.Location = new System.Drawing.Point(568, 291);
+            this.btnLogin.Location = new System.Drawing.Point(730, 388);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(179, 33);
+            this.btnLogin.Size = new System.Drawing.Size(230, 54);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Log in";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -292,23 +309,26 @@ namespace RoadToUni.Forms.Login
             // lblAccountExist
             // 
             this.lblAccountExist.AutoSize = true;
-            this.lblAccountExist.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAccountExist.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblAccountExist.ForeColor = System.Drawing.Color.White;
-            this.lblAccountExist.Location = new System.Drawing.Point(568, 327);
+            this.lblAccountExist.Location = new System.Drawing.Point(725, 446);
+            this.lblAccountExist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccountExist.Name = "lblAccountExist";
-            this.lblAccountExist.Size = new System.Drawing.Size(152, 17);
+            this.lblAccountExist.Size = new System.Drawing.Size(233, 28);
             this.lblAccountExist.TabIndex = 12;
             this.lblAccountExist.Text = "Don\'t have an account?";
             // 
             // lblRegister
             // 
             this.lblRegister.AutoSize = true;
+            this.lblRegister.BackColor = System.Drawing.Color.Yellow;
             this.lblRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblRegister.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblRegister.ForeColor = System.Drawing.Color.Blue;
-            this.lblRegister.Location = new System.Drawing.Point(568, 344);
+            this.lblRegister.Font = new System.Drawing.Font("Nirmala UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegister.ForeColor = System.Drawing.Color.Black;
+            this.lblRegister.Location = new System.Drawing.Point(730, 479);
+            this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(72, 21);
+            this.lblRegister.Size = new System.Drawing.Size(98, 30);
             this.lblRegister.TabIndex = 5;
             this.lblRegister.Text = "Register";
             this.lblRegister.Click += new System.EventHandler(this.lblRegister_Click);
@@ -317,22 +337,24 @@ namespace RoadToUni.Forms.Login
             // 
             this.cbxShowPassword.AutoSize = true;
             this.cbxShowPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbxShowPassword.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxShowPassword.Location = new System.Drawing.Point(568, 269);
+            this.cbxShowPassword.Font = new System.Drawing.Font("Nirmala UI", 9F);
+            this.cbxShowPassword.ForeColor = System.Drawing.Color.White;
+            this.cbxShowPassword.Location = new System.Drawing.Point(730, 359);
+            this.cbxShowPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbxShowPassword.Name = "cbxShowPassword";
-            this.cbxShowPassword.Size = new System.Drawing.Size(108, 19);
+            this.cbxShowPassword.Size = new System.Drawing.Size(164, 29);
             this.cbxShowPassword.TabIndex = 3;
             this.cbxShowPassword.Text = "Show password";
             this.cbxShowPassword.UseVisualStyleBackColor = true;
             this.cbxShowPassword.CheckedChanged += new System.EventHandler(this.cbxShowPassword_CheckedChanged);
             // 
-            // frmLogin
+            // fLogin
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 400);
+            this.ClientSize = new System.Drawing.Size(1029, 533);
             this.Controls.Add(this.cbxShowPassword);
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.lblAccountExist);
@@ -350,9 +372,10 @@ namespace RoadToUni.Forms.Login
             this.Controls.Add(this.pbxSlide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmLogin";
+            this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "University Analyzer";
             ((System.ComponentModel.ISupportInitialize)(this.pbxSlide)).EndInit();

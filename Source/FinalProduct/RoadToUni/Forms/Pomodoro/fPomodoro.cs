@@ -27,7 +27,7 @@ namespace RoadToUni.Forms.Pomodoro
         private void btnPomodoro_Click(object sender, EventArgs e)
         {
             btnStart1.Enabled = true;
-            btnStop1.Enabled = true;
+            btnStop1.Enabled = false;
             lbClock.BackColor = Color.LightCoral;
             this.timeLeft = 25 * 60;
             int minutes = timeLeft / 60;
@@ -56,7 +56,7 @@ namespace RoadToUni.Forms.Pomodoro
         private void btnShortBreak_Click(object sender, EventArgs e)
         {
             btnStart1.Enabled = true;
-            btnStop1.Enabled = true;
+            btnStop1.Enabled = false;
             lbClock.BackColor = Color.DarkSeaGreen;
             this.timeLeft = 5 * 60;
             int minutes = timeLeft / 60;
@@ -69,7 +69,7 @@ namespace RoadToUni.Forms.Pomodoro
         private void btnLongBreak_Click(object sender, EventArgs e)
         {
             btnStart1.Enabled = true;
-            btnStop1.Enabled = true;
+            btnStop1.Enabled = false;
             lbClock.BackColor = Color.CadetBlue;
             this.timeLeft = 15 * 60;
             int minutes = timeLeft / 60;

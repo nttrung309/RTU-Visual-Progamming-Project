@@ -119,7 +119,7 @@ namespace RoadToUni.Forms.Login
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=TRUNGNGUYEN\SQLEXPRESS;Initial Catalog=databaseDiemChuan;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-281DQ5C3\SQLEXPRESS;Initial Catalog=QuanLyDiemChuanDHQG;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             SqlDataAdapter da = new SqlDataAdapter();
 

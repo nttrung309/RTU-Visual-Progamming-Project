@@ -253,6 +253,16 @@ namespace RoadToUni.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blue_search_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("blue-search-icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnSearch__1_ {
             get {
                 object obj = ResourceManager.GetObject("btnSearch__1_", resourceCulture);
@@ -616,6 +626,16 @@ namespace RoadToUni.Properties {
         internal static System.Drawing.Bitmap rounded_rec {
             get {
                 object obj = ResourceManager.GetObject("rounded_rec", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap searchicon__2_ {
+            get {
+                object obj = ResourceManager.GetObject("searchicon (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

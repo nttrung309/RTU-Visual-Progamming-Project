@@ -308,8 +308,6 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.cbCombination.Size = new System.Drawing.Size(423, 41);
             this.cbCombination.TabIndex = 0;
             this.cbCombination.TabStop = false;
-            this.cbCombination.Enter += new System.EventHandler(this.cbCombination_Enter);
-            this.cbCombination.Leave += new System.EventHandler(this.cbCombination_Leave);
             // 
             // lbComb
             // 
@@ -591,8 +589,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.cbNameUni.Name = "cbNameUni";
             this.cbNameUni.Size = new System.Drawing.Size(423, 41);
             this.cbNameUni.TabIndex = 8;
-            this.cbNameUni.Enter += new System.EventHandler(this.cbNameUni_Enter);
-            this.cbNameUni.Leave += new System.EventHandler(this.cbNameUni_Leave);
+           
             // 
             // label1
             // 

@@ -20,3 +20,25 @@ D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc n
 D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
 D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb
 D:\programer\Github\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Meow.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe.config
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.pdb
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau03_04.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau05_06.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau07_08.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau09_10.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau11_12.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau13_14.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau15_16.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau17_18.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau19_20.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.FormUI.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau01_02.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.KetQua.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Meow.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Properties.Resources.resources
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.GenerateResource.cache
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
+C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb

@@ -363,5 +363,11 @@
   <ItemGroup>
     <None Include="Resources\next_24px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-search-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchicon %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

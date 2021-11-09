@@ -124,7 +124,7 @@ namespace RoadToUni.Forms.Search.ViewScore
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(299, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 22);
+            this.label1.Size = new System.Drawing.Size(173, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "Chọn Trường";
             // 
@@ -136,7 +136,7 @@ namespace RoadToUni.Forms.Search.ViewScore
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(777, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 22);
+            this.label2.Size = new System.Drawing.Size(140, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "Chọn Năm";
             // 
@@ -149,7 +149,7 @@ namespace RoadToUni.Forms.Search.ViewScore
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(82, 95);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(629, 30);
+            this.comboBox1.Size = new System.Drawing.Size(629, 40);
             this.comboBox1.TabIndex = 21;
             // 
             // comboBox2
@@ -165,7 +165,7 @@ namespace RoadToUni.Forms.Search.ViewScore
             "2021"});
             this.comboBox2.Location = new System.Drawing.Point(745, 95);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(159, 30);
+            this.comboBox2.Size = new System.Drawing.Size(159, 40);
             this.comboBox2.TabIndex = 8;
             // 
             // groupBox2

@@ -200,40 +200,5 @@ namespace RoadToUni.Forms.Search.FindSchool
             }
         }
 
-        private void cbCombination_Enter(object sender, EventArgs e)
-        {
-            if(cbCombination.Text == "Chọn tổ hợp xét tuyển")
-            {
-                cbCombination.Text = "";
-                cbCombination.ForeColor = Color.Black;
-            }    
-        }
-
-        private void cbCombination_Leave(object sender, EventArgs e)
-        {
-            if (cbCombination.Text == "")
-            {
-                cbCombination.Text = "Chọn tổ hợp xét tuyển";
-                cbCombination.ForeColor = Color.DarkGray;
-            }
-        }
-
-        private void cbNameUni_Enter(object sender, EventArgs e)
-        {
-            if (cbNameUni.Text == "Chọn trường")
-            {
-                cbNameUni.Text = "";
-                cbNameUni.ForeColor = Color.Black;
-            }
-        }
-
-        private void cbNameUni_Leave(object sender, EventArgs e)
-        {
-            if (cbNameUni.Text == "")
-            {
-                cbNameUni.Text = "Chọn trường";
-                cbNameUni.ForeColor = Color.DarkGray;
-            }
-        }
     }
 }

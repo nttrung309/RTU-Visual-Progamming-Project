@@ -10,7 +10,7 @@ namespace RoadToUni.Forms.Search.FindSchool
 {
     class ClassCrud
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-281DQ5C3\SQLEXPRESS;Initial Catalog=QuanLyDiemChuanDHQG;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=TRUNGNGUYEN\SQLEXPRESS;Initial Catalog=databaseDiemChuan;Integrated Security=True");
         private void OpenConnect()
         {
             if(con.State ==ConnectionState.Closed)

@@ -50,3 +50,16 @@ C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\obj\Debug\RoadToUni.csproj.CoreCompileInputs.cache
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\obj\Debug\RoadToUni.exe
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\obj\Debug\RoadToUni.pdb
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.fMBTIMain.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.UI.fOpen.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau01_02.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau03_04.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau05_06.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau07_08.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau09_10.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau11_12.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau13_14.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau15_16.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau17_18.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Questions.Cau19_20.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.UI.KetQua.resources

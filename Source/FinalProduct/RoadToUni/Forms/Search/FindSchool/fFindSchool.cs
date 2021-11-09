@@ -17,8 +17,8 @@ namespace RoadToUni.Forms.Search.FindSchool
         {
             InitializeComponent();
             LoadNameUni();
-            
-            
+
+
         }
         void LoadNameUni()
         {
@@ -60,12 +60,12 @@ namespace RoadToUni.Forms.Search.FindSchool
                 MessageBox.Show("Điểm xét tuyển tối đa 32.75! Vui lòng nhập số điểm nhỏ hơn 32.75", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if(cbNameUni.SelectedIndex == -1)
+            if (cbNameUni.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }    
-            if(cbCombination.SelectedIndex == -1)
+            }
+            if (cbCombination.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn tổ hợp xét tuyển", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -93,10 +93,10 @@ namespace RoadToUni.Forms.Search.FindSchool
             dtCol.Columns.Add("STT");
             string nameAndID = cbNameUni.GetItemText(cbNameUni.SelectedItem);
             string IDUni = nameAndID.Substring(0, 3);
-            if(IDUni.Equals("Tất"))
+            if (IDUni.Equals("Tất"))
             {
                 IDUni = "";
-            }    
+            }
             string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
             string comb = subjectComb.Substring(0, 3);
             float mark = float.Parse(txbGrade.Text);
@@ -121,7 +121,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             dataGridViewResult.Columns[3].Width = 100;
             dataGridViewResult.Columns[4].Width = 350;
             dataGridViewResult.Columns[5].Width = 100;
-          
+
         }
         private void DisableClickHeader()
         {
@@ -138,7 +138,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             style2.BackColor = Color.LightCyan;
             for (int i = dataGridViewResult.RowCount - 1; i >= 0; i--)
             {
-                if (i % 2 == 0) 
+                if (i % 2 == 0)
                     dataGridViewResult.Rows[i].DefaultCellStyle = style1;
                 else
                     dataGridViewResult.Rows[i].DefaultCellStyle = style2;
@@ -146,16 +146,16 @@ namespace RoadToUni.Forms.Search.FindSchool
         }
         private void SetColName()
         {
-           
+
             dataGridViewResult.RowHeadersVisible = false;
             dataGridViewResult.EnableHeadersVisualStyles = false;
             dataGridViewResult.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewResult.ClearSelection();
             dataGridViewResult.ColumnHeadersHeight = 35;
             dataGridViewResult.ColumnHeadersDefaultCellStyle.BackColor = Color.PaleGreen;
-            dataGridViewResult.Columns[1].HeaderText= "Mã trường";
+            dataGridViewResult.Columns[1].HeaderText = "Mã trường";
             dataGridViewResult.Columns[2].HeaderText = "Tên trường";
-            dataGridViewResult.Columns[3].HeaderText= "Mã ngành";
+            dataGridViewResult.Columns[3].HeaderText = "Mã ngành";
             dataGridViewResult.Columns[4].HeaderText = "Tên ngành";
             dataGridViewResult.Columns[5].HeaderText = "Điểm chuẩn";
             foreach (DataGridViewColumn col in dataGridViewResult.Columns)
@@ -163,7 +163,7 @@ namespace RoadToUni.Forms.Search.FindSchool
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 col.HeaderCell.Style.Font = new Font("Arial", 13F, FontStyle.Bold, GraphicsUnit.Pixel);
             }
-            
+
         }
         private void CheckResult()
         {
@@ -173,13 +173,13 @@ namespace RoadToUni.Forms.Search.FindSchool
             {
                 MessageBox.Show("Không có ngành nào của tất cả các Trường thuộc ĐHQG-TPHCM có điểm chuẩn nhỏ hơn điểm dự kiến của bạn ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-            }    
-            if(!IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 1)
+            }
+            if (!IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 1)
             {
-                MessageBox.Show(String.Format("Không có ngành nào thuộc {0} có điểm chuẩn nhỏ hơn điểm dự kiến của bạn",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(String.Format("Không có ngành nào thuộc {0} có điểm chuẩn nhỏ hơn điểm dự kiến của bạn", nameAndID), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-            }    
-            
+            }
+
         }
 
         private void txbGrade_Enter(object sender, EventArgs e)

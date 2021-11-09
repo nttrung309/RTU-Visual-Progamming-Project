@@ -255,7 +255,7 @@ namespace RoadToUni.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap blue_search_icon__1_ {
             get {
-                object obj = ResourceManager.GetObject("blue-search-icon (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("blue_search_icon__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -635,7 +635,7 @@ namespace RoadToUni.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap searchicon__2_ {
             get {
-                object obj = ResourceManager.GetObject("searchicon (2)", resourceCulture);
+                object obj = ResourceManager.GetObject("searchicon__2_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

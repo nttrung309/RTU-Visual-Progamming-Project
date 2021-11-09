@@ -47,9 +47,9 @@ namespace RoadToUni.Forms.Search
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Courier New", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbTitle.Location = new System.Drawing.Point(266, 209);
+            this.lbTitle.Location = new System.Drawing.Point(293, 209);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(844, 164);
+            this.lbTitle.Size = new System.Drawing.Size(569, 110);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Bạn Muốn?";
             // 
@@ -127,7 +127,7 @@ namespace RoadToUni.Forms.Search
             // 
             // fChoice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::RoadToUni.Properties.Resources._1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

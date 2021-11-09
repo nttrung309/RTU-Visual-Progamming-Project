@@ -119,7 +119,7 @@ namespace RoadToUni.Forms.Login
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-281DQ5C3\SQLEXPRESS;Initial Catalog=QuanLyDiemChuanDHQG;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=TRUNGNGUYEN\SQLEXPRESS;Initial Catalog=databaseDiemChuan;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             SqlDataAdapter da = new SqlDataAdapter();
 
@@ -130,12 +130,25 @@ namespace RoadToUni.Forms.Login
             else if (txtPasswordReg.Text == txtConfirmPassword.Text)
             {
                 con.Open();
-                string register = "INSERT INTO ACCOUNT VALUES ('" + txtUsernameReg.Text + "','" + txtPasswordReg.Text + "')";
-                cmd = new SqlCommand(register, con);
-                cmd.ExecuteNonQuery();
+                string login = "SELECT * FROM ACCOUNT WHERE USERNAME= '" + txtUsernameReg.Text + "'";
+                cmd = new SqlCommand(login, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read() == true)
+                {
+                    MessageBox.Show("Username has existed!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    dr.Close();
+                }
+                else
+                {
+                    dr.Close();
+                    string register = "INSERT INTO ACCOUNT VALUES ('" + txtUsernameReg.Text + "','" + txtPasswordReg.Text + "')";
+                    cmd = new SqlCommand(register, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    lblBackLogin_Click(new object(), new EventArgs());
+                }
                 con.Close();
-                MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                lblBackLogin_Click(new object(), new EventArgs());
             }
             else
             {

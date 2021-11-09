@@ -64,6 +64,84 @@
     <Compile Include="Forms\Login\fRegister.Designer.cs">
       <DependentUpon>fRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MBTI\fMBTIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\fMBTIMain.designer.cs">
+      <DependentUpon>fMBTIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau01_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau01_02.designer.cs">
+      <DependentUpon>Cau01_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau03_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau03_04.designer.cs">
+      <DependentUpon>Cau03_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau05_06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau05_06.designer.cs">
+      <DependentUpon>Cau05_06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau07_08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau07_08.designer.cs">
+      <DependentUpon>Cau07_08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau09_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau09_10.designer.cs">
+      <DependentUpon>Cau09_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau11_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau11_12.designer.cs">
+      <DependentUpon>Cau11_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau13_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau13_14.designer.cs">
+      <DependentUpon>Cau13_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau15_16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau15_16.designer.cs">
+      <DependentUpon>Cau15_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau17_18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau17_18.designer.cs">
+      <DependentUpon>Cau17_18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau19_20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Cau19_20.designer.cs">
+      <DependentUpon>Cau19_20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\UI\fOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\UI\fOpen.designer.cs">
+      <DependentUpon>fOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\UI\KetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\UI\KetQua.designer.cs">
+      <DependentUpon>KetQua.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Pomodoro\CircleButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -135,6 +213,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\fRegister.resx">
       <DependentUpon>fRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\fMBTIMain.resx">
+      <DependentUpon>fMBTIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau01_02.resx">
+      <DependentUpon>Cau01_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau03_04.resx">
+      <DependentUpon>Cau03_04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau05_06.resx">
+      <DependentUpon>Cau05_06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau07_08.resx">
+      <DependentUpon>Cau07_08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau09_10.resx">
+      <DependentUpon>Cau09_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau11_12.resx">
+      <DependentUpon>Cau11_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau13_14.resx">
+      <DependentUpon>Cau13_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau15_16.resx">
+      <DependentUpon>Cau15_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau17_18.resx">
+      <DependentUpon>Cau17_18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Cau19_20.resx">
+      <DependentUpon>Cau19_20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\UI\fOpen.resx">
+      <DependentUpon>fOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\UI\KetQua.resx">
+      <DependentUpon>KetQua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pomodoro\fPomodoro.resx">
       <DependentUpon>fPomodoro.cs</DependentUpon>

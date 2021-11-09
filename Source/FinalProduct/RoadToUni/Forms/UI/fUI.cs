@@ -125,6 +125,10 @@ namespace RoadToUni.Forms.UI
         private void btnChoice_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
+            if (childForm == null || childForm.Name != "fMBTIMain")
+            {
+                SwitchForm(new Forms.MBTI.fMBTIMain());
+            }
         }
         private void btnSetting_Click(object sender, EventArgs e)
         {
@@ -203,7 +207,7 @@ namespace RoadToUni.Forms.UI
         //Close Button
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         //Maximize Button

@@ -29,8 +29,8 @@ namespace RoadToUni.Forms.Search.FindSchool
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txbGrade = new System.Windows.Forms.TextBox();
             this.lbGrade = new System.Windows.Forms.Label();
             this.lbNameUni = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.txbGrade.ForeColor = System.Drawing.Color.DarkGray;
             this.txbGrade.Location = new System.Drawing.Point(398, 96);
             this.txbGrade.Name = "txbGrade";
-            this.txbGrade.Size = new System.Drawing.Size(277, 40);
+            this.txbGrade.Size = new System.Drawing.Size(277, 29);
             this.txbGrade.TabIndex = 0;
             this.txbGrade.TabStop = false;
             this.txbGrade.Text = "Điểm xét tuyển dự kiến";
@@ -67,7 +67,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.lbGrade.ForeColor = System.Drawing.Color.MediumBlue;
             this.lbGrade.Location = new System.Drawing.Point(105, 96);
             this.lbGrade.Name = "lbGrade";
-            this.lbGrade.Size = new System.Drawing.Size(418, 48);
+            this.lbGrade.Size = new System.Drawing.Size(286, 33);
             this.lbGrade.TabIndex = 2;
             this.lbGrade.Text = "Nhập tổng điểm dự kiến \r\n";
             // 
@@ -80,7 +80,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.lbNameUni.ForeColor = System.Drawing.Color.MediumBlue;
             this.lbNameUni.Location = new System.Drawing.Point(105, 146);
             this.lbNameUni.Name = "lbNameUni";
-            this.lbNameUni.Size = new System.Drawing.Size(233, 46);
+            this.lbNameUni.Size = new System.Drawing.Size(160, 31);
             this.lbNameUni.TabIndex = 3;
             this.lbNameUni.Text = "Chọn trường ";
             // 
@@ -97,7 +97,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.cbCombination.ForeColor = System.Drawing.Color.Black;
             this.cbCombination.FormattingEnabled = true;
             this.cbCombination.IntegralHeight = false;
-            this.cbCombination.ItemHeight = 33;
+            this.cbCombination.ItemHeight = 21;
             this.cbCombination.Items.AddRange(new object[] {
             "A00 -- Toán, Vật lý, Hóa học",
             "A01 -- Toán, Vật lý, Tiếng Anh",
@@ -305,7 +305,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.cbCombination.Location = new System.Drawing.Point(398, 201);
             this.cbCombination.MaxDropDownItems = 10;
             this.cbCombination.Name = "cbCombination";
-            this.cbCombination.Size = new System.Drawing.Size(423, 41);
+            this.cbCombination.Size = new System.Drawing.Size(423, 29);
             this.cbCombination.TabIndex = 0;
             this.cbCombination.TabStop = false;
             // 
@@ -318,7 +318,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.lbComb.ForeColor = System.Drawing.Color.MediumBlue;
             this.lbComb.Location = new System.Drawing.Point(105, 197);
             this.lbComb.Name = "lbComb";
-            this.lbComb.Size = new System.Drawing.Size(217, 46);
+            this.lbComb.Size = new System.Drawing.Size(152, 31);
             this.lbComb.TabIndex = 5;
             this.lbComb.Text = "Chọn tổ hợp";
             // 
@@ -341,22 +341,24 @@ namespace RoadToUni.Forms.Search.FindSchool
             // 
             // dataGridViewResult
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewResult.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewResult.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.dataGridViewResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewResult.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewResult.Location = new System.Drawing.Point(105, 255);
             this.dataGridViewResult.Name = "dataGridViewResult";
             this.dataGridViewResult.RowHeadersWidth = 62;
@@ -379,7 +381,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.cbNameUni.ForeColor = System.Drawing.Color.Black;
             this.cbNameUni.FormattingEnabled = true;
             this.cbNameUni.IntegralHeight = false;
-            this.cbNameUni.ItemHeight = 33;
+            this.cbNameUni.ItemHeight = 21;
             this.cbNameUni.Items.AddRange(new object[] {
             "A00 -- Toán, Vật lý, Hóa học",
             "A01 -- Toán, Vật lý, Tiếng Anh",
@@ -587,9 +589,8 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.cbNameUni.Location = new System.Drawing.Point(398, 150);
             this.cbNameUni.MaxDropDownItems = 10;
             this.cbNameUni.Name = "cbNameUni";
-            this.cbNameUni.Size = new System.Drawing.Size(423, 41);
+            this.cbNameUni.Size = new System.Drawing.Size(423, 29);
             this.cbNameUni.TabIndex = 8;
-           
             // 
             // label1
             // 

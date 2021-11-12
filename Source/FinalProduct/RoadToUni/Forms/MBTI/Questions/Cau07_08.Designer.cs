@@ -53,9 +53,9 @@ namespace RoadToUni.Forms.MBTI.Questions
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.radioButton2);
             this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Location = new System.Drawing.Point(348, 275);
+            this.panel2.Location = new System.Drawing.Point(348, 255);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(682, 101);
+            this.panel2.Size = new System.Drawing.Size(682, 105);
             this.panel2.TabIndex = 46;
             // 
             // radioButton2
@@ -103,7 +103,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(361, 379);
+            this.label6.Location = new System.Drawing.Point(361, 363);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(467, 40);
             this.label6.TabIndex = 43;
@@ -114,7 +114,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(361, 225);
+            this.label5.Location = new System.Drawing.Point(361, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(621, 40);
             this.label5.TabIndex = 42;
@@ -126,7 +126,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             this.Cau1.AutoSize = true;
             this.Cau1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cau1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Cau1.Location = new System.Drawing.Point(260, 224);
+            this.Cau1.Location = new System.Drawing.Point(260, 208);
             this.Cau1.Name = "Cau1";
             this.Cau1.Size = new System.Drawing.Size(111, 44);
             this.Cau1.TabIndex = 41;
@@ -138,7 +138,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             this.Cau2.AutoSize = true;
             this.Cau2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cau2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Cau2.Location = new System.Drawing.Point(260, 379);
+            this.Cau2.Location = new System.Drawing.Point(260, 363);
             this.Cau2.Name = "Cau2";
             this.Cau2.Size = new System.Drawing.Size(111, 44);
             this.Cau2.TabIndex = 40;
@@ -149,7 +149,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.Controls.Add(this.radioButton3);
             this.panel3.Controls.Add(this.radioButton4);
-            this.panel3.Location = new System.Drawing.Point(348, 426);
+            this.panel3.Location = new System.Drawing.Point(348, 410);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(660, 112);
             this.panel3.TabIndex = 47;
@@ -210,7 +210,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(362, 96);
+            this.label2.Location = new System.Drawing.Point(365, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(718, 33);

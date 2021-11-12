@@ -55,9 +55,10 @@ namespace RoadToUni.Forms.MBTI.UI
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 100);
+            this.panel1.Size = new System.Drawing.Size(1200, 157);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -65,7 +66,7 @@ namespace RoadToUni.Forms.MBTI.UI
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(362, 96);
+            this.label2.Location = new System.Drawing.Point(365, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(718, 33);
             this.label2.TabIndex = 2;
@@ -90,7 +91,7 @@ namespace RoadToUni.Forms.MBTI.UI
             this.CheckButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.CheckButton.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.CheckButton.Location = new System.Drawing.Point(473, 499);
+            this.CheckButton.Location = new System.Drawing.Point(458, 499);
             this.CheckButton.Name = "CheckButton";
             this.CheckButton.Size = new System.Drawing.Size(249, 53);
             this.CheckButton.TabIndex = 5;
@@ -98,26 +99,24 @@ namespace RoadToUni.Forms.MBTI.UI
             this.CheckButton.UseVisualStyleBackColor = false;
             this.CheckButton.Click += new System.EventHandler(this.CheckButton_Click);
             // 
-            // FormUI
+            // fOpen
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1108, 611);
             this.ControlBox = false;
             this.Controls.Add(this.CheckButton);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FormUI";
+            this.Name = "fOpen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

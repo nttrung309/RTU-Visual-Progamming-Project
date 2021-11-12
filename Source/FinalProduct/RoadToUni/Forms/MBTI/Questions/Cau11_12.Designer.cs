@@ -50,9 +50,10 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(361, 380);
+            this.label6.Location = new System.Drawing.Point(361, 364);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(211, 40);
@@ -61,9 +62,10 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(361, 225);
+            this.label5.Location = new System.Drawing.Point(361, 209);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(439, 40);
@@ -72,10 +74,11 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // Cau1
             // 
+            this.Cau1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cau1.AutoSize = true;
             this.Cau1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cau1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Cau1.Location = new System.Drawing.Point(260, 224);
+            this.Cau1.Location = new System.Drawing.Point(260, 208);
             this.Cau1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Cau1.Name = "Cau1";
             this.Cau1.Size = new System.Drawing.Size(129, 44);
@@ -84,10 +87,11 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // Cau2
             // 
+            this.Cau2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cau2.AutoSize = true;
             this.Cau2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cau2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.Cau2.Location = new System.Drawing.Point(260, 379);
+            this.Cau2.Location = new System.Drawing.Point(260, 363);
             this.Cau2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Cau2.Name = "Cau2";
             this.Cau2.Size = new System.Drawing.Size(129, 44);
@@ -96,18 +100,20 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.Controls.Add(this.radioButton4);
             this.panel4.Controls.Add(this.radioButton3);
-            this.panel4.Location = new System.Drawing.Point(280, 426);
+            this.panel4.Location = new System.Drawing.Point(280, 410);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(660, 134);
             this.panel4.TabIndex = 54;
             // 
             // radioButton4
             // 
+            this.radioButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(88, 65);
+            this.radioButton4.Location = new System.Drawing.Point(88, 53);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(474, 44);
             this.radioButton4.TabIndex = 1;
@@ -116,9 +122,10 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // radioButton3
             // 
+            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(88, 15);
+            this.radioButton3.Location = new System.Drawing.Point(88, 3);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(440, 44);
             this.radioButton3.TabIndex = 0;
@@ -127,18 +134,20 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Location = new System.Drawing.Point(329, 275);
+            this.panel1.Location = new System.Drawing.Point(329, 252);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(737, 101);
+            this.panel1.Size = new System.Drawing.Size(737, 108);
             this.panel1.TabIndex = 53;
             // 
             // radioButton2
             // 
+            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(39, 57);
+            this.radioButton2.Location = new System.Drawing.Point(39, 53);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(682, 44);
             this.radioButton2.TabIndex = 21;
@@ -147,9 +156,10 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // radioButton1
             // 
+            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(39, 7);
+            this.radioButton1.Location = new System.Drawing.Point(39, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(682, 44);
             this.radioButton1.TabIndex = 20;
@@ -158,6 +168,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // Next1
             // 
+            this.Next1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Next1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Next1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next1.ForeColor = System.Drawing.Color.Azure;
@@ -171,9 +182,9 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
@@ -182,6 +193,7 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,9 +207,10 @@ namespace RoadToUni.Forms.MBTI.Questions
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(362, 96);
+            this.label2.Location = new System.Drawing.Point(365, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(718, 33);

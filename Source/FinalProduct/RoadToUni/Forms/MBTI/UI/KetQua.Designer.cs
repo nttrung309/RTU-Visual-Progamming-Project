@@ -63,7 +63,7 @@ namespace RoadToUni.Forms.MBTI.UI
             this.label1.Location = new System.Drawing.Point(353, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(496, 58);
+            this.label1.Size = new System.Drawing.Size(743, 87);
             this.label1.TabIndex = 4;
             this.label1.Text = "Trắc nghiệm tính cách";
             // 
@@ -72,10 +72,10 @@ namespace RoadToUni.Forms.MBTI.UI
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(362, 96);
+            this.label2.Location = new System.Drawing.Point(365, 96);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(476, 24);
+            this.label2.Size = new System.Drawing.Size(718, 33);
             this.label2.TabIndex = 3;
             this.label2.Text = "Khám phá nghề nghiệp phù hợp qua tính cách của bạn";
             // 
@@ -87,7 +87,7 @@ namespace RoadToUni.Forms.MBTI.UI
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label3.Location = new System.Drawing.Point(212, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 29);
+            this.label3.Size = new System.Drawing.Size(73, 40);
             this.label3.TabIndex = 9;
             this.label3.Text = "loại";
             // 
@@ -128,7 +128,7 @@ namespace RoadToUni.Forms.MBTI.UI
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(88, 179);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 29);
+            this.label7.Size = new System.Drawing.Size(151, 40);
             this.label7.TabIndex = 13;
             this.label7.Text = "Kết quả:";
             // 

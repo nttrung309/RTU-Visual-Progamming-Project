@@ -55,28 +55,28 @@ namespace RoadToUni.Forms.MBTI.UI
                 label3.Text = "ESFJ (Extrovert, Sensor, Feeler, Judger)";
                 label4.Text = "Có khoảng 12% dân số mang tính cách này. Bạn rất năng động và tràn đầy nhiệt huyết. Tuy nhiên bạn khá nhạy cảm và dễ bị tổn thương. Bạn là người ngăn nắp và có trách nhiệm. Bạn không thích sự thay đổi.";
                 label8.Text = "Những người nổi tiếng mang tính cách ESFJ: - Harry S. Truman, - Gerald Ford, - Desmond Tutu";
-                label5.Text = "*Bạn có thể là một chuyên gia kinh doanh Bất động sản, Bác sĩ thú y, Giáo viên, Y tá, Nhân viên kinh doanh, Nhân viên du lịch.";
+                label5.Text = "*Bạn có thể trở thành: Chuyên gia kinh doanh Bất động sản, Bác sĩ thú y, Giáo viên, Y tá, Nhân viên kinh doanh, Nhân viên du lịch.";
             }
             if (a == "ESFP")//6
             {
                 label3.Text = "ESFP (Extrovert, Sensor, Feeler, Perceiver)";
                 label4.Text = "Có khoảng 7.5% dân số mang tính cách này. Bạn khá thoải mái và khôi hài. Vì vậy đừng ngạc nhiên khi thỉnh thoảng bạn cảm thấy mình hơi bốc đồng nhé! Tuy nhiên bạn rất ham học hỏi. Bạn rất năng động và yêu các hoạt động xã hội.";
                 label8.Text = "Những người nổi tiếng mang tính cách ESFP: - Ronald Reagan, - Hugh Hefner, - Howard Schultz";
-                label5.Text = "*Bạn có thể trở thành một Giáo viên mầm non, Bác sĩ chuyên khoa, Bác sĩ thú y, Nha sĩ.";
+                label5.Text = "*Bạn có thể trở thành: một Giáo viên mầm non, Bác sĩ chuyên khoa, Bác sĩ thú y, Nha sĩ.";
             }
             if (a == "ESTJ")//7
             {
                 label8.Text = "Những người nổi tiếng mang tính cách ESTJ: - Bernard Montgomery, - Henry Ford, - George W. Bush";
                 label3.Text = "ESTJ (Extrovert, Sensor, Thinker, Judger)";
                 label4.Text = "Có khoảng 11,5% dân số mang tính cách này. Bạn có khuynh hướng nói thẳng những điều bạn nghĩ. Bạn rất thực tế, khó thay đổi ý kiến và nghiêm túc. Bạn yêu thích tính truyền thống và rất giỏi quyết định mọi chuyện.";
-                label5.Text = "*Bạn có thể trở thành Nhân viên kinh doanh, Nhân viên bất động sản, Dược sĩ, Sĩ quan.";
+                label5.Text = "*Bạn có thể trở thành: Nhân viên kinh doanh, Nhân viên bất động sản, Dược sĩ, Sĩ quan.";
             }
             if (a == "ESTP")//8
             {
                 label8.Text = "Những người nổi tiếng mang tính cách ESTP: - Ernest Hemingway, - Eddie Murphy, - Jack Nicholson";
                 label3.Text = "ESTP (Extrovert, Sensor, Thinker, Perceiver)";
                 label4.Text = "Có khoảng 4% dân số mang tính cách này. Bạn là người năng động, vui vẻ và quyến rũ nhưng hơi bốc đồng. Bạn thích thử thách và luôn luôn muốn học hỏi thêm nhiều điều mới lạ. Bạn cũng là người hiếu kỳ, điềm đạm và suy nghĩ lôgic.";
-                label5.Text = "*Bạn có thể trở thành Nhân viên y tế, Môi giới chứng khoán, Nhân viên bảo hiểm, Kỹ sư, Nhân viên du lịch.";
+                label5.Text = "*Bạn có thể trở thành: Nhân viên y tế, Môi giới chứng khoán, Nhân viên bảo hiểm, Kỹ sư, Nhân viên du lịch.";
             }
             if (a == "INFJ")//9
             {
@@ -89,7 +89,7 @@ namespace RoadToUni.Forms.MBTI.UI
             {
                 label8.Text = "Những người nổi tiếng mang tính cách INFP: - William Shakespeare, - J.K. Rowling, - Antoine de Saint-Exupery";
                 label3.Text = "INFP (Introvert, Intuitive, Feeler, Perceiver)";
-                label4.Text = "Có khoảng 4,5% dân số mang tính cách này. Bạn khá trầm lặng, kín đáo và tốt bụng. Thỉnh thoảng bạn khá nhạy cảm nên cũngdễ bị tổn thương. Bạn là người sáng tạo, độc đáo và giàu trí tưởng tượng.";
+                label4.Text = "Có khoảng 4,5% dân số mang tính cách này. Bạn khá trầm lặng, kín đáo và tốt bụng. Thỉnh thoảng bạn khá nhạy cảm nên cũng dễ bị tổn thương. Bạn là người sáng tạo, độc đáo và giàu trí tưởng tượng.";
                 label5.Text = "*Những nghề thích hợp với bạn: Chuyên gia nhân sự, Nhà nghiên cứu, Nhà tâm lý học, Thông dịch viên, Thủ thư, Thiết kế thời trang, Biên tập viên.";
             }
             if (a == "INTJ")//11

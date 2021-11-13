@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime;
+using System.Runtime.InteropServices;
 
 namespace RoadToUni.Forms.CountDown
 {
@@ -17,14 +19,34 @@ namespace RoadToUni.Forms.CountDown
         string hours;
         string mins;
         string secs;
+
+        public static string loadDate = "";
         public fCountDown()
         {
             InitializeComponent();
         }
-
         private void fCountDown_Load(object sender, EventArgs e)
         {
-            daysLeft = -DateTime.Now.Subtract(new DateTime(2022, 6, 7));
+            if(loadDate == "")
+            {
+                int year;
+                if(DateTime.Now >= new DateTime(DateTime.Now.Year, 6, 7))
+                {
+                    year = DateTime.Now.Year + 1;
+                }
+                else
+                {
+                    year = DateTime.Now.Year;
+                }
+                daysLeft = -DateTime.Now.Subtract(new DateTime(year, 6, 7));
+                lbSubTitle.Text = "Kỳ thi THPT Quốc Gia " + year.ToString();
+            }
+            else
+            {
+                string[] date = loadDate.Split('/');
+                daysLeft = -DateTime.Now.Subtract(new DateTime(int.Parse(date[0]), int.Parse(date[1]), int.Parse(date[2])));
+                lbSubTitle.Text = "Kỳ thi THPT Quốc Gia " + date[0];
+            }
             UpdateTime();
             tmCountDown.Start();
         }

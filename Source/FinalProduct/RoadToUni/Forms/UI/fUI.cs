@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Runtime;
 using System.Runtime.InteropServices;
+using System.Net;
 
 namespace RoadToUni.Forms.UI
 {
@@ -252,13 +254,36 @@ namespace RoadToUni.Forms.UI
             pnlDesktop.Controls.Add(childForm);
             childForm.Show();
         }
-        public static void FixBlank()
+
+        //Creating the extern function...  
+        [DllImport("wininet.dll")]
+        private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
+        //Creating a function that uses the API function...  
+        public static bool IsConnectedToInternet()
         {
-            
+            int Desc;
+            return InternetGetConnectedState(out Desc, 0);
         }
 
         private void fUI_Load(object sender, EventArgs e)
         {
+            WebClient webClient = new WebClient();
+
+            try
+            {
+                if (IsConnectedToInternet())
+                {
+                    RoadToUni.Forms.CountDown.fCountDown.loadDate = webClient.DownloadString("https://pastebin.com/raw/M2yDB6tT");
+                }
+                else
+                {
+                    RoadToUni.Forms.CountDown.fCountDown.loadDate = "";
+                }
+            }
+            catch
+            {
+
+            }
             //Check update
             RoadToUni.Forms.UI.Setting.fSettingInfo.CheckUpdate();
 

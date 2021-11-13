@@ -124,38 +124,10 @@ namespace RoadToUni.Forms.UI.Setting
         {
             this.Close();
         }
-
-        //Maximize Button
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                maximizedByClick = true;
-                lastWidth = this.Width;
-                lastHeight = this.Height;
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                if (!maximizedByClick)
-                {
-                    this.Location = lastPos;
-                }
-                this.WindowState = FormWindowState.Normal;
-                this.Width = lastWidth;
-                this.Height = lastHeight;
-                maximizedByClick = false;
-            }
-
-        }
         //Adjust when maximized by dragging
         private void fMain_SizeChanged(object sender, EventArgs e)
         {
 
-        }
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
         private void SwitchForm(Form f)
         {

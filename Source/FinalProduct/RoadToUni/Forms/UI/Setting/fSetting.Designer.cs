@@ -31,16 +31,16 @@ namespace RoadToUni.Forms.UI.Setting
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlMenuBar = new System.Windows.Forms.Panel();
-            this.lbSetting = new System.Windows.Forms.Label();
-            this.pnlTitleBar = new System.Windows.Forms.Panel();
-            this.pnlDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnGeneral = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnPomo = new System.Windows.Forms.Button();
             this.btnAccountManage = new System.Windows.Forms.Button();
+            this.lbSetting = new System.Windows.Forms.Label();
+            this.pnlTitleBar = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.pnlDesktop = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,64 +68,6 @@ namespace RoadToUni.Forms.UI.Setting
             this.pnlMenuBar.Size = new System.Drawing.Size(4, 65);
             this.pnlMenuBar.TabIndex = 1;
             this.pnlMenuBar.Visible = false;
-            // 
-            // lbSetting
-            // 
-            this.lbSetting.AutoSize = true;
-            this.lbSetting.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSetting.ForeColor = System.Drawing.Color.White;
-            this.lbSetting.Location = new System.Drawing.Point(25, -2);
-            this.lbSetting.Name = "lbSetting";
-            this.lbSetting.Size = new System.Drawing.Size(89, 28);
-            this.lbSetting.TabIndex = 11;
-            this.lbSetting.Text = "Setting";
-            // 
-            // pnlTitleBar
-            // 
-            this.pnlTitleBar.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.pnlTitleBar.Controls.Add(this.lbSetting);
-            this.pnlTitleBar.Controls.Add(this.pictureBox1);
-            this.pnlTitleBar.Controls.Add(this.btnExit);
-            this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(593, 26);
-            this.pnlTitleBar.TabIndex = 1;
-            this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
-            // 
-            // pnlDesktop
-            // 
-            this.pnlDesktop.BackColor = System.Drawing.Color.White;
-            this.pnlDesktop.Location = new System.Drawing.Point(188, 26);
-            this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(405, 610);
-            this.pnlDesktop.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::RoadToUni.Properties.Resources.settingx1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 36);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Salmon;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Image = global::RoadToUni.Properties.Resources.close;
-            this.btnExit.Location = new System.Drawing.Point(548, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 26);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnGeneral
             // 
@@ -222,6 +164,64 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnAccountManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAccountManage.UseVisualStyleBackColor = false;
             this.btnAccountManage.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // lbSetting
+            // 
+            this.lbSetting.AutoSize = true;
+            this.lbSetting.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSetting.ForeColor = System.Drawing.Color.White;
+            this.lbSetting.Location = new System.Drawing.Point(25, -2);
+            this.lbSetting.Name = "lbSetting";
+            this.lbSetting.Size = new System.Drawing.Size(89, 28);
+            this.lbSetting.TabIndex = 11;
+            this.lbSetting.Text = "Setting";
+            // 
+            // pnlTitleBar
+            // 
+            this.pnlTitleBar.BackColor = System.Drawing.Color.LightPink;
+            this.pnlTitleBar.Controls.Add(this.lbSetting);
+            this.pnlTitleBar.Controls.Add(this.pictureBox1);
+            this.pnlTitleBar.Controls.Add(this.btnExit);
+            this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitleBar.Name = "pnlTitleBar";
+            this.pnlTitleBar.Size = new System.Drawing.Size(593, 26);
+            this.pnlTitleBar.TabIndex = 1;
+            this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::RoadToUni.Properties.Resources.settingx1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(1, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 36);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Salmon;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = global::RoadToUni.Properties.Resources.close;
+            this.btnExit.Location = new System.Drawing.Point(548, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 26);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pnlDesktop
+            // 
+            this.pnlDesktop.BackColor = System.Drawing.Color.White;
+            this.pnlDesktop.Location = new System.Drawing.Point(188, 26);
+            this.pnlDesktop.Name = "pnlDesktop";
+            this.pnlDesktop.Size = new System.Drawing.Size(405, 610);
+            this.pnlDesktop.TabIndex = 2;
             // 
             // fSetting
             // 

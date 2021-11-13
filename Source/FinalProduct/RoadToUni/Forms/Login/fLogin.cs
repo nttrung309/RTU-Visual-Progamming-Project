@@ -141,8 +141,16 @@ namespace RoadToUni.Forms.Login
             {
                 loginedUser = txtUsername.Text;
                 this.Hide();
-                new RoadToUni.Forms.UI.fUI().ShowDialog();
-                this.Show();
+                new Forms.UI.fUI().ShowDialog();
+                Forms.UI.fUI.childForm = null;
+                try
+                {
+                    this.Show();
+                }
+                catch
+                {
+
+                }
             }
             else
             {

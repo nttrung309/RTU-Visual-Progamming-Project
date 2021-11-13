@@ -21,42 +21,31 @@ namespace RoadToUni.Forms.UI
         int lastHeight;
 
         public static Form childForm;
-        //public static Panel pnlDesktop;
+        public static Panel pnlDesktop;
         public fUI()
         {
-            InitializeComponent();
             OnStartUp();
+            InitializeComponent();
         }
         private void OnStartUp()
         {
-            //pnlDesktop = new Panel();
-            //pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            //pnlDesktop.Location = new System.Drawing.Point(187, 26);
-            //pnlDesktop.Name = "pnlDesktop";
-            //pnlDesktop.TabIndex = 2;
-            //Controls.Add(pnlDesktop);
+            pnlDesktop = new Panel();
+            pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlDesktop.Location = new System.Drawing.Point(187, 26);
+            pnlDesktop.Name = "pnlDesktop";
+            pnlDesktop.TabIndex = 2;
+            Controls.Add(pnlDesktop);
 
-            btnHome_Click(btnHome, new EventArgs());
-            btnMenu_Click(new object(), new EventArgs());
-
-            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-
-            lastPos = new Point(this.Location.X, this.Location.Y);
-            maximizedByClick = false;
-
-            this.lbUser.Text += RoadToUni.Forms.Login.fLogin.loginedUser;
-            lbUser.Location = new Point((187-lbUser.Width)/2, ptBUser.Location.Y + 55);
         }
         private void ActiveButton(Object btnSender)
         {
-            if (currentBtn != (Button)btnSender)
+            if (currentBtn != (CustomControls.RJControls.RJButton)btnSender)
             {
                 DeactiveButton();
-                currentBtn = (Button)btnSender;
+                currentBtn = (CustomControls.RJControls.RJButton)btnSender;
                 //Move menubar
-                pnlMenuBar.Location = new Point(0, currentBtn.Location.Y);
-                pnlMenuBar.Visible = true;
+                //pnlMenuBar.Location = new Point(0, currentBtn.Location.Y + 2);
+                //pnlMenuBar.Visible = true;
                 //Change btn's color when chosen 
                 if (currentBtn.Name == "btnHome")
                 {
@@ -83,7 +72,7 @@ namespace RoadToUni.Forms.UI
                     currentBtn.BackColor = Color.LightBlue;
                 }
             }
-            if (pnlMenu.Width == 60)
+            if (pnlMenu.Width == 61)
             {
                 btnMenu_Click(new object(), new EventArgs());
             }
@@ -92,7 +81,7 @@ namespace RoadToUni.Forms.UI
         {
             foreach (Control btn in pnlMenu.Controls)
             {
-                if (btn.GetType() == typeof(Button))
+                if (btn.GetType() == typeof(Button) || btn.GetType() == typeof(CustomControls.RJControls.RJButton))
                 {
                     btn.BackColor = Color.CornflowerBlue;
                 }
@@ -147,17 +136,18 @@ namespace RoadToUni.Forms.UI
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (pnlMenu.Width != 60)
+            if (pnlMenu.Width != 61)
             {
-                pnlMenu.Width = 60;
-                btnMenu.Location = new Point(0, btnMenu.Location.Y);
+                pnlMenu.Width = 61;
+                btnMenu.Location = new Point(1, btnMenu.Location.Y);
 
 
                 foreach (Control cnt in pnlMenu.Controls)
                 {
-                    if (cnt.GetType() == typeof(Button))
+                    if (cnt.GetType() == typeof(Button) || cnt.GetType() == typeof(CustomControls.RJControls.RJButton))
                     {
                         cnt.Text = "";
+                        cnt.Width = 58;
                     }
                     else
                     {
@@ -175,11 +165,13 @@ namespace RoadToUni.Forms.UI
 
                 foreach (Control cnt in pnlMenu.Controls)
                 {
-                    if (cnt.GetType() == typeof(Button))
+                    if (cnt.GetType() == typeof(Button) || cnt.GetType() == typeof(CustomControls.RJControls.RJButton))
                     {
                         if (cnt.Tag != null)
                         {
                             cnt.Text = cnt.Tag.ToString();
+                            cnt.Width = 184;
+                            cnt.Height = 60;
                         }
                     }
                     else
@@ -187,6 +179,7 @@ namespace RoadToUni.Forms.UI
                         cnt.Visible = true;
                     }
                 }
+                pnlMenuBar.Visible = false;
             }
         }
 
@@ -256,6 +249,27 @@ namespace RoadToUni.Forms.UI
             childForm.BringToFront();
             pnlDesktop.Controls.Add(childForm);
             childForm.Show();
+        }
+        public static void FixBlank()
+        {
+            
+        }
+
+        private void fUI_Load(object sender, EventArgs e)
+        {
+            btnHome_Click(btnHome, new EventArgs());
+            btnMenu_Click(new object(), new EventArgs());
+
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+            lastPos = new Point(this.Location.X, this.Location.Y);
+            maximizedByClick = false;
+
+            this.lbUser.Text += RoadToUni.Forms.Login.fLogin.loginedUser;
+            lbUser.Location = new Point((187 - lbUser.Width) / 2, ptBUser.Location.Y + 55);
+
+            this.pnlMenuBar.BringToFront();
         }
     }
 }

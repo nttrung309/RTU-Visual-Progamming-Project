@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -178,6 +180,9 @@
     </Compile>
     <Compile Include="Forms\Search\ViewScore\fVSManual.designer.cs">
       <DependentUpon>fVSManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UI\Custom_Button.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\UI\Setting\fSetting.cs">
       <SubType>Form</SubType>

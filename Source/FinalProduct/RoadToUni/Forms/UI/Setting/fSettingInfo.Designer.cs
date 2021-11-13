@@ -71,6 +71,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnCheckUpdate.Text = "Check For Update!";
             this.btnCheckUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCheckUpdate.UseVisualStyleBackColor = false;
+            this.btnCheckUpdate.Click += new System.EventHandler(this.btnCheckUpdate_Click);
             // 
             // fSettingInfo
             // 

@@ -123,6 +123,8 @@ namespace RoadToUni.Forms.UI
         {
             ActiveButton(sender);
             Form f = new Forms.UI.Setting.fSetting();
+            f.StartPosition = FormStartPosition.Manual;
+            f.Location = new Point((this.Location.X + ((this.Width - f.Width) / 2)), this.Location.Y + 40);
             f.ShowDialog();
         }
         private void btnLogout_Click(object sender, EventArgs e)
@@ -257,6 +259,10 @@ namespace RoadToUni.Forms.UI
 
         private void fUI_Load(object sender, EventArgs e)
         {
+            //Check update
+            RoadToUni.Forms.UI.Setting.fSettingInfo.CheckUpdate();
+
+
             btnHome_Click(btnHome, new EventArgs());
             btnMenu_Click(new object(), new EventArgs());
 

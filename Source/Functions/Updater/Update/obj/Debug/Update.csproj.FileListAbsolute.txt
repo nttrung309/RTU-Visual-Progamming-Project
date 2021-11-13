@@ -1,0 +1,7 @@
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Updater\Update\bin\Debug\Update.exe.config
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Updater\Update\bin\Debug\Update.exe
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Updater\Update\bin\Debug\Update.pdb
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Updater\Update\obj\Debug\Update.csproj.AssemblyReference.cache
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Updater\Update\obj\Debug\Update.csproj.CoreCompileInputs.cache
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Updater\Update\obj\Debug\Update.exe
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Updater\Update\obj\Debug\Update.pdb

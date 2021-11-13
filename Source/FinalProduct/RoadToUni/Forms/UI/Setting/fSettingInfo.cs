@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Net;
 using System.Diagnostics;
 using System.Threading;
+using System.Runtime;
+using System.Runtime.InteropServices;
 
 namespace RoadToUni.Forms.UI.Setting
 {
@@ -19,12 +21,28 @@ namespace RoadToUni.Forms.UI.Setting
         {
             InitializeComponent();
         }
+        //Creating the extern function...  
+        [DllImport("wininet.dll")]
+        private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
+        //Creating a function that uses the API function...  
+        public static bool IsConnectedToInternet()
+        {
+            int Desc;
+            return InternetGetConnectedState(out Desc, 0);
+        }
 
         private void btnCheckUpdate_Click(object sender, EventArgs e)
         {
-            if(CheckUpdate() == 0)
+            if (IsConnectedToInternet())
             {
-                MessageBox.Show("Đây là phiên bản mới nhất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (CheckUpdate() == 0)
+                {
+                    MessageBox.Show("Đây là phiên bản mới nhất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng thử lại sau khi kết nối Internet!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         public static int CheckUpdate()
@@ -33,15 +51,18 @@ namespace RoadToUni.Forms.UI.Setting
 
             try
             {
-                if (!webClient.DownloadString("https://pastebin.com/raw/v7pwQcEj").Contains("1.0"))
+                if (IsConnectedToInternet())
                 {
-                    DialogResult dg = MessageBox.Show("Đã có phiên bản mới, bạn có muốn cập nhật không?","Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Information);
-                    if(dg == DialogResult.Yes)
+                    if (!webClient.DownloadString("https://pastebin.com/raw/zd98TVkq").Contains("1.0"))
                     {
-                        Process.Start("Updater.exe");
-                        Application.Exit();
+                        DialogResult dg = MessageBox.Show("Đã có phiên bản mới, bạn có muốn cập nhật không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                        if (dg == DialogResult.Yes)
+                        {
+                            Process.Start("Updater.exe");
+                            Application.Exit();
+                        }
+                        return 1;
                     }
-                    return 1;
                 }
             }
             catch

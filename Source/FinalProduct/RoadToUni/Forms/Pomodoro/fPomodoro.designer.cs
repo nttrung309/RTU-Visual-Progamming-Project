@@ -126,9 +126,9 @@ namespace RoadToUni.Forms.Pomodoro
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Image = global::RoadToUni.Properties.Resources.LogoTilteLeft;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(337, 31);
+            this.label1.Location = new System.Drawing.Point(367, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(510, 81);
+            this.label1.Size = new System.Drawing.Size(333, 55);
             this.label1.TabIndex = 9;
             this.label1.Text = "     Pomodoro Timer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

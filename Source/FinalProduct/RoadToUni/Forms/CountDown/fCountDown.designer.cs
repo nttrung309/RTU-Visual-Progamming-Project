@@ -30,13 +30,10 @@ namespace RoadToUni.Forms.CountDown
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fCountDown));
             this.tmCountDown = new System.Windows.Forms.Timer(this.components);
             this.lbTitle = new System.Windows.Forms.Label();
             this.lbSubTitle = new System.Windows.Forms.Label();
-            this.picRoundedRec1 = new System.Windows.Forms.PictureBox();
-            this.picRoundedRec2 = new System.Windows.Forms.PictureBox();
-            this.picRoundedRec3 = new System.Windows.Forms.PictureBox();
-            this.picRoundedRec4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbDays = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,12 +42,26 @@ namespace RoadToUni.Forms.CountDown
             this.label4 = new System.Windows.Forms.Label();
             this.lbHours = new System.Windows.Forms.Label();
             this.lbSec = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.picMBTI = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.picPomo = new System.Windows.Forms.PictureBox();
             this.topBackGround = new System.Windows.Forms.PictureBox();
+            this.picRoundedRec1 = new System.Windows.Forms.PictureBox();
+            this.picRoundedRec2 = new System.Windows.Forms.PictureBox();
+            this.picRoundedRec3 = new System.Windows.Forms.PictureBox();
+            this.picRoundedRec4 = new System.Windows.Forms.PictureBox();
+            this.btnMBTI = new CustomControls.RJControls.RJButton();
+            this.btnPomo = new CustomControls.RJControls.RJButton();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMBTI)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPomo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topBackGround)).BeginInit();
             this.SuspendLayout();
             // 
             // tmCountDown
@@ -67,7 +78,7 @@ namespace RoadToUni.Forms.CountDown
             this.lbTitle.ForeColor = System.Drawing.Color.White;
             this.lbTitle.Location = new System.Drawing.Point(440, 32);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(258, 31);
+            this.lbTitle.Size = new System.Drawing.Size(260, 31);
             this.lbTitle.TabIndex = 2;
             this.lbTitle.Text = "Đếm ngược ngày thi";
             // 
@@ -83,54 +94,6 @@ namespace RoadToUni.Forms.CountDown
             this.lbSubTitle.Size = new System.Drawing.Size(227, 20);
             this.lbSubTitle.TabIndex = 3;
             this.lbSubTitle.Text = "Kỳ thi THPT Quốc Gia 2022";
-            // 
-            // picRoundedRec1
-            // 
-            this.picRoundedRec1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picRoundedRec1.BackColor = System.Drawing.Color.Transparent;
-            this.picRoundedRec1.BackgroundImage = global::RoadToUni.Properties.Resources.rounded_rec;
-            this.picRoundedRec1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picRoundedRec1.Location = new System.Drawing.Point(143, 109);
-            this.picRoundedRec1.Name = "picRoundedRec1";
-            this.picRoundedRec1.Size = new System.Drawing.Size(201, 195);
-            this.picRoundedRec1.TabIndex = 5;
-            this.picRoundedRec1.TabStop = false;
-            // 
-            // picRoundedRec2
-            // 
-            this.picRoundedRec2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picRoundedRec2.BackColor = System.Drawing.Color.Transparent;
-            this.picRoundedRec2.BackgroundImage = global::RoadToUni.Properties.Resources.rounded_rec;
-            this.picRoundedRec2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picRoundedRec2.Location = new System.Drawing.Point(350, 109);
-            this.picRoundedRec2.Name = "picRoundedRec2";
-            this.picRoundedRec2.Size = new System.Drawing.Size(201, 195);
-            this.picRoundedRec2.TabIndex = 6;
-            this.picRoundedRec2.TabStop = false;
-            // 
-            // picRoundedRec3
-            // 
-            this.picRoundedRec3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picRoundedRec3.BackColor = System.Drawing.Color.Transparent;
-            this.picRoundedRec3.BackgroundImage = global::RoadToUni.Properties.Resources.rounded_rec;
-            this.picRoundedRec3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picRoundedRec3.Location = new System.Drawing.Point(557, 109);
-            this.picRoundedRec3.Name = "picRoundedRec3";
-            this.picRoundedRec3.Size = new System.Drawing.Size(201, 195);
-            this.picRoundedRec3.TabIndex = 7;
-            this.picRoundedRec3.TabStop = false;
-            // 
-            // picRoundedRec4
-            // 
-            this.picRoundedRec4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picRoundedRec4.BackColor = System.Drawing.Color.Transparent;
-            this.picRoundedRec4.BackgroundImage = global::RoadToUni.Properties.Resources.rounded_rec;
-            this.picRoundedRec4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picRoundedRec4.Location = new System.Drawing.Point(764, 109);
-            this.picRoundedRec4.Name = "picRoundedRec4";
-            this.picRoundedRec4.Size = new System.Drawing.Size(201, 195);
-            this.picRoundedRec4.TabIndex = 8;
-            this.picRoundedRec4.TabStop = false;
             // 
             // label1
             // 
@@ -169,7 +132,7 @@ namespace RoadToUni.Forms.CountDown
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(427, 249);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 25);
+            this.label2.Size = new System.Drawing.Size(47, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Giờ";
             // 
@@ -236,13 +199,61 @@ namespace RoadToUni.Forms.CountDown
             this.lbSec.Size = new System.Drawing.Size(0, 64);
             this.lbSec.TabIndex = 2;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::RoadToUni.Properties.Resources.green_panel;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnMBTI);
+            this.panel1.Controls.Add(this.picMBTI);
+            this.panel1.Location = new System.Drawing.Point(914, 387);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(182, 192);
+            this.panel1.TabIndex = 12;
+            // 
+            // picMBTI
+            // 
+            this.picMBTI.BackColor = System.Drawing.Color.Transparent;
+            this.picMBTI.Image = ((System.Drawing.Image)(resources.GetObject("picMBTI.Image")));
+            this.picMBTI.Location = new System.Drawing.Point(-17, 11);
+            this.picMBTI.Name = "picMBTI";
+            this.picMBTI.Size = new System.Drawing.Size(201, 125);
+            this.picMBTI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMBTI.TabIndex = 11;
+            this.picMBTI.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.btnPomo);
+            this.panel2.Controls.Add(this.picPomo);
+            this.panel2.Location = new System.Drawing.Point(744, 387);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(182, 192);
+            this.panel2.TabIndex = 11;
+            // 
+            // picPomo
+            // 
+            this.picPomo.BackColor = System.Drawing.Color.Transparent;
+            this.picPomo.Image = ((System.Drawing.Image)(resources.GetObject("picPomo.Image")));
+            this.picPomo.Location = new System.Drawing.Point(-11, 13);
+            this.picPomo.Name = "picPomo";
+            this.picPomo.Size = new System.Drawing.Size(201, 125);
+            this.picPomo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPomo.TabIndex = 11;
+            this.picPomo.TabStop = false;
+            // 
             // topBackGround
             // 
             this.topBackGround.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.topBackGround.BackColor = System.Drawing.Color.Transparent;
-            this.topBackGround.BackgroundImage = global::RoadToUni.Properties.Resources.cdBackGround4;
+            this.topBackGround.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("topBackGround.BackgroundImage")));
             this.topBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.topBackGround.Location = new System.Drawing.Point(12, 12);
             this.topBackGround.Name = "topBackGround";
@@ -250,14 +261,104 @@ namespace RoadToUni.Forms.CountDown
             this.topBackGround.TabIndex = 9;
             this.topBackGround.TabStop = false;
             // 
+            // picRoundedRec1
+            // 
+            this.picRoundedRec1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picRoundedRec1.BackColor = System.Drawing.Color.Transparent;
+            this.picRoundedRec1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec1.BackgroundImage")));
+            this.picRoundedRec1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picRoundedRec1.Location = new System.Drawing.Point(143, 109);
+            this.picRoundedRec1.Name = "picRoundedRec1";
+            this.picRoundedRec1.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec1.TabIndex = 5;
+            this.picRoundedRec1.TabStop = false;
+            // 
+            // picRoundedRec2
+            // 
+            this.picRoundedRec2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picRoundedRec2.BackColor = System.Drawing.Color.Transparent;
+            this.picRoundedRec2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec2.BackgroundImage")));
+            this.picRoundedRec2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picRoundedRec2.Location = new System.Drawing.Point(350, 109);
+            this.picRoundedRec2.Name = "picRoundedRec2";
+            this.picRoundedRec2.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec2.TabIndex = 6;
+            this.picRoundedRec2.TabStop = false;
+            // 
+            // picRoundedRec3
+            // 
+            this.picRoundedRec3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picRoundedRec3.BackColor = System.Drawing.Color.Transparent;
+            this.picRoundedRec3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec3.BackgroundImage")));
+            this.picRoundedRec3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picRoundedRec3.Location = new System.Drawing.Point(557, 109);
+            this.picRoundedRec3.Name = "picRoundedRec3";
+            this.picRoundedRec3.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec3.TabIndex = 7;
+            this.picRoundedRec3.TabStop = false;
+            // 
+            // picRoundedRec4
+            // 
+            this.picRoundedRec4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picRoundedRec4.BackColor = System.Drawing.Color.Transparent;
+            this.picRoundedRec4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec4.BackgroundImage")));
+            this.picRoundedRec4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picRoundedRec4.Location = new System.Drawing.Point(764, 109);
+            this.picRoundedRec4.Name = "picRoundedRec4";
+            this.picRoundedRec4.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec4.TabIndex = 8;
+            this.picRoundedRec4.TabStop = false;
+            // 
+            // btnMBTI
+            // 
+            this.btnMBTI.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnMBTI.BackgroundColor = System.Drawing.Color.MediumAquamarine;
+            this.btnMBTI.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMBTI.BorderRadius = 10;
+            this.btnMBTI.BorderSize = 0;
+            this.btnMBTI.FlatAppearance.BorderSize = 0;
+            this.btnMBTI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMBTI.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBTI.ForeColor = System.Drawing.Color.White;
+            this.btnMBTI.Location = new System.Drawing.Point(18, 135);
+            this.btnMBTI.Name = "btnMBTI";
+            this.btnMBTI.Size = new System.Drawing.Size(144, 40);
+            this.btnMBTI.TabIndex = 0;
+            this.btnMBTI.Text = "MBTI";
+            this.btnMBTI.TextColor = System.Drawing.Color.White;
+            this.btnMBTI.UseVisualStyleBackColor = false;
+            this.btnMBTI.Click += new System.EventHandler(this.btnMBTI_Click);
+            // 
+            // btnPomo
+            // 
+            this.btnPomo.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPomo.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPomo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPomo.BorderRadius = 10;
+            this.btnPomo.BorderSize = 0;
+            this.btnPomo.FlatAppearance.BorderSize = 0;
+            this.btnPomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPomo.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPomo.ForeColor = System.Drawing.Color.White;
+            this.btnPomo.Location = new System.Drawing.Point(18, 135);
+            this.btnPomo.Name = "btnPomo";
+            this.btnPomo.Size = new System.Drawing.Size(144, 40);
+            this.btnPomo.TabIndex = 0;
+            this.btnPomo.Text = "Pomodoro";
+            this.btnPomo.TextColor = System.Drawing.Color.White;
+            this.btnPomo.UseVisualStyleBackColor = false;
+            this.btnPomo.Click += new System.EventHandler(this.btnPomo_Click);
+            // 
             // fCountDown
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Snow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1108, 611);
             this.ControlBox = false;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.topBackGround);
             this.Controls.Add(this.lbSec);
             this.Controls.Add(this.lbHours);
@@ -280,11 +381,15 @@ namespace RoadToUni.Forms.CountDown
             this.Text = "fCountDown";
             this.Load += new System.EventHandler(this.fCountDown_Load);
             this.SizeChanged += new System.EventHandler(this.fCountDown_SizeChanged);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picMBTI)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picPomo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topBackGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topBackGround)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,5 +413,11 @@ namespace RoadToUni.Forms.CountDown
         private System.Windows.Forms.Label lbHours;
         private System.Windows.Forms.Label lbSec;
         private System.Windows.Forms.PictureBox topBackGround;
+        private CustomControls.RJControls.RJButton btnPomo;
+        private System.Windows.Forms.PictureBox picPomo;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private CustomControls.RJControls.RJButton btnMBTI;
+        private System.Windows.Forms.PictureBox picMBTI;
     }
 }

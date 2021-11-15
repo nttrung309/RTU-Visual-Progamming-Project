@@ -16,6 +16,9 @@ namespace RoadToUni.Forms.UI
 {
     public partial class fLoading : Form
     {
+
+        public static bool isLoaded = false;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -41,6 +44,7 @@ namespace RoadToUni.Forms.UI
             ThreadStart ts = new ThreadStart(Loading);
             Thread td = new Thread(ts);
             td.Start();
+            timer.Start();
             picLoad.Location = new Point((this.Width - picLoad.Width) / 2, picLoad.Location.Y);
         }
 
@@ -58,6 +62,7 @@ namespace RoadToUni.Forms.UI
         {
             Thread.Sleep(2000);
             //Check update
+            lowConnect.Start();
             RoadToUni.Forms.UI.Setting.fSettingInfo.CheckUpdate();
 
             WebClient webClient = new WebClient();
@@ -77,8 +82,7 @@ namespace RoadToUni.Forms.UI
             {
 
             }
-
-            this.Close();
+            isLoaded = true;
         }
 
         //Drag Form
@@ -90,6 +94,26 @@ namespace RoadToUni.Forms.UI
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            if (isLoaded)
+            {
+                this.Opacity -= 0.2;
+                if (this.Opacity == 0)
+                {
+                    this.Close();
+                }
+            }
+        }
+
+        private void lowConnect_Tick(object sender, EventArgs e)
+        {
+            lowConnect.Stop();
+            RoadToUni.Forms.CountDown.fCountDown.loadDate = "";
+            isLoaded = true;
+            this.Close();
         }
     }
 }

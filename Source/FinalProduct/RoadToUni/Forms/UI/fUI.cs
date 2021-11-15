@@ -218,7 +218,7 @@ namespace RoadToUni.Forms.UI
         //Close Button
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         //Maximize Button
@@ -289,7 +289,10 @@ namespace RoadToUni.Forms.UI
 
         private void fUI_Load(object sender, EventArgs e)
         {
-
+            if (!RoadToUni.Forms.UI.fLoading.isLoaded)
+            {
+                Application.Exit();
+            }
 
             btnHome_Click(btnHome, new EventArgs());
             btnMenu_Click(new object(), new EventArgs());

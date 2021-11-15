@@ -190,6 +190,9 @@
     <Compile Include="Forms\UI\fLoading.Designer.cs">
       <DependentUpon>fLoading.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UI\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\UI\Setting\fSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -504,10 +507,19 @@
     <None Include="Resources\loading_ui.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\loading_ui_auto_x2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\loading.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\loading_ui_auto_x2.jpg" />
+    <None Include="Resources\red_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MBTI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_panel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -74,7 +74,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnGeneral.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGeneral.FlatAppearance.BorderSize = 0;
             this.btnGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGeneral.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGeneral.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeneral.ForeColor = System.Drawing.Color.White;
             this.btnGeneral.Image = global::RoadToUni.Properties.Resources.general;
             this.btnGeneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -94,7 +94,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnReport.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnReport.FlatAppearance.BorderSize = 0;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
             this.btnReport.Image = global::RoadToUni.Properties.Resources.report;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -113,7 +113,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnInfo.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnInfo.FlatAppearance.BorderSize = 0;
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfo.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfo.ForeColor = System.Drawing.Color.White;
             this.btnInfo.Image = global::RoadToUni.Properties.Resources.info;
             this.btnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,7 +132,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnPomo.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnPomo.FlatAppearance.BorderSize = 0;
             this.btnPomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPomo.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPomo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPomo.ForeColor = System.Drawing.Color.White;
             this.btnPomo.Image = global::RoadToUni.Properties.Resources.alarm;
             this.btnPomo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,7 +151,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnAccountManage.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnAccountManage.FlatAppearance.BorderSize = 0;
             this.btnAccountManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountManage.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountManage.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountManage.ForeColor = System.Drawing.Color.White;
             this.btnAccountManage.Image = global::RoadToUni.Properties.Resources.ManageAccount;
             this.btnAccountManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

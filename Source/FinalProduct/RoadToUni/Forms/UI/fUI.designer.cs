@@ -32,21 +32,21 @@ namespace RoadToUni.Forms.UI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUI));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnSearch = new CustomControls.RJControls.RJButton();
-            this.btnHome = new CustomControls.RJControls.RJButton();
             this.pnlMenuBar = new System.Windows.Forms.Panel();
-            this.btnLogout = new CustomControls.RJControls.RJButton();
-            this.btnSetting = new CustomControls.RJControls.RJButton();
-            this.btnChoice = new CustomControls.RJControls.RJButton();
-            this.btnPomo = new CustomControls.RJControls.RJButton();
             this.lbUser = new System.Windows.Forms.Label();
             this.ptBUser = new System.Windows.Forms.PictureBox();
             this.lbMenu = new System.Windows.Forms.Label();
-            this.btnMenu = new CustomControls.RJControls.RJButton();
             this.pnlTitleBar = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnSearch = new CustomControls.RJControls.RJButton();
+            this.btnHome = new CustomControls.RJControls.RJButton();
+            this.btnLogout = new CustomControls.RJControls.RJButton();
+            this.btnSetting = new CustomControls.RJControls.RJButton();
+            this.btnChoice = new CustomControls.RJControls.RJButton();
+            this.btnPomo = new CustomControls.RJControls.RJButton();
+            this.btnMenu = new CustomControls.RJControls.RJButton();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptBUser)).BeginInit();
             this.pnlTitleBar.SuspendLayout();
@@ -71,6 +71,105 @@ namespace RoadToUni.Forms.UI
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(187, 637);
             this.pnlMenu.TabIndex = 0;
+            // 
+            // pnlMenuBar
+            // 
+            this.pnlMenuBar.BackColor = System.Drawing.Color.White;
+            this.pnlMenuBar.Location = new System.Drawing.Point(0, 188);
+            this.pnlMenuBar.Name = "pnlMenuBar";
+            this.pnlMenuBar.Size = new System.Drawing.Size(8, 58);
+            this.pnlMenuBar.TabIndex = 1;
+            this.pnlMenuBar.Visible = false;
+            // 
+            // lbUser
+            // 
+            this.lbUser.AutoSize = true;
+            this.lbUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.ForeColor = System.Drawing.Color.Bisque;
+            this.lbUser.Location = new System.Drawing.Point(20, 121);
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(76, 24);
+            this.lbUser.TabIndex = 3;
+            this.lbUser.Text = "Chào: ";
+            // 
+            // ptBUser
+            // 
+            this.ptBUser.Image = global::RoadToUni.Properties.Resources.account;
+            this.ptBUser.Location = new System.Drawing.Point(67, 67);
+            this.ptBUser.Name = "ptBUser";
+            this.ptBUser.Size = new System.Drawing.Size(49, 47);
+            this.ptBUser.TabIndex = 2;
+            this.ptBUser.TabStop = false;
+            // 
+            // lbMenu
+            // 
+            this.lbMenu.AutoSize = true;
+            this.lbMenu.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMenu.ForeColor = System.Drawing.Color.White;
+            this.lbMenu.Location = new System.Drawing.Point(39, 19);
+            this.lbMenu.Name = "lbMenu";
+            this.lbMenu.Size = new System.Drawing.Size(75, 30);
+            this.lbMenu.TabIndex = 1;
+            this.lbMenu.Text = "MENU";
+            // 
+            // pnlTitleBar
+            // 
+            this.pnlTitleBar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pnlTitleBar.Controls.Add(this.btnMinimize);
+            this.pnlTitleBar.Controls.Add(this.btnMaximize);
+            this.pnlTitleBar.Controls.Add(this.btnExit);
+            this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitleBar.Location = new System.Drawing.Point(187, 0);
+            this.pnlTitleBar.Name = "pnlTitleBar";
+            this.pnlTitleBar.Size = new System.Drawing.Size(981, 26);
+            this.pnlTitleBar.TabIndex = 1;
+            this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.Turquoise;
+            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = global::RoadToUni.Properties.Resources.minimize;
+            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMinimize.Location = new System.Drawing.Point(846, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(45, 26);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMaximize.FlatAppearance.BorderSize = 0;
+            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.Image = global::RoadToUni.Properties.Resources.maximize;
+            this.btnMaximize.Location = new System.Drawing.Point(891, 0);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(45, 26);
+            this.btnMaximize.TabIndex = 1;
+            this.btnMaximize.UseVisualStyleBackColor = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Salmon;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = global::RoadToUni.Properties.Resources.close;
+            this.btnExit.Location = new System.Drawing.Point(936, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 26);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSearch
             // 
@@ -121,15 +220,6 @@ namespace RoadToUni.Forms.UI
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // pnlMenuBar
-            // 
-            this.pnlMenuBar.BackColor = System.Drawing.Color.White;
-            this.pnlMenuBar.Location = new System.Drawing.Point(0, 188);
-            this.pnlMenuBar.Name = "pnlMenuBar";
-            this.pnlMenuBar.Size = new System.Drawing.Size(8, 58);
-            this.pnlMenuBar.TabIndex = 1;
-            this.pnlMenuBar.Visible = false;
             // 
             // btnLogout
             // 
@@ -231,37 +321,6 @@ namespace RoadToUni.Forms.UI
             this.btnPomo.UseVisualStyleBackColor = false;
             this.btnPomo.Click += new System.EventHandler(this.btnPomo_Click);
             // 
-            // lbUser
-            // 
-            this.lbUser.AutoSize = true;
-            this.lbUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.ForeColor = System.Drawing.Color.Bisque;
-            this.lbUser.Location = new System.Drawing.Point(20, 121);
-            this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(76, 24);
-            this.lbUser.TabIndex = 3;
-            this.lbUser.Text = "Chào: ";
-            // 
-            // ptBUser
-            // 
-            this.ptBUser.Image = global::RoadToUni.Properties.Resources.account;
-            this.ptBUser.Location = new System.Drawing.Point(67, 67);
-            this.ptBUser.Name = "ptBUser";
-            this.ptBUser.Size = new System.Drawing.Size(49, 47);
-            this.ptBUser.TabIndex = 2;
-            this.ptBUser.TabStop = false;
-            // 
-            // lbMenu
-            // 
-            this.lbMenu.AutoSize = true;
-            this.lbMenu.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMenu.ForeColor = System.Drawing.Color.White;
-            this.lbMenu.Location = new System.Drawing.Point(39, 19);
-            this.lbMenu.Name = "lbMenu";
-            this.lbMenu.Size = new System.Drawing.Size(75, 30);
-            this.lbMenu.TabIndex = 1;
-            this.lbMenu.Text = "MENU";
-            // 
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -282,65 +341,6 @@ namespace RoadToUni.Forms.UI
             this.btnMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // pnlTitleBar
-            // 
-            this.pnlTitleBar.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.pnlTitleBar.Controls.Add(this.btnMinimize);
-            this.pnlTitleBar.Controls.Add(this.btnMaximize);
-            this.pnlTitleBar.Controls.Add(this.btnExit);
-            this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(187, 0);
-            this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(981, 26);
-            this.pnlTitleBar.TabIndex = 1;
-            this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackColor = System.Drawing.Color.Turquoise;
-            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = global::RoadToUni.Properties.Resources.minimize;
-            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMinimize.Location = new System.Drawing.Point(846, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(45, 26);
-            this.btnMinimize.TabIndex = 2;
-            this.btnMinimize.UseVisualStyleBackColor = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Image = global::RoadToUni.Properties.Resources.maximize;
-            this.btnMaximize.Location = new System.Drawing.Point(891, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(45, 26);
-            this.btnMaximize.TabIndex = 1;
-            this.btnMaximize.UseVisualStyleBackColor = false;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Salmon;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Image = global::RoadToUni.Properties.Resources.close;
-            this.btnExit.Location = new System.Drawing.Point(936, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 26);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // fUI
             // 

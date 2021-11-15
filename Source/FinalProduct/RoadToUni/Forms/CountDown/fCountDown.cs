@@ -171,5 +171,15 @@ namespace RoadToUni.Forms.CountDown
                 topBackGround.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, topBackGround.Width, topBackGround.Height, 20, 20));
             }
         }
+
+        private void btnPomo_Click(object sender, EventArgs e)
+        {
+            RoadToUni.Forms.UI.fUI.SwitchForm(new RoadToUni.Forms.Pomodoro.fPomodoro());
+        }
+
+        private void btnMBTI_Click(object sender, EventArgs e)
+        {
+            RoadToUni.Forms.UI.fUI.SwitchForm(new RoadToUni.Forms.MBTI.fMBTIMain());
+        }
     }
 }

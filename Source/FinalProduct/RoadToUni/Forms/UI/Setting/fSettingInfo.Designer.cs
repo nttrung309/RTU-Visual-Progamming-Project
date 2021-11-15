@@ -31,7 +31,7 @@ namespace RoadToUni.Forms.UI.Setting
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lbVersion = new System.Windows.Forms.Label();
-            this.btnCheckUpdate = new System.Windows.Forms.Button();
+            this.btnCheckUpdate = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // label1
@@ -50,7 +50,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.lbVersion.AutoSize = true;
             this.lbVersion.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbVersion.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.lbVersion.Location = new System.Drawing.Point(12, 570);
+            this.lbVersion.Location = new System.Drawing.Point(8, 574);
             this.lbVersion.Name = "lbVersion";
             this.lbVersion.Size = new System.Drawing.Size(128, 28);
             this.lbVersion.TabIndex = 1;
@@ -59,16 +59,21 @@ namespace RoadToUni.Forms.UI.Setting
             // btnCheckUpdate
             // 
             this.btnCheckUpdate.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnCheckUpdate.BackgroundColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnCheckUpdate.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCheckUpdate.BorderRadius = 8;
+            this.btnCheckUpdate.BorderSize = 0;
             this.btnCheckUpdate.FlatAppearance.BorderSize = 0;
             this.btnCheckUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCheckUpdate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckUpdate.ForeColor = System.Drawing.Color.AliceBlue;
             this.btnCheckUpdate.Image = global::RoadToUni.Properties.Resources.update;
-            this.btnCheckUpdate.Location = new System.Drawing.Point(249, 544);
+            this.btnCheckUpdate.Location = new System.Drawing.Point(255, 550);
             this.btnCheckUpdate.Name = "btnCheckUpdate";
             this.btnCheckUpdate.Size = new System.Drawing.Size(144, 54);
             this.btnCheckUpdate.TabIndex = 2;
             this.btnCheckUpdate.Text = "Check For Update!";
+            this.btnCheckUpdate.TextColor = System.Drawing.Color.AliceBlue;
             this.btnCheckUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCheckUpdate.UseVisualStyleBackColor = false;
             this.btnCheckUpdate.Click += new System.EventHandler(this.btnCheckUpdate_Click);
@@ -94,6 +99,6 @@ namespace RoadToUni.Forms.UI.Setting
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbVersion;
-        private System.Windows.Forms.Button btnCheckUpdate;
+        private CustomControls.RJControls.RJButton btnCheckUpdate;
     }
 }

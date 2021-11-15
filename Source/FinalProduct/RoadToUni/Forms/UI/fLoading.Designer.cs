@@ -29,20 +29,33 @@ namespace RoadToUni.Forms.UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLoading));
             this.picLoad = new System.Windows.Forms.PictureBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.lowConnect = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // picLoad
             // 
             this.picLoad.BackColor = System.Drawing.Color.Transparent;
-            this.picLoad.Image = global::RoadToUni.Properties.Resources.loading;
-            this.picLoad.Location = new System.Drawing.Point(208, 279);
+            this.picLoad.Image = ((System.Drawing.Image)(resources.GetObject("picLoad.Image")));
+            this.picLoad.Location = new System.Drawing.Point(209, 286);
             this.picLoad.Name = "picLoad";
-            this.picLoad.Size = new System.Drawing.Size(68, 66);
+            this.picLoad.Size = new System.Drawing.Size(50, 50);
+            this.picLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLoad.TabIndex = 0;
             this.picLoad.TabStop = false;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // lowConnect
+            // 
+            this.lowConnect.Interval = 10000;
+            this.lowConnect.Tick += new System.EventHandler(this.lowConnect_Tick);
             // 
             // fLoading
             // 
@@ -54,6 +67,7 @@ namespace RoadToUni.Forms.UI
             this.Controls.Add(this.picLoad);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fLoading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.fLoading_Load);
@@ -66,5 +80,7 @@ namespace RoadToUni.Forms.UI
         #endregion
 
         private System.Windows.Forms.PictureBox picLoad;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Timer lowConnect;
     }
 }

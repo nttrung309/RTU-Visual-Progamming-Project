@@ -74,6 +74,7 @@ namespace RoadToUni.Forms.UI
             // 
             // btnSearch
             // 
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnSearch.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnSearch.BackgroundColor = System.Drawing.Color.CornflowerBlue;
             this.btnSearch.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -98,6 +99,7 @@ namespace RoadToUni.Forms.UI
             // 
             // btnHome
             // 
+            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnHome.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnHome.BackgroundColor = System.Drawing.Color.CornflowerBlue;
             this.btnHome.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -181,6 +183,7 @@ namespace RoadToUni.Forms.UI
             // 
             // btnChoice
             // 
+            this.btnChoice.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnChoice.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnChoice.BackgroundColor = System.Drawing.Color.CornflowerBlue;
             this.btnChoice.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -205,6 +208,7 @@ namespace RoadToUni.Forms.UI
             // 
             // btnPomo
             // 
+            this.btnPomo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnPomo.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnPomo.BackgroundColor = System.Drawing.Color.CornflowerBlue;
             this.btnPomo.BorderColor = System.Drawing.Color.PaleVioletRed;

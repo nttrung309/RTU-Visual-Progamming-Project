@@ -184,6 +184,12 @@
     <Compile Include="Forms\UI\Custom_Button.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\UI\fLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UI\fLoading.Designer.cs">
+      <DependentUpon>fLoading.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UI\Setting\fSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search\ViewScore\fVSManual.resx">
       <DependentUpon>fVSManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UI\fLoading.resx">
+      <DependentUpon>fLoading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UI\Setting\fSetting.resx">
       <DependentUpon>fSetting.cs</DependentUpon>
@@ -490,6 +499,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\searchicon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading_ui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading_ui_auto_x2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

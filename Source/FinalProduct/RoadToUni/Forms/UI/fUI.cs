@@ -21,6 +21,7 @@ namespace RoadToUni.Forms.UI
         bool maximizedByClick;
         int lastWidth;
         int lastHeight;
+        public static bool isMaximized = false;
 
         public static Form childForm;
         public static Panel pnlDesktop;
@@ -225,6 +226,7 @@ namespace RoadToUni.Forms.UI
         {
             if (WindowState == FormWindowState.Normal)
             {
+                isMaximized = true;
                 maximizedByClick = true;
                 lastWidth = this.Width;
                 lastHeight = this.Height;
@@ -233,6 +235,7 @@ namespace RoadToUni.Forms.UI
             }
             else
             {
+                isMaximized = false;
                 if (!maximizedByClick)
                 {
                     this.Location = lastPos;
@@ -245,10 +248,14 @@ namespace RoadToUni.Forms.UI
             }
             
         }
-        //Adjust when maximized by dragging
+        //Adjust when minimized by dragging
         private void fMain_SizeChanged(object sender, EventArgs e)
         {
-            
+            if (WindowState == FormWindowState.Normal)
+            {
+                isMaximized = false;
+                Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            }
         }
         private void btnMinimize_Click(object sender, EventArgs e)
         {
@@ -282,25 +289,6 @@ namespace RoadToUni.Forms.UI
 
         private void fUI_Load(object sender, EventArgs e)
         {
-            WebClient webClient = new WebClient();
-
-            try
-            {
-                if (IsConnectedToInternet())
-                {
-                    RoadToUni.Forms.CountDown.fCountDown.loadDate = webClient.DownloadString("https://pastebin.com/raw/M2yDB6tT");
-                }
-                else
-                {
-                    RoadToUni.Forms.CountDown.fCountDown.loadDate = "";
-                }
-            }
-            catch
-            {
-
-            }
-            //Check update
-            RoadToUni.Forms.UI.Setting.fSettingInfo.CheckUpdate();
 
 
             btnHome_Click(btnHome, new EventArgs());

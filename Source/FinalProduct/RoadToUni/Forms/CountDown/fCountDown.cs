@@ -21,12 +21,28 @@ namespace RoadToUni.Forms.CountDown
         string secs;
 
         public static string loadDate = "";
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+          int nLeftRect,     // x-coordinate of upper-left corner
+          int nTopRect,      // y-coordinate of upper-left corner
+          int nRightRect,    // x-coordinate of lower-right corner
+          int nBottomRect,   // y-coordinate of lower-right corner
+          int nWidthEllipse, // height of ellipse
+          int nHeightEllipse // width of ellipse
+        );
+
         public fCountDown()
         {
             InitializeComponent();
         }
         private void fCountDown_Load(object sender, EventArgs e)
         {
+            topBackGround.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, topBackGround.Width, topBackGround.Height, 20, 20));
+            ToFront();
+
+            lbTitle.Location = new Point((this.Width - lbTitle.Width) / 2, lbTitle.Location.Y);
             if(loadDate == "")
             {
                 int year;
@@ -47,8 +63,47 @@ namespace RoadToUni.Forms.CountDown
                 daysLeft = -DateTime.Now.Subtract(new DateTime(int.Parse(date[0]), int.Parse(date[1]), int.Parse(date[2])));
                 lbSubTitle.Text = "Kỳ thi THPT Quốc Gia " + date[0];
             }
+            lbSubTitle.Location = new Point((this.Width - lbSubTitle.Width) / 2, lbSubTitle.Location.Y);
             UpdateTime();
             tmCountDown.Start();
+        }
+        private void ToFront()
+        {
+            lbDays.BringToFront();
+            lbHours.BringToFront();
+            lbMins.BringToFront();
+            lbSec.BringToFront();
+
+            label1.BringToFront();
+            label2.BringToFront();
+            label3.BringToFront();
+            label4.BringToFront();
+
+            picRoundedRec1.BringToFront();
+            picRoundedRec2.BringToFront();
+            picRoundedRec3.BringToFront();
+            picRoundedRec4.BringToFront();
+
+            lbTitle.BringToFront();
+            lbSubTitle.BringToFront();
+
+            lbDays.Parent = topBackGround;
+            lbHours.Parent = topBackGround;
+            lbMins.Parent = topBackGround;
+            lbSec.Parent = topBackGround;
+
+            label1.Parent = topBackGround;
+            label2.Parent = topBackGround;
+            label3.Parent = topBackGround;
+            label4.Parent = topBackGround;
+
+            picRoundedRec1.Parent = topBackGround;
+            picRoundedRec2.Parent = topBackGround;
+            picRoundedRec3.Parent = topBackGround;
+            picRoundedRec4.Parent = topBackGround;
+
+            lbTitle.Parent = topBackGround;
+            lbSubTitle.Parent = topBackGround;
         }
 
         private void tmCountDown_Tick(object sender, EventArgs e)
@@ -103,13 +158,17 @@ namespace RoadToUni.Forms.CountDown
             lbMins.Text = mins;
             lbSec.Text = secs;
         }
-        protected override CreateParams CreateParams //Fix flick when resize
+
+
+        private void fCountDown_SizeChanged(object sender, EventArgs e)
         {
-            get
+            if (RoadToUni.Forms.UI.fUI.isMaximized)
             {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000;
-                return cp;
+                topBackGround.Region = null;
+            }
+            else
+            {
+                topBackGround.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, topBackGround.Width, topBackGround.Height, 20, 20));
             }
         }
     }

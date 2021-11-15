@@ -155,6 +155,7 @@ namespace RoadToUni.Forms.Login
             {
                 loginedUser = txtUsername.Text;
                 this.Hide();
+                new Forms.UI.fLoading().ShowDialog();
                 new Forms.UI.fUI().ShowDialog();
                 Forms.UI.fUI.childForm = null;
                 try

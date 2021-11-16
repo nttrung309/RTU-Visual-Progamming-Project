@@ -44,7 +44,7 @@ namespace RoadToUni.Forms.UI
             ThreadStart ts = new ThreadStart(Loading);
             Thread td = new Thread(ts);
             td.Start();
-            timer.Start();
+            //timer.Start();
             picLoad.Location = new Point((this.Width - picLoad.Width) / 2, picLoad.Location.Y);
         }
 
@@ -83,6 +83,7 @@ namespace RoadToUni.Forms.UI
 
             }
             isLoaded = true;
+            this.Close();
         }
 
         //Drag Form

@@ -99,7 +99,7 @@ namespace RoadToUni.Forms.UI
             {
                 if (btn.GetType() == typeof(Button) || btn.GetType() == typeof(CustomControls.RJControls.RJButton))
                 {
-                    btn.BackColor = Color.CornflowerBlue;
+                    btn.BackColor = Color.Transparent;
                 }
             }
         }
@@ -158,7 +158,7 @@ namespace RoadToUni.Forms.UI
             {
                 pnlMenu.Width = 61;
                 btnMenu.Location = new Point(1, btnMenu.Location.Y);
-
+                ptBUser.Location = new Point((61-ptBUser.Width)/2, ptBUser.Location.Y);
 
                 foreach (Control cnt in pnlMenu.Controls)
                 {
@@ -171,7 +171,10 @@ namespace RoadToUni.Forms.UI
                     {
                         if (cnt.GetType() != typeof(Panel))
                         {
-                            cnt.Visible = false;
+                            if(cnt.Name != "ptBUser")
+                            {
+                                cnt.Visible = false;
+                            }
                         }
                     }
                 }
@@ -180,6 +183,8 @@ namespace RoadToUni.Forms.UI
             {
                 pnlMenu.Width = 187;
                 btnMenu.Location = new Point(127, btnMenu.Location.Y);
+                ptBUser.Location = new Point(18, ptBUser.Location.Y);
+                lbUser.Location = new Point(ptBUser.Location.X + ptBUser.Width, ptBUser.Location.Y + (ptBUser.Height - lbUser.Height) / 2);
 
                 foreach (Control cnt in pnlMenu.Controls)
                 {
@@ -294,6 +299,8 @@ namespace RoadToUni.Forms.UI
                 Application.Exit();
             }
 
+            LoadButtonEvent();
+
             btnHome_Click(btnHome, new EventArgs());
             btnMenu_Click(new object(), new EventArgs());
 
@@ -303,10 +310,46 @@ namespace RoadToUni.Forms.UI
             lastPos = new Point(this.Location.X, this.Location.Y);
             maximizedByClick = false;
 
-            this.lbUser.Text += RoadToUni.Forms.Login.fLogin.loginedUser;
-            lbUser.Location = new Point((187 - lbUser.Width) / 2, ptBUser.Location.Y + 55);
+            this.lbUser.Text = RoadToUni.Forms.Login.fLogin.loginedUser.ToUpper();
+            lbUser.Location = new Point(ptBUser.Location.X + ptBUser.Width, ptBUser.Location.Y + (ptBUser.Height - lbUser.Height) / 2);
+            while (lbUser.Location.X + lbUser.Width >= 187 - 2)
+            {
+                this.lbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", lbUser.Font.Size - (float)0.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                lbUser.Location = new Point(lbUser.Location.X, ptBUser.Location.Y + (ptBUser.Height-lbUser.Height)/2);
+            }
 
             this.pnlMenuBar.BringToFront();
+        }
+
+        private void btn_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (btn.Name != currentBtn.Name)
+            {
+                btn.BackColor = Color.CornflowerBlue;
+            }
+        }
+
+        private void btn_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (btn.Name != currentBtn.Name)
+            {
+                btn.BackColor = Color.Transparent;
+            }
+        }
+
+        private void LoadButtonEvent()
+        {
+            foreach (Control cnt in pnlMenu.Controls)
+            {
+                if (cnt.GetType() == typeof(Button) || cnt.GetType() == typeof(CustomControls.RJControls.RJButton))
+                {
+                    Button btn = cnt as Button;
+                    btn.MouseEnter += btn_MouseEnter;
+                    btn.MouseLeave += btn_MouseLeave;
+                }
+            }
         }
     }
 }

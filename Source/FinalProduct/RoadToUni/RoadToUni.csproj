@@ -193,6 +193,12 @@
     <Compile Include="Forms\UI\GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Forms\UI\Setting\fManageAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UI\Setting\fManageAccount.Designer.cs">
+      <DependentUpon>fManageAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UI\Setting\fSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UI\fLoading.resx">
       <DependentUpon>fLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UI\Setting\fManageAccount.resx">
+      <DependentUpon>fManageAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UI\Setting\fSetting.resx">
       <DependentUpon>fSetting.cs</DependentUpon>
@@ -520,6 +529,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\green_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient_img %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

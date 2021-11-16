@@ -163,7 +163,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnAccountManage.Text = "Tài khoản";
             this.btnAccountManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAccountManage.UseVisualStyleBackColor = false;
-            this.btnAccountManage.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnAccountManage.Click += new System.EventHandler(this.btnManageAccount_Click);
             // 
             // lbSetting
             // 

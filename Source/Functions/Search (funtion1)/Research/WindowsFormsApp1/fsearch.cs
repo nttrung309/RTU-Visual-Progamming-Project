@@ -16,22 +16,21 @@ namespace WindowsFormsApp1
         public fsearch()
         {
             InitializeComponent();
-            LoadNameUni();
+            LoadNameMajor();
             
             
         }
-        void LoadNameUni()
+        void LoadNameMajor()
         {
             DataTable dt = new DataTable();
-            dt = crud.ReadData("SELECT * FROM TRUONG");
-            dt.Columns.Add("NameAndID", typeof(string), "MATRUONG + ' - '+ TENTRUONG");
-            object[] arr = { "Tất cả các trường", "", "" };
-            dt.Rows.Add(arr);
-            cbNameUni.DisplayMember = "NameAndID";
+            dt = crud.ReadData("SELECT * FROM NHOMNGANH");
+            //dt.Columns.Add("NameAndID", typeof(string), "MATRUONG + ' - '+ TENTRUONG");
+            //object[] arr = { "Tất cả các trường", "", "" };
+           // dt.Rows.Add(arr);
+            cbNameUni.DisplayMember = "TENNHNGANH";
             cbNameUni.DataSource = dt;
             cbNameUni.SelectedIndex = -1;
-            cbNameUni.Text = "Chọn trường";
-
+            cbNameUni.Text = "Chọn ngành/nghề";
         }
         bool IsNumeric(string text)
         {
@@ -57,7 +56,7 @@ namespace WindowsFormsApp1
             }
             if (double.Parse(txbGrade.Text) > 32.75)
             {
-                MessageBox.Show("Điểm xét tuyển tối đa 32.75! Vui lòng nhập số điểm nhỏ hơn 32.75", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Điểm xét tuyển tối đa 40! Vui lòng nhập số điểm nhỏ hơn 40", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if(cbNameUni.SelectedIndex == -1)
@@ -77,13 +76,18 @@ namespace WindowsFormsApp1
             SetWidthDataTable();
             SetColorRowDT();
             DisableClickHeader();
-            for (int i = 0; i < dataGridViewResult.Rows.Count - 1; i++)
+            for (int i = 0; i < dataGridViewResult.Rows.Count ; i++)
             {
                 dataGridViewResult.Rows[i].Cells[0].Value = i + 1;
             }
             CheckResult();
+            int totalRowHeight = dataGridViewResult.ColumnHeadersHeight;
 
+            foreach (DataGridViewRow row in dataGridViewResult.Rows)
+                totalRowHeight += row.Height;
 
+            dataGridViewResult.Height = totalRowHeight;
+            //this.Height = dataGridViewResult.Height + 100;
 
         }
         DataTable LoadDB()
@@ -91,24 +95,56 @@ namespace WindowsFormsApp1
             DataTable dt = new DataTable();
             DataTable dtCol = new DataTable();
             dtCol.Columns.Add("STT");
-            string nameAndID = cbNameUni.GetItemText(cbNameUni.SelectedItem);
-            string IDUni = nameAndID.Substring(0, 3);
-            if(IDUni.Equals("Tất"))
-            {
-                IDUni = "";
-            }    
+            string nameMajors = cbNameUni.GetItemText(cbNameUni.SelectedItem);
+            //string IDUni = nameAndID.Substring(0, 3);
+            //if(IDUni.Equals("Tất"))
+            //{
+            //    IDUni = "";
+            //}    
+            //string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
+            //string comb = subjectComb.Substring(0, 3);
+            //float mark = float.Parse(txbGrade.Text);
+
+            //string query = "SELECT XET.MATRUONG, TENTRUONG, XET.MANGANH,NGANH.TENNGANH, DIEMCHUAN " +
+            //               "FROM XET, TRUONG, NGANH " +
+            //               "WHERE  XET.MATRUONG = TRUONG.MATRUONG AND " +
+            //               "XET.MANGANH = NGANH.MANGANH AND " +
+            //               "XET.MATRUONG LIKE '%" + IDUni + "%' AND " +
+            //               "XET.NAM = 2021 AND " +
+            //               "XET.CHUOITOHOP LIKE '%" + comb + "%' AND " +
+            //               "DIEMCHUAN <= " + mark + "ORDER BY XET.MATRUONG, DIEMCHUAN DESC";
+            //dt = crud.ReadData(query);
             string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
             string comb = subjectComb.Substring(0, 3);
             float mark = float.Parse(txbGrade.Text);
-
-            string query = "SELECT XET.MATRUONG, TENTRUONG, XET.MANGANH,NGANH.TENNGANH, DIEMCHUAN " +
-                           "FROM XET, TRUONG, NGANH " +
-                           "WHERE  XET.MATRUONG = TRUONG.MATRUONG AND " +
-                           "XET.MANGANH = NGANH.MANGANH AND " +
-                           "XET.MATRUONG LIKE '%" + IDUni + "%' AND " +
-                           "XET.NAM = 2021 AND " +
-                           "XET.CHUOITOHOP LIKE '%" + comb + "%' AND " +
-                           "DIEMCHUAN <= " + mark + "ORDER BY XET.MATRUONG, DIEMCHUAN DESC";
+            //string query =  "SELECT TRUONG.MATRUONG, TENTRUONG, COUNT(NGANH.MANGANH) AS KETQUA " +
+            //                 "FROM TRUONG, XET, NGANH " +
+            //                 "WHERE TRUONG.MATRUONG = XET.MATRUONG" +
+            //                 "AND NGANH.MANGANH = XET.MANGANH " +
+            //                 "AND NAM = 2021 " +
+            //                 "AND XET.CHUOITOHOP LIKE '%" + comb + "%'" +
+            //                 "AND DIEMCHUAN <= " + mark +
+            //                 "AND EXISTS(" +
+            //                 "SELECT * FROM NGANHCHUNG, NHOMNGANH " +
+            //                 "WHERE TENNGANH LIKE '%' + TENNGANHCHUNG + '%' " +
+            //                 "AND NGANHCHUNG.MANHNGANH = NHOMNGANH.MANHNGANH" +
+            //                 "AND TENNHNGANH = N'" + nameMajors + "')" +
+            //                 "GROUP BY TRUONG.MATRUONG, TENTRUONG " +
+            //                 "ORDER BY KETQUA DESC";
+            string query = "SELECT TRUONG.MATRUONG, TENTRUONG,COUNT(NGANH.MANGANH) AS KETQUA " +
+                        "FROM TRUONG, XET, NGANH " +
+                        "WHERE TRUONG.MATRUONG = XET.MATRUONG " +
+                        "AND NGANH.MANGANH = XET.MANGANH " +
+                        "AND NAM = 2021 " +
+                        "AND CHUOITOHOP LIKE '%"+comb+"%' " +
+                        "AND DIEMCHUAN <="+mark +
+                        "AND EXISTS( " +
+                        "SELECT * FROM NGANHCHUNG, NHOMNGANH " +
+                        "WHERE TENNGANH LIKE '%' + TENNGANHCHUNG + '%' " +
+                        "AND NGANHCHUNG.MANHNGANH = NHOMNGANH.MANHNGANH " +
+                        "AND TENNHNGANH = N'"+nameMajors+"') " +
+                        "GROUP BY TRUONG.MATRUONG, TENTRUONG " +
+                        "ORDER BY KETQUA DESC";
             dt = crud.ReadData(query);
             dtCol.Merge(dt);
             return dtCol;
@@ -119,8 +155,9 @@ namespace WindowsFormsApp1
             dataGridViewResult.Columns[1].Width = 90;
             dataGridViewResult.Columns[2].Width = 280;
             dataGridViewResult.Columns[3].Width = 100;
-            dataGridViewResult.Columns[4].Width = 350;
-            dataGridViewResult.Columns[5].Width = 100;
+            //dataGridViewResult.Columns[4].Width = 350;
+            //dataGridViewResult.Columns[5].Width = 100;
+
           
         }
         private void DisableClickHeader()
@@ -155,9 +192,9 @@ namespace WindowsFormsApp1
             dataGridViewResult.ColumnHeadersDefaultCellStyle.BackColor = Color.PaleGreen;
             dataGridViewResult.Columns[1].HeaderText= "Mã trường";
             dataGridViewResult.Columns[2].HeaderText = "Tên trường";
-            dataGridViewResult.Columns[3].HeaderText= "Mã ngành";
-            dataGridViewResult.Columns[4].HeaderText = "Tên ngành";
-            dataGridViewResult.Columns[5].HeaderText = "Điểm chuẩn";
+            dataGridViewResult.Columns[3].HeaderText= "Kết quả";
+            //dataGridViewResult.Columns[4].HeaderText = "Tên ngành";
+            //dataGridViewResult.Columns[5].HeaderText = "Điểm chuẩn";
             foreach (DataGridViewColumn col in dataGridViewResult.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -169,17 +206,16 @@ namespace WindowsFormsApp1
         {
             string nameAndID = cbNameUni.GetItemText(cbNameUni.SelectedItem);
             string IDUni = nameAndID.Substring(0, 3);
-            if (IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 1)
+            if (IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 0)
             {
                 MessageBox.Show("Không có ngành nào của tất cả các Trường thuộc ĐHQG-TPHCM có điểm chuẩn nhỏ hơn điểm dự kiến của bạn ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }    
-            if(!IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 1)
+            if(!IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 0)
             {
-                MessageBox.Show(String.Format("Không có ngành nào thuộc {0} có điểm chuẩn nhỏ hơn điểm dự kiến của bạn",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(String.Format("Không có ngành nào thuộc nhóm ngành {0} có điểm chuẩn nhỏ hơn điểm dự kiến của bạn",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
-            }    
-            
+            }  
         }
 
         private void txbGrade_Enter(object sender, EventArgs e)
@@ -220,20 +256,49 @@ namespace WindowsFormsApp1
 
         private void cbNameUni_Enter(object sender, EventArgs e)
         {
-            if (cbNameUni.Text == "Chọn trường")
+            if (cbNameUni.Text == "Chọn ngành/nghề")
             {
                 cbNameUni.Text = "";
                 cbNameUni.ForeColor = Color.Black;
             }
         }
+        //private int dgvHeight()
+        //{
+        //    int sum = this.dataGridViewResult.ColumnHeadersHeight;
 
+        //    foreach (DataGridViewRow row in this.dataGridViewResult.Rows)
+        //        sum += row.Height + 1; // I dont think the height property includes the cell border size, so + 1
+
+        //    return sum;
+        //}
+        private int dgvHeight()
+        {
+            int sum = this.dataGridViewResult.ColumnHeadersHeight;
+
+            foreach (DataGridViewRow row in this.dataGridViewResult.Rows)
+                sum += row.Height + 1; // I dont think the height property includes the cell border size, so + 1
+
+            return sum;
+        }
         private void cbNameUni_Leave(object sender, EventArgs e)
         {
             if (cbNameUni.Text == "")
-            {
-                cbNameUni.Text = "Chọn trường";
+            { 
+                cbNameUni.Text = "Chọn ngành/nghề";
                 cbNameUni.ForeColor = Color.DarkGray;
             }
         }
+
+        private void dataGridViewResult_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string idUni = dataGridViewResult.Rows[e.RowIndex].Cells[1].Value.ToString();
+            string major = cbNameUni.Text;
+            string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
+            string comb = subjectComb.Substring(0, 3);
+            float grade = float.Parse(txbGrade.Text);
+            Form2 f2 = new Form2(idUni, major, comb, grade);
+            f2.Show();
+        }
+
     }
 }

@@ -66,12 +66,6 @@
     <Compile Include="Forms\Login\fLogin.designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login\fRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Login\fRegister.Designer.cs">
-      <DependentUpon>fRegister.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\MBTI\fMBTIMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,9 +230,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login\fRegister.resx">
-      <DependentUpon>fRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MBTI\fMBTIMain.resx">
       <DependentUpon>fMBTIMain.cs</DependentUpon>

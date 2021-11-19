@@ -27,7 +27,6 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.ViewScore.fVSManual.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.FindSchool.fFindSchool.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Login.fLogin.resources
-D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Login.fRegister.resources
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\bin\Debug\RoadToUni.exe.config
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\bin\Debug\RoadToUni.exe
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\bin\Debug\RoadToUni.pdb
@@ -64,3 +63,4 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Qu
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.UI.KetQua.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.UI.fLoading.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.UI.Setting.fManageAccount.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.csproj.AssemblyReference.cache

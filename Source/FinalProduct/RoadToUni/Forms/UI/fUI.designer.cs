@@ -54,7 +54,7 @@ namespace RoadToUni.Forms.UI
             // 
             // pnlTitleBar
             // 
-            this.pnlTitleBar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pnlTitleBar.BackColor = System.Drawing.Color.Snow;
             this.pnlTitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTitleBar.Controls.Add(this.btnMinimize);
             this.pnlTitleBar.Controls.Add(this.btnMaximize);

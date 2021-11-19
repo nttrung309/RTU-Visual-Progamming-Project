@@ -16,6 +16,8 @@ namespace RoadToUni.Forms.UI
 {
     public partial class fLoading : Form
     {
+        ThreadStart ts;
+        Thread td;
 
         public static bool isLoaded = false;
 
@@ -41,10 +43,10 @@ namespace RoadToUni.Forms.UI
 
         private void fLoading_Load(object sender, EventArgs e)
         {
-            ThreadStart ts = new ThreadStart(Loading);
-            Thread td = new Thread(ts);
+            ts = new ThreadStart(Loading);
+            td = new Thread(ts);
             td.Start();
-            //timer.Start();
+            lowConnect.Start();
             picLoad.Location = new Point((this.Width - picLoad.Width) / 2, picLoad.Location.Y);
         }
 
@@ -62,7 +64,6 @@ namespace RoadToUni.Forms.UI
         {
             Thread.Sleep(2000);
             //Check update
-            lowConnect.Start();
             RoadToUni.Forms.UI.Setting.fSettingInfo.CheckUpdate();
 
             WebClient webClient = new WebClient();

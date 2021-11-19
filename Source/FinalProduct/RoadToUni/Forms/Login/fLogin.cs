@@ -143,17 +143,9 @@ namespace RoadToUni.Forms.Login
         //form main here
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=TRUNGNGUYEN\SQLEXPRESS;Initial Catalog=databaseDiemChuan;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand();
-            SqlDataAdapter da = new SqlDataAdapter();
-            con.Open();
-            string login = "SELECT * FROM ACCOUNT WHERE USERNAME= '" + txtUsername.Text + "' and PASSWORD = '" + txtPassword.Text + "'";
-            cmd = new SqlCommand(login, con);
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            if (dr.Read() == true)
+            if (txtUsername.Texts != "")
             {
-                loginedUser = txtUsername.Text;
+                loginedUser = txtUsername.Texts;
                 this.Hide();
                 new Forms.UI.fLoading().ShowDialog();
                 new Forms.UI.fUI().ShowDialog();
@@ -169,32 +161,16 @@ namespace RoadToUni.Forms.Login
             }
             else
             {
-                MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        private void cbxShowPassword_CheckedChanged(object sender, EventArgs e)
+        private void txtUsername__TextChanged(object sender, EventArgs e)
         {
-            if (cbxShowPassword.Checked)
+            if(txtUsername.Texts.Length > 8)
             {
-                txtPassword.UseSystemPasswordChar = false;
-
+                
             }
-            else
-            {
-                txtPassword.UseSystemPasswordChar = true;
-
-            }
-        }
-
-        private void lblRegister_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form f = new RoadToUni.Forms.Login.fRegister();
-            f.StartPosition = FormStartPosition.Manual;
-            f.Location = this.Location;
-            f.ShowDialog();
-            this.Close();
         }
     }
 }

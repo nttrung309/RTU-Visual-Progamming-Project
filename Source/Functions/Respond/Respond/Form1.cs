@@ -16,7 +16,7 @@ namespace Respond
         public Form1()
         {
             InitializeComponent();
-           
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -32,7 +32,23 @@ namespace Respond
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox1.Checked==true)
+            {
+              
+             
+                this.ClientSize = new System.Drawing.Size(323, 610);
+                this.button1.Location = new System.Drawing.Point(180, 557);
+                this.button2.Location = new System.Drawing.Point(250, 557);
+            }    
+            else
+            {
+                pictureBox1.Image = null;
+                this.button1.Location = new System.Drawing.Point(160, 260);
+                this.button2.Location = new System.Drawing.Point(230, 260);
+                this.ClientSize = new System.Drawing.Size(323, 300);
+               
+              
+            }    
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -58,6 +74,24 @@ namespace Respond
         private void richTextBox1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
         
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "*.JPEG|*.JPG|*.PNG|*.GIF|All files (*.*)|*.*";
+           // fileDialog.Filter = "*.txt|*.txt|All files (*.*)|*.*";
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var fileName = fileDialog.FileName;
+                pictureBox1.Image = Image.FromFile(fileName);
+            }
+
         }
     }
 }

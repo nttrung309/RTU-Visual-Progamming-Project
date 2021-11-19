@@ -60,6 +60,7 @@
     <Compile Include="Forms\CountDown\fCountDown.designer.cs">
       <DependentUpon>fCountDown.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CountDown\Quotes.cs" />
     <Compile Include="Forms\Login\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +226,9 @@
     <Compile Include="Forms\UI\fUI.designer.cs">
       <DependentUpon>fUI.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomControl\RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CountDown\fCountDown.resx">
       <DependentUpon>fCountDown.cs</DependentUpon>
     </EmbeddedResource>

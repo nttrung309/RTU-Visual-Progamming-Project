@@ -51,6 +51,8 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec2 = new System.Windows.Forms.PictureBox();
             this.picRoundedRec3 = new System.Windows.Forms.PictureBox();
             this.picRoundedRec4 = new System.Windows.Forms.PictureBox();
+            this.lbQuote = new System.Windows.Forms.Label();
+            this.lbAuthor = new System.Windows.Forms.Label();
             this.btnMBTI = new CustomControls.RJControls.RJButton();
             this.btnPomo = new CustomControls.RJControls.RJButton();
             this.panel1.SuspendLayout();
@@ -76,7 +78,7 @@ namespace RoadToUni.Forms.CountDown
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(440, 32);
+            this.lbTitle.Location = new System.Drawing.Point(440, 12);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(260, 31);
             this.lbTitle.TabIndex = 2;
@@ -89,7 +91,7 @@ namespace RoadToUni.Forms.CountDown
             this.lbSubTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbSubTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSubTitle.ForeColor = System.Drawing.Color.White;
-            this.lbSubTitle.Location = new System.Drawing.Point(455, 67);
+            this.lbSubTitle.Location = new System.Drawing.Point(455, 47);
             this.lbSubTitle.Name = "lbSubTitle";
             this.lbSubTitle.Size = new System.Drawing.Size(227, 20);
             this.lbSubTitle.TabIndex = 3;
@@ -102,7 +104,7 @@ namespace RoadToUni.Forms.CountDown
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(211, 249);
+            this.label1.Location = new System.Drawing.Point(304, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 25);
             this.label1.TabIndex = 2;
@@ -114,13 +116,13 @@ namespace RoadToUni.Forms.CountDown
             this.lbDays.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbDays.AutoSize = true;
             this.lbDays.BackColor = System.Drawing.Color.Transparent;
-            this.lbDays.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDays.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDays.ForeColor = System.Drawing.Color.White;
-            this.lbDays.Location = new System.Drawing.Point(188, 166);
+            this.lbDays.Location = new System.Drawing.Point(293, 114);
             this.lbDays.Name = "lbDays";
-            this.lbDays.Size = new System.Drawing.Size(88, 64);
+            this.lbDays.Size = new System.Drawing.Size(86, 46);
             this.lbDays.TabIndex = 0;
-            this.lbDays.Text = "10";
+            this.lbDays.Text = "100";
             this.lbDays.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -130,7 +132,7 @@ namespace RoadToUni.Forms.CountDown
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(427, 249);
+            this.label2.Location = new System.Drawing.Point(460, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 25);
             this.label2.TabIndex = 3;
@@ -143,7 +145,7 @@ namespace RoadToUni.Forms.CountDown
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(631, 249);
+            this.label3.Location = new System.Drawing.Point(604, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 25);
             this.label3.TabIndex = 4;
@@ -154,12 +156,13 @@ namespace RoadToUni.Forms.CountDown
             this.lbMins.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbMins.AutoSize = true;
             this.lbMins.BackColor = System.Drawing.Color.Transparent;
-            this.lbMins.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMins.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMins.ForeColor = System.Drawing.Color.White;
-            this.lbMins.Location = new System.Drawing.Point(617, 166);
+            this.lbMins.Location = new System.Drawing.Point(601, 114);
             this.lbMins.Name = "lbMins";
-            this.lbMins.Size = new System.Drawing.Size(0, 64);
+            this.lbMins.Size = new System.Drawing.Size(64, 46);
             this.lbMins.TabIndex = 2;
+            this.lbMins.Text = "60";
             // 
             // label4
             // 
@@ -168,7 +171,7 @@ namespace RoadToUni.Forms.CountDown
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(837, 249);
+            this.label4.Location = new System.Drawing.Point(752, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 5;
@@ -179,12 +182,13 @@ namespace RoadToUni.Forms.CountDown
             this.lbHours.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbHours.AutoSize = true;
             this.lbHours.BackColor = System.Drawing.Color.Transparent;
-            this.lbHours.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHours.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHours.ForeColor = System.Drawing.Color.White;
-            this.lbHours.Location = new System.Drawing.Point(409, 166);
+            this.lbHours.Location = new System.Drawing.Point(452, 114);
             this.lbHours.Name = "lbHours";
-            this.lbHours.Size = new System.Drawing.Size(0, 64);
+            this.lbHours.Size = new System.Drawing.Size(64, 46);
             this.lbHours.TabIndex = 3;
+            this.lbHours.Text = "24";
             this.lbHours.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbSec
@@ -192,12 +196,13 @@ namespace RoadToUni.Forms.CountDown
             this.lbSec.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbSec.AutoSize = true;
             this.lbSec.BackColor = System.Drawing.Color.Transparent;
-            this.lbSec.Font = new System.Drawing.Font("Microsoft YaHei UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSec.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSec.ForeColor = System.Drawing.Color.White;
-            this.lbSec.Location = new System.Drawing.Point(824, 166);
+            this.lbSec.Location = new System.Drawing.Point(749, 114);
             this.lbSec.Name = "lbSec";
-            this.lbSec.Size = new System.Drawing.Size(0, 64);
+            this.lbSec.Size = new System.Drawing.Size(64, 46);
             this.lbSec.TabIndex = 2;
+            this.lbSec.Text = "60";
             // 
             // panel1
             // 
@@ -267,9 +272,9 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec1.BackColor = System.Drawing.Color.Transparent;
             this.picRoundedRec1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec1.BackgroundImage")));
             this.picRoundedRec1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picRoundedRec1.Location = new System.Drawing.Point(143, 109);
+            this.picRoundedRec1.Location = new System.Drawing.Point(264, 74);
             this.picRoundedRec1.Name = "picRoundedRec1";
-            this.picRoundedRec1.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec1.Size = new System.Drawing.Size(142, 137);
             this.picRoundedRec1.TabIndex = 5;
             this.picRoundedRec1.TabStop = false;
             // 
@@ -279,9 +284,9 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec2.BackColor = System.Drawing.Color.Transparent;
             this.picRoundedRec2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec2.BackgroundImage")));
             this.picRoundedRec2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picRoundedRec2.Location = new System.Drawing.Point(350, 109);
+            this.picRoundedRec2.Location = new System.Drawing.Point(412, 74);
             this.picRoundedRec2.Name = "picRoundedRec2";
-            this.picRoundedRec2.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec2.Size = new System.Drawing.Size(142, 137);
             this.picRoundedRec2.TabIndex = 6;
             this.picRoundedRec2.TabStop = false;
             // 
@@ -291,9 +296,9 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec3.BackColor = System.Drawing.Color.Transparent;
             this.picRoundedRec3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec3.BackgroundImage")));
             this.picRoundedRec3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picRoundedRec3.Location = new System.Drawing.Point(557, 109);
+            this.picRoundedRec3.Location = new System.Drawing.Point(560, 74);
             this.picRoundedRec3.Name = "picRoundedRec3";
-            this.picRoundedRec3.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec3.Size = new System.Drawing.Size(142, 137);
             this.picRoundedRec3.TabIndex = 7;
             this.picRoundedRec3.TabStop = false;
             // 
@@ -303,11 +308,35 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec4.BackColor = System.Drawing.Color.Transparent;
             this.picRoundedRec4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picRoundedRec4.BackgroundImage")));
             this.picRoundedRec4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picRoundedRec4.Location = new System.Drawing.Point(764, 109);
+            this.picRoundedRec4.Location = new System.Drawing.Point(708, 74);
             this.picRoundedRec4.Name = "picRoundedRec4";
-            this.picRoundedRec4.Size = new System.Drawing.Size(201, 195);
+            this.picRoundedRec4.Size = new System.Drawing.Size(142, 137);
             this.picRoundedRec4.TabIndex = 8;
             this.picRoundedRec4.TabStop = false;
+            // 
+            // lbQuote
+            // 
+            this.lbQuote.AutoSize = true;
+            this.lbQuote.BackColor = System.Drawing.Color.Transparent;
+            this.lbQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuote.ForeColor = System.Drawing.Color.White;
+            this.lbQuote.Location = new System.Drawing.Point(359, 253);
+            this.lbQuote.Name = "lbQuote";
+            this.lbQuote.Size = new System.Drawing.Size(668, 29);
+            this.lbQuote.TabIndex = 13;
+            this.lbQuote.Text = "Chỉ những người dám thất bại lớn mới đạt được thành công lớn";
+            // 
+            // lbAuthor
+            // 
+            this.lbAuthor.AutoSize = true;
+            this.lbAuthor.BackColor = System.Drawing.Color.Transparent;
+            this.lbAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAuthor.ForeColor = System.Drawing.Color.White;
+            this.lbAuthor.Location = new System.Drawing.Point(704, 291);
+            this.lbAuthor.Name = "lbAuthor";
+            this.lbAuthor.Size = new System.Drawing.Size(169, 24);
+            this.lbAuthor.TabIndex = 14;
+            this.lbAuthor.Text = "Robert F. Kennedy";
             // 
             // btnMBTI
             // 
@@ -357,6 +386,8 @@ namespace RoadToUni.Forms.CountDown
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1108, 611);
             this.ControlBox = false;
+            this.Controls.Add(this.lbAuthor);
+            this.Controls.Add(this.lbQuote);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.topBackGround);
@@ -419,5 +450,7 @@ namespace RoadToUni.Forms.CountDown
         private System.Windows.Forms.Panel panel1;
         private CustomControls.RJControls.RJButton btnMBTI;
         private System.Windows.Forms.PictureBox picMBTI;
+        private System.Windows.Forms.Label lbQuote;
+        private System.Windows.Forms.Label lbAuthor;
     }
 }

@@ -53,7 +53,7 @@ namespace RoadToUni.Forms.Pomodoro
             this.btnPomodoro.ForeColor = System.Drawing.Color.IndianRed;
             this.btnPomodoro.Image = global::RoadToUni.Properties.Resources.LogoBtnPomo;
             this.btnPomodoro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPomodoro.Location = new System.Drawing.Point(111, 146);
+            this.btnPomodoro.Location = new System.Drawing.Point(119, 146);
             this.btnPomodoro.Name = "btnPomodoro";
             this.btnPomodoro.Size = new System.Drawing.Size(201, 60);
             this.btnPomodoro.TabIndex = 0;
@@ -70,7 +70,7 @@ namespace RoadToUni.Forms.Pomodoro
             this.btnShortBreak.ForeColor = System.Drawing.Color.IndianRed;
             this.btnShortBreak.Image = global::RoadToUni.Properties.Resources.LogoBtnShortBreak;
             this.btnShortBreak.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShortBreak.Location = new System.Drawing.Point(111, 232);
+            this.btnShortBreak.Location = new System.Drawing.Point(119, 232);
             this.btnShortBreak.Name = "btnShortBreak";
             this.btnShortBreak.Size = new System.Drawing.Size(201, 59);
             this.btnShortBreak.TabIndex = 1;
@@ -89,7 +89,7 @@ namespace RoadToUni.Forms.Pomodoro
             this.btnLongBreak.ForeColor = System.Drawing.Color.IndianRed;
             this.btnLongBreak.Image = global::RoadToUni.Properties.Resources.LogoBtnLongBreak;
             this.btnLongBreak.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLongBreak.Location = new System.Drawing.Point(111, 320);
+            this.btnLongBreak.Location = new System.Drawing.Point(119, 320);
             this.btnLongBreak.Name = "btnLongBreak";
             this.btnLongBreak.Size = new System.Drawing.Size(201, 57);
             this.btnLongBreak.TabIndex = 2;
@@ -105,7 +105,7 @@ namespace RoadToUni.Forms.Pomodoro
             this.lbClock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbClock.Font = new System.Drawing.Font("Script MT Bold", 55F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbClock.ForeColor = System.Drawing.Color.Snow;
-            this.lbClock.Location = new System.Drawing.Point(374, 124);
+            this.lbClock.Location = new System.Drawing.Point(382, 124);
             this.lbClock.Name = "lbClock";
             this.lbClock.Size = new System.Drawing.Size(292, 281);
             this.lbClock.TabIndex = 3;
@@ -126,7 +126,7 @@ namespace RoadToUni.Forms.Pomodoro
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Image = global::RoadToUni.Properties.Resources.LogoTilteLeft;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(367, 31);
+            this.label1.Location = new System.Drawing.Point(375, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(333, 55);
             this.label1.TabIndex = 9;
@@ -143,7 +143,7 @@ namespace RoadToUni.Forms.Pomodoro
             this.btnStop1.ForeColor = System.Drawing.Color.White;
             this.btnStop1.Image = global::RoadToUni.Properties.Resources.LogoStop;
             this.btnStop1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStop1.Location = new System.Drawing.Point(747, 282);
+            this.btnStop1.Location = new System.Drawing.Point(755, 282);
             this.btnStop1.Name = "btnStop1";
             this.btnStop1.Size = new System.Drawing.Size(235, 95);
             this.btnStop1.TabIndex = 8;
@@ -161,7 +161,7 @@ namespace RoadToUni.Forms.Pomodoro
             this.btnStart1.ForeColor = System.Drawing.Color.White;
             this.btnStart1.Image = global::RoadToUni.Properties.Resources.logoStart;
             this.btnStart1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStart1.Location = new System.Drawing.Point(747, 163);
+            this.btnStart1.Location = new System.Drawing.Point(755, 163);
             this.btnStart1.Name = "btnStart1";
             this.btnStart1.Size = new System.Drawing.Size(235, 95);
             this.btnStart1.TabIndex = 7;
@@ -176,7 +176,8 @@ namespace RoadToUni.Forms.Pomodoro
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::RoadToUni.Properties.Resources.Cool_wallpaper1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1092, 572);
+            this.ClientSize = new System.Drawing.Size(1108, 611);
+            this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStop1);
             this.Controls.Add(this.btnStart1);
@@ -186,10 +187,10 @@ namespace RoadToUni.Forms.Pomodoro
             this.Controls.Add(this.btnPomodoro);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Transparent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fPomodoro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pomodoro";
             this.Load += new System.EventHandler(this.fPomodoro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

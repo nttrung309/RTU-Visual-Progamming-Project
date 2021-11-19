@@ -43,7 +43,11 @@ namespace RoadToUni.Forms.CountDown
             ToFront();
 
             lbTitle.Location = new Point((this.Width - lbTitle.Width) / 2, lbTitle.Location.Y);
-            if(loadDate == "")
+
+            lbQuote.Location = new Point((this.Width - lbQuote.Width) / 2, lbQuote.Location.Y);
+            lbAuthor.Location = new Point(lbQuote.Location.X + lbQuote.Width - (80), lbQuote.Location.Y + lbQuote.Height + 2);
+
+            if (loadDate == "")
             {
                 int year;
                 if(DateTime.Now >= new DateTime(DateTime.Now.Year, 6, 7))
@@ -69,6 +73,11 @@ namespace RoadToUni.Forms.CountDown
         }
         private void ToFront()
         {
+            picRoundedRec1.BringToFront();
+            picRoundedRec2.BringToFront();
+            picRoundedRec3.BringToFront();
+            picRoundedRec4.BringToFront();
+
             lbDays.BringToFront();
             lbHours.BringToFront();
             lbMins.BringToFront();
@@ -79,10 +88,8 @@ namespace RoadToUni.Forms.CountDown
             label3.BringToFront();
             label4.BringToFront();
 
-            picRoundedRec1.BringToFront();
-            picRoundedRec2.BringToFront();
-            picRoundedRec3.BringToFront();
-            picRoundedRec4.BringToFront();
+            lbQuote.BringToFront();
+            lbAuthor.BringToFront();
 
             lbTitle.BringToFront();
             lbSubTitle.BringToFront();
@@ -104,6 +111,9 @@ namespace RoadToUni.Forms.CountDown
 
             lbTitle.Parent = topBackGround;
             lbSubTitle.Parent = topBackGround;
+
+            lbQuote.Parent = topBackGround;
+            lbAuthor.Parent = topBackGround;
         }
 
         private void tmCountDown_Tick(object sender, EventArgs e)

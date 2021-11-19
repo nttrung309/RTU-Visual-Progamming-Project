@@ -225,7 +225,7 @@ namespace RoadToUni.Forms.Login
             // 
             this.pbxLogo.Cursor = System.Windows.Forms.Cursors.Default;
             this.pbxLogo.Image = global::RoadToUni.Properties.Resources.image_psd__1_;
-            this.pbxLogo.Location = new System.Drawing.Point(474, 42);
+            this.pbxLogo.Location = new System.Drawing.Point(466, 50);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(185, 86);
             this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

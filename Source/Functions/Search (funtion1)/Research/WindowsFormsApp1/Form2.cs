@@ -19,15 +19,17 @@ namespace WindowsFormsApp1
         }
         ClassCrud crud = new ClassCrud();
         string idUni = null;
+        string nameUni = null;
         string major = null;
         string bench = null;
         float grade;
-        public Form2(string idUni, string major, string bench, float grade): this()
+        public Form2(string idUni,string nameUni, string major, string bench, float grade): this()
         {
             this.idUni = idUni;
             this.major = major;
             this.bench = bench;
             this.grade = grade;
+            this.nameUni = nameUni;
         }
         DataTable LoadDB()
         {
@@ -78,11 +80,12 @@ namespace WindowsFormsApp1
                 col.HeaderCell.Style.Font = new Font("Arial", 13F, FontStyle.Bold, GraphicsUnit.Pixel);
             }
         }
+       
         private void SetColorRowDT()
         {
             DataGridViewCellStyle style1 = new DataGridViewCellStyle();
             DataGridViewCellStyle style2 = new DataGridViewCellStyle();
-            style1.BackColor = Color.LemonChiffon;
+            style1.BackColor = Color.Yellow;
             style2.BackColor = Color.LightCyan;
             for (int i = dgvShow.RowCount - 1; i >= 0; i--)
             {
@@ -94,27 +97,40 @@ namespace WindowsFormsApp1
         }
         private void SetSizeCol()
         {
-            dgvShow.Columns[0].Width = 50;
-            dgvShow.Columns[1].Width = 50;
-            dgvShow.Columns[2].Width = 200;
-            dgvShow.Columns[3].Width = 75;
-
+            dgvShow.Columns[0].Width = 30;
+            dgvShow.Columns[1].Width = 60;
+            dgvShow.Columns[2].Width = 175;
+            dgvShow.Columns[3].Width = 100;
+        }
+        private void SetMiddleCol()
+        {
+            dgvShow.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvShow.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
         private void Form2_Load(object sender, EventArgs e)
         {
             dgvShow.DataSource = this.LoadDB();
+            string bm = idUni + ".jpg";
             SetColName();
             SetColorRowDT();
             DisableClickHeader();
             SetSizeCol();
-            for (int i = 0; i < dgvShow.Rows.Count - 1; i++)
+            SetMiddleCol();
+            
+            lbNameUni.Text = nameUni;
+            lbMajor.Text = major;
+            pictureBox1.BackgroundImage = new Bitmap(Application.StartupPath + "\\Images\\LogoUni\\" + bm);
+            for (int i = 0; i < dgvShow.Rows.Count; i++)
             {
                 dgvShow.Rows[i].Cells[0].Value = i + 1;
             }
             int totalRowHeight = dgvShow.ColumnHeadersHeight;
             foreach (DataGridViewRow row in dgvShow.Rows)
                 totalRowHeight += row.Height;
-            dgvShow.Height = totalRowHeight;
+            if (totalRowHeight < 200)
+                dgvShow.Height = totalRowHeight; 
+            else
+                dgvShow.Height = 200;
         }
     }
 }

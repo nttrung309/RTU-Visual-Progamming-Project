@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             cbNameUni.DisplayMember = "TENNHNGANH";
             cbNameUni.DataSource = dt;
             cbNameUni.SelectedIndex = -1;
-            cbNameUni.Text = "Chọn ngành/nghề";
+            cbNameUni.Text = "Chọn ngành/nhóm ngành";
         }
         bool IsNumeric(string text)
         {
@@ -76,6 +76,7 @@ namespace WindowsFormsApp1
             SetWidthDataTable();
             SetColorRowDT();
             DisableClickHeader();
+            SetMiddleCol();
             for (int i = 0; i < dataGridViewResult.Rows.Count ; i++)
             {
                 dataGridViewResult.Rows[i].Cells[0].Value = i + 1;
@@ -85,9 +86,12 @@ namespace WindowsFormsApp1
 
             foreach (DataGridViewRow row in dataGridViewResult.Rows)
                 totalRowHeight += row.Height;
+            if (totalRowHeight < 350)
+                dataGridViewResult.Height = totalRowHeight;
+            else
+                dataGridViewResult.Height = 350;
 
-            dataGridViewResult.Height = totalRowHeight;
-            //this.Height = dataGridViewResult.Height + 100;
+            
 
         }
         DataTable LoadDB()
@@ -151,8 +155,8 @@ namespace WindowsFormsApp1
         }
         private void SetWidthDataTable()
         {
-            dataGridViewResult.Columns[0].Width = 45;
-            dataGridViewResult.Columns[1].Width = 90;
+            dataGridViewResult.Columns[0].Width = 30;
+            dataGridViewResult.Columns[1].Width = 60;
             dataGridViewResult.Columns[2].Width = 280;
             dataGridViewResult.Columns[3].Width = 100;
             //dataGridViewResult.Columns[4].Width = 350;
@@ -256,7 +260,7 @@ namespace WindowsFormsApp1
 
         private void cbNameUni_Enter(object sender, EventArgs e)
         {
-            if (cbNameUni.Text == "Chọn ngành/nghề")
+            if (cbNameUni.Text == "Chọn ngành/nhóm ngành") ;
             {
                 cbNameUni.Text = "";
                 cbNameUni.ForeColor = Color.Black;
@@ -284,19 +288,26 @@ namespace WindowsFormsApp1
         {
             if (cbNameUni.Text == "")
             { 
-                cbNameUni.Text = "Chọn ngành/nghề";
+                cbNameUni.Text = "Chọn ngành/nhóm ngành";
                 cbNameUni.ForeColor = Color.DarkGray;
             }
+        }
+        private void SetMiddleCol()
+        {
+            dataGridViewResult.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewResult.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewResult.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
 
         private void dataGridViewResult_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string idUni = dataGridViewResult.Rows[e.RowIndex].Cells[1].Value.ToString();
+            string nameUni = dataGridViewResult.Rows[e.RowIndex].Cells[2].Value.ToString();
             string major = cbNameUni.Text;
             string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
             string comb = subjectComb.Substring(0, 3);
             float grade = float.Parse(txbGrade.Text);
-            Form2 f2 = new Form2(idUni, major, comb, grade);
+            Form2 f2 = new Form2(idUni,nameUni, major, comb, grade);
             f2.Show();
         }
 

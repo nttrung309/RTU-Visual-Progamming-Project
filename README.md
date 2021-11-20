@@ -29,17 +29,21 @@ Danh sách thành viên:
 
 ## Các chức năng chính <a name="func"></a>
 
-1.Nhập điểm thi và hiển thị những trường có khả năng đậu.
+1.Tư vấn chọn trường.
   
-2.Tra cứu điểm chuẩn qua các năm.
+2.Tư vấn chọn ngành.
+
+3.Tra cứu điểm chuẩn qua các năm.
   
-3.Tra cứu thông tin các trường.
+4.Tra cứu thông tin các trường.
+
+5.Vẽ biểu đồ dao động điểm chuẩn qua các năm.
+
+6.Đếm ngược ngày thi.
+
+7.Đồng hồ pomodoro.
   
-4.Đếm ngược ngày thi.
-  
-5.Đồng hồ pomodoro.
-  
-6.Trắc nghiệm tính cách lựa chọn nghề nghiệp.
+8.Trắc nghiệm tính cách lựa chọn nghề nghiệp (MBTI).
 
 ## Phân công <a name="task"></a>
 

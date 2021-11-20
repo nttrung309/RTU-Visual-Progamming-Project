@@ -114,6 +114,9 @@ namespace RoadToUni.Forms.CountDown
 
             lbQuote.Parent = topBackGround;
             lbAuthor.Parent = topBackGround;
+
+            lbQuote.BackColor = Color.FromArgb(50, 0, 0, 0);
+            lbAuthor.BackColor = Color.FromArgb(50, 0, 0, 0);
         }
 
         private void tmCountDown_Tick(object sender, EventArgs e)

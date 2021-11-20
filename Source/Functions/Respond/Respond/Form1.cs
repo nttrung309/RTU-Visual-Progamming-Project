@@ -8,11 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Net.Mail;
+using System.IO;
+using System.Net;
 namespace Respond
 {
     public partial class Form1 : Form
     {
         int i=0;
+        string fileName;
+    
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +26,7 @@ namespace Respond
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            button2.Enabled = false;
 
         }
 
@@ -59,6 +64,7 @@ namespace Respond
                 richTextBox1.Text = "Gửi cho chúng tôi thông tin về lỗi mà bạn gặp phải trong quá trình sử dụng sản phẩm, việc bạn mô tả càng chi tiết sẽ giúp chúng tôi nhanh chống và dễ dàng sửa được lỗi đó hơn, xin chân thành cám ơn.";
                 i = 0;
                 this.richTextBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+                button2.Enabled = false;
             }    
             if (i==1)
             {
@@ -68,9 +74,18 @@ namespace Respond
                 richTextBox1.Text =s;
                 richTextBox1.SelectionStart = richTextBox1.Right;
                 this.richTextBox1.ForeColor = Color.Black;
+                button2.Enabled = true;
             }    
         }
-
+        void sendMail(string from,string to,string subject,string message,Attachment file=null)
+        {
+            MailMessage mess = new MailMessage(from,to,subject,message);
+             
+            SmtpClient client = new SmtpClient("smtp.gmail.com",587);
+            client.EnableSsl = true;
+            client.Credentials = new NetworkCredential("roadtouni2021@gmail.com", "meowmeow1234");
+            client.Send(mess); 
+        }
         private void richTextBox1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
         
@@ -88,10 +103,23 @@ namespace Respond
            // fileDialog.Filter = "*.txt|*.txt|All files (*.*)|*.*";
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
-                var fileName = fileDialog.FileName;
+                 fileName = fileDialog.FileName;
                 pictureBox1.Image = Image.FromFile(fileName);
             }
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+            sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", richTextBox1.Text);
+            MessageBox.Show("gửi thành công,cám ơn phản hồi của bạn");
+            this.Close();
         }
     }
 }

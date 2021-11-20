@@ -68,6 +68,7 @@ namespace Respond
             this.label1.Size = new System.Drawing.Size(165, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Gửi phản hồi";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // richTextBox1
             // 
@@ -130,6 +131,7 @@ namespace Respond
             this.button2.TabIndex = 6;
             this.button2.Text = "Gửi";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 

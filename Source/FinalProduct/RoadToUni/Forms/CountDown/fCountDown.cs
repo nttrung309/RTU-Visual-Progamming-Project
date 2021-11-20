@@ -19,6 +19,8 @@ namespace RoadToUni.Forms.CountDown
         string hours;
         string mins;
         string secs;
+        private Random random = new Random();
+        private int currentQuote = new Random().Next(0, Quotes.quotes.Count);
 
         public static string loadDate = "";
 
@@ -44,8 +46,7 @@ namespace RoadToUni.Forms.CountDown
 
             lbTitle.Location = new Point((this.Width - lbTitle.Width) / 2, lbTitle.Location.Y);
 
-            lbQuote.Location = new Point((this.Width - lbQuote.Width) / 2, lbQuote.Location.Y);
-            lbAuthor.Location = new Point(lbQuote.Location.X + lbQuote.Width - (80), lbQuote.Location.Y + lbQuote.Height + 2);
+            AdjustPos();
 
             if (loadDate == "")
             {
@@ -193,6 +194,31 @@ namespace RoadToUni.Forms.CountDown
         private void btnMBTI_Click(object sender, EventArgs e)
         {
             RoadToUni.Forms.UI.fUI.SwitchForm(new RoadToUni.Forms.MBTI.fMBTIMain());
+        }
+
+        private void NextQuote()
+        {
+            int nextQuote;
+            do
+            {
+                nextQuote = random.Next(0, Quotes.quotes.Count);
+            }
+            while (nextQuote == currentQuote);
+
+            currentQuote = nextQuote;
+            this.lbQuote.Text = Quotes.quotes[currentQuote];
+            AdjustPos();
+        }
+
+        private void AdjustPos()
+        {
+            lbQuote.Location = new Point((this.Width - lbQuote.Width) / 2, lbQuote.Location.Y);
+            lbAuthor.Location = new Point(lbQuote.Location.X + lbQuote.Width - (80), lbQuote.Location.Y + lbQuote.Height + 2);
+        }
+
+        private void lbQuote_Click(object sender, EventArgs e)
+        {
+            NextQuote();
         }
     }
 }

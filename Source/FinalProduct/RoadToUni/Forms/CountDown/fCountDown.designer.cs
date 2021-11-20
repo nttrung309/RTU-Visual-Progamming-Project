@@ -325,6 +325,8 @@ namespace RoadToUni.Forms.CountDown
             this.lbQuote.Size = new System.Drawing.Size(668, 29);
             this.lbQuote.TabIndex = 13;
             this.lbQuote.Text = "Chỉ những người dám thất bại lớn mới đạt được thành công lớn";
+            this.lbQuote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbQuote.Click += new System.EventHandler(this.lbQuote_Click);
             // 
             // lbAuthor
             // 
@@ -337,6 +339,7 @@ namespace RoadToUni.Forms.CountDown
             this.lbAuthor.Size = new System.Drawing.Size(186, 24);
             this.lbAuthor.TabIndex = 14;
             this.lbAuthor.Text = "Robert F. Kennedy";
+            this.lbAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnMBTI
             // 

@@ -62,7 +62,7 @@ namespace Respond
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(3, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 29);
@@ -134,7 +134,7 @@ namespace Respond
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(147, 414);
+            this.button3.Location = new System.Drawing.Point(131, 642);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(125, 27);
             this.button3.TabIndex = 7;
@@ -148,7 +148,7 @@ namespace Respond
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(430, 380);
+            this.ClientSize = new System.Drawing.Size(430, 371);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

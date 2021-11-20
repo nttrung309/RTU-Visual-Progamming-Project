@@ -18,14 +18,18 @@ namespace Update
             WebClient webClient = new WebClient();
             var client = new WebClient();
 
-            string downloadURL = "https://download1321.mediafire.com/m3kpwa4pocjg/vr4m3f8xvf32my7/RoadToUni.exe";
+            string downloadURL = "https://roadtouni.000webhostapp.com/RoadToUni/RoadToUni.zip";
 
             try
             {
                 Thread.Sleep(5000);
+                client.DownloadFile(downloadURL,@"RoadToUni.zip");
                 File.Delete(@".\RoadToUni.exe");
-                client.DownloadFile(downloadURL,@"RoadToUni.exe");
-                Process.Start("RoadToUni.exe");
+                string zipPath = @".\RoadToUni.zip";
+                string extractPath = @".\";
+                ZipFile.ExtractToDirectory(zipPath, extractPath);
+                File.Delete(@".\RoadToUni.zip");
+                Process.Start(@".\RoadToUni.exe");
             }
             catch
             {

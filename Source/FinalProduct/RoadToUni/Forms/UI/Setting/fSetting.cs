@@ -119,6 +119,10 @@ namespace RoadToUni.Forms.UI.Setting
         private void btnReport_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
+            if (childForm == null || childForm.Name != "fRespond")
+            {
+                SwitchForm(new Forms.UI.Setting.fRespond());
+            }
         }
         
 

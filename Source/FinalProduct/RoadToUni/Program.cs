@@ -16,7 +16,7 @@ namespace RoadToUni
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RoadToUni.Forms.UI.Setting.fRespond());
+            Application.Run(new RoadToUni.Forms.Login.fLogin());
         }
     }
 }

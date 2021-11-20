@@ -27,7 +27,14 @@ namespace RoadToUni.Forms.UI.Setting
         private void Form1_Load(object sender, EventArgs e)
         {
             button2.Enabled = false;
-
+            pictureBox1.Image = null;
+            //this.button1.Location = new System.Drawing.Point(160, 260);
+            //this.button2.Location = new System.Drawing.Point(230, 260);
+            //this.ClientSize = new System.Drawing.Size(405, 300);
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.pictureBox1.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -44,15 +51,21 @@ namespace RoadToUni.Forms.UI.Setting
                 this.ClientSize = new System.Drawing.Size(405, 610);
                 //this.button1.Location = new System.Drawing.Point(180, 557);
                 //this.button2.Location = new System.Drawing.Point(250, 557);
+                this.button1.Visible = true;
+                this.button2.Visible = true;
+                this.button3.Visible = true;
+                this.pictureBox1.Visible = true;
             }
             else
             {
                 pictureBox1.Image = null;
                 //this.button1.Location = new System.Drawing.Point(160, 260);
                 //this.button2.Location = new System.Drawing.Point(230, 260);
-                this.ClientSize = new System.Drawing.Size(405, 300);
-
-
+                //this.ClientSize = new System.Drawing.Size(405, 300);
+                this.button1.Visible = false;
+                this.button2.Visible = false;
+                this.button3.Visible = false;
+                this.pictureBox1.Visible = false;
             }
         }
 
@@ -61,7 +74,7 @@ namespace RoadToUni.Forms.UI.Setting
             i++;
             if (richTextBox1.Text == "")
             {
-                richTextBox1.Text = "Gửi cho chúng tôi thông tin về lỗi mà bạn gặp phải trong quá trình sử dụng sản phẩm, việc bạn mô tả càng chi tiết sẽ giúp chúng tôi nhanh chống và dễ dàng sửa được lỗi đó hơn, xin chân thành cám ơn.";
+                richTextBox1.Text = "Gửi cho chúng tôi thông tin về lỗi mà bạn gặp phải trong quá trình sử dụng sản phẩm, việc bạn mô tả càng chi tiết sẽ giúp chúng tôi nhanh chóng và dễ dàng sửa được lỗi đó hơn, xin chân thành cám ơn.";
                 i = 0;
                 this.richTextBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
                 button2.Enabled = false;

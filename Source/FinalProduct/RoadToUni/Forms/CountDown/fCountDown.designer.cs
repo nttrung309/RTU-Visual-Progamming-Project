@@ -43,8 +43,10 @@ namespace RoadToUni.Forms.CountDown
             this.lbHours = new System.Windows.Forms.Label();
             this.lbSec = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMBTI = new CustomControls.RJControls.RJButton();
             this.picMBTI = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnPomo = new CustomControls.RJControls.RJButton();
             this.picPomo = new System.Windows.Forms.PictureBox();
             this.topBackGround = new System.Windows.Forms.PictureBox();
             this.picRoundedRec1 = new System.Windows.Forms.PictureBox();
@@ -53,8 +55,6 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec4 = new System.Windows.Forms.PictureBox();
             this.lbQuote = new System.Windows.Forms.Label();
             this.lbAuthor = new System.Windows.Forms.Label();
-            this.btnMBTI = new CustomControls.RJControls.RJButton();
-            this.btnPomo = new CustomControls.RJControls.RJButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMBTI)).BeginInit();
             this.panel2.SuspendLayout();
@@ -184,7 +184,7 @@ namespace RoadToUni.Forms.CountDown
             this.lbHours.BackColor = System.Drawing.Color.Transparent;
             this.lbHours.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHours.ForeColor = System.Drawing.Color.White;
-            this.lbHours.Location = new System.Drawing.Point(452, 114);
+            this.lbHours.Location = new System.Drawing.Point(454, 114);
             this.lbHours.Name = "lbHours";
             this.lbHours.Size = new System.Drawing.Size(64, 46);
             this.lbHours.TabIndex = 3;
@@ -217,6 +217,26 @@ namespace RoadToUni.Forms.CountDown
             this.panel1.Size = new System.Drawing.Size(182, 192);
             this.panel1.TabIndex = 12;
             // 
+            // btnMBTI
+            // 
+            this.btnMBTI.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnMBTI.BackgroundColor = System.Drawing.Color.MediumAquamarine;
+            this.btnMBTI.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMBTI.BorderRadius = 10;
+            this.btnMBTI.BorderSize = 0;
+            this.btnMBTI.FlatAppearance.BorderSize = 0;
+            this.btnMBTI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMBTI.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMBTI.ForeColor = System.Drawing.Color.White;
+            this.btnMBTI.Location = new System.Drawing.Point(18, 135);
+            this.btnMBTI.Name = "btnMBTI";
+            this.btnMBTI.Size = new System.Drawing.Size(144, 40);
+            this.btnMBTI.TabIndex = 0;
+            this.btnMBTI.Text = "MBTI";
+            this.btnMBTI.TextColor = System.Drawing.Color.White;
+            this.btnMBTI.UseVisualStyleBackColor = false;
+            this.btnMBTI.Click += new System.EventHandler(this.btnMBTI_Click);
+            // 
             // picMBTI
             // 
             this.picMBTI.BackColor = System.Drawing.Color.Transparent;
@@ -240,6 +260,26 @@ namespace RoadToUni.Forms.CountDown
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(182, 192);
             this.panel2.TabIndex = 11;
+            // 
+            // btnPomo
+            // 
+            this.btnPomo.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPomo.BackgroundColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPomo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPomo.BorderRadius = 10;
+            this.btnPomo.BorderSize = 0;
+            this.btnPomo.FlatAppearance.BorderSize = 0;
+            this.btnPomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPomo.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPomo.ForeColor = System.Drawing.Color.White;
+            this.btnPomo.Location = new System.Drawing.Point(18, 135);
+            this.btnPomo.Name = "btnPomo";
+            this.btnPomo.Size = new System.Drawing.Size(144, 40);
+            this.btnPomo.TabIndex = 0;
+            this.btnPomo.Text = "Pomodoro";
+            this.btnPomo.TextColor = System.Drawing.Color.White;
+            this.btnPomo.UseVisualStyleBackColor = false;
+            this.btnPomo.Click += new System.EventHandler(this.btnPomo_Click);
             // 
             // picPomo
             // 
@@ -330,53 +370,13 @@ namespace RoadToUni.Forms.CountDown
             // 
             this.lbAuthor.AutoSize = true;
             this.lbAuthor.BackColor = System.Drawing.Color.Transparent;
-            this.lbAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAuthor.ForeColor = System.Drawing.Color.White;
             this.lbAuthor.Location = new System.Drawing.Point(704, 291);
             this.lbAuthor.Name = "lbAuthor";
-            this.lbAuthor.Size = new System.Drawing.Size(169, 24);
+            this.lbAuthor.Size = new System.Drawing.Size(186, 24);
             this.lbAuthor.TabIndex = 14;
             this.lbAuthor.Text = "Robert F. Kennedy";
-            // 
-            // btnMBTI
-            // 
-            this.btnMBTI.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.btnMBTI.BackgroundColor = System.Drawing.Color.MediumAquamarine;
-            this.btnMBTI.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnMBTI.BorderRadius = 10;
-            this.btnMBTI.BorderSize = 0;
-            this.btnMBTI.FlatAppearance.BorderSize = 0;
-            this.btnMBTI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMBTI.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMBTI.ForeColor = System.Drawing.Color.White;
-            this.btnMBTI.Location = new System.Drawing.Point(18, 135);
-            this.btnMBTI.Name = "btnMBTI";
-            this.btnMBTI.Size = new System.Drawing.Size(144, 40);
-            this.btnMBTI.TabIndex = 0;
-            this.btnMBTI.Text = "MBTI";
-            this.btnMBTI.TextColor = System.Drawing.Color.White;
-            this.btnMBTI.UseVisualStyleBackColor = false;
-            this.btnMBTI.Click += new System.EventHandler(this.btnMBTI_Click);
-            // 
-            // btnPomo
-            // 
-            this.btnPomo.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPomo.BackgroundColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPomo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPomo.BorderRadius = 10;
-            this.btnPomo.BorderSize = 0;
-            this.btnPomo.FlatAppearance.BorderSize = 0;
-            this.btnPomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPomo.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPomo.ForeColor = System.Drawing.Color.White;
-            this.btnPomo.Location = new System.Drawing.Point(18, 135);
-            this.btnPomo.Name = "btnPomo";
-            this.btnPomo.Size = new System.Drawing.Size(144, 40);
-            this.btnPomo.TabIndex = 0;
-            this.btnPomo.Text = "Pomodoro";
-            this.btnPomo.TextColor = System.Drawing.Color.White;
-            this.btnPomo.UseVisualStyleBackColor = false;
-            this.btnPomo.Click += new System.EventHandler(this.btnPomo_Click);
             // 
             // fCountDown
             // 

@@ -78,7 +78,7 @@ namespace RoadToUni.Forms.UI.Setting
                 }
                 if (currentBtn.Name == "btnReport")
                 {
-                    currentBtn.BackColor = Color.IndianRed;
+                    currentBtn.BackColor = Color.BurlyWood;
                 }
             }
         }

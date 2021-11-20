@@ -36,6 +36,7 @@ namespace Fuction4
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pictureBox1.Location = new System.Drawing.Point(38, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 92);
@@ -57,10 +58,13 @@ namespace Fuction4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.TenTruong);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Truong";
             this.Size = new System.Drawing.Size(180, 187);
+            this.MouseLeave += new System.EventHandler(this.Truong_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.Truong_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

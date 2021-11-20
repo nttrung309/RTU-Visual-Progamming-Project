@@ -20,5 +20,14 @@ namespace Fuction4
         public string TuaDe { get; set; }
         public Image Icon { get; set; }
 
+        private void Truong_MouseHover(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Silver;
+        }
+
+        private void Truong_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
     }
 }

@@ -24,16 +24,21 @@ namespace Fuction4
             {
                 listTruong[i] = new Truong();
                 listTruong[i].TuaDe = "";
-                //if(flowLayoutPanel1.Controls.Count > 0)
-                //{
-                //    flowLayoutPanel1.Controls.Clear();
-                //}
-                //else
+                if (flowLayoutPanel1.Controls.Count < 0)
+                {
+                    flowLayoutPanel1.Controls.Clear();
+                }
+                else
                 {
                     flowLayoutPanel1.Controls.Add(listTruong[i]);
                 }
             }
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DanhsachIcon();
         }
     }
 }

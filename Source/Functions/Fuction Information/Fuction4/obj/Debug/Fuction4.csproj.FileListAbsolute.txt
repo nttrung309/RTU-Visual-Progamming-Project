@@ -9,3 +9,14 @@ D:\Thử nghiệm\Code\Fuction4\Fuction4\obj\Debug\Fuction4.csproj.CoreCompileIn
 D:\Thử nghiệm\Code\Fuction4\Fuction4\obj\Debug\Fuction4.exe
 D:\Thử nghiệm\Code\Fuction4\Fuction4\obj\Debug\Fuction4.pdb
 D:\Thử nghiệm\Code\Fuction4\Fuction4\obj\Debug\Fuction4.csproj.AssemblyReference.cache
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\bin\Debug\Fuction4.exe.config
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\bin\Debug\Fuction4.exe
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\bin\Debug\Fuction4.pdb
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.AssemblyReference.cache
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.Form1.resources
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.Properties.Resources.resources
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.Truong.resources
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.GenerateResource.cache
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.CoreCompileInputs.cache
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.exe
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.pdb

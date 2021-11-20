@@ -200,6 +200,12 @@
     <Compile Include="Forms\UI\Setting\fManageAccount.Designer.cs">
       <DependentUpon>fManageAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UI\Setting\fRespond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UI\Setting\fRespond.designer.cs">
+      <DependentUpon>fRespond.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UI\Setting\fSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UI\Setting\fManageAccount.resx">
       <DependentUpon>fManageAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UI\Setting\fRespond.resx">
+      <DependentUpon>fRespond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UI\Setting\fSetting.resx">
       <DependentUpon>fSetting.cs</DependentUpon>

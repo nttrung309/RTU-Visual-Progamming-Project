@@ -65,3 +65,4 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.UI.fLoa
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.UI.Setting.fManageAccount.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.csproj.AssemblyReference.cache
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\CustomControls.RJControls.RJTextBox.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.UI.Setting.fRespond.resources

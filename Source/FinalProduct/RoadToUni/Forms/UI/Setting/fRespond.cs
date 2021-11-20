@@ -41,16 +41,16 @@ namespace RoadToUni.Forms.UI.Setting
             {
 
 
-                this.ClientSize = new System.Drawing.Size(323, 610);
-                this.button1.Location = new System.Drawing.Point(180, 557);
-                this.button2.Location = new System.Drawing.Point(250, 557);
+                this.ClientSize = new System.Drawing.Size(405, 610);
+                //this.button1.Location = new System.Drawing.Point(180, 557);
+                //this.button2.Location = new System.Drawing.Point(250, 557);
             }
             else
             {
                 pictureBox1.Image = null;
-                this.button1.Location = new System.Drawing.Point(160, 260);
-                this.button2.Location = new System.Drawing.Point(230, 260);
-                this.ClientSize = new System.Drawing.Size(323, 300);
+                //this.button1.Location = new System.Drawing.Point(160, 260);
+                //this.button2.Location = new System.Drawing.Point(230, 260);
+                this.ClientSize = new System.Drawing.Size(405, 300);
 
 
             }
@@ -127,8 +127,7 @@ namespace RoadToUni.Forms.UI.Setting
             }
             catch { }
             sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", richTextBox1.Text, attach);
-            MessageBox.Show("gửi thành công,cám ơn phản hồi của bạn");
-            this.Close();
+            MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
         }
     }
 }

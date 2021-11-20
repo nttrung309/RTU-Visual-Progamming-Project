@@ -207,6 +207,7 @@ namespace RoadToUni.Forms.CountDown
 
             currentQuote = nextQuote;
             this.lbQuote.Text = Quotes.quotes[currentQuote];
+            this.lbAuthor.Text = Quotes.authors[currentQuote];
             AdjustPos();
         }
 
@@ -217,6 +218,11 @@ namespace RoadToUni.Forms.CountDown
         }
 
         private void lbQuote_Click(object sender, EventArgs e)
+        {
+            NextQuote();
+        }
+
+        private void lbAuthor_Click(object sender, EventArgs e)
         {
             NextQuote();
         }

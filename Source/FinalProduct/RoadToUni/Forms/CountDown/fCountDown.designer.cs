@@ -320,7 +320,7 @@ namespace RoadToUni.Forms.CountDown
             this.lbQuote.BackColor = System.Drawing.Color.White;
             this.lbQuote.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuote.ForeColor = System.Drawing.Color.White;
-            this.lbQuote.Location = new System.Drawing.Point(359, 237);
+            this.lbQuote.Location = new System.Drawing.Point(359, 229);
             this.lbQuote.Name = "lbQuote";
             this.lbQuote.Size = new System.Drawing.Size(668, 29);
             this.lbQuote.TabIndex = 13;
@@ -334,12 +334,13 @@ namespace RoadToUni.Forms.CountDown
             this.lbAuthor.BackColor = System.Drawing.Color.White;
             this.lbAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAuthor.ForeColor = System.Drawing.Color.White;
-            this.lbAuthor.Location = new System.Drawing.Point(704, 275);
+            this.lbAuthor.Location = new System.Drawing.Point(704, 267);
             this.lbAuthor.Name = "lbAuthor";
             this.lbAuthor.Size = new System.Drawing.Size(186, 24);
             this.lbAuthor.TabIndex = 14;
             this.lbAuthor.Text = "Robert F. Kennedy";
             this.lbAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbAuthor.Click += new System.EventHandler(this.lbAuthor_Click);
             // 
             // btnMBTI
             // 

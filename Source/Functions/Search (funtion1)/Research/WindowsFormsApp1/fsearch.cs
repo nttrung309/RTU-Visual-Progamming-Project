@@ -39,6 +39,11 @@ namespace WindowsFormsApp1
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            if (cbNameUni.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (txbGrade.Text.Equals("Điểm xét tuyển dự kiến"))
             {
                 MessageBox.Show("Vui lòng nhập số điểm dự kiến", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -54,16 +59,12 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Vui lòng nhập số điểm lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (double.Parse(txbGrade.Text) > 32.75)
+            if (double.Parse(txbGrade.Text) > 40)
             {
                 MessageBox.Show("Điểm xét tuyển tối đa 40! Vui lòng nhập số điểm nhỏ hơn 40", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if(cbNameUni.SelectedIndex == -1)
-            {
-                MessageBox.Show("Vui lòng chọn đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }    
+            
             if(cbCombination.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng chọn tổ hợp xét tuyển", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -209,13 +210,8 @@ namespace WindowsFormsApp1
         private void CheckResult()
         {
             string nameAndID = cbNameUni.GetItemText(cbNameUni.SelectedItem);
-            string IDUni = nameAndID.Substring(0, 3);
-            if (IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 0)
-            {
-                MessageBox.Show("Không có ngành nào của tất cả các Trường thuộc ĐHQG-TPHCM có điểm chuẩn nhỏ hơn điểm dự kiến của bạn ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }    
-            if(!IDUni.Equals("Tất") && dataGridViewResult.Rows.Count == 0)
+            string IDUni = nameAndID.Substring(0, 3);   
+            if(dataGridViewResult.Rows.Count == 0)
             {
                 MessageBox.Show(String.Format("Không có ngành nào thuộc nhóm ngành {0} có điểm chuẩn nhỏ hơn điểm dự kiến của bạn",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;

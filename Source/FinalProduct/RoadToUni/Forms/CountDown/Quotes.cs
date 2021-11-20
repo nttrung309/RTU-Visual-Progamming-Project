@@ -33,8 +33,28 @@ namespace RoadToUni.Forms.CountDown
             "Nếu bạn cảm giác rằng đã đến lúc phải bỏ cuộc,\n hãy nghĩ xem bạn đã cố gắng hết mình vì cái gì cho đến tận bây giờ."
         };
         public static List<string> authors = new List<string>() 
-        { 
-            ""
+        {
+            "Roy T. Bennett",
+            "Roy T. Bennett",
+            "Robert F. Kennedy",
+            "George R.R. Martin",
+            "Roy T. Bennett",
+            "Tim Fargo",
+            "George E. Woodberry",
+            "Patricia Briggs",
+            "Rachel Hollis",
+            "Mehmet Murat ildan",
+            "Jameel",
+            "Avina Celeste",
+            "Sophia Braun",
+            "Alan Maiccon",
+            "Mahatma Gandhi",
+            "Katharine Graham",
+            "Aesop",
+            "Publilius Syrus",
+            "Vince Lombardi",
+            "Robert Thibodaux",
+            "Jared Leto"
         };
     }
 }

@@ -11,6 +11,9 @@ using System.Threading;
 using System.Net.Mail;
 using System.IO;
 using System.Net;
+using System.Runtime;
+using System.Runtime.InteropServices;
+
 namespace RoadToUni.Forms.UI.Setting
 {
     public partial class fRespond : Form
@@ -22,6 +25,15 @@ namespace RoadToUni.Forms.UI.Setting
         {
             InitializeComponent();
 
+        }
+        //Creating the extern function...  
+        [DllImport("wininet.dll")]
+        private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
+        //Creating a function that uses the API function...  
+        public static bool IsConnectedToInternet()
+        {
+            int Desc;
+            return InternetGetConnectedState(out Desc, 0);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -133,24 +145,31 @@ namespace RoadToUni.Forms.UI.Setting
         private void button2_Click(object sender, EventArgs e)
         {
             attach = null;
-            try
+            if (IsConnectedToInternet())
             {
-                FileInfo file = new FileInfo(fileName);
-                attach = new Attachment(fileName);
+                try
+                {
+                    FileInfo file = new FileInfo(fileName);
+                    attach = new Attachment(fileName);
+                }
+                catch { }
+                sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", richTextBox1.Text, attach);
+                MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
+                checkBox1.Checked = false;
+                pictureBox1.Image = null;
+                //this.button1.Location = new System.Drawing.Point(160, 260);
+                //this.button2.Location = new System.Drawing.Point(230, 260);
+                //this.ClientSize = new System.Drawing.Size(405, 300);
+                this.button1.Visible = false;
+                this.button2.Visible = false;
+                this.button3.Visible = false;
+                this.pictureBox1.Visible = false;
+                this.richTextBox1.Text = "";
             }
-            catch { }
-            sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", richTextBox1.Text, attach);
-            MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
-            checkBox1.Checked = false;
-            pictureBox1.Image = null;
-            //this.button1.Location = new System.Drawing.Point(160, 260);
-            //this.button2.Location = new System.Drawing.Point(230, 260);
-            //this.ClientSize = new System.Drawing.Size(405, 300);
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
-            this.pictureBox1.Visible = false;
-            this.richTextBox1.Text = "";
+            else
+            {
+                MessageBox.Show("Vui lòng thử lại khi kết nối với Internet!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
     }
 }

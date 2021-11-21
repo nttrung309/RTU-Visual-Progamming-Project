@@ -23,26 +23,21 @@ namespace Searching
         DataTable tabe = new DataTable();
     
         string str = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=databaseNew;Integrated Security=True";
+
         SqlDataAdapter adapter = new SqlDataAdapter();
+
         int i,count=0;
         void loaddata()
         {
-//load dữ liệu từ Database
+            //load dữ liệu từ Database
+         
+
             command = connection.CreateCommand();
             command.CommandText = "select * from TRUONG";
-             adapter.SelectCommand = command;
+            adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
-            table.Columns.Add("NAME", typeof(string));
-            int t = table.Rows.Count;
-            for (int j = 0; j < t; j++)
-            {
-                DataRow row=table.NewRow();
-               // row = table.NewRow();
-                row["NAME"] = "fa" + "f" + "@gmail.com";
-                table.Rows[j].ItemArray[2] = row;
-      
-            }
+          
             comboBox1.DataSource = table;
             comboBox1.ValueMember = "MATRUONG";
             comboBox1.DisplayMember ="NAME";
@@ -71,6 +66,7 @@ namespace Searching
         public Form1()
         {
             InitializeComponent();
+            
             noBackground();
             hideTheNextChap();
         }
@@ -143,7 +139,7 @@ namespace Searching
         private void circlePicture1_Click_1(object sender, EventArgs e)
         {
             // chuyển chap
-
+      
             comboBox1.SelectedIndex = -1;
             this.Hide();
             pictureBox1.Hide();
@@ -252,6 +248,24 @@ namespace Searching
         {
             connection = new SqlConnection(str);
             connection.Open();
+            command = connection.CreateCommand();
+            command.CommandText = "select * from TRUONG";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+
+            //command.CommandText = "ALTER TABLE TRUONG ADD NAME nvarchar(100)";
+            //command.ExecuteNonQuery();
+            //command = connection.CreateCommand();
+            int t = table.Rows.Count;
+
+            for (int j = 0; j < t; j++)
+            {
+
+
+                command.CommandText = "update TRUONG set NAME=N'" + table.Rows[j].ItemArray[1].ToString() +" - "+ table.Rows[j].ItemArray[0].ToString() + "' Where MATRUONG='" + table.Rows[j].ItemArray[0].ToString() + "' ";
+                command.ExecuteNonQuery();
+            }
             loaddata();
             dezignDataGridView();
         }

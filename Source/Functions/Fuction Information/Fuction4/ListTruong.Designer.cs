@@ -76,6 +76,6 @@ namespace Fuction4
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label TenTruong;
+        public System.Windows.Forms.Label TenTruong;
     }
 }

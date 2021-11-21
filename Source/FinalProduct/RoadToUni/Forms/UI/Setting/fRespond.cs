@@ -141,6 +141,16 @@ namespace RoadToUni.Forms.UI.Setting
             catch { }
             sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", richTextBox1.Text, attach);
             MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
+            checkBox1.Checked = false;
+            pictureBox1.Image = null;
+            //this.button1.Location = new System.Drawing.Point(160, 260);
+            //this.button2.Location = new System.Drawing.Point(230, 260);
+            //this.ClientSize = new System.Drawing.Size(405, 300);
+            this.button1.Visible = false;
+            this.button2.Visible = false;
+            this.button3.Visible = false;
+            this.pictureBox1.Visible = false;
+            this.richTextBox1.Text = "";
         }
     }
 }

@@ -30,7 +30,33 @@ namespace RoadToUni.Forms.CountDown
             "Nếu muốn vươn lên đến đỉnh, hãy bắt đầu từ dưới đáy.",
             "Nếu bạn không phạm sai lầm, bạn còn chưa cố gắng đủ.",
             "Cố gắng là tất cả những gì mà bạn phải làm,\n dù thành công hay thất bại.",
-            "Nếu bạn cảm giác rằng đã đến lúc phải bỏ cuộc,\n hãy nghĩ xem bạn đã cố gắng hết mình vì cái gì cho đến tận bây giờ."
+            "Nếu bạn cảm giác rằng đã đến lúc phải bỏ cuộc,\n hãy nghĩ xem bạn đã cố gắng hết mình vì cái gì cho đến tận bây giờ.",
+            //Noname quotes
+            "Học đi đừng mãi mê nghịch ngợm nữa!",
+            "Chỉ đứng mà không bước thì làm sao có thể đến đích.",
+            "Hãy giỏi đến mức người ta không thể ngó lơ bạn.",
+            "Đừng nói với tôi bạn học thế nào,\n hãy nói với tôi bạn đi bao nhiêu.",
+            "Đừng đếm cuộc sống bằng thời gian mà hãy\nđếm cuộc sống bằng nụ cười.",
+            "Rêu chỉ mọc trên những tảng đá đứng im.",
+            "Đừng chọn sống an nhàn vào những năm tháng\ncòn có thể chịu khổ được.",
+            "Mỗi ngày là một cuộc hành trình,\nvà cuộc hành trình bản thân nó chính là nhà.",
+            "Nếu bạn không có kế hoạch cho cuộc đời mình,\nbạn sẽ là một phần kế hoạch của người khác.",
+            "Vấp ngã không phải thất bại, chỉ là dừng lại\ncho đỡ mỏi chân thôi!",
+            "Cuộc hành trình ngàn dặm bắt đầu từ một bước chân nhỏ bé.",
+            "Khi bạn đang mơ thì những người khác đang nỗ lực.",
+            "Giữa người với người, khoảng cách ngắn nhất là IQ,\nkhoảng cách lớn nhất là kiên trì.",
+            "Trong một cuộc đua, kẻ thắng cuộc luôn là\nngười bền bỉ đến cùng.",
+            "Trên con đường thành công, không có dấu chân của kẻ lười biếng.",
+            "Nghị lực và bền bỉ có thể giúp bạn chinh phục mọi thứ.",
+            "No pain, no gain",
+            "Muốn thành công thì khao khát thành công\nphải lớn hơn nỗi sợ bị thất bại.",
+            "Thành công đến từ sự đơn giản.",
+            "Tương lai khóc hay cười, phụ thuộc vào\nđộ lười của quá khứ.",
+            "Những ngày nước rút cuối cùng, ai chăm chỉ,\nkiên trì nỗ lực hơn là người chiến thắng.",
+            "Thành công là một cuộc hành trình,\nkhông phải do định mệnh.",
+            "Vấp ngã còn không chịu đứng lên,\n tính đợi người ta giẫm đạp lên hay sao?",
+            "Phía sau tôi không có lấy một người,\nlàm sao tôi dám ngã xuống.",
+            "Đừng xấu hổ khi không biết, chỉ xấu hổ khi không học."
         };
         public static List<string> authors = new List<string>() 
         {

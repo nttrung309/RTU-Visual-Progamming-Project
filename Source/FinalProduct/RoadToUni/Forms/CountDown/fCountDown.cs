@@ -207,7 +207,14 @@ namespace RoadToUni.Forms.CountDown
 
             currentQuote = nextQuote;
             this.lbQuote.Text = Quotes.quotes[currentQuote];
-            this.lbAuthor.Text = Quotes.authors[currentQuote];
+            if(currentQuote < Quotes.authors.Count)
+            {
+                this.lbAuthor.Text = Quotes.authors[currentQuote];
+            }
+            else
+            {
+                this.lbAuthor.Text = "";
+            }
             AdjustPos();
         }
 

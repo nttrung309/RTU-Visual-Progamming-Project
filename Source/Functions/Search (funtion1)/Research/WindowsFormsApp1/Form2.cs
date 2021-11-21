@@ -36,7 +36,22 @@ namespace WindowsFormsApp1
             DataTable dt = new DataTable();
             DataTable dtCol = new DataTable();
             dtCol.Columns.Add("STT");
-            string query = "SELECT XET.MANGANH, NGANH.TENNGANH, XET.DIEMCHUAN " +
+            string query;
+            if (major == "Tất cả các ngành")
+            {
+                query = "SELECT XET.MANGANH, NGANH.TENNGANH, XET.DIEMCHUAN " +
+                        "FROM TRUONG, XET, NGANH " +
+                        "WHERE TRUONG.MATRUONG = XET.MATRUONG " +
+                        "AND NGANH.MANGANH = XET.MANGANH " +
+                        "AND TRUONG.MATRUONG = '" + idUni + "'" +
+                        "AND NAM = 2021 " +
+                        "AND CHUOITOHOP LIKE '%" + bench + "%' " +
+                        "AND DIEMCHUAN <=" + grade +
+                        "ORDER BY DIEMCHUAN DESC";
+            }
+            else
+            {
+                query = "SELECT XET.MANGANH, NGANH.TENNGANH, XET.DIEMCHUAN " +
                         "FROM TRUONG, XET, NGANH " +
                         "WHERE TRUONG.MATRUONG = XET.MATRUONG " +
                         "AND NGANH.MANGANH = XET.MANGANH " +
@@ -50,6 +65,7 @@ namespace WindowsFormsApp1
                         "AND NGANHCHUNG.MANHNGANH = NHOMNGANH.MANHNGANH " +
                         "AND TENNHNGANH = N'" + major + "') " +
                         "ORDER BY DIEMCHUAN DESC";
+            }
             dt = crud.ReadData(query);
             dtCol.Merge(dt);
             return dtCol;

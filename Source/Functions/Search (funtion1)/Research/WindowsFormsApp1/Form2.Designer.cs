@@ -64,7 +64,7 @@ namespace WindowsFormsApp1
             this.dgvShow.RowHeadersWidth = 62;
             this.dgvShow.RowTemplate.Height = 28;
             this.dgvShow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvShow.Size = new System.Drawing.Size(893, 223);
+            this.dgvShow.Size = new System.Drawing.Size(893, 230);
             this.dgvShow.TabIndex = 1;
             // 
             // pictureBox1
@@ -91,7 +91,7 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Courier New", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(323, 170);
+            this.label1.Location = new System.Drawing.Point(323, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(208, 74);
             this.label1.TabIndex = 4;
@@ -100,11 +100,11 @@ namespace WindowsFormsApp1
             // lbMajor
             // 
             this.lbMajor.Font = new System.Drawing.Font("Courier New", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMajor.Location = new System.Drawing.Point(537, 159);
+            this.lbMajor.Location = new System.Drawing.Point(537, 156);
             this.lbMajor.Name = "lbMajor";
             this.lbMajor.Size = new System.Drawing.Size(445, 90);
             this.lbMajor.TabIndex = 5;
-            this.lbMajor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbMajor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // Form2
             // 

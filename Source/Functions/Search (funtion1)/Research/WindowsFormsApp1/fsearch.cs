@@ -101,55 +101,40 @@ namespace WindowsFormsApp1
             DataTable dtCol = new DataTable();
             dtCol.Columns.Add("STT");
             string nameMajors = cbNameUni.GetItemText(cbNameUni.SelectedItem);
-            //string IDUni = nameAndID.Substring(0, 3);
-            //if(IDUni.Equals("Tất"))
-            //{
-            //    IDUni = "";
-            //}    
-            //string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
-            //string comb = subjectComb.Substring(0, 3);
-            //float mark = float.Parse(txbGrade.Text);
-
-            //string query = "SELECT XET.MATRUONG, TENTRUONG, XET.MANGANH,NGANH.TENNGANH, DIEMCHUAN " +
-            //               "FROM XET, TRUONG, NGANH " +
-            //               "WHERE  XET.MATRUONG = TRUONG.MATRUONG AND " +
-            //               "XET.MANGANH = NGANH.MANGANH AND " +
-            //               "XET.MATRUONG LIKE '%" + IDUni + "%' AND " +
-            //               "XET.NAM = 2021 AND " +
-            //               "XET.CHUOITOHOP LIKE '%" + comb + "%' AND " +
-            //               "DIEMCHUAN <= " + mark + "ORDER BY XET.MATRUONG, DIEMCHUAN DESC";
-            //dt = crud.ReadData(query);
+            string query = null;
             string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
             string comb = subjectComb.Substring(0, 3);
             float mark = float.Parse(txbGrade.Text);
-            //string query =  "SELECT TRUONG.MATRUONG, TENTRUONG, COUNT(NGANH.MANGANH) AS KETQUA " +
-            //                 "FROM TRUONG, XET, NGANH " +
-            //                 "WHERE TRUONG.MATRUONG = XET.MATRUONG" +
-            //                 "AND NGANH.MANGANH = XET.MANGANH " +
-            //                 "AND NAM = 2021 " +
-            //                 "AND XET.CHUOITOHOP LIKE '%" + comb + "%'" +
-            //                 "AND DIEMCHUAN <= " + mark +
-            //                 "AND EXISTS(" +
-            //                 "SELECT * FROM NGANHCHUNG, NHOMNGANH " +
-            //                 "WHERE TENNGANH LIKE '%' + TENNGANHCHUNG + '%' " +
-            //                 "AND NGANHCHUNG.MANHNGANH = NHOMNGANH.MANHNGANH" +
-            //                 "AND TENNHNGANH = N'" + nameMajors + "')" +
-            //                 "GROUP BY TRUONG.MATRUONG, TENTRUONG " +
-            //                 "ORDER BY KETQUA DESC";
-            string query = "SELECT TRUONG.MATRUONG, TENTRUONG,COUNT(NGANH.MANGANH) AS KETQUA " +
-                        "FROM TRUONG, XET, NGANH " +
-                        "WHERE TRUONG.MATRUONG = XET.MATRUONG " +
-                        "AND NGANH.MANGANH = XET.MANGANH " +
-                        "AND NAM = 2021 " +
-                        "AND CHUOITOHOP LIKE '%"+comb+"%' " +
-                        "AND DIEMCHUAN <="+mark +
-                        "AND EXISTS( " +
-                        "SELECT * FROM NGANHCHUNG, NHOMNGANH " +
-                        "WHERE TENNGANH LIKE '%' + TENNGANHCHUNG + '%' " +
-                        "AND NGANHCHUNG.MANHNGANH = NHOMNGANH.MANHNGANH " +
-                        "AND TENNHNGANH = N'"+nameMajors+"') " +
-                        "GROUP BY TRUONG.MATRUONG, TENTRUONG " +
-                        "ORDER BY KETQUA DESC";
+            if (nameMajors == "Tất cả các ngành")
+            {
+                
+                query = "SELECT TRUONG.MATRUONG, TENTRUONG,COUNT(NGANH.MANGANH) AS KETQUA " +
+                       "FROM TRUONG, XET, NGANH " +
+                       "WHERE TRUONG.MATRUONG = XET.MATRUONG " +
+                       "AND NGANH.MANGANH = XET.MANGANH " +
+                       "AND NAM = 2021 " +
+                       "AND CHUOITOHOP LIKE '%" + comb + "%' " +
+                       "AND DIEMCHUAN <=" + mark +
+                       "GROUP BY TRUONG.MATRUONG, TENTRUONG " +
+                       "ORDER BY KETQUA DESC";
+            }
+            else
+            {
+                          query = "SELECT TRUONG.MATRUONG, TENTRUONG,COUNT(NGANH.MANGANH) AS KETQUA " +
+                          "FROM TRUONG, XET, NGANH " +
+                          "WHERE TRUONG.MATRUONG = XET.MATRUONG " +
+                          "AND NGANH.MANGANH = XET.MANGANH " +
+                          "AND NAM = 2021 " +
+                          "AND CHUOITOHOP LIKE '%" + comb + "%' " +
+                          "AND DIEMCHUAN <=" + mark +
+                          "AND EXISTS( " +
+                          "SELECT * FROM NGANHCHUNG, NHOMNGANH " +
+                          "WHERE TENNGANH LIKE '%' + TENNGANHCHUNG + '%' " +
+                          "AND NGANHCHUNG.MANHNGANH = NHOMNGANH.MANHNGANH " +
+                          "AND TENNHNGANH = N'" + nameMajors + "') " +
+                          "GROUP BY TRUONG.MATRUONG, TENTRUONG " +
+                          "ORDER BY KETQUA DESC";
+            }
             dt = crud.ReadData(query);
             dtCol.Merge(dt);
             return dtCol;

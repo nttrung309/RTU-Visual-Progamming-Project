@@ -53,6 +53,7 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec4 = new System.Windows.Forms.PictureBox();
             this.lbQuote = new System.Windows.Forms.Label();
             this.lbAuthor = new System.Windows.Forms.Label();
+            this.timerNextQuote = new System.Windows.Forms.Timer(this.components);
             this.btnMBTI = new CustomControls.RJControls.RJButton();
             this.btnPomo = new CustomControls.RJControls.RJButton();
             this.panel1.SuspendLayout();
@@ -342,6 +343,11 @@ namespace RoadToUni.Forms.CountDown
             this.lbAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbAuthor.Click += new System.EventHandler(this.lbAuthor_Click);
             // 
+            // timerNextQuote
+            // 
+            this.timerNextQuote.Interval = 20000;
+            this.timerNextQuote.Tick += new System.EventHandler(this.timerNextQuote_Tick);
+            // 
             // btnMBTI
             // 
             this.btnMBTI.BackColor = System.Drawing.Color.MediumAquamarine;
@@ -456,5 +462,6 @@ namespace RoadToUni.Forms.CountDown
         private System.Windows.Forms.PictureBox picMBTI;
         private System.Windows.Forms.Label lbQuote;
         private System.Windows.Forms.Label lbAuthor;
+        private System.Windows.Forms.Timer timerNextQuote;
     }
 }

@@ -46,7 +46,7 @@ namespace RoadToUni.Forms.CountDown
 
             lbTitle.Location = new Point((this.Width - lbTitle.Width) / 2, lbTitle.Location.Y);
 
-            AdjustPos();
+            NextQuote();
 
             if (loadDate == "")
             {
@@ -71,6 +71,7 @@ namespace RoadToUni.Forms.CountDown
             lbSubTitle.Location = new Point((this.Width - lbSubTitle.Width) / 2, lbSubTitle.Location.Y);
             UpdateTime();
             tmCountDown.Start();
+            timerNextQuote.Start();
         }
         private void ToFront()
         {
@@ -230,6 +231,11 @@ namespace RoadToUni.Forms.CountDown
         }
 
         private void lbAuthor_Click(object sender, EventArgs e)
+        {
+            NextQuote();
+        }
+
+        private void timerNextQuote_Tick(object sender, EventArgs e)
         {
             NextQuote();
         }

@@ -120,7 +120,6 @@ namespace RoadToUni.Forms.CountDown
             lbQuote.BackColor = Color.FromArgb(50, 0, 0, 0);
             lbAuthor.BackColor = Color.FromArgb(50, 0, 0, 0);
         }
-
         private void tmCountDown_Tick(object sender, EventArgs e)
         {
             daysLeft = daysLeft.Subtract(new TimeSpan(0,0,1));
@@ -199,6 +198,7 @@ namespace RoadToUni.Forms.CountDown
 
         private void NextQuote()
         {
+            timerNextQuote.Stop();
             int nextQuote;
             do
             {
@@ -217,6 +217,7 @@ namespace RoadToUni.Forms.CountDown
                 this.lbAuthor.Text = "";
             }
             AdjustPos();
+            timerNextQuote.Start();
         }
 
         private void AdjustPos()

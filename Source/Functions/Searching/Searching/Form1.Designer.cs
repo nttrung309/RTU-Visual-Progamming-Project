@@ -41,12 +41,12 @@ namespace Searching
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.circlePicture1 = new Searching.CirclePicture();
             this.circlePicture4 = new Searching.CirclePicture();
             this.circlePicture3 = new Searching.CirclePicture();
             this.circlePicture2 = new Searching.CirclePicture();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -129,7 +129,7 @@ namespace Searching
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.Color.Black;
@@ -155,14 +155,14 @@ namespace Searching
             // comboBox1
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.DropDownWidth = 629;
             this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(232, 95);
+            this.comboBox1.Location = new System.Drawing.Point(185, 95);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(629, 34);
+            this.comboBox1.Size = new System.Drawing.Size(676, 34);
             this.comboBox1.TabIndex = 21;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -183,6 +183,7 @@ namespace Searching
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(159, 34);
             this.comboBox2.TabIndex = 8;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -215,6 +216,40 @@ namespace Searching
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1094, 407);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.DropDownWidth = 159;
+            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.comboBox3.Items.AddRange(new object[] {
+            "",
+            "Miền Bắc",
+            "Miền Trung",
+            "Miền Nam"});
+            this.comboBox3.Location = new System.Drawing.Point(5, 95);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(159, 34);
+            this.comboBox3.TabIndex = 38;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.comboBox3.SelectedValueChanged += new System.EventHandler(this.comboBox3_SelectedValueChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(29, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(124, 28);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Chọn Miền";
             // 
             // circlePicture1
             // 
@@ -269,37 +304,6 @@ namespace Searching
             this.circlePicture2.TabStop = false;
             this.circlePicture2.Click += new System.EventHandler(this.circlePicture2_Click_1);
             // 
-            // comboBox3
-            // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.DropDownWidth = 159;
-            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Miền Bắc",
-            "Miền Trung",
-            "Miền Nam"});
-            this.comboBox3.Location = new System.Drawing.Point(36, 95);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(159, 34);
-            this.comboBox3.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(60, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 28);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Chọn Miền";
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -327,6 +331,7 @@ namespace Searching
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phầm Mềm Hỗ Trợ Chọn Trường ĐH";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

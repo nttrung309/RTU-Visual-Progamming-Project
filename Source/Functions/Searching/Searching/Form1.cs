@@ -30,7 +30,7 @@ namespace Searching
         void loaddata()
         {
             //load dữ liệu từ Database
-
+        
             // chọn trên trường các kiểu đã xong
             command1 = connection.CreateCommand();
             command1.CommandText = "select * from XET";
@@ -236,25 +236,23 @@ namespace Searching
 
         void addColumn_Name()
         {
-            connection = new SqlConnection(str);
-            connection.Open();
+            
             command = connection.CreateCommand();
             command.CommandText = "select * from TRUONG";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
-
-            command.CommandText = " IF  EXISTS(SELECT * FROM TRUONG WHERE Name = 'NAME') BEGIN  ALTER TABLE TRUONG ADD NAME nvarchar(200) END";
-            command.ExecuteNonQuery();
             command = connection.CreateCommand();
+         
+           command.CommandText = "  IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME ='TRUONG' AND  COLUMN_NAME = 'NAME') BEGIN ALTER TABLE TRUONG ADD NAME nvarchar(200) END";
+            command.ExecuteNonQuery();
+           
 
             int t = table.Rows.Count;
 
             for (int j = 0; j < t; j++)
             {
-
-
-
+                command = connection.CreateCommand();
 
                 command.CommandText = "update TRUONG set NAME=N'" + table.Rows[j].ItemArray[1].ToString() + " - " + table.Rows[j].ItemArray[0].ToString() + "' Where MATRUONG='" + table.Rows[j].ItemArray[0].ToString() + "' ";
                 command.ExecuteNonQuery();
@@ -280,10 +278,85 @@ namespace Searching
         {
 
         }
-        void loadComboBox()
+        void loadComboBoxCentralRegion()
+        {
+      
+
+            command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM [TRUONG] WHERE THUOCMIEN=N'Miền Trung'  ";
+        
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+
+            comboBox1.DataSource = table;
+            comboBox1.ValueMember = "MATRUONG";
+            comboBox1.DisplayMember = "NAME";
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (comboBox3.Text == "Miền Trung")
+                loadComboBoxCentralRegion();
+            else
+                if (comboBox3.Text == "Miền Nam")
+                loadComboBoxSouth();
+            else
+                 if (comboBox3.Text == "Miền Bắc")
+                loadComboBoxNorth();
+            else
+                loadComboBoxALL();
+                
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             command = connection.CreateCommand();
-            command.CommandText = "select * from TRUONG";
+            command.CommandText = "ALTER TABLE TRUONG DROP COLUMN NAME";
+            command.ExecuteNonQuery();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        void loadComboBoxALL()
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "select * from TRUONG ";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+
+            comboBox1.DataSource = table;
+            comboBox1.ValueMember = "MATRUONG";
+            comboBox1.DisplayMember = "NAME";
+
+        }
+        void loadComboBoxNorth()
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "select * from TRUONG Where THUOCMIEN=N'Miền Bắc'";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+
+            comboBox1.DataSource = table;
+            comboBox1.ValueMember = "MATRUONG";
+            comboBox1.DisplayMember = "NAME";
+       
+        }
+        void loadComboBoxSouth()
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "select * from TRUONG Where THUOCMIEN=N'Miền Nam'";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -293,7 +366,10 @@ namespace Searching
             comboBox1.DisplayMember = "NAME";
         }
         private void Form1_Load(object sender, EventArgs e)
+            
         {
+            connection = new SqlConnection(str);
+            connection.Open();
             addColumn_Name();
             loaddata();
             dezignDataGridView();

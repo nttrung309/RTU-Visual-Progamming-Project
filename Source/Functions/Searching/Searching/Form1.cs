@@ -30,17 +30,7 @@ namespace Searching
         void loaddata()
         {
             //load dữ liệu từ Database
-         
 
-            command = connection.CreateCommand();
-            command.CommandText = "select * from TRUONG";
-            adapter.SelectCommand = command;
-            table.Clear();
-            adapter.Fill(table);
-          
-            comboBox1.DataSource = table;
-            comboBox1.ValueMember = "MATRUONG";
-            comboBox1.DisplayMember ="NAME";
             // chọn trên trường các kiểu đã xong
             command1 = connection.CreateCommand();
             command1.CommandText = "select * from XET";
@@ -84,8 +74,16 @@ namespace Searching
            
             circlePicture4.Hide();
             groupBox2.Hide();
+            label3.Hide();
+            comboBox3.Hide();
             
         }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
         public void noBackground()
         {
 // ẩn toàn bộ nền của các picture box
@@ -99,6 +97,7 @@ namespace Searching
             circlePicture2.BackColor = Color.Transparent;
             circlePicture3.BackColor = Color.Transparent;
             circlePicture4.BackColor = Color.Transparent;
+            label3.BackColor = Color.Transparent;
         }
        
             private void Form1_SizeChanged(object sender, EventArgs e)
@@ -151,13 +150,17 @@ namespace Searching
             comboBox1.Show();
             label2.Show();
             comboBox2.Show();
-
+            label3.Show();
+            comboBox3.Show();
             circlePicture4.Show();
             this.Show();
 
 
         }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
         private void circlePicture4_Click_1(object sender, EventArgs e)
         {
             // tra cứu ở đây
@@ -217,12 +220,6 @@ namespace Searching
         {
 
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void circlePicture2_Click_1(object sender, EventArgs e)
         {
             Form2 f = new Form2();
@@ -230,9 +227,45 @@ namespace Searching
             // mục hướng dẫn 
         }
 
-      
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+           
+        }
 
-      
+       
+
+        void addColumn_Name()
+        {
+            connection = new SqlConnection(str);
+            connection.Open();
+            command = connection.CreateCommand();
+            command.CommandText = "select * from TRUONG";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+
+            command.CommandText = " IF  EXISTS(SELECT * FROM TRUONG WHERE Name = 'NAME') BEGIN  ALTER TABLE TRUONG ADD NAME nvarchar(200) END";
+            command.ExecuteNonQuery();
+            command = connection.CreateCommand();
+
+            int t = table.Rows.Count;
+
+            for (int j = 0; j < t; j++)
+            {
+
+
+
+
+                command.CommandText = "update TRUONG set NAME=N'" + table.Rows[j].ItemArray[1].ToString() + " - " + table.Rows[j].ItemArray[0].ToString() + "' Where MATRUONG='" + table.Rows[j].ItemArray[0].ToString() + "' ";
+                command.ExecuteNonQuery();
+            }
+        }
+
+     
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
         void dezignDataGridView()
         {
 // điều chỉnh độ rộng cột cho datagrid
@@ -243,29 +276,25 @@ namespace Searching
             dataGridView1.Columns[3].Width = 208;
             dataGridView1.Columns[4].Width = 80;
         }
- 
-        private void Form1_Load(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-            connection = new SqlConnection(str);
-            connection.Open();
+
+        }
+        void loadComboBox()
+        {
             command = connection.CreateCommand();
             command.CommandText = "select * from TRUONG";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
 
-            //command.CommandText = "ALTER TABLE TRUONG ADD NAME nvarchar(100)";
-            //command.ExecuteNonQuery();
-            //command = connection.CreateCommand();
-            int t = table.Rows.Count;
-
-            for (int j = 0; j < t; j++)
-            {
-
-
-                command.CommandText = "update TRUONG set NAME=N'" + table.Rows[j].ItemArray[1].ToString() +" - "+ table.Rows[j].ItemArray[0].ToString() + "' Where MATRUONG='" + table.Rows[j].ItemArray[0].ToString() + "' ";
-                command.ExecuteNonQuery();
-            }
+            comboBox1.DataSource = table;
+            comboBox1.ValueMember = "MATRUONG";
+            comboBox1.DisplayMember = "NAME";
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            addColumn_Name();
             loaddata();
             dezignDataGridView();
         }

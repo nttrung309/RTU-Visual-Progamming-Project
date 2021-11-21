@@ -20,14 +20,31 @@ namespace Fuction4
         public string TuaDe { get; set; }
         public Image Icon { get; set; }
 
-        private void Truong_MouseHover(object sender, EventArgs e)
-        {
-            this.BackColor = Color.Silver;
-        }
-
         private void Truong_MouseLeave(object sender, EventArgs e)
         {
-            this.BackColor = Color.White;
+            BackColor = Color.White;
+        }
+
+        private void Truong_MouseEnter(object sender, EventArgs e)
+        {
+            BackColor = Color.Silver;
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            BackColor = Color.Silver;
+        }
+
+        private void TenTruong_MouseEnter(object sender, EventArgs e)
+        {
+            BackColor = Color.Silver;
+        }
+
+        private void Truong_Click(object sender, EventArgs e)
+        {
+            ThongtinTruong ch = new ThongtinTruong();
+            ch.Show();
+            this.Hide();
         }
     }
 }

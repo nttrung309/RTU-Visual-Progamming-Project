@@ -43,6 +43,7 @@ namespace Fuction4
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
             // 
             // TenTruong
             // 
@@ -53,6 +54,7 @@ namespace Fuction4
             this.TenTruong.Size = new System.Drawing.Size(112, 46);
             this.TenTruong.TabIndex = 1;
             this.TenTruong.Text = "Hello";
+            this.TenTruong.MouseEnter += new System.EventHandler(this.TenTruong_MouseEnter);
             // 
             // Truong
             // 
@@ -63,8 +65,9 @@ namespace Fuction4
             this.Controls.Add(this.pictureBox1);
             this.Name = "Truong";
             this.Size = new System.Drawing.Size(180, 187);
+            this.Click += new System.EventHandler(this.Truong_Click);
+            this.MouseEnter += new System.EventHandler(this.Truong_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.Truong_MouseLeave);
-            this.MouseHover += new System.EventHandler(this.Truong_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

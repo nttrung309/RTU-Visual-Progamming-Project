@@ -38,15 +38,14 @@ namespace RoadToUni.Forms.UI.Setting
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            button2.Enabled = false;
+            //btnSend.Enabled = false;
             pictureBox1.Image = null;
             //this.button1.Location = new System.Drawing.Point(160, 260);
             //this.button2.Location = new System.Drawing.Point(230, 260);
             //this.ClientSize = new System.Drawing.Size(405, 300);
-            this.button1.Visible = false;
-            this.button2.Visible = false;
-            this.button3.Visible = false;
+            this.btnChoosePic.Visible = false;
             this.pictureBox1.Visible = false;
+            label.Location = new Point((this.Width - label.Width) / 2, label.Location.Y);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -56,16 +55,14 @@ namespace RoadToUni.Forms.UI.Setting
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
+            if (ckboxPic.Checked == true)
             {
 
 
                 this.ClientSize = new System.Drawing.Size(405, 610);
                 //this.button1.Location = new System.Drawing.Point(180, 557);
                 //this.button2.Location = new System.Drawing.Point(250, 557);
-                this.button1.Visible = true;
-                this.button2.Visible = true;
-                this.button3.Visible = true;
+                this.btnChoosePic.Visible = true;
                 this.pictureBox1.Visible = true;
             }
             else
@@ -74,9 +71,7 @@ namespace RoadToUni.Forms.UI.Setting
                 //this.button1.Location = new System.Drawing.Point(160, 260);
                 //this.button2.Location = new System.Drawing.Point(230, 260);
                 //this.ClientSize = new System.Drawing.Size(405, 300);
-                this.button1.Visible = false;
-                this.button2.Visible = false;
-                this.button3.Visible = false;
+                this.btnChoosePic.Visible = false;
                 this.pictureBox1.Visible = false;
             }
         }
@@ -84,22 +79,22 @@ namespace RoadToUni.Forms.UI.Setting
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             i++;
-            if (richTextBox1.Text == "")
+            if (txbContent.Text == "")
             {
-                richTextBox1.Text = "Gửi cho chúng tôi thông tin về lỗi mà bạn gặp phải trong quá trình sử dụng sản phẩm, việc bạn mô tả càng chi tiết sẽ giúp chúng tôi nhanh chóng và dễ dàng sửa được lỗi đó hơn, xin chân thành cám ơn.";
+                txbContent.Texts = "Gửi cho chúng tôi thông tin về lỗi mà bạn gặp phải trong quá trình sử dụng sản phẩm, việc bạn mô tả càng chi tiết sẽ giúp chúng tôi nhanh chóng và dễ dàng sửa được lỗi đó hơn, xin chân thành cám ơn.";
                 i = 0;
-                this.richTextBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-                button2.Enabled = false;
+                this.txbContent.ForeColor = System.Drawing.SystemColors.ScrollBar;
+                btnSend.Enabled = false;
             }
             if (i == 1)
             {
-                string s1 = richTextBox1.Text;
+                string s1 = txbContent.Text;
                 string s = "";
                 s += s1[0];
-                richTextBox1.Text = s;
-                richTextBox1.SelectionStart = richTextBox1.Right;
-                this.richTextBox1.ForeColor = Color.Black;
-                button2.Enabled = true;
+                txbContent.Texts = s;
+                //txbContent.SelectionStart = txbContent.Right;
+                this.txbContent.ForeColor = Color.Black;
+                btnSend.Enabled = true;
             }
         }
         void sendMail(string from, string to, string subject, string message, Attachment file = null)
@@ -113,10 +108,6 @@ namespace RoadToUni.Forms.UI.Setting
             client.EnableSsl = true;
             client.Credentials = new NetworkCredential("roadtouni2021@gmail.com", "meowmeow1234");
             client.Send(mess);
-        }
-        private void richTextBox1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -134,7 +125,6 @@ namespace RoadToUni.Forms.UI.Setting
                 fileName = fileDialog.FileName;
                 pictureBox1.Image = Image.FromFile(fileName);
             }
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -153,18 +143,16 @@ namespace RoadToUni.Forms.UI.Setting
                     attach = new Attachment(fileName);
                 }
                 catch { }
-                sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", richTextBox1.Text, attach);
+                sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", txbContent.Text, attach);
                 MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
-                checkBox1.Checked = false;
+                ckboxPic.Checked = false;
                 pictureBox1.Image = null;
                 //this.button1.Location = new System.Drawing.Point(160, 260);
                 //this.button2.Location = new System.Drawing.Point(230, 260);
                 //this.ClientSize = new System.Drawing.Size(405, 300);
-                this.button1.Visible = false;
-                this.button2.Visible = false;
-                this.button3.Visible = false;
+                this.btnChoosePic.Visible = false;
                 this.pictureBox1.Visible = false;
-                this.richTextBox1.Text = "";
+                this.txbContent.Texts = "";
             }
             else
             {

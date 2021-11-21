@@ -31,15 +31,15 @@ namespace RoadToUni.Forms.UI.Setting
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.label = new System.Windows.Forms.Label();
+            this.ckboxPic = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.btnChoosePic = new CustomControls.RJControls.RJButton();
+            this.btnSend = new CustomControls.RJControls.RJButton();
+            this.btnCancel = new CustomControls.RJControls.RJButton();
+            this.txbContent = new CustomControls.RJControls.RJTextBox();
+            this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,112 +49,144 @@ namespace RoadToUni.Forms.UI.Setting
             this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // panel1
+            // pnlTop
             // 
-            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(405, 51);
-            this.panel1.TabIndex = 1;
+            this.pnlTop.BackColor = System.Drawing.Color.White;
+            this.pnlTop.Controls.Add(this.label);
+            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(405, 51);
+            this.pnlTop.TabIndex = 1;
             // 
-            // label1
+            // label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(2, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Gửi phản hồi";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label.Location = new System.Drawing.Point(103, 9);
+            this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(187, 33);
+            this.label.TabIndex = 2;
+            this.label.Text = "Gửi phản hồi";
+            this.label.Click += new System.EventHandler(this.label1_Click);
             // 
-            // richTextBox1
+            // ckboxPic
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Font = new System.Drawing.Font("Tahoma", 10.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 52);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(405, 230);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Gửi cho chúng tôi thông tin về lỗi mà bạn gặp phải trong quá trình sử dụng sản ph" +
-    "ẩm, việc bạn mô tả càng chi tiết sẽ giúp chúng tôi nhanh chống và dễ dàng sửa đư" +
-    "ợc lỗi đó hơn, xin chân thành cám ơn.";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            this.richTextBox1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.richTextBox1_PreviewKeyDown);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.checkBox1.Location = new System.Drawing.Point(4, 286);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(219, 21);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Gửi kèm ảnh chụp màn hình";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.ckboxPic.AutoSize = true;
+            this.ckboxPic.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckboxPic.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ckboxPic.Location = new System.Drawing.Point(7, 276);
+            this.ckboxPic.Margin = new System.Windows.Forms.Padding(2);
+            this.ckboxPic.Name = "ckboxPic";
+            this.ckboxPic.Size = new System.Drawing.Size(230, 23);
+            this.ckboxPic.TabIndex = 3;
+            this.ckboxPic.Text = "Gửi kèm ảnh chụp màn hình";
+            this.ckboxPic.UseVisualStyleBackColor = true;
+            this.ckboxPic.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 309);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 364);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(405, 300);
+            this.pictureBox1.Size = new System.Drawing.Size(405, 246);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnChoosePic
             // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(203, 546);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Hủy";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnChoosePic.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnChoosePic.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnChoosePic.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnChoosePic.BorderRadius = 8;
+            this.btnChoosePic.BorderSize = 0;
+            this.btnChoosePic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChoosePic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChoosePic.ForeColor = System.Drawing.Color.White;
+            this.btnChoosePic.Location = new System.Drawing.Point(259, 261);
+            this.btnChoosePic.Margin = new System.Windows.Forms.Padding(2);
+            this.btnChoosePic.Name = "btnChoosePic";
+            this.btnChoosePic.Size = new System.Drawing.Size(139, 49);
+            this.btnChoosePic.TabIndex = 7;
+            this.btnChoosePic.Text = "Chọn hình ảnh";
+            this.btnChoosePic.TextColor = System.Drawing.Color.White;
+            this.btnChoosePic.UseVisualStyleBackColor = true;
+            this.btnChoosePic.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnSend
             // 
-            this.button2.BackColor = System.Drawing.Color.Azure;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(127, 546);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(46, 32);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Gửi";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSend.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnSend.BackgroundColor = System.Drawing.Color.MediumAquamarine;
+            this.btnSend.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSend.BorderRadius = 8;
+            this.btnSend.BorderSize = 0;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.ForeColor = System.Drawing.Color.Snow;
+            this.btnSend.Location = new System.Drawing.Point(101, 316);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(94, 40);
+            this.btnSend.TabIndex = 6;
+            this.btnSend.Text = "Gửi";
+            this.btnSend.TextColor = System.Drawing.Color.Snow;
+            this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnCancel
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(289, 325);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 34);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Chọn hình ảnh";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnCancel.BackColor = System.Drawing.Color.Salmon;
+            this.btnCancel.BackgroundColor = System.Drawing.Color.Salmon;
+            this.btnCancel.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCancel.BorderRadius = 8;
+            this.btnCancel.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.Snow;
+            this.btnCancel.Location = new System.Drawing.Point(199, 316);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(94, 40);
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.TextColor = System.Drawing.Color.Snow;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txbContent
+            // 
+            this.txbContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbContent.AutoScroll = true;
+            this.txbContent.BackColor = System.Drawing.SystemColors.Window;
+            this.txbContent.BorderColor = System.Drawing.Color.Thistle;
+            this.txbContent.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txbContent.BorderRadius = 0;
+            this.txbContent.BorderSize = 2;
+            this.txbContent.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbContent.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.txbContent.Location = new System.Drawing.Point(7, 55);
+            this.txbContent.Margin = new System.Windows.Forms.Padding(2);
+            this.txbContent.Multiline = true;
+            this.txbContent.Name = "txbContent";
+            this.txbContent.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txbContent.PasswordChar = false;
+            this.txbContent.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txbContent.PlaceholderText = "Gửi cho chúng tôi thông tin về lỗi mà bạn gặp phải trong quá trình sử dụng sản ph" +
+    "ẩm, việc bạn mô tả càng chi tiết sẽ giúp chúng tôi nhanh chóng và dễ dàng sửa đư" +
+    "ợc lỗi đó hơn, xin chân thành cám ơn.";
+            this.txbContent.Size = new System.Drawing.Size(391, 200);
+            this.txbContent.TabIndex = 2;
+            this.txbContent.Texts = "";
+            this.txbContent.UnderlinedStyle = false;
             // 
             // fRespond
             // 
@@ -163,21 +195,21 @@ namespace RoadToUni.Forms.UI.Setting
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(405, 610);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnChoosePic);
+            this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ckboxPic);
+            this.Controls.Add(this.txbContent);
+            this.Controls.Add(this.pnlTop);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fRespond";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,14 +219,14 @@ namespace RoadToUni.Forms.UI.Setting
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel pnlTop;
+        private System.Windows.Forms.Label label;
+        private CustomControls.RJControls.RJTextBox txbContent;
+        private System.Windows.Forms.CheckBox ckboxPic;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private CustomControls.RJControls.RJButton btnCancel;
+        private CustomControls.RJControls.RJButton btnSend;
+        private CustomControls.RJControls.RJButton btnChoosePic;
     }
 }
 

@@ -36,7 +36,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Location = new System.Drawing.Point(10, 7);
-            this.textBox1.MaxLength = 8;
+            this.textBox1.MaxLength = 999999;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(230, 15);
             this.textBox1.TabIndex = 0;

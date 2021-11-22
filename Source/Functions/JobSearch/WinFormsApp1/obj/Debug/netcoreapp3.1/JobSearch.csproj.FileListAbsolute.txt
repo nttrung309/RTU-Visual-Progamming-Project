@@ -1,0 +1,17 @@
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\bin\Debug\netcoreapp3.1\JobSearch.exe
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\bin\Debug\netcoreapp3.1\JobSearch.deps.json
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\bin\Debug\netcoreapp3.1\JobSearch.runtimeconfig.json
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\bin\Debug\netcoreapp3.1\JobSearch.runtimeconfig.dev.json
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\bin\Debug\netcoreapp3.1\JobSearch.dll
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\bin\Debug\netcoreapp3.1\JobSearch.pdb
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.FirstUI.resources
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.dll
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.pdb
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\RTU-Visual-Progamming-Project\Source\Functions\JobSearch\JobSearch\WinFormsApp1\obj\Debug\netcoreapp3.1\JobSearch.Properties.Resources.resources

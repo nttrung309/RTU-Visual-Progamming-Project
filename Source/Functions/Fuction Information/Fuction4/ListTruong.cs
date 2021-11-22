@@ -18,7 +18,9 @@ namespace Fuction4
         private Color boderColor = Color.DeepSkyBlue;
         public Truong()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            this.boderColor = Color.Blue;
+            this.boderSize = 1;
         }
 
         private GraphicsPath graphicD(Rectangle rect, float radius)
@@ -77,25 +79,29 @@ namespace Fuction4
         }
         public string TuaDe { get; set; }
         public Image Icon { get; set; }
-
+        public string MaTruong { get; set; }
         private void Truong_MouseLeave(object sender, EventArgs e)
         {
             BackColor = Color.White;
+            pictureBox1.BackColor = Color.White;
         }
 
         private void Truong_MouseEnter(object sender, EventArgs e)
         {
             BackColor = Color.Silver;
+            pictureBox1.BackColor = Color.Silver;
         }
 
         private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
             BackColor = Color.Silver;
+            pictureBox1.BackColor = Color.Silver;
         }
 
         private void TenTruong_MouseEnter(object sender, EventArgs e)
         {
             BackColor = Color.Silver;
+            pictureBox1.BackColor = Color.Silver;
         }
 
         //public string[] schoolCode = { "QSB", "QSC", "QSK", "QST", "QSX" };

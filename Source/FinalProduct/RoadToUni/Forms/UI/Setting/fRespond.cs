@@ -99,6 +99,7 @@ namespace RoadToUni.Forms.UI.Setting
         }
         void sendMail(string from, string to, string subject, string message, Attachment file = null)
         {
+            message = "Người gửi: " + txbSender.Texts + "\n\nNội dung: " + message;
             MailMessage mess = new MailMessage(from, to, subject, message);
             if (attach != null)
             {
@@ -137,22 +138,30 @@ namespace RoadToUni.Forms.UI.Setting
             attach = null;
             if (IsConnectedToInternet())
             {
-                try
+                if(txbContent.Texts == "" && pictureBox1.Image == null)
                 {
-                    FileInfo file = new FileInfo(fileName);
-                    attach = new Attachment(fileName);
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                catch { }
-                sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", txbContent.Text, attach);
-                MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
-                ckboxPic.Checked = false;
-                pictureBox1.Image = null;
-                //this.button1.Location = new System.Drawing.Point(160, 260);
-                //this.button2.Location = new System.Drawing.Point(230, 260);
-                //this.ClientSize = new System.Drawing.Size(405, 300);
-                this.btnChoosePic.Visible = false;
-                this.pictureBox1.Visible = false;
-                this.txbContent.Texts = "";
+                else
+                {
+                    try
+                    {
+                        FileInfo file = new FileInfo(fileName);
+                        attach = new Attachment(fileName);
+                    }
+                    catch { }
+                    sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", txbContent.Texts, attach);
+                    MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
+                    ckboxPic.Checked = false;
+                    pictureBox1.Image = null;
+                    //this.button1.Location = new System.Drawing.Point(160, 260);
+                    //this.button2.Location = new System.Drawing.Point(230, 260);
+                    //this.ClientSize = new System.Drawing.Size(405, 300);
+                    this.btnChoosePic.Visible = false;
+                    this.pictureBox1.Visible = false;
+                    this.txbContent.Texts = "";
+                    this.txbSender.Texts = "";
+                }
             }
             else
             {

@@ -99,7 +99,8 @@ namespace RoadToUni.Forms.UI.Setting
         }
         void sendMail(string from, string to, string subject, string message, Attachment file = null)
         {
-            message = "Người gửi: " + txbSender.Texts + "\n\nNội dung: " + message;
+            string senderName = (txbSender.Texts != "") ? txbSender.Texts : "Ẩn danh";
+            message = "Người gửi: " + senderName + "\n\nNội dung: " + message;
             MailMessage mess = new MailMessage(from, to, subject, message);
             if (attach != null)
             {
@@ -109,11 +110,26 @@ namespace RoadToUni.Forms.UI.Setting
             client.EnableSsl = true;
             client.Credentials = new NetworkCredential("roadtouni2021@gmail.com", "meowmeow1234");
             client.Send(mess);
+            MessageBox.Show("Gửi thành công, cảm ơn phản hồi của bạn");
+            ckboxPic.Checked = false;
+            pictureBox1.Image = null;
+            //this.button1.Location = new System.Drawing.Point(160, 260);
+            //this.button2.Location = new System.Drawing.Point(230, 260);
+            //this.ClientSize = new System.Drawing.Size(405, 300);
+            this.btnChoosePic.Visible = false;
+            this.pictureBox1.Visible = false;
+            this.txbContent.Texts = "";
+            this.txbSender.Texts = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.txbContent.Texts = "";
+            this.txbSender.Texts = "";
+            this.btnChoosePic.Visible = false;
+            this.pictureBox1.Visible = false;
+            ckboxPic.Checked = false;
+            pictureBox1.Image = null;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -150,17 +166,7 @@ namespace RoadToUni.Forms.UI.Setting
                         attach = new Attachment(fileName);
                     }
                     catch { }
-                    sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", txbContent.Texts, attach);
-                    MessageBox.Show("Gửi thành công,cám ơn phản hồi của bạn");
-                    ckboxPic.Checked = false;
-                    pictureBox1.Image = null;
-                    //this.button1.Location = new System.Drawing.Point(160, 260);
-                    //this.button2.Location = new System.Drawing.Point(230, 260);
-                    //this.ClientSize = new System.Drawing.Size(405, 300);
-                    this.btnChoosePic.Visible = false;
-                    this.pictureBox1.Visible = false;
-                    this.txbContent.Texts = "";
-                    this.txbSender.Texts = "";
+                    Task.Run(() => sendMail("roadtouni2021@gmail.com", "roadtouni2021@gmail.com", "Báo Cáo Lỗi", txbContent.Texts, attach));
                 }
             }
             else

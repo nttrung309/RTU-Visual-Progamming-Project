@@ -66,6 +66,9 @@
     <Compile Include="ThongtinTruong.Designer.cs">
       <DependentUpon>ThongtinTruong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ThongtinTruong.resx">
+      <DependentUpon>ThongtinTruong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI.resx">
       <DependentUpon>UI.cs</DependentUpon>
     </EmbeddedResource>

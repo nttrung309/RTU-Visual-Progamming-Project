@@ -65,6 +65,7 @@ namespace Fuction4
             this.Controls.Add(this.pictureBox1);
             this.Name = "Truong";
             this.Size = new System.Drawing.Size(180, 187);
+            this.Load += new System.EventHandler(this.Truong_Load);
             this.Click += new System.EventHandler(this.Truong_Click);
             this.MouseEnter += new System.EventHandler(this.Truong_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.Truong_MouseLeave);

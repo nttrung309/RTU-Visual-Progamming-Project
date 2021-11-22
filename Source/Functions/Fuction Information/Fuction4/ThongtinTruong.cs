@@ -15,8 +15,14 @@ namespace Fuction4
         public ThongtinTruong()
         {
             InitializeComponent();
+            
         }
-        public string schoolname;/* = { "Đại học Bách Khoa TP.HCM", "Đại học Công nghệ Thông tin ĐHQG TP.HCM", "Trường Đại Học Kinh tế - Luật - ĐHQG TPHCM", "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM", "Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TPHCM" };*/
+        public string schoolname; /*= { "Đại học Bách Khoa TP.HCM", "Đại học Công nghệ Thông tin ĐHQG TP.HCM", "Trường Đại Học Kinh tế - Luật - ĐHQG TPHCM", "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM", "Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TPHCM" };*/
+
+        private void ThongtinTruong_Load(object sender, EventArgs e)
+        {
+            label1.Text = schoolname;
+        }
         //public string schoolCode = { "QSB", "QSC", "QSK", "QST", "QSX" };
     }
 }

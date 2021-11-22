@@ -16,11 +16,12 @@ namespace Fuction4
         public string[] schoolname = { "Đại học Bách Khoa TP.HCM", "Đại học Công nghệ Thông tin ĐHQG TP.HCM", "Trường Đại Học Kinh tế - Luật - ĐHQG TPHCM", "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM", "Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TPHCM" };
         public string[] schoolCode = { "QSB", "QSC", "QSK", "QST", "QSX" };
         public UI()
-        {
-            InitializeComponent();
+        {           
             infSchoolForm.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Controls.Add(infSchoolForm);
+            Controls.Add(infSchoolForm);
+            infSchoolForm.BringToFront();
             infSchoolForm.Hide();
+            InitializeComponent();
         }
 
         private void DanhsachIcon()
@@ -31,14 +32,13 @@ namespace Fuction4
                 //for (int j = 0; j < 5; j++)
                 {
                     listTruong[i] = new Truong();
-                    listTruong[i].TenTruong.Text = schoolname[i];
+                    listTruong[i].TuaDe = schoolname[i];
                     if (flowLayoutPanel1.Controls.Count < 0)
                     {
                         flowLayoutPanel1.Controls.Clear();
                     }
                     else
                     {
-
                         flowLayoutPanel1.Controls.Add(listTruong[i]);
                     }
                 }

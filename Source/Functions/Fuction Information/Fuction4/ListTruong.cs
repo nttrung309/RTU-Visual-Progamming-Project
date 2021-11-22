@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,12 +13,68 @@ namespace Fuction4
 {
     public partial class Truong : UserControl
     {
+        private int boderSize = 0;
+        private int boderRadius = 40;
+        private Color boderColor = Color.DeepSkyBlue;
         public Truong()
         {
-            InitializeComponent();
-            //TenTruong.Text = TuaDe;
+            InitializeComponent();            
         }
 
+        private GraphicsPath graphicD(Rectangle rect, float radius)
+        {
+            GraphicsPath graphicsPath = new GraphicsPath();
+            graphicsPath.StartFigure();
+            graphicsPath.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
+            graphicsPath.AddArc(rect.Width-radius, rect.Y, radius, radius, 270, 90);
+            graphicsPath.AddArc(rect.Width-radius, rect.Height-radius, radius, radius, 0, 90);
+            graphicsPath.AddArc(rect.X, rect.Height-radius, radius, radius, 90, 90);
+            graphicsPath.CloseFigure();
+            return graphicsPath;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            Rectangle rectSurface = this.ClientRectangle;
+            Rectangle rectBorder = Rectangle.Inflate(rectSurface, -boderSize, -boderSize);
+            int smoothSize = 2;
+            if (boderSize > 0)
+                smoothSize = boderSize;
+            if (boderRadius > 2) //Rounded button
+            {
+                using (GraphicsPath pathSurface = graphicD(rectSurface, boderRadius))
+                using (GraphicsPath pathBorder = graphicD(rectBorder, boderRadius - boderSize))
+                using (Pen penSurface = new Pen(this.Parent.BackColor, smoothSize))
+                using (Pen penBorder = new Pen(boderColor, boderSize))
+                {
+                    e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                    //Button surface
+                    this.Region = new Region(pathSurface);
+                    //Draw surface border for HD result
+                    e.Graphics.DrawPath(penSurface, pathSurface);
+                    //Button border                    
+                    if (boderSize >= 1)
+                        //Draw control border
+                        e.Graphics.DrawPath(penBorder, pathBorder);
+                }
+            }
+            else //Normal button
+            {
+                e.Graphics.SmoothingMode = SmoothingMode.None;
+                //Button surface
+                this.Region = new Region(rectSurface);
+                //Button border
+                if (boderSize >= 1)
+                {
+                    using (Pen penBorder = new Pen(boderColor, boderSize))
+                    {
+                        penBorder.Alignment = PenAlignment.Inset;
+                        e.Graphics.DrawRectangle(penBorder, 0, 0, this.Width - 1, this.Height - 1);
+                    }
+                }
+            }
+        }
         public string TuaDe { get; set; }
         public Image Icon { get; set; }
 
@@ -42,7 +99,7 @@ namespace Fuction4
         }
 
         //public string[] schoolCode = { "QSB", "QSC", "QSK", "QST", "QSX" };
-        //public string[] schoolName = { "Đại học Bách Khoa TP.HCM", "Đại học Công nghệ Thông tin ĐHQG TP.HCM", "Trường Đại Học Kinh tế - Luật - ĐHQG TPHCM", "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM", "Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TPHCM" };
+        public string[] schoolName = { "Đại học Bách Khoa TP.HCM", "Đại học Công nghệ Thông tin ĐHQG TP.HCM", "Trường Đại Học Kinh tế - Luật - ĐHQG TPHCM", "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM", "Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TPHCM" };
         //public string[] schoolSummary =
         //{
         //    "Trường Đại học Bách khoa (Ho Chi Minh City University of Technology) là trường đại học chuyên ngành kỹ thuật lớn của Việt Nam, thành viên của hệ thống Đại học Quốc gia, được xếp vào nhóm đại học trọng điểm quốc gia Việt Nam. Tiền thân là Trung tâm Kỹ thuật Quốc gia được thành lập từ năm 1957, đến ngày 27/10/1976, Thủ tướng Phạm Văn Đồng ký Quyết định số 426/TTg đổi tên trường Đại học Kỹ thuật Phú Thọ thành trường Đại học Bách Khoa TP. Hồ Chí Minh.",
@@ -54,23 +111,27 @@ namespace Fuction4
         private void Truong_Click(object sender, EventArgs e)
         {
             //bool found = false;
-            //int i = 0;
-            //foreach (string item in schoolCode)
-            //{
-            //    if (this.Name == item)
-            //    {
-            //        found = true;
-            //        break;
-            //    }
-            //    i++;
+            int i = -1;
+            foreach (string item in schoolName)
+                //{
+                //    if (this.Name == item)
+                //    {
+                //        found = true;
+                //        break;
+                //    }
+                i++;
             //}
             //if (found)
             //{
-            //    UI.infSchoolForm.schoolname = schoolName[i];
-            //    //UI.infSchoolForm.Summary = schoolSummary[i];
-            //    UI.infSchoolForm.Show();
+            UI.infSchoolForm.schoolname = schoolName[i];
+            //UI.infSchoolForm.Summary = schoolSummary[i];
+            UI.infSchoolForm.Show();
             //}
         }
 
+        private void Truong_Load(object sender, EventArgs e)
+        {
+            TenTruong.Text = TuaDe;
+        }
     }
 }

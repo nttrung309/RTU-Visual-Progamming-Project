@@ -98,9 +98,29 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Images\Logo-DH-Kinh-Te-Luat-UEL.png" />
+    <None Include="Images\QSY.png" />
+    <None Include="Images\DDQ.jpg" />
+    <None Include="Images\QHE.png" />
+    <None Include="Images\DDF.jpg" />
+    <None Include="Images\DDS.jpg" />
+    <None Include="Images\QHI.png" />
+    <None Include="Images\DSK.png" />
+    <None Include="Images\QHS.png" />
+    <None Include="Images\DDY.png" />
+    <None Include="Images\QHY.jpg" />
+    <None Include="Images\QHT.jpg" />
+    <None Include="Images\QHX.jpg" />
+    <Content Include="Images\QSB.png" />
+    <None Include="Images\QUF.png" />
+    <Content Include="Images\UIT.png" />
+    <Content Include="Images\HCMUS.png" />
+    <Content Include="Images\USSH.png" />
+    <Content Include="Images\IU.png" />
+    <Content Include="Images\DUT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\UEL.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

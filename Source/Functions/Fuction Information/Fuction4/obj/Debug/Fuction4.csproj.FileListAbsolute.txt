@@ -19,5 +19,5 @@ D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.Co
 D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.exe
 D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.pdb
 D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.UI.resources
-D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.AssemblyReference.cache
 D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.ThongtinTruong.resources
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.AssemblyReference.cache

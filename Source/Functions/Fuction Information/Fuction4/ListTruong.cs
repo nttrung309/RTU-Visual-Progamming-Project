@@ -16,11 +16,14 @@ namespace Fuction4
         private int boderSize = 0;
         private int boderRadius = 40;
         private Color boderColor = Color.DeepSkyBlue;
+        List<string> listIcon = new List<string>();
         public Truong()
         {
             InitializeComponent();
-            this.boderColor = Color.Blue;
+            //this.boderColor = Color.Blue;
             this.boderSize = 1;
+            
+            //pictureBox1.Image = Properties.Resources
         }
 
         private GraphicsPath graphicD(Rectangle rect, float radius)
@@ -138,6 +141,95 @@ namespace Fuction4
         private void Truong_Load(object sender, EventArgs e)
         {
             TenTruong.Text = TuaDe;
+            //pictureBox1.Image = Image.FromStream
+            if (MaTruong != "")
+            {
+                if (MaTruong == "QSK")
+                {
+                    pictureBox1.Image = Properties.Resources.UEL;
+                }
+                if (MaTruong == "QSB")
+                {
+                    pictureBox1.Image = Properties.Resources.QSB;
+                }
+                if (MaTruong == "QSC")
+                {
+                    pictureBox1.Image = Properties.Resources.UIT;
+                }
+                if (MaTruong == "QSQ")
+                {
+                    pictureBox1.Image = Properties.Resources.IU;
+                }
+                if (MaTruong == "QST")
+                {
+                    pictureBox1.Image = Properties.Resources.HCMUS;
+                }
+                if (MaTruong == "QSX")
+                {
+                    pictureBox1.Image = Properties.Resources.USSH;
+                }
+                if (MaTruong == "QSY")
+                {
+                    pictureBox1.Image = Properties.Resources.QSY;
+                }
+                if (MaTruong == "DDQ")
+                {
+                    pictureBox1.Image = Properties.Resources.DDQ;
+                }
+                if (MaTruong == "DDK")
+                {
+                    pictureBox1.Image = Properties.Resources.DDK;
+                }
+                if (MaTruong == "QHE")
+                {
+                    pictureBox1.Image = Properties.Resources.QHE;
+                }
+                //
+
+                if (MaTruong == "QHF")
+                {
+                    pictureBox1.Image = Properties.Resources.DDF;
+                }
+                if (MaTruong == "DDF")
+                {
+                    pictureBox1.Image = Properties.Resources.DDF;
+                }
+                //
+
+                if (MaTruong == "DDS")
+                {
+                    pictureBox1.Image = Properties.Resources.DDS;
+                }
+                if (MaTruong == "DSK")
+                {
+                    pictureBox1.Image = Properties.Resources.DSK;
+                }
+                if (MaTruong == "QHI")
+                {
+                    pictureBox1.Image = Properties.Resources.QHI;
+                }
+                if (MaTruong == "QHS")
+                {
+                    pictureBox1.Image = Properties.Resources.QHS;
+                }
+                if (MaTruong == "DDY")
+                {
+                    pictureBox1.Image = Properties.Resources.DDY;
+                }
+                if (MaTruong == "QHT")
+                {
+                    pictureBox1.Image = Properties.Resources.QHT;
+                }
+                if (MaTruong == "QHY")
+                {
+                    pictureBox1.Image = Properties.Resources.QHY;
+                }
+                if (MaTruong == "QHX")
+                {
+                    pictureBox1.Image = Properties.Resources.QHX;
+                }
+
+            }
         }
     }
 }

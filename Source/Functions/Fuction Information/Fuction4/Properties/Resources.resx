@@ -118,4 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\DDF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\DUT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\DDQ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\DDS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\DDY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DSK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\DSK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HCMUS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\HCMUS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\IU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QHE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QUF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QHI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QHS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QHT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QHX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QHY.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QSB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QSY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\QSY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\UEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UIT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\UIT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USSH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\USSH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code.cs" />
     <Compile Include="UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +100,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Text\QSC.text.txt" />
+    <None Include="Text\QSC.txt" />
     <None Include="Images\QSY.png" />
     <None Include="Images\DDQ.jpg" />
     <None Include="Images\QHE.png" />
@@ -122,5 +125,6 @@
   <ItemGroup>
     <None Include="Images\UEL.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

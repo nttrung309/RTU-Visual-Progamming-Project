@@ -221,6 +221,15 @@ namespace Fuction4.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pham Nhat Minh.
+        /// </summary>
+        internal static string QSC_text {
+            get {
+                return ResourceManager.GetString("QSC_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap QSY {

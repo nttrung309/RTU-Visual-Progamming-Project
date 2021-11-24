@@ -37,38 +37,37 @@ namespace Fuction4
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(244, 188);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
             // 
             // TenTruong
             // 
             this.TenTruong.AutoEllipsis = true;
             this.TenTruong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TenTruong.Location = new System.Drawing.Point(26, 149);
-            this.TenTruong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TenTruong.Location = new System.Drawing.Point(39, 229);
             this.TenTruong.Name = "TenTruong";
-            this.TenTruong.Size = new System.Drawing.Size(139, 47);
+            this.TenTruong.Size = new System.Drawing.Size(208, 72);
             this.TenTruong.TabIndex = 1;
             this.TenTruong.Text = "Hello";
             this.TenTruong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TenTruong.Click += new System.EventHandler(this.TenTruong_Click);
             this.TenTruong.MouseEnter += new System.EventHandler(this.TenTruong_MouseEnter);
             // 
             // Truong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.TenTruong);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Truong";
-            this.Size = new System.Drawing.Size(193, 206);
+            this.Size = new System.Drawing.Size(290, 317);
             this.Load += new System.EventHandler(this.Truong_Load);
             this.Click += new System.EventHandler(this.Truong_Click);
             this.MouseEnter += new System.EventHandler(this.Truong_MouseEnter);

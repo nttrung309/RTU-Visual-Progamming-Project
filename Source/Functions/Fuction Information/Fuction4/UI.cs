@@ -32,19 +32,12 @@ namespace Fuction4
             {
                 Truong Tr = new Truong();
                 Code c = new Code();
-                listTruong.Add(Tr);
-                //Truong[] listTruong = new Truong[5];
-                //for (int i = 0; i < listTruong.Length; i++)
-                //{
-                //for (int i = 0; i < 5; i++)
-                
-                        //listTruong[i] = new Truong();
+                listTruong.Add(Tr);               
                     Tr.MaTruong = schoolCode[j];
                     c.MATRUONG = schoolCode[j];
                     codes.Add(c);
                     //Xóa dòng này sau
                     Tr.TuaDe = schoolname[j];
-                    //infSchoolForm.schoolcode = schoolCode[j];
                         if (flowLayoutPanel1.Controls.Count < 0)
                         {
                             flowLayoutPanel1.Controls.Clear();
@@ -53,15 +46,6 @@ namespace Fuction4
                         {
                             flowLayoutPanel1.Controls.Add(listTruong[j]);
                         }                   
-            }
-        }
-
-        private void Dienthongtin()
-        {
-            foreach (Code cs in codes)
-            {
-                //if(cs.MATRUONG == )
-                //infSchoolForm.label3.Text = 
             }
         }
         private void Form1_Load(object sender, EventArgs e)

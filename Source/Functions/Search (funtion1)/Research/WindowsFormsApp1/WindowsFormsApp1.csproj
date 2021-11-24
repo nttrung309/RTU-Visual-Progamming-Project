@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassCrud.cs" />
-    <Compile Include="Form2.cs">
+    <Compile Include="fdetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="fdetail.Designer.cs">
+      <DependentUpon>fdetail.cs</DependentUpon>
     </Compile>
     <Compile Include="fsearch.cs">
       <SubType>Form</SubType>
@@ -61,8 +61,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="fdetail.resx">
+      <DependentUpon>fdetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fsearch.resx">
       <DependentUpon>fsearch.cs</DependentUpon>

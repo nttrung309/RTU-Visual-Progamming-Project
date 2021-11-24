@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class fdetail : Form
     {
 
-        public Form2()
+        public fdetail()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
         string major = null;
         string bench = null;
         float grade;
-        public Form2(string idUni,string nameUni, string major, string bench, float grade): this()
+        public fdetail(string idUni,string nameUni, string major, string bench, float grade): this()
         {
             this.idUni = idUni;
             this.major = major;

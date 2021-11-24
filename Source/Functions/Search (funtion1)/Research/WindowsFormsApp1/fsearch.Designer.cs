@@ -29,8 +29,8 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txbGrade = new System.Windows.Forms.TextBox();
             this.lbGrade = new System.Windows.Forms.Label();
             this.cbCombination = new System.Windows.Forms.ComboBox();
@@ -40,14 +40,19 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.cbNameUni = new System.Windows.Forms.ComboBox();
             this.lbNameUni = new System.Windows.Forms.Label();
+            this.lbNote = new System.Windows.Forms.Label();
+            this.lbTextNote = new System.Windows.Forms.Label();
+            this.lbTHPT = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txbGrade
             // 
             this.txbGrade.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbGrade.ForeColor = System.Drawing.Color.DarkGray;
-            this.txbGrade.Location = new System.Drawing.Point(350, 150);
+            this.txbGrade.Location = new System.Drawing.Point(311, 64);
             this.txbGrade.Name = "txbGrade";
             this.txbGrade.Size = new System.Drawing.Size(277, 44);
             this.txbGrade.TabIndex = 0;
@@ -63,7 +68,7 @@ namespace WindowsFormsApp1
             this.lbGrade.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbGrade.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGrade.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lbGrade.Location = new System.Drawing.Point(57, 149);
+            this.lbGrade.Location = new System.Drawing.Point(13, 64);
             this.lbGrade.Name = "lbGrade";
             this.lbGrade.Size = new System.Drawing.Size(418, 48);
             this.lbGrade.TabIndex = 2;
@@ -284,7 +289,7 @@ namespace WindowsFormsApp1
             "S00 -- Văn, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             "S01 -- Toán, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             ""});
-            this.cbCombination.Location = new System.Drawing.Point(350, 204);
+            this.cbCombination.Location = new System.Drawing.Point(311, 118);
             this.cbCombination.MaxDropDownItems = 10;
             this.cbCombination.Name = "cbCombination";
             this.cbCombination.Size = new System.Drawing.Size(470, 44);
@@ -300,7 +305,7 @@ namespace WindowsFormsApp1
             this.lbComb.BackColor = System.Drawing.Color.Gold;
             this.lbComb.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbComb.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lbComb.Location = new System.Drawing.Point(57, 204);
+            this.lbComb.Location = new System.Drawing.Point(14, 118);
             this.lbComb.Name = "lbComb";
             this.lbComb.Size = new System.Drawing.Size(217, 46);
             this.lbComb.TabIndex = 5;
@@ -314,7 +319,7 @@ namespace WindowsFormsApp1
             this.btnSearch.ForeColor = System.Drawing.Color.Tomato;
             this.btnSearch.Image = global::WindowsFormsApp1.Properties.Resources.btnSearch__1_;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(861, 104);
+            this.btnSearch.Location = new System.Drawing.Point(795, 44);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(206, 68);
             this.btnSearch.TabIndex = 6;
@@ -325,21 +330,21 @@ namespace WindowsFormsApp1
             // dataGridViewResult
             // 
             this.dataGridViewResult.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewResult.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.dataGridViewResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewResult.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewResult.Location = new System.Drawing.Point(43, 254);
             this.dataGridViewResult.Name = "dataGridViewResult";
             this.dataGridViewResult.RowHeadersWidth = 62;
@@ -355,11 +360,11 @@ namespace WindowsFormsApp1
             this.label1.Font = new System.Drawing.Font("Courier New", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Image = global::WindowsFormsApp1.Properties.Resources.icoTuVan__1_;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label1.Location = new System.Drawing.Point(309, 12);
+            this.label1.Location = new System.Drawing.Point(265, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(511, 74);
+            this.label1.Size = new System.Drawing.Size(620, 74);
             this.label1.TabIndex = 9;
-            this.label1.Text = "    TƯ VẤN CHỌN TRƯỜNG ĐẠI HỌC \r\n 2021-2022\r\n";
+            this.label1.Text = "     CHÀO MỪNG CÁC BẠN ĐẾN VỚI TƯ VẤN CHỌN TRƯỜNG 2022";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbNameUni
@@ -577,7 +582,7 @@ namespace WindowsFormsApp1
             "S00 -- Văn, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             "S01 -- Toán, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             ""});
-            this.cbNameUni.Location = new System.Drawing.Point(350, 93);
+            this.cbNameUni.Location = new System.Drawing.Point(311, 13);
             this.cbNameUni.MaxDropDownItems = 10;
             this.cbNameUni.Name = "cbNameUni";
             this.cbNameUni.Size = new System.Drawing.Size(470, 44);
@@ -592,11 +597,64 @@ namespace WindowsFormsApp1
             this.lbNameUni.BackColor = System.Drawing.Color.Gold;
             this.lbNameUni.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameUni.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lbNameUni.Location = new System.Drawing.Point(57, 93);
+            this.lbNameUni.Location = new System.Drawing.Point(12, 13);
             this.lbNameUni.Name = "lbNameUni";
             this.lbNameUni.Size = new System.Drawing.Size(424, 46);
             this.lbNameUni.TabIndex = 3;
             this.lbNameUni.Text = "Chọn ngành/nhóm ngành";
+            // 
+            // lbNote
+            // 
+            this.lbNote.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.lbNote.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNote.ForeColor = System.Drawing.Color.White;
+            this.lbNote.Location = new System.Drawing.Point(231, 90);
+            this.lbNote.Name = "lbNote";
+            this.lbNote.Size = new System.Drawing.Size(687, 111);
+            this.lbNote.TabIndex = 10;
+            this.lbNote.Text = "LƯU Ý: Chúng tôi đang hỗ trợ tư vấn chọn trường, chọn ngành nghề và khối thi phù " +
+    "hợp với điểm thi THPTQG 2021, điểm chuẩn năm gần nhất giúp thí sinh tăng khả năn" +
+    "g trúng tuyển Đại học.";
+            this.lbNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbTextNote
+            // 
+            this.lbTextNote.AutoSize = true;
+            this.lbTextNote.BackColor = System.Drawing.Color.White;
+            this.lbTextNote.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTextNote.ForeColor = System.Drawing.Color.Red;
+            this.lbTextNote.Location = new System.Drawing.Point(231, 90);
+            this.lbTextNote.Name = "lbTextNote";
+            this.lbTextNote.Size = new System.Drawing.Size(123, 34);
+            this.lbTextNote.TabIndex = 11;
+            this.lbTextNote.Text = "LƯU Ý:";
+            // 
+            // lbTHPT
+            // 
+            this.lbTHPT.AutoSize = true;
+            this.lbTHPT.BackColor = System.Drawing.Color.White;
+            this.lbTHPT.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTHPT.ForeColor = System.Drawing.Color.Red;
+            this.lbTHPT.Location = new System.Drawing.Point(687, 149);
+            this.lbTHPT.Name = "lbTHPT";
+            this.lbTHPT.Size = new System.Drawing.Size(213, 34);
+            this.lbTHPT.TabIndex = 12;
+            this.lbTHPT.Text = "THPTQG 2021";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.lbComb);
+            this.panel1.Controls.Add(this.lbGrade);
+            this.panel1.Controls.Add(this.lbNameUni);
+            this.panel1.Controls.Add(this.cbNameUni);
+            this.panel1.Controls.Add(this.txbGrade);
+            this.panel1.Controls.Add(this.cbCombination);
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Location = new System.Drawing.Point(43, 229);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1031, 157);
+            this.panel1.TabIndex = 13;
             // 
             // fsearch
             // 
@@ -605,18 +663,17 @@ namespace WindowsFormsApp1
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.bkgr_Researching;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1086, 555);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lbTHPT);
+            this.Controls.Add(this.lbTextNote);
+            this.Controls.Add(this.lbNote);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbNameUni);
             this.Controls.Add(this.dataGridViewResult);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.lbComb);
-            this.Controls.Add(this.cbCombination);
-            this.Controls.Add(this.lbNameUni);
-            this.Controls.Add(this.lbGrade);
-            this.Controls.Add(this.txbGrade);
             this.Name = "fsearch";
             this.Text = "Tư vấn chọn trường";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -632,6 +689,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbNameUni;
         private System.Windows.Forms.Label lbNameUni;
+        private System.Windows.Forms.Label lbNote;
+        private System.Windows.Forms.Label lbTextNote;
+        private System.Windows.Forms.Label lbTHPT;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

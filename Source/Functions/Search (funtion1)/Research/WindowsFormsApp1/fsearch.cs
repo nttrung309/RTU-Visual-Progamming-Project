@@ -17,8 +17,19 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             LoadNameMajor();
-            
-            
+            //lbNameUni.Location = new Point(57, 210);
+            //cbNameUni.Location = new Point(350, 210);
+            //lbGrade.Location = new Point(57, 266);
+            //txbGrade.Location = new Point(350, 266);
+            //lbComb.Location = new Point(57, 322);
+            //cbCombination.Location = new Point(350, 322);
+            //btnSearch.Location = new Point(861, 240);
+            lbNote.Location = new Point(228, 95);
+            lbTextNote.Location = new Point(228, 103);
+            lbTHPT.Location = new Point(752, 127);
+            panel1.Location = new Point(57, 210);
+            panel1.Show();
+            dataGridViewResult.Hide();
         }
         void LoadNameMajor()
         {
@@ -70,7 +81,18 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Vui lòng chọn tổ hợp xét tuyển", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            //lbNameUni.Location = new Point(57, 93);
+            //cbNameUni.Location = new Point(350, 93);
+            //lbGrade.Location = new Point(57, 149);
+            //txbGrade.Location = new Point(350, 150);
+            //lbComb.Location = new Point(57, 204);
+            //cbCombination.Location = new Point(350, 204);
+            //btnSearch.Location = new Point(861, 104);
+            lbNote.Visible = false;
+            lbTHPT.Visible = false;
+            lbTextNote.Visible = false;
+            panel1.Location = new Point(57, 93);
+            dataGridViewResult.Show();
 
             dataGridViewResult.DataSource = this.LoadDB();
             SetColName();
@@ -91,7 +113,6 @@ namespace WindowsFormsApp1
                 dataGridViewResult.Height = totalRowHeight;
             else
                 dataGridViewResult.Height = 350;
-
             
 
         }
@@ -288,7 +309,7 @@ namespace WindowsFormsApp1
             string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
             string comb = subjectComb.Substring(0, 3);
             float grade = float.Parse(txbGrade.Text);
-            Form2 f2 = new Form2(idUni,nameUni, major, comb, grade);
+            fdetail f2 = new fdetail(idUni,nameUni, major, comb, grade);
             f2.Show();
         }
 

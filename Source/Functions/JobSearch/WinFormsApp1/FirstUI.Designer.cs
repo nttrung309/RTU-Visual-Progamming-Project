@@ -30,52 +30,29 @@ namespace WinFormsApp1
         private void InitializeComponent()
         {
             this.lblMainText = new System.Windows.Forms.Label();
-            this.flpMain = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.flpMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.fpnlJobsGroup = new JobSearch.CustomFlowLayoutPanel();
+            this.job1 = new JobSearch.Job();
+            this.job2 = new JobSearch.Job();
+            this.job3 = new JobSearch.Job();
+            this.job4 = new JobSearch.Job();
+            this.job5 = new JobSearch.Job();
+            this.job6 = new JobSearch.Job();
+            this.job7 = new JobSearch.Job();
+            this.job8 = new JobSearch.Job();
+            this.job9 = new JobSearch.Job();
+            this.job10 = new JobSearch.Job();
+            this.job11 = new JobSearch.Job();
+            this.job12 = new JobSearch.Job();
+            this.job13 = new JobSearch.Job();
+            this.job14 = new JobSearch.Job();
+            this.job15 = new JobSearch.Job();
+            this.job16 = new JobSearch.Job();
+            this.job17 = new JobSearch.Job();
+            this.job18 = new JobSearch.Job();
+            this.job19 = new JobSearch.Job();
+            this.job20 = new JobSearch.Job();
+            this.job21 = new JobSearch.Job();
+            this.fpnlJobsGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMainText
@@ -92,274 +69,285 @@ namespace WinFormsApp1
             this.lblMainText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblMainText.UseCompatibleTextRendering = true;
             // 
-            // flpMain
+            // fpnlJobsGroup
             // 
-            this.flpMain.AutoScroll = true;
-            this.flpMain.BackColor = System.Drawing.Color.Transparent;
-            this.flpMain.Controls.Add(this.pictureBox1);
-            this.flpMain.Controls.Add(this.pictureBox2);
-            this.flpMain.Controls.Add(this.pictureBox3);
-            this.flpMain.Controls.Add(this.pictureBox4);
-            this.flpMain.Controls.Add(this.pictureBox5);
-            this.flpMain.Controls.Add(this.pictureBox6);
-            this.flpMain.Controls.Add(this.pictureBox7);
-            this.flpMain.Controls.Add(this.pictureBox8);
-            this.flpMain.Controls.Add(this.pictureBox9);
-            this.flpMain.Controls.Add(this.pictureBox10);
-            this.flpMain.Controls.Add(this.pictureBox11);
-            this.flpMain.Controls.Add(this.pictureBox12);
-            this.flpMain.Controls.Add(this.pictureBox13);
-            this.flpMain.Controls.Add(this.pictureBox14);
-            this.flpMain.Controls.Add(this.pictureBox15);
-            this.flpMain.Controls.Add(this.pictureBox16);
-            this.flpMain.Controls.Add(this.pictureBox17);
-            this.flpMain.Controls.Add(this.pictureBox18);
-            this.flpMain.Controls.Add(this.pictureBox19);
-            this.flpMain.Controls.Add(this.pictureBox20);
-            this.flpMain.Controls.Add(this.pictureBox21);
-            this.flpMain.Controls.Add(this.pictureBox22);
-            this.flpMain.Location = new System.Drawing.Point(0, 95);
-            this.flpMain.Name = "flpMain";
-            this.flpMain.Padding = new System.Windows.Forms.Padding(54, 30, 0, 30);
-            this.flpMain.Size = new System.Drawing.Size(1108, 516);
-            this.flpMain.TabIndex = 1;
+            this.fpnlJobsGroup.AutoScroll = true;
+            this.fpnlJobsGroup.BackColor = System.Drawing.Color.Transparent;
+            this.fpnlJobsGroup.Controls.Add(this.job1);
+            this.fpnlJobsGroup.Controls.Add(this.job2);
+            this.fpnlJobsGroup.Controls.Add(this.job3);
+            this.fpnlJobsGroup.Controls.Add(this.job4);
+            this.fpnlJobsGroup.Controls.Add(this.job5);
+            this.fpnlJobsGroup.Controls.Add(this.job6);
+            this.fpnlJobsGroup.Controls.Add(this.job7);
+            this.fpnlJobsGroup.Controls.Add(this.job8);
+            this.fpnlJobsGroup.Controls.Add(this.job9);
+            this.fpnlJobsGroup.Controls.Add(this.job10);
+            this.fpnlJobsGroup.Controls.Add(this.job11);
+            this.fpnlJobsGroup.Controls.Add(this.job12);
+            this.fpnlJobsGroup.Controls.Add(this.job13);
+            this.fpnlJobsGroup.Controls.Add(this.job14);
+            this.fpnlJobsGroup.Controls.Add(this.job15);
+            this.fpnlJobsGroup.Controls.Add(this.job16);
+            this.fpnlJobsGroup.Controls.Add(this.job17);
+            this.fpnlJobsGroup.Controls.Add(this.job18);
+            this.fpnlJobsGroup.Controls.Add(this.job19);
+            this.fpnlJobsGroup.Controls.Add(this.job20);
+            this.fpnlJobsGroup.Controls.Add(this.job21);
+            this.fpnlJobsGroup.Location = new System.Drawing.Point(0, 81);
+            this.fpnlJobsGroup.Margin = new System.Windows.Forms.Padding(0);
+            this.fpnlJobsGroup.Name = "fpnlJobsGroup";
+            this.fpnlJobsGroup.Padding = new System.Windows.Forms.Padding(54, 50, 0, 50);
+            this.fpnlJobsGroup.Size = new System.Drawing.Size(1108, 530);
+            this.fpnlJobsGroup.TabIndex = 1;
             // 
-            // pictureBox1
+            // job1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(54, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.job1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job1.Img = global::JobSearch.Properties.Resources.kt_kt;
+            this.job1.Location = new System.Drawing.Point(54, 50);
+            this.job1.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job1.Name = "job1";
+            this.job1.PlaceholderText = "Kế toán - Kiểm toán";
+            this.job1.Size = new System.Drawing.Size(300, 200);
+            this.job1.TabIndex = 0;
             // 
-            // pictureBox2
+            // job2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(404, 30);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.job2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job2.Img = global::JobSearch.Properties.Resources.tc_nh_bh;
+            this.job2.Location = new System.Drawing.Point(404, 50);
+            this.job2.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job2.Name = "job2";
+            this.job2.PlaceholderText = "Tài chính - Ngân hàng- Bảo hiểm";
+            this.job2.Size = new System.Drawing.Size(300, 200);
+            this.job2.TabIndex = 1;
             // 
-            // pictureBox3
+            // job3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(754, 30);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.job3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job3.Img = global::JobSearch.Properties.Resources.kt_qtkd_bh;
+            this.job3.Location = new System.Drawing.Point(754, 50);
+            this.job3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.job3.Name = "job3";
+            this.job3.PlaceholderText = "Kinh tế - Quản trị kinh doanh - Thương Mại";
+            this.job3.Size = new System.Drawing.Size(300, 200);
+            this.job3.TabIndex = 2;
             // 
-            // pictureBox4
+            // job4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(54, 230);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.job4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job4.Img = global::JobSearch.Properties.Resources.ng_nn;
+            this.job4.Location = new System.Drawing.Point(54, 300);
+            this.job4.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job4.Name = "job4";
+            this.job4.PlaceholderText = "Ngoại giao - Ngoại ngữ";
+            this.job4.Size = new System.Drawing.Size(300, 200);
+            this.job4.TabIndex = 3;
             // 
-            // pictureBox5
+            // job5
             // 
-            this.pictureBox5.Image = global::JobSearch.Properties.Resources.aether___lumine;
-            this.pictureBox5.Location = new System.Drawing.Point(404, 230);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.job5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job5.Img = global::JobSearch.Properties.Resources.bc_m_qc_pr;
+            this.job5.Location = new System.Drawing.Point(404, 300);
+            this.job5.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job5.Name = "job5";
+            this.job5.PlaceholderText = "Báo chí - Marketing - Quảng cáo - PR";
+            this.job5.Size = new System.Drawing.Size(300, 200);
+            this.job5.TabIndex = 4;
             // 
-            // pictureBox6
+            // job6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(754, 230);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.job6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job6.Img = global::JobSearch.Properties.Resources.cntt_th;
+            this.job6.Location = new System.Drawing.Point(754, 300);
+            this.job6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.job6.Name = "job6";
+            this.job6.PlaceholderText = "Công nghệ thông tin - Tin học";
+            this.job6.Size = new System.Drawing.Size(300, 200);
+            this.job6.TabIndex = 5;
             // 
-            // pictureBox7
+            // job7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(54, 430);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
+            this.job7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job7.Img = global::JobSearch.Properties.Resources.ca_qd;
+            this.job7.Location = new System.Drawing.Point(54, 550);
+            this.job7.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job7.Name = "job7";
+            this.job7.PlaceholderText = "Công an - Quân đội";
+            this.job7.Size = new System.Drawing.Size(300, 200);
+            this.job7.TabIndex = 6;
             // 
-            // pictureBox8
+            // job8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(404, 430);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
+            this.job8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job8.Img = global::JobSearch.Properties.Resources.l_ta;
+            this.job8.Location = new System.Drawing.Point(404, 550);
+            this.job8.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job8.Name = "job8";
+            this.job8.PlaceholderText = "Luật - Tòa án";
+            this.job8.Size = new System.Drawing.Size(300, 200);
+            this.job8.TabIndex = 7;
             // 
-            // pictureBox9
+            // job9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(754, 430);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
+            this.job9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job9.Img = global::JobSearch.Properties.Resources.mt_an_nt;
+            this.job9.Location = new System.Drawing.Point(754, 550);
+            this.job9.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.job9.Name = "job9";
+            this.job9.PlaceholderText = "Mỹ thuật - Âm nhạc-Nghệ thuật";
+            this.job9.Size = new System.Drawing.Size(300, 200);
+            this.job9.TabIndex = 8;
             // 
-            // pictureBox10
+            // job10
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(54, 630);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
+            this.job10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job10.Img = global::JobSearch.Properties.Resources.td_tt;
+            this.job10.Location = new System.Drawing.Point(54, 800);
+            this.job10.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job10.Name = "job10";
+            this.job10.PlaceholderText = "Thể dục - Thể thao";
+            this.job10.Size = new System.Drawing.Size(300, 200);
+            this.job10.TabIndex = 9;
             // 
-            // pictureBox11
+            // job11
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(404, 630);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
+            this.job11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job11.Img = global::JobSearch.Properties.Resources.dl_ks;
+            this.job11.Location = new System.Drawing.Point(404, 800);
+            this.job11.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job11.Name = "job11";
+            this.job11.PlaceholderText = "Du lịch-Khách sạn";
+            this.job11.Size = new System.Drawing.Size(300, 200);
+            this.job11.TabIndex = 10;
             // 
-            // pictureBox12
+            // job12
             // 
-            this.pictureBox12.Location = new System.Drawing.Point(754, 630);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox12.TabIndex = 11;
-            this.pictureBox12.TabStop = false;
+            this.job12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job12.Img = global::JobSearch.Properties.Resources.vh_ct_khxh;
+            this.job12.Location = new System.Drawing.Point(754, 800);
+            this.job12.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.job12.Name = "job12";
+            this.job12.PlaceholderText = "Văn hóa - Chính trị - Khoa học Xã hội";
+            this.job12.Size = new System.Drawing.Size(300, 200);
+            this.job12.TabIndex = 11;
             // 
-            // pictureBox13
+            // job13
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(54, 830);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox13.TabIndex = 12;
-            this.pictureBox13.TabStop = false;
+            this.job13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job13.Img = global::JobSearch.Properties.Resources.sp_gd;
+            this.job13.Location = new System.Drawing.Point(54, 1050);
+            this.job13.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job13.Name = "job13";
+            this.job13.PlaceholderText = "Sư phạm - Giáo dục";
+            this.job13.Size = new System.Drawing.Size(300, 200);
+            this.job13.TabIndex = 12;
             // 
-            // pictureBox14
+            // job14
             // 
-            this.pictureBox14.Location = new System.Drawing.Point(404, 830);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox14.TabIndex = 13;
-            this.pictureBox14.TabStop = false;
+            this.job14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job14.Img = global::JobSearch.Properties.Resources.tn_mt;
+            this.job14.Location = new System.Drawing.Point(404, 1050);
+            this.job14.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job14.Name = "job14";
+            this.job14.PlaceholderText = "Tài nguyên- Môi trường";
+            this.job14.Size = new System.Drawing.Size(300, 200);
+            this.job14.TabIndex = 13;
             // 
-            // pictureBox15
+            // job15
             // 
-            this.pictureBox15.Location = new System.Drawing.Point(754, 830);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox15.TabIndex = 14;
-            this.pictureBox15.TabStop = false;
+            this.job15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job15.Img = global::JobSearch.Properties.Resources.ts_ln_nn;
+            this.job15.Location = new System.Drawing.Point(754, 1050);
+            this.job15.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.job15.Name = "job15";
+            this.job15.PlaceholderText = "Thủy sản-Lâm Nghiệp-Nông nghiệp";
+            this.job15.Size = new System.Drawing.Size(300, 200);
+            this.job15.TabIndex = 14;
             // 
-            // pictureBox16
+            // job16
             // 
-            this.pictureBox16.Location = new System.Drawing.Point(54, 1030);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox16.TabIndex = 15;
-            this.pictureBox16.TabStop = false;
+            this.job16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job16.Img = global::JobSearch.Properties.Resources.y_d;
+            this.job16.Location = new System.Drawing.Point(54, 1300);
+            this.job16.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job16.Name = "job16";
+            this.job16.PlaceholderText = "Y - Dược";
+            this.job16.Size = new System.Drawing.Size(300, 200);
+            this.job16.TabIndex = 15;
             // 
-            // pictureBox17
+            // job17
             // 
-            this.pictureBox17.Location = new System.Drawing.Point(404, 1030);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox17.TabIndex = 16;
-            this.pictureBox17.TabStop = false;
+            this.job17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job17.Img = global::JobSearch.Properties.Resources.dl_dt_d_tdh;
+            this.job17.Location = new System.Drawing.Point(404, 1300);
+            this.job17.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job17.Name = "job17";
+            this.job17.PlaceholderText = "Điện lạnh- Điện tử - Điện - Tự động hóa";
+            this.job17.Size = new System.Drawing.Size(300, 200);
+            this.job17.TabIndex = 16;
             // 
-            // pictureBox18
+            // job18
             // 
-            this.pictureBox18.Location = new System.Drawing.Point(754, 1030);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox18.TabIndex = 17;
-            this.pictureBox18.TabStop = false;
+            this.job18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job18.Img = global::JobSearch.Properties.Resources.cncbtp;
+            this.job18.Location = new System.Drawing.Point(754, 1300);
+            this.job18.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.job18.Name = "job18";
+            this.job18.PlaceholderText = "Công nghệ chế biến thực phẩm";
+            this.job18.Size = new System.Drawing.Size(300, 200);
+            this.job18.TabIndex = 17;
             // 
-            // pictureBox19
+            // job19
             // 
-            this.pictureBox19.Location = new System.Drawing.Point(54, 1230);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox19.TabIndex = 18;
-            this.pictureBox19.TabStop = false;
+            this.job19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job19.Img = global::JobSearch.Properties.Resources.cnvl;
+            this.job19.Location = new System.Drawing.Point(54, 1550);
+            this.job19.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job19.Name = "job19";
+            this.job19.PlaceholderText = "Công nghệ vật liệu";
+            this.job19.Size = new System.Drawing.Size(300, 200);
+            this.job19.TabIndex = 18;
             // 
-            // pictureBox20
+            // job20
             // 
-            this.pictureBox20.Location = new System.Drawing.Point(404, 1230);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(50, 0, 50, 50);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox20.TabIndex = 19;
-            this.pictureBox20.TabStop = false;
+            this.job20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job20.Img = global::JobSearch.Properties.Resources.hk_vt_hn;
+            this.job20.Location = new System.Drawing.Point(404, 1550);
+            this.job20.Margin = new System.Windows.Forms.Padding(0, 0, 50, 50);
+            this.job20.Name = "job20";
+            this.job20.PlaceholderText = "Hàng không - Vũ trụ- Hạt nhân";
+            this.job20.Size = new System.Drawing.Size(300, 200);
+            this.job20.TabIndex = 19;
             // 
-            // pictureBox21
+            // job21
             // 
-            this.pictureBox21.Location = new System.Drawing.Point(754, 1230);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox21.TabIndex = 20;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Location = new System.Drawing.Point(54, 1430);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(300, 150);
-            this.pictureBox22.TabIndex = 21;
-            this.pictureBox22.TabStop = false;
+            this.job21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.job21.Img = global::JobSearch.Properties.Resources.thvtk;
+            this.job21.Location = new System.Drawing.Point(754, 1550);
+            this.job21.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.job21.Name = "job21";
+            this.job21.PlaceholderText = "Toán học và thống kê";
+            this.job21.Size = new System.Drawing.Size(300, 200);
+            this.job21.TabIndex = 20;
             // 
             // FirstUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::JobSearch.Properties.Resources.bluebg;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1108, 611);
             this.ControlBox = false;
-            this.Controls.Add(this.flpMain);
+            this.Controls.Add(this.fpnlJobsGroup);
             this.Controls.Add(this.lblMainText);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FirstUI";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.flpMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            this.fpnlJobsGroup.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,29 +356,28 @@ namespace WinFormsApp1
         #endregion
 
         private System.Windows.Forms.Label lblMainText;
-        private System.Windows.Forms.FlowLayoutPanel flpMain;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox22;
+        private JobSearch.CustomFlowLayoutPanel fpnlJobsGroup;
+        private JobSearch.Job job1;
+        private JobSearch.Job job2;
+        private JobSearch.Job job3;
+        private JobSearch.Job job4;
+        private JobSearch.Job job5;
+        private JobSearch.Job job6;
+        private JobSearch.Job job7;
+        private JobSearch.Job job8;
+        private JobSearch.Job job9;
+        private JobSearch.Job job10;
+        private JobSearch.Job job11;
+        private JobSearch.Job job12;
+        private JobSearch.Job job13;
+        private JobSearch.Job job14;
+        private JobSearch.Job job15;
+        private JobSearch.Job job16;
+        private JobSearch.Job job17;
+        private JobSearch.Job job18;
+        private JobSearch.Job job19;
+        private JobSearch.Job job20;
+        private JobSearch.Job job21;
     }
 }
 

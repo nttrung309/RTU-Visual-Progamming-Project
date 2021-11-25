@@ -118,10 +118,73 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bluebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bluebg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cnvl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cnvl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dl-ks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dl-ks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aether &amp; lumine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aether &amp; lumine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tc-nh-bh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tc-nh-bh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sp-gd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sp-gd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ts-ln-nn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ts-ln-nn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="y-d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\y-d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="l-ta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\l-ta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bluebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bluebg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vh-ct-khxh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vh-ct-khxh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ca-qd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ca-qd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dl-dt-d-tdh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dl-dt-d-tdh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ng-nn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ng-nn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bc-m-qc-pr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bc-m-qc-pr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mt-an-nt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mt-an-nt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kt-kt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kt-kt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="td-tt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\td-tt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cntt-th" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cntt-th.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hk-vt-hn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hk-vt-hn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tn-mt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tn-mt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kt-qtkd-bh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kt-qtkd-bh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cncbtp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cncbtp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thvtk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thvtk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

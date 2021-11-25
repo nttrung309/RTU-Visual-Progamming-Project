@@ -15,8 +15,7 @@ namespace Fuction4
 
         public ThongtinTruong()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
         }
         public string schoolname;
         public string schoolcode;
@@ -28,8 +27,11 @@ namespace Fuction4
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            label1.Text = "Tên trường: ";
-            label2.Text = "Mã trường: ";
+        }
+
+        private void ThongtinTruong_VisibleChanged(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.UEL;
         }
     }
 }

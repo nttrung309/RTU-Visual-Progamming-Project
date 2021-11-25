@@ -38,10 +38,10 @@ namespace Fuction4
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 1);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1092, 572);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1092, 571);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.MouseEnter += new System.EventHandler(this.flowLayoutPanel1_MouseEnter);
             // 

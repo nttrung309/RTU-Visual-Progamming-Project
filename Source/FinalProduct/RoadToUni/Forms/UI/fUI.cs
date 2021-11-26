@@ -146,11 +146,7 @@ namespace RoadToUni.Forms.UI
         private void btnLogout_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            DialogResult dg = MessageBox.Show("Bạn có thực sự muốn đăng xuất?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if(dg == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            Application.Exit();
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {

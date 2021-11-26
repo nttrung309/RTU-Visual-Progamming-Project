@@ -29,21 +29,21 @@ namespace RoadToUni.Forms.UI.Setting
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.lbVersion = new System.Windows.Forms.Label();
             this.btnCheckUpdate = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
-            // label1
+            // lbTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Violet;
-            this.label1.Location = new System.Drawing.Point(81, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Road to Uni";
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Font = new System.Drawing.Font("Lobster", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.ForeColor = System.Drawing.Color.Violet;
+            this.lbTitle.Location = new System.Drawing.Point(72, 37);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(252, 72);
+            this.lbTitle.TabIndex = 0;
+            this.lbTitle.Text = "Road to Uni";
             // 
             // lbVersion
             // 
@@ -87,7 +87,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.ControlBox = false;
             this.Controls.Add(this.btnCheckUpdate);
             this.Controls.Add(this.lbVersion);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fSettingInfo";
             this.ResumeLayout(false);
@@ -97,7 +97,7 @@ namespace RoadToUni.Forms.UI.Setting
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbVersion;
         private CustomControls.RJControls.RJButton btnCheckUpdate;
     }

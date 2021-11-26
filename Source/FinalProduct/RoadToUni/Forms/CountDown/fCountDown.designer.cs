@@ -48,7 +48,6 @@ namespace RoadToUni.Forms.CountDown
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnPomo = new CustomControls.RJControls.RJButton();
             this.picPomo = new System.Windows.Forms.PictureBox();
-            this.topBackGround = new System.Windows.Forms.PictureBox();
             this.picRoundedRec1 = new System.Windows.Forms.PictureBox();
             this.picRoundedRec2 = new System.Windows.Forms.PictureBox();
             this.picRoundedRec3 = new System.Windows.Forms.PictureBox();
@@ -60,7 +59,6 @@ namespace RoadToUni.Forms.CountDown
             ((System.ComponentModel.ISupportInitialize)(this.picMBTI)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPomo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec3)).BeginInit();
@@ -293,20 +291,6 @@ namespace RoadToUni.Forms.CountDown
             this.picPomo.TabIndex = 11;
             this.picPomo.TabStop = false;
             // 
-            // topBackGround
-            // 
-            this.topBackGround.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.topBackGround.BackColor = System.Drawing.Color.Transparent;
-            this.topBackGround.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("topBackGround.BackgroundImage")));
-            this.topBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.topBackGround.Location = new System.Drawing.Point(12, 12);
-            this.topBackGround.Name = "topBackGround";
-            this.topBackGround.Size = new System.Drawing.Size(1084, 330);
-            this.topBackGround.TabIndex = 9;
-            this.topBackGround.TabStop = false;
-            // 
             // picRoundedRec1
             // 
             this.picRoundedRec1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -402,7 +386,6 @@ namespace RoadToUni.Forms.CountDown
             this.Controls.Add(this.lbQuote);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.topBackGround);
             this.Controls.Add(this.lbSec);
             this.Controls.Add(this.lbHours);
             this.Controls.Add(this.label4);
@@ -428,7 +411,6 @@ namespace RoadToUni.Forms.CountDown
             ((System.ComponentModel.ISupportInitialize)(this.picMBTI)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picPomo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topBackGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec3)).EndInit();
@@ -455,7 +437,6 @@ namespace RoadToUni.Forms.CountDown
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbHours;
         private System.Windows.Forms.Label lbSec;
-        private System.Windows.Forms.PictureBox topBackGround;
         private CustomControls.RJControls.RJButton btnPomo;
         private System.Windows.Forms.PictureBox picPomo;
         private System.Windows.Forms.Panel panel2;

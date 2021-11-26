@@ -22,6 +22,9 @@ namespace RoadToUni.Forms.CountDown
         private Random random = new Random();
         private int currentQuote = new Random().Next(0, Quotes.quotes.Count);
 
+        public static System.Windows.Forms.PictureBox topBackGround;
+        public static Image backGround = null;
+
         public static string loadDate = "";
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -38,7 +41,27 @@ namespace RoadToUni.Forms.CountDown
         public fCountDown()
         {
             InitializeComponent();
+            CreateBackGround();
         }
+        private void CreateBackGround()
+        {
+            topBackGround = new System.Windows.Forms.PictureBox();
+            topBackGround.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            topBackGround.BackColor = System.Drawing.Color.Transparent;
+            topBackGround.BackgroundImage = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\1.jpg");
+            backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\1.jpg");
+            topBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            topBackGround.Location = new System.Drawing.Point(12, 12);
+            topBackGround.Name = "topBackGround";
+            topBackGround.Size = new System.Drawing.Size(1084, 330);
+            topBackGround.TabIndex = 9;
+            topBackGround.TabStop = false;
+            topBackGround.Parent = this;
+            topBackGround.BringToFront();
+        }
+
         private void fCountDown_Load(object sender, EventArgs e)
         {
             topBackGround.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, topBackGround.Width, topBackGround.Height, 20, 20));

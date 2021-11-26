@@ -93,6 +93,10 @@ namespace RoadToUni.Forms.UI.Setting
         private void btnGeneral_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
+            if (childForm == null || childForm.Name != "fSettingGeneral")
+            {
+                SwitchForm(new Forms.UI.Setting.fSettingGeneral());
+            }
         }
         private void btnManageAccount_Click(object sender, EventArgs e)
         {

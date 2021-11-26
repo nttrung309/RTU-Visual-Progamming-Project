@@ -71,5 +71,9 @@ namespace RoadToUni.Forms.UI.Setting
             }
             return 0;
         }
+        private void SetPosition()
+        {
+            this.lbTitle.Location = new Point((this.Width-lbTitle.Width)/2,this.lbTitle.Location.Y);
+        }
     }
 }

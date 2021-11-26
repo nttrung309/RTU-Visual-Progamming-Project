@@ -16,5 +16,11 @@ namespace RoadToUni.Forms.UI.Setting
         {
             InitializeComponent();
         }
+
+        private void fSettingGeneral_Load(object sender, EventArgs e)
+        {
+            this.picCountDown.BackgroundImage = RoadToUni.Forms.CountDown.fCountDown.backGround;
+            this.picCountDown.BackgroundImageLayout = ImageLayout.Stretch;
+        }
     }
 }

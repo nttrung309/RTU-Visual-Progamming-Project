@@ -58,7 +58,7 @@ namespace RoadToUni.Forms.UI.Setting
                         DialogResult dg = MessageBox.Show("Đã có phiên bản mới, bạn có muốn cập nhật không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         if (dg == DialogResult.Yes)
                         {
-                            Process.Start("Updater.exe");
+                            Process.Start(@".\Data\Updater\Updater.exe");
                             Application.Exit();
                         }
                         return 1;

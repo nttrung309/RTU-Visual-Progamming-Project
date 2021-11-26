@@ -69,7 +69,7 @@ namespace RoadToUni.Forms.Login
             {
                 ImageNumber = 1;
             }
-            pbxSlide.Image = new Bitmap(Application.StartupPath + "\\Images\\"+ ImageNumber+".jpg");        
+            pbxSlide.Image = new Bitmap(Application.StartupPath + "\\Data\\Images\\Login_Images\\" + ImageNumber+".jpg");        
 
         }
         private void LoadPreviousImage()
@@ -80,7 +80,7 @@ namespace RoadToUni.Forms.Login
             {
                 ImageNumber = 5;
             }
-            pbxSlide.Image = new Bitmap(Application.StartupPath + "\\Images\\" + ImageNumber + ".jpg");
+            pbxSlide.Image = new Bitmap(Application.StartupPath + "\\Data\\Images\\Login_Images\\" + ImageNumber + ".jpg");
 
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -132,7 +132,7 @@ namespace RoadToUni.Forms.Login
             else if (rbtn3.Checked == true) ImageNumber = 3;
             else if (rbtn4.Checked == true) ImageNumber = 4;
             else if (rbtn5.Checked == true) ImageNumber = 5;
-            pbxSlide.Image = new Bitmap(Application.StartupPath + "\\Images\\" + ImageNumber + ".jpg");
+            pbxSlide.Image = new Bitmap(Application.StartupPath + "\\Data\\Images\\Login_Images\\" + ImageNumber + ".jpg");
 
         }
         private void rbtn3_CheckedChanged(object sender, EventArgs e)

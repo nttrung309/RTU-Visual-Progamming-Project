@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
+using System.IO;
 
 
 namespace RoadToUni.Forms.Login
@@ -170,6 +171,26 @@ namespace RoadToUni.Forms.Login
             if(txtUsername.Texts.Length > 8)
             {
                 
+            }
+        }
+
+        private void fLogin_Load(object sender, EventArgs e)
+        {
+            CheckSystemRequire();
+        }
+        private void CheckSystemRequire()
+        {
+            string netFramwork = @"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2";
+            string sqlCompact = @"C:\Program Files\Microsoft SQL Server Compact Edition\v4.0";
+            if (!Directory.Exists(netFramwork))
+            {
+                MessageBox.Show("Ứng dụng này yêu cầu .NETFramework Runtime v4.7.2 hoặc cao hơn!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                System.Diagnostics.Process.Start("https://dotnet.microsoft.com/download/dotnet-framework/net472");
+            }
+            if (!Directory.Exists(sqlCompact))
+            {
+                MessageBox.Show("Ứng dụng này yêu cầu SQL Compact Runtime 4.0 hoặc cao hơn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                System.Diagnostics.Process.Start("https://www.microsoft.com/en-us/download/details.aspx?id=30709");
             }
         }
     }

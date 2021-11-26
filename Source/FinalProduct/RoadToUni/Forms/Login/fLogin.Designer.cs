@@ -310,6 +310,7 @@ namespace RoadToUni.Forms.Login
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "University Analyzer";
+            this.Load += new System.EventHandler(this.fLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxSlide)).EndInit();
             this.pnlImageSlider.ResumeLayout(false);
             this.pnlImageSlider.PerformLayout();

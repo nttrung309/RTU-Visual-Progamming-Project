@@ -22,7 +22,7 @@ namespace Searching
         DataTable table2 = new DataTable();
         DataTable tabe = new DataTable();
     
-        string str = @"Data Source=C:\Users\Admin\Desktop\hình\RTU.sdf";
+        string str = @"Data Source=C:\Users\Admin\Desktop\f\RTU.sdf";
 
         SqlCeDataAdapter adapter = new SqlCeDataAdapter();
 
@@ -56,7 +56,7 @@ namespace Searching
         public Form1()
         {
             InitializeComponent();
-            
+       
             noBackground();
             hideTheNextChap();
         }
@@ -210,7 +210,7 @@ namespace Searching
                 }
 
 
-
+               
                 dataGridView1.DataSource = tabe;
             }
 
@@ -232,21 +232,21 @@ namespace Searching
            
         }
 
-       
+
 
         void addColumn_Name()
         {
-            
+
             command = connection.CreateCommand();
             command.CommandText = "select * from TRUONG";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
             command = connection.CreateCommand();
-         
-           command.CommandText = "  IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME ='TRUONG' AND  COLUMN_NAME = 'NAME') BEGIN ALTER TABLE TRUONG ADD NAME nvarchar(200) END";
+
+            command.CommandText = "  ALTER TABLE TRUONG ADD NAME nvarchar(200) ";
             command.ExecuteNonQuery();
-           
+
 
             int t = table.Rows.Count;
 
@@ -258,8 +258,21 @@ namespace Searching
                 command.ExecuteNonQuery();
             }
         }
+        private void SetColorRowDT()
+        {
+            DataGridViewCellStyle style1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle style2 = new DataGridViewCellStyle();
+            style1.BackColor = Color.LemonChiffon;
+            style2.BackColor = Color.LightCyan;
+            for (int i = dataGridView1.RowCount - 1; i >= 0; i--)
+            {
+                if (i % 2 == 0)
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LemonChiffon;
+                else
+                    dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightCyan;
+            }
+        }
 
-     
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
@@ -292,6 +305,7 @@ namespace Searching
             comboBox1.DataSource = table;
             comboBox1.ValueMember = "MATRUONG";
             comboBox1.DisplayMember = "NAME";
+            comboBox1.SelectedIndex = -1;
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -318,7 +332,7 @@ namespace Searching
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             command = connection.CreateCommand();
-            command.CommandText = "ALTER TABLE TRUONG DROP COLUMN NAME";
+          command.CommandText = "ALTER TABLE TRUONG DROP COLUMN NAME";
             command.ExecuteNonQuery();
         }
 
@@ -351,7 +365,7 @@ namespace Searching
             comboBox1.DataSource = table;
             comboBox1.ValueMember = "MATRUONG";
             comboBox1.DisplayMember = "NAME";
-       
+            comboBox1.SelectedIndex = -1;
         }
         void loadComboBoxSouth()
         {
@@ -364,15 +378,17 @@ namespace Searching
             comboBox1.DataSource = table;
             comboBox1.ValueMember = "MATRUONG";
             comboBox1.DisplayMember = "NAME";
+            comboBox1.SelectedIndex = -1;
         }
         private void Form1_Load(object sender, EventArgs e)
             
         {
             connection = new SqlCeConnection(str);
             connection.Open();
-            addColumn_Name();
+           addColumn_Name();
             loaddata();
             dezignDataGridView();
+            
         }
        
     }

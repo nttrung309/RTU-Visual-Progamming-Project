@@ -16,6 +16,7 @@ namespace RoadToUni.Forms.Login
 {
     public partial class fLogin : Form
     {
+        string appConfigPath = $@"{Application.StartupPath}\Data\Database\AppConfig.txt";
         public static string loginedUser = "";
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -146,24 +147,27 @@ namespace RoadToUni.Forms.Login
         {
             if (txtUsername.Texts != "")
             {
-                loginedUser = txtUsername.Texts;
-                this.Hide();
-                new Forms.UI.fLoading().ShowDialog();
-                new Forms.UI.fUI().ShowDialog();
-                Forms.UI.fUI.childForm = null;
-                try
-                {
-                    this.Show();
-                }
-                catch
-                {
-
-                }
+                LoadAppConfig();
+                OpenLoadingUI(txtUsername.Texts);
             }
             else
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void LoadAppConfig()
+        {
+            if (!File.Exists(appConfigPath))
+            {
+                using (FileStream fs = File.Create(appConfigPath))
+                {
+
+                }
+            }
+
+            string dataToWrite = "Username:" + txtUsername.Texts + "\nBackground:";
+            File.WriteAllText(appConfigPath, dataToWrite);
         }
 
         private void txtUsername__TextChanged(object sender, EventArgs e)
@@ -177,6 +181,7 @@ namespace RoadToUni.Forms.Login
         private void fLogin_Load(object sender, EventArgs e)
         {
             CheckSystemRequire();
+            CheckNewUser();
         }
         private void CheckSystemRequire()
         {
@@ -186,11 +191,39 @@ namespace RoadToUni.Forms.Login
             {
                 MessageBox.Show("Ứng dụng này yêu cầu .NETFramework Runtime v4.7.2 hoặc cao hơn!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 System.Diagnostics.Process.Start("https://dotnet.microsoft.com/download/dotnet-framework/net472");
+                Application.Exit();
             }
             if (!Directory.Exists(sqlCompact))
             {
                 MessageBox.Show("Ứng dụng này yêu cầu SQL Compact Runtime 4.0 hoặc cao hơn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 System.Diagnostics.Process.Start("https://www.microsoft.com/en-us/download/details.aspx?id=30709");
+                Application.Exit();
+            }
+        }
+        private void OpenLoadingUI(string userName)
+        {
+            loginedUser = userName;
+            this.Hide();
+            new Forms.UI.fLoading().ShowDialog();
+            new Forms.UI.fUI().ShowDialog();
+            Forms.UI.fUI.childForm = null;
+            try
+            {
+                this.Show();
+            }
+            catch
+            {
+
+            }
+        }
+        private void CheckNewUser()
+        {
+            string data = File.ReadAllText(appConfigPath);
+            string[] config = data.Split('\n');
+            string userName = config[0].Substring(9,config[0].Length - 9);
+            if(userName != "")
+            {
+                OpenLoadingUI(userName);
             }
         }
     }

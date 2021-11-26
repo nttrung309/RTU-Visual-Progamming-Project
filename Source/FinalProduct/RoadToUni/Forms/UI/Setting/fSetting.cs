@@ -16,7 +16,6 @@ namespace RoadToUni.Forms.UI.Setting
     {
         Button currentBtn;
         Point lastPos;
-        bool maximizedByClick;
         int lastWidth;
         int lastHeight;
 
@@ -47,7 +46,6 @@ namespace RoadToUni.Forms.UI.Setting
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
             lastPos = new Point(this.Location.X, this.Location.Y);
-            maximizedByClick = false;
 
         }
         private void ActiveButton(Object btnSender)

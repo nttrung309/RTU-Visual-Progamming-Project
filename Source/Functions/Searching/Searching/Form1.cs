@@ -203,15 +203,19 @@ namespace Searching
 
                         a[3] = table1.Rows[i].ItemArray[2].ToString();
                         a[4] = table1.Rows[i].ItemArray[4].ToString();
-
+                      
                         tabe.Rows.Add(a);
+                       
                     }
                     i++;
                 }
 
 
-               
+           
                 dataGridView1.DataSource = tabe;
+              
+                SetColorRowDT();
+               
             }
 
         }
@@ -279,13 +283,15 @@ namespace Searching
         }
         void dezignDataGridView()
         {
-// điều chỉnh độ rộng cột cho datagrid
+            // điều chỉnh độ rộng cột cho datagrid
+            dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.ReadOnly = true;
             dataGridView1.Columns[0].Width = 60;
-            dataGridView1.Columns[1].Width = 500;
-            dataGridView1.Columns[2].Width = 170;
-            dataGridView1.Columns[3].Width = 208;
-            dataGridView1.Columns[4].Width = 80;
+            dataGridView1.Columns[1].Width = 400;
+            dataGridView1.Columns[2].Width = 110;
+            dataGridView1.Columns[3].Width = 140;
+            dataGridView1.Columns[4].Width = 60;
+       
         }
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -354,6 +360,16 @@ namespace Searching
             comboBox1.DisplayMember = "NAME";
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex==5)
+            {
+                
+            }
+          
+        }
+
         void loadComboBoxNorth()
         {
             command = connection.CreateCommand();

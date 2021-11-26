@@ -42,3 +42,5 @@ C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Searching\
 C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Searching\Searching\obj\Debug\Searching.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Searching\Searching\obj\Debug\Searching.exe
 C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Searching\Searching\obj\Debug\Searching.pdb
+C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Searching\Searching\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Searching\Searching\obj\Debug\Searching.csproj.CopyComplete

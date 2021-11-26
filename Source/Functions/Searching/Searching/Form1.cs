@@ -9,22 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Data.SqlClient;
-
+using System.Data.SqlServerCe;
 namespace Searching
 {
    public partial class Form1 : Form
     {
        
-        SqlConnection connection;
-        SqlCommand  command, command1, command2;
+        SqlCeConnection connection;
+        SqlCeCommand  command, command1, command2;
         DataTable table = new DataTable();
         DataTable table1 = new DataTable();
         DataTable table2 = new DataTable();
         DataTable tabe = new DataTable();
     
-        string str = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=databaseNew;Integrated Security=True";
+        string str = @"Data Source=C:\Users\Admin\Desktop\hình\RTU.sdf";
 
-        SqlDataAdapter adapter = new SqlDataAdapter();
+        SqlCeDataAdapter adapter = new SqlCeDataAdapter();
 
         int i,count=0;
         void loaddata()
@@ -368,7 +368,7 @@ namespace Searching
         private void Form1_Load(object sender, EventArgs e)
             
         {
-            connection = new SqlConnection(str);
+            connection = new SqlCeConnection(str);
             connection.Open();
             addColumn_Name();
             loaddata();

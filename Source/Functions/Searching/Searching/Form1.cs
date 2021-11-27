@@ -13,13 +13,14 @@ using System.Data.SqlServerCe;
 namespace Searching
 {
    public partial class Form1 : Form
-    {
-       
+    {     
+  
         SqlCeConnection connection;
-        SqlCeCommand  command, command1, command2;
+        SqlCeCommand  command, command1, command2,command3;
         DataTable table = new DataTable();
         DataTable table1 = new DataTable();
         DataTable table2 = new DataTable();
+        DataTable table3 = new DataTable();
         DataTable tabe = new DataTable();
     
         string str = @"Data Source=C:\Users\Admin\Desktop\f\RTU.sdf";
@@ -112,10 +113,10 @@ namespace Searching
                 this.pictureBox2.Location = new System.Drawing.Point(430, 80);
                     this.pictureBox3.Location = new System.Drawing.Point(900, 55);
                 dataGridView1.Columns[0].Width = 60 + 90;
-                dataGridView1.Columns[1].Width = 500 + 90;
-                dataGridView1.Columns[2].Width = 170 + 90;
-                dataGridView1.Columns[3].Width = 208 + 90;
-                dataGridView1.Columns[4].Width = 80 + 90;
+                dataGridView1.Columns[1].Width = 400 + 90;
+                dataGridView1.Columns[2].Width = 110 + 90;
+                dataGridView1.Columns[3].Width = 140 + 70;
+                dataGridView1.Columns[4].Width = 60 + 70;
                 dataGridView1.Font = new Font(" time new roman", 13.2f);
 
 
@@ -126,10 +127,10 @@ namespace Searching
                 this.pictureBox2.Location = new System.Drawing.Point(289, 64);
                 this.pictureBox3.Location = new System.Drawing.Point(591, 57);
                 dataGridView1.Columns[0].Width = 60;
-                dataGridView1.Columns[1].Width = 500;
-                dataGridView1.Columns[2].Width = 170;
-                dataGridView1.Columns[3].Width = 208;
-                dataGridView1.Columns[4].Width = 80;
+                dataGridView1.Columns[1].Width = 400;
+                dataGridView1.Columns[2].Width = 110;
+                dataGridView1.Columns[3].Width = 140;
+                dataGridView1.Columns[4].Width = 60;
                 dataGridView1.Font = new Font(" time new roman", 10.2f);
             }
         
@@ -159,11 +160,13 @@ namespace Searching
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+          
         }
         private void circlePicture4_Click_1(object sender, EventArgs e)
         {
             // tra cứu ở đây
+            chart1.Series["Biểu Đồ"].Points.Clear();
+            this.chart1.Titles["Title1"].Text = "Biểu đồ giao động điểm";
             if (comboBox1.Text == "" || comboBox2.Text == "")
             {
                 MessageBox.Show("Vui lòng chọn đầy đủ thông tin trước khi tra cứu");
@@ -338,13 +341,13 @@ namespace Searching
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             command = connection.CreateCommand();
-          command.CommandText = "ALTER TABLE TRUONG DROP COLUMN NAME";
+            command.CommandText = "ALTER TABLE TRUONG DROP COLUMN NAME";
             command.ExecuteNonQuery();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+        
         }
 
         void loadComboBoxALL()
@@ -363,11 +366,55 @@ namespace Searching
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex==5)
+
+            command3 = connection.CreateCommand();
+
+            command3.CommandText = "select * from XET";
+            adapter.SelectCommand = command3;
+
+            table3.Clear();
+            adapter.Fill(table3);
+        
+            float a = 0, b = 0, c = 0;
+
+            for (int j = 0; j < table3.Rows.Count; j++)
             {
-                
+                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2019" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString())
+                {
+                    a = float.Parse(table3.Rows[j].ItemArray[4].ToString());
+                }
+                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2020" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString())
+                {
+                    b = float.Parse(table3.Rows[j].ItemArray[4].ToString());
+                }
+                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2021" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString())
+                {
+                    c = float.Parse(table3.Rows[j].ItemArray[4].ToString());
+                }
+                if (a != 0 && b != 0 && c != 0)
+                    break;
             }
-          
+            //   dataGridView1.DataSource = table3;
+            //   int a = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[1].ToString());
+            //   MessageBox.Show(a.ToString() + " " + b.ToString() + " " + c.ToString());
+
+            //this.chart1.Titles.Clear();
+            //chart1.Titles["Biểu Đồ"].Alignment = System.Drawing.ContentAlignment.TopLeft;
+            //chart1.Titles["title1"].Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //chart1.Titles["title1"].ForeColor = System.Drawing.Color.DarkSlateGray;
+            string st = "Ngành "+dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            //this.chart1.Titles.Add(st);
+            this.chart1.Titles["Title1"].Text =st ;
+            chart1.Series["Biểu Đồ"].Points.Clear();
+            chart1.Series["Biểu Đồ"].Points.AddXY("2019", a);
+            chart1.Series["Biểu Đồ"].Points[0].Label = a.ToString();
+            chart1.Series["Biểu Đồ"].LabelForeColor = Color.Blue;
+            //   chart1.Series["Biểu Đồ"].Points[0].Color = Color.Red;
+            chart1.Series["Biểu Đồ"].Points.AddXY("2020", b);
+            chart1.Series["Biểu Đồ"].Points[1].Label = b.ToString();
+            chart1.Series["Biểu Đồ"].Points.AddXY("2021", c);
+            chart1.Series["Biểu Đồ"].Points[2].Label = c.ToString();
+
         }
 
         void loadComboBoxNorth()

@@ -364,9 +364,13 @@ namespace Searching
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
         {
+           
+        }
 
+        private void dataGridView1_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
             command3 = connection.CreateCommand();
 
             command3.CommandText = "select * from XET";
@@ -374,7 +378,7 @@ namespace Searching
 
             table3.Clear();
             adapter.Fill(table3);
-        
+
             float a = 0, b = 0, c = 0;
 
             for (int j = 0; j < table3.Rows.Count; j++)
@@ -402,9 +406,9 @@ namespace Searching
             //chart1.Titles["Biểu Đồ"].Alignment = System.Drawing.ContentAlignment.TopLeft;
             //chart1.Titles["title1"].Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             //chart1.Titles["title1"].ForeColor = System.Drawing.Color.DarkSlateGray;
-            string st = "Ngành "+dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            string st = "Ngành " + dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             //this.chart1.Titles.Add(st);
-            this.chart1.Titles["Title1"].Text =st ;
+            this.chart1.Titles["Title1"].Text = st;
             chart1.Series["Biểu Đồ"].Points.Clear();
             chart1.Series["Biểu Đồ"].Points.AddXY("2019", a);
             chart1.Series["Biểu Đồ"].Points[0].Label = a.ToString();
@@ -414,6 +418,12 @@ namespace Searching
             chart1.Series["Biểu Đồ"].Points[1].Label = b.ToString();
             chart1.Series["Biểu Đồ"].Points.AddXY("2021", c);
             chart1.Series["Biểu Đồ"].Points[2].Label = c.ToString();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            
 
         }
 

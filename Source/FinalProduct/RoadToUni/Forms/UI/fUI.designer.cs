@@ -38,14 +38,15 @@ namespace RoadToUni.Forms.UI
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.lbUser = new System.Windows.Forms.Label();
             this.ptBUser = new System.Windows.Forms.PictureBox();
-            this.btnSearch = new CustomControls.RJControls.RJButton();
+            this.lbMenu = new System.Windows.Forms.Label();
+            this.btnSchoolInfo = new CustomControls.RJControls.RJButton();
+            this.btnScore = new CustomControls.RJControls.RJButton();
+            this.btnSchool = new CustomControls.RJControls.RJButton();
             this.btnHome = new CustomControls.RJControls.RJButton();
-            this.pnlMenuBar = new System.Windows.Forms.Panel();
             this.btnLogout = new CustomControls.RJControls.RJButton();
             this.btnSetting = new CustomControls.RJControls.RJButton();
             this.btnChoice = new CustomControls.RJControls.RJButton();
-            this.btnPomo = new CustomControls.RJControls.RJButton();
-            this.lbMenu = new System.Windows.Forms.Label();
+            this.btnMajor = new CustomControls.RJControls.RJButton();
             this.btnMenu = new CustomControls.RJControls.RJButton();
             this.pnlTitleBar.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -117,15 +118,16 @@ namespace RoadToUni.Forms.UI
             this.pnlMenu.BackColor = System.Drawing.Color.Transparent;
             this.pnlMenu.BackgroundImage = global::RoadToUni.Properties.Resources.menu_background;
             this.pnlMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlMenu.Controls.Add(this.btnSchoolInfo);
+            this.pnlMenu.Controls.Add(this.btnScore);
             this.pnlMenu.Controls.Add(this.lbUser);
             this.pnlMenu.Controls.Add(this.ptBUser);
-            this.pnlMenu.Controls.Add(this.btnSearch);
+            this.pnlMenu.Controls.Add(this.btnSchool);
             this.pnlMenu.Controls.Add(this.btnHome);
-            this.pnlMenu.Controls.Add(this.pnlMenuBar);
             this.pnlMenu.Controls.Add(this.btnLogout);
             this.pnlMenu.Controls.Add(this.btnSetting);
             this.pnlMenu.Controls.Add(this.btnChoice);
-            this.pnlMenu.Controls.Add(this.btnPomo);
+            this.pnlMenu.Controls.Add(this.btnMajor);
             this.pnlMenu.Controls.Add(this.lbMenu);
             this.pnlMenu.Controls.Add(this.btnMenu);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -148,37 +150,99 @@ namespace RoadToUni.Forms.UI
             // 
             this.ptBUser.BackColor = System.Drawing.Color.Transparent;
             this.ptBUser.Image = global::RoadToUni.Properties.Resources.user;
-            this.ptBUser.Location = new System.Drawing.Point(18, 95);
+            this.ptBUser.Location = new System.Drawing.Point(6, 68);
             this.ptBUser.Name = "ptBUser";
             this.ptBUser.Size = new System.Drawing.Size(49, 47);
             this.ptBUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptBUser.TabIndex = 2;
             this.ptBUser.TabStop = false;
             // 
-            // btnSearch
+            // lbMenu
             // 
-            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSearch.BorderRadius = 10;
-            this.btnSearch.BorderSize = 0;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Image = global::RoadToUni.Properties.Resources.explore;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(1, 250);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(184, 60);
-            this.btnSearch.TabIndex = 9;
-            this.btnSearch.Tag = "Tra cứu";
-            this.btnSearch.Text = "Tra cứu";
-            this.btnSearch.TextColor = System.Drawing.Color.White;
-            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.lbMenu.AutoSize = true;
+            this.lbMenu.BackColor = System.Drawing.Color.Transparent;
+            this.lbMenu.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMenu.ForeColor = System.Drawing.Color.White;
+            this.lbMenu.Location = new System.Drawing.Point(39, 19);
+            this.lbMenu.Name = "lbMenu";
+            this.lbMenu.Size = new System.Drawing.Size(75, 30);
+            this.lbMenu.TabIndex = 1;
+            this.lbMenu.Text = "MENU";
+            // 
+            // btnSchoolInfo
+            // 
+            this.btnSchoolInfo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnSchoolInfo.BackColor = System.Drawing.Color.Transparent;
+            this.btnSchoolInfo.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnSchoolInfo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSchoolInfo.BorderRadius = 10;
+            this.btnSchoolInfo.BorderSize = 0;
+            this.btnSchoolInfo.FlatAppearance.BorderSize = 0;
+            this.btnSchoolInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSchoolInfo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchoolInfo.ForeColor = System.Drawing.Color.White;
+            this.btnSchoolInfo.Image = global::RoadToUni.Properties.Resources.ui_explore;
+            this.btnSchoolInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSchoolInfo.Location = new System.Drawing.Point(1, 374);
+            this.btnSchoolInfo.Name = "btnSchoolInfo";
+            this.btnSchoolInfo.Size = new System.Drawing.Size(184, 60);
+            this.btnSchoolInfo.TabIndex = 11;
+            this.btnSchoolInfo.Tag = "Điểm chuẩn các năm";
+            this.btnSchoolInfo.Text = "Thông tin trường";
+            this.btnSchoolInfo.TextColor = System.Drawing.Color.White;
+            this.btnSchoolInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSchoolInfo.UseVisualStyleBackColor = false;
+            this.btnSchoolInfo.Click += new System.EventHandler(this.btnSchoolInfo_Click);
+            // 
+            // btnScore
+            // 
+            this.btnScore.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnScore.BackColor = System.Drawing.Color.Transparent;
+            this.btnScore.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnScore.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnScore.BorderRadius = 10;
+            this.btnScore.BorderSize = 0;
+            this.btnScore.FlatAppearance.BorderSize = 0;
+            this.btnScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnScore.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScore.ForeColor = System.Drawing.Color.White;
+            this.btnScore.Image = global::RoadToUni.Properties.Resources.ui_search;
+            this.btnScore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnScore.Location = new System.Drawing.Point(1, 314);
+            this.btnScore.Name = "btnScore";
+            this.btnScore.Size = new System.Drawing.Size(184, 60);
+            this.btnScore.TabIndex = 10;
+            this.btnScore.Tag = "Điểm chuẩn các năm";
+            this.btnScore.Text = "Điểm chuẩn các năm";
+            this.btnScore.TextColor = System.Drawing.Color.White;
+            this.btnScore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnScore.UseVisualStyleBackColor = false;
+            this.btnScore.Click += new System.EventHandler(this.btnScore_Click);
+            // 
+            // btnSchool
+            // 
+            this.btnSchool.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnSchool.BackColor = System.Drawing.Color.Transparent;
+            this.btnSchool.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnSchool.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSchool.BorderRadius = 10;
+            this.btnSchool.BorderSize = 0;
+            this.btnSchool.FlatAppearance.BorderSize = 0;
+            this.btnSchool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSchool.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchool.ForeColor = System.Drawing.Color.White;
+            this.btnSchool.Image = global::RoadToUni.Properties.Resources.ui_school;
+            this.btnSchool.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSchool.Location = new System.Drawing.Point(1, 194);
+            this.btnSchool.Name = "btnSchool";
+            this.btnSchool.Size = new System.Drawing.Size(184, 60);
+            this.btnSchool.TabIndex = 9;
+            this.btnSchool.Tag = "Tư vấn chọn trường";
+            this.btnSchool.Text = "Tư vấn chọn trường";
+            this.btnSchool.TextColor = System.Drawing.Color.White;
+            this.btnSchool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSchool.UseVisualStyleBackColor = false;
+            this.btnSchool.Click += new System.EventHandler(this.btnSchool_Click);
             // 
             // btnHome
             // 
@@ -192,9 +256,9 @@ namespace RoadToUni.Forms.UI
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::RoadToUni.Properties.Resources.home;
+            this.btnHome.Image = global::RoadToUni.Properties.Resources.ui_home;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(1, 190);
+            this.btnHome.Location = new System.Drawing.Point(1, 134);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(184, 60);
             this.btnHome.TabIndex = 2;
@@ -204,15 +268,6 @@ namespace RoadToUni.Forms.UI
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // pnlMenuBar
-            // 
-            this.pnlMenuBar.BackColor = System.Drawing.Color.White;
-            this.pnlMenuBar.Location = new System.Drawing.Point(0, 188);
-            this.pnlMenuBar.Name = "pnlMenuBar";
-            this.pnlMenuBar.Size = new System.Drawing.Size(8, 58);
-            this.pnlMenuBar.TabIndex = 1;
-            this.pnlMenuBar.Visible = false;
             // 
             // btnLogout
             // 
@@ -226,14 +281,14 @@ namespace RoadToUni.Forms.UI
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = global::RoadToUni.Properties.Resources.logout;
+            this.btnLogout.Image = global::RoadToUni.Properties.Resources.ui_logout;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.Location = new System.Drawing.Point(0, 517);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(187, 60);
             this.btnLogout.TabIndex = 8;
-            this.btnLogout.Tag = "Log out";
-            this.btnLogout.Text = "Log out";
+            this.btnLogout.Tag = "Thoát";
+            this.btnLogout.Text = "Thoát";
             this.btnLogout.TextColor = System.Drawing.Color.White;
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -251,7 +306,7 @@ namespace RoadToUni.Forms.UI
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetting.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.ForeColor = System.Drawing.Color.White;
-            this.btnSetting.Image = global::RoadToUni.Properties.Resources.setting;
+            this.btnSetting.Image = global::RoadToUni.Properties.Resources.ui_setting;
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSetting.Location = new System.Drawing.Point(0, 577);
             this.btnSetting.Name = "btnSetting";
@@ -274,11 +329,11 @@ namespace RoadToUni.Forms.UI
             this.btnChoice.BorderSize = 0;
             this.btnChoice.FlatAppearance.BorderSize = 0;
             this.btnChoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChoice.Font = new System.Drawing.Font("Verdana", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChoice.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoice.ForeColor = System.Drawing.Color.White;
-            this.btnChoice.Image = global::RoadToUni.Properties.Resources.analyticsp;
+            this.btnChoice.Image = global::RoadToUni.Properties.Resources.ui_MBTI;
             this.btnChoice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChoice.Location = new System.Drawing.Point(1, 370);
+            this.btnChoice.Location = new System.Drawing.Point(1, 434);
             this.btnChoice.Name = "btnChoice";
             this.btnChoice.Size = new System.Drawing.Size(184, 60);
             this.btnChoice.TabIndex = 6;
@@ -289,42 +344,30 @@ namespace RoadToUni.Forms.UI
             this.btnChoice.UseVisualStyleBackColor = false;
             this.btnChoice.Click += new System.EventHandler(this.btnChoice_Click);
             // 
-            // btnPomo
+            // btnMajor
             // 
-            this.btnPomo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnPomo.BackColor = System.Drawing.Color.Transparent;
-            this.btnPomo.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnPomo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPomo.BorderRadius = 10;
-            this.btnPomo.BorderSize = 0;
-            this.btnPomo.FlatAppearance.BorderSize = 0;
-            this.btnPomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPomo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPomo.ForeColor = System.Drawing.Color.White;
-            this.btnPomo.Image = global::RoadToUni.Properties.Resources.alarm;
-            this.btnPomo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPomo.Location = new System.Drawing.Point(1, 310);
-            this.btnPomo.Name = "btnPomo";
-            this.btnPomo.Size = new System.Drawing.Size(184, 60);
-            this.btnPomo.TabIndex = 5;
-            this.btnPomo.Tag = "Pomodoro";
-            this.btnPomo.Text = "Pomodoro";
-            this.btnPomo.TextColor = System.Drawing.Color.White;
-            this.btnPomo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPomo.UseVisualStyleBackColor = false;
-            this.btnPomo.Click += new System.EventHandler(this.btnPomo_Click);
-            // 
-            // lbMenu
-            // 
-            this.lbMenu.AutoSize = true;
-            this.lbMenu.BackColor = System.Drawing.Color.Transparent;
-            this.lbMenu.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMenu.ForeColor = System.Drawing.Color.White;
-            this.lbMenu.Location = new System.Drawing.Point(39, 19);
-            this.lbMenu.Name = "lbMenu";
-            this.lbMenu.Size = new System.Drawing.Size(75, 30);
-            this.lbMenu.TabIndex = 1;
-            this.lbMenu.Text = "MENU";
+            this.btnMajor.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnMajor.BackColor = System.Drawing.Color.Transparent;
+            this.btnMajor.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnMajor.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnMajor.BorderRadius = 10;
+            this.btnMajor.BorderSize = 0;
+            this.btnMajor.FlatAppearance.BorderSize = 0;
+            this.btnMajor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMajor.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMajor.ForeColor = System.Drawing.Color.White;
+            this.btnMajor.Image = global::RoadToUni.Properties.Resources.ui_class;
+            this.btnMajor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMajor.Location = new System.Drawing.Point(1, 254);
+            this.btnMajor.Name = "btnMajor";
+            this.btnMajor.Size = new System.Drawing.Size(184, 60);
+            this.btnMajor.TabIndex = 5;
+            this.btnMajor.Tag = "Tư vấn chọn ngành";
+            this.btnMajor.Text = "Tư vấn chọn ngành";
+            this.btnMajor.TextColor = System.Drawing.Color.White;
+            this.btnMajor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMajor.UseVisualStyleBackColor = false;
+            this.btnMajor.Click += new System.EventHandler(this.btnMajor_Click);
             // 
             // btnMenu
             // 
@@ -377,18 +420,19 @@ namespace RoadToUni.Forms.UI
         private CustomControls.RJControls.RJButton btnMenu;
         private System.Windows.Forms.Label lbMenu;
         private System.Windows.Forms.PictureBox ptBUser;
-        private CustomControls.RJControls.RJButton btnPomo;
+        private CustomControls.RJControls.RJButton btnMajor;
         private CustomControls.RJControls.RJButton btnChoice;
         private CustomControls.RJControls.RJButton btnSetting;
-        private System.Windows.Forms.Panel pnlMenuBar;
         private CustomControls.RJControls.RJButton btnLogout;
         private System.Windows.Forms.Panel pnlTitleBar;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnMaximize;
         private CustomControls.RJControls.RJButton btnHome;
-        private CustomControls.RJControls.RJButton btnSearch;
+        private CustomControls.RJControls.RJButton btnSchool;
         private Label lbUser;
+        private CustomControls.RJControls.RJButton btnScore;
+        private CustomControls.RJControls.RJButton btnSchoolInfo;
     }
 }
 

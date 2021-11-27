@@ -549,6 +549,38 @@
   <ItemGroup>
     <None Include="Resources\user.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ui_school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_explore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_MBTI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ui_gen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

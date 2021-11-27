@@ -67,11 +67,11 @@ namespace RoadToUni.Forms.UI
                 {
                     currentBtn.BackColor = Color.DarkKhaki;
                 }
-                if (currentBtn.Name == "btnSearch")
+                if (currentBtn.Name == "btnSchool")
                 {
                     currentBtn.BackColor = Color.LightSalmon;
                 }
-                if (currentBtn.Name == "btnPomo")
+                if (currentBtn.Name == "btnMajor")
                 {
                     currentBtn.BackColor = Color.LightPink;
                 }
@@ -86,6 +86,14 @@ namespace RoadToUni.Forms.UI
                 if (currentBtn.Name == "btnSetting")
                 {
                     currentBtn.BackColor = Color.LightBlue;
+                }
+                if (currentBtn.Name == "btnScore")
+                {
+                    currentBtn.BackColor = Color.LightCoral;
+                }
+                if (currentBtn.Name == "btnSchoolInfo")
+                {
+                    currentBtn.BackColor = Color.Wheat;
                 }
             }
             if (pnlMenu.Width == 61)
@@ -111,20 +119,20 @@ namespace RoadToUni.Forms.UI
                 SwitchForm(new Forms.CountDown.fCountDown());
             }
         }
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void btnSchool_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            if (childForm == null || childForm.Name != "fChoice")
+            if (childForm == null || childForm.Name != "btnSchool")
             {
-                SwitchForm(new Forms.Search.fChoice());
+                //SwitchForm(new Forms.Search.fChoice());
             }
         }
-        private void btnPomo_Click(object sender, EventArgs e)
+        private void btnMajor_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            if (childForm == null || childForm.Name != "fPomodoro")
+            if (childForm == null || childForm.Name != "btnMajor")
             {
-                SwitchForm(new Forms.Pomodoro.fPomodoro());
+                //SwitchForm(new Forms.Pomodoro.fPomodoro());
             }
         }
         private void btnChoice_Click(object sender, EventArgs e)
@@ -198,7 +206,7 @@ namespace RoadToUni.Forms.UI
                         cnt.Visible = true;
                     }
                 }
-                pnlMenuBar.Visible = false;
+                //pnlMenuBar.Visible = false;
             }
         }
 
@@ -314,7 +322,7 @@ namespace RoadToUni.Forms.UI
                 lbUser.Location = new Point(lbUser.Location.X, ptBUser.Location.Y + (ptBUser.Height-lbUser.Height)/2);
             }
 
-            this.pnlMenuBar.BringToFront();
+            //this.pnlMenuBar.BringToFront();
         }
 
         private void btn_MouseEnter(object sender, EventArgs e)
@@ -345,6 +353,24 @@ namespace RoadToUni.Forms.UI
                     btn.MouseEnter += btn_MouseEnter;
                     btn.MouseLeave += btn_MouseLeave;
                 }
+            }
+        }
+
+        private void btnScore_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            if (childForm == null || childForm.Name != "btnScore")
+            {
+                //SwitchForm(new Forms.CountDown.fCountDown());
+            }
+        }
+
+        private void btnSchoolInfo_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            if (childForm == null || childForm.Name != "btnSchoolInfo")
+            {
+                //SwitchForm(new Forms.CountDown.fCountDown());
             }
         }
     }

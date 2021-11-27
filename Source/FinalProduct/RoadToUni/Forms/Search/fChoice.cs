@@ -21,7 +21,7 @@ namespace RoadToUni.Forms.Search
         {
             if (RoadToUni.Forms.UI.fUI.childForm == null || RoadToUni.Forms.UI.fUI.childForm.Name != "fFindSchool")
             {
-                RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.FindSchool.fFindSchool());
+                //RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.FindSchool.fFindSchool());
             }
         }
 

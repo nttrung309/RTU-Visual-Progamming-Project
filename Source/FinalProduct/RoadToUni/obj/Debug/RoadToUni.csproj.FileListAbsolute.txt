@@ -25,7 +25,6 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Pomodor
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.fChoice.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.ViewScore.fViewScore.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.ViewScore.fVSManual.resources
-D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.FindSchool.fFindSchool.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Login.fLogin.resources
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\bin\Debug\RoadToUni.exe.config
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\FinalProduct\RoadToUni\bin\Debug\RoadToUni.exe
@@ -66,3 +65,7 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.UI.Sett
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.csproj.AssemblyReference.cache
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\CustomControls.RJControls.RJTextBox.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.UI.Setting.fRespond.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.FindSchool.fdetail.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.FindSchool.fsearch.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\bin\Debug\System.Data.SqlServerCe.dll
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.csproj.CopyComplete

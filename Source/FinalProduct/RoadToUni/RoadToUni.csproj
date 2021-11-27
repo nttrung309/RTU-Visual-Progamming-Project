@@ -35,6 +35,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
@@ -161,11 +165,17 @@
       <DependentUpon>fChoice.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Search\FindSchool\ClassCrud.cs" />
-    <Compile Include="Forms\Search\FindSchool\fFindSchool.cs">
+    <Compile Include="Forms\Search\FindSchool\fDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Search\FindSchool\fFindSchool.Designer.cs">
-      <DependentUpon>fFindSchool.cs</DependentUpon>
+    <Compile Include="Forms\Search\FindSchool\fDetail.designer.cs">
+      <DependentUpon>fDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\FindSchool\fSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\FindSchool\fSearch.designer.cs">
+      <DependentUpon>fSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Search\ViewScore\CirclePicture.cs">
       <SubType>Component</SubType>
@@ -286,8 +296,11 @@
     <EmbeddedResource Include="Forms\Search\fChoice.resx">
       <DependentUpon>fChoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Search\FindSchool\fFindSchool.resx">
-      <DependentUpon>fFindSchool.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Search\FindSchool\fDetail.resx">
+      <DependentUpon>fDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\FindSchool\fSearch.resx">
+      <DependentUpon>fSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search\ViewScore\fViewScore.resx">
       <DependentUpon>fViewScore.cs</DependentUpon>

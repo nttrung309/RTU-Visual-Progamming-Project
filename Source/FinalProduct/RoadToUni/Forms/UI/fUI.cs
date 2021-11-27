@@ -122,9 +122,9 @@ namespace RoadToUni.Forms.UI
         private void btnSchool_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            if (childForm == null || childForm.Name != "btnSchool")
+            if (childForm == null || childForm.Name != "fSearch")
             {
-                //SwitchForm(new Forms.Search.fChoice());
+                SwitchForm(new Forms.Search.FindSchool.fSearch());
             }
         }
         private void btnMajor_Click(object sender, EventArgs e)

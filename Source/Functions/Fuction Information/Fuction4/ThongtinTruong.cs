@@ -19,6 +19,7 @@ namespace Fuction4
         }
         public string schoolname;
         public string schoolcode;
+        public string schoolLink;
         private void ThongtinTruong_Load(object sender, EventArgs e)
         {
 
@@ -31,7 +32,20 @@ namespace Fuction4
 
         private void ThongtinTruong_VisibleChanged(object sender, EventArgs e)
         {
-            pictureBox1.Image = Properties.Resources.UEL;
+            label2.Text = "Mã trường:  " + schoolcode;
+            linkLabel2.Text = schoolLink;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ThongtinNganh thongtinNganh = new ThongtinNganh();
+            thongtinNganh.Code = schoolcode;
+            thongtinNganh.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(schoolLink);
         }
     }
 }

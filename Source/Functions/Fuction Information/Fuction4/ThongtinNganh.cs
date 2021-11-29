@@ -22,24 +22,18 @@ namespace Fuction4
 
         string str = @"Data Source=desktop-puo8cb7\minhpham;Initial Catalog=databaseNew;Integrated Security=True";
         SqlConnection connection;
-        SqlCommand command, command1, command2, command3;
-        DataTable table = new DataTable();
+        SqlCommand command1, command2;
         DataTable table1 = new DataTable();
         DataTable table2 = new DataTable();
-        DataTable table3 = new DataTable();
-        DataTable tabe = new DataTable();
-
+        DataTable tabble = new DataTable();
         SqlDataAdapter adapter = new SqlDataAdapter();
-
         int i, count = 0;
-
         private void ThongtinNganh_Load(object sender, EventArgs e)
         {
             connection = new SqlConnection(str);
             connection.Open();
-            //addColumn_Name();
             TakeData(Code);
-            dezignDataGridView();
+            SetCol();
         }
 
         void TakeData(string a)
@@ -49,19 +43,19 @@ namespace Fuction4
             adapter.SelectCommand = command1;
             table1.Clear();
             adapter.Fill(table1);
-            //load data bảng Xét để tra
+
             command2 = connection.CreateCommand();
             command2.CommandText = "select * from NGANH";
             adapter.SelectCommand = command2;
             table2.Clear();
             adapter.Fill(table2);
 
-            tabe.Columns.Add("STT");
-            tabe.Columns.Add("Tên Ngành");
-            tabe.Columns.Add("Mã Ngành");
-            tabe.Columns.Add("Tổ Hợp");
+            tabble.Columns.Add("STT");
+            tabble.Columns.Add("Tên Ngành");
+            tabble.Columns.Add("Mã Ngành");
+            tabble.Columns.Add("Tổ Hợp");
             //groupBox2.Show();
-            tabe.Clear();
+            tabble.Clear();
 
             i = 0;
             while ((table1.Rows[i].ItemArray[0].ToString() != a)/*&& (table1.Rows[i].ItemArray[4].ToString() == "2021")*/)
@@ -89,16 +83,15 @@ namespace Fuction4
                         }
                     }
                     b[3] = table1.Rows[i].ItemArray[2].ToString();
-                    tabe.Rows.Add(b);
+                    tabble.Rows.Add(b);
                 }
                     i++;
                 
             }
-            dataGridView1.DataSource = tabe;
+            dataGridView1.DataSource = tabble;
         }
-        void dezignDataGridView()
+        void SetCol()
         {
-            // điều chỉnh độ rộng cột cho datagrid
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.ReadOnly = true;
             dataGridView1.Columns[0].Width = 60;

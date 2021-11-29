@@ -27,7 +27,7 @@ namespace Searching
 
         SqlCeDataAdapter adapter = new SqlCeDataAdapter();
 
-        int i,count=0;
+        int i,count=0,Loca;
         void loaddata()
         {
             //load dữ liệu từ Database
@@ -251,8 +251,8 @@ namespace Searching
             adapter.Fill(table);
             command = connection.CreateCommand();
 
-            command.CommandText = "  ALTER TABLE TRUONG ADD NAME nvarchar(200) ";
-            command.ExecuteNonQuery();
+            //command.CommandText = "  ALTER TABLE TRUONG ADD NAME nvarchar(200) ";
+            //command.ExecuteNonQuery();
 
 
             int t = table.Rows.Count;
@@ -340,9 +340,9 @@ namespace Searching
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            command = connection.CreateCommand();
-            command.CommandText = "ALTER TABLE TRUONG DROP COLUMN NAME";
-            command.ExecuteNonQuery();
+            //command = connection.CreateCommand();
+            //command.CommandText = "ALTER TABLE TRUONG DROP COLUMN NAME";
+            //command.ExecuteNonQuery();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -371,6 +371,12 @@ namespace Searching
 
         private void dataGridView1_CellLeave(object sender, DataGridViewCellEventArgs e)
         {
+          
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+        Loca = int.Parse(dataGridView1.SelectedRows[0].Index.ToString());
             command3 = connection.CreateCommand();
 
             command3.CommandText = "select * from XET";
@@ -383,15 +389,15 @@ namespace Searching
 
             for (int j = 0; j < table3.Rows.Count; j++)
             {
-                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2019" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString())
+                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2019" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
                 {
                     a = float.Parse(table3.Rows[j].ItemArray[4].ToString());
                 }
-                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2020" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString())
+                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2020" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
                 {
                     b = float.Parse(table3.Rows[j].ItemArray[4].ToString());
                 }
-                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2021" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString())
+                if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2021" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
                 {
                     c = float.Parse(table3.Rows[j].ItemArray[4].ToString());
                 }
@@ -406,7 +412,7 @@ namespace Searching
             //chart1.Titles["Biểu Đồ"].Alignment = System.Drawing.ContentAlignment.TopLeft;
             //chart1.Titles["title1"].Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             //chart1.Titles["title1"].ForeColor = System.Drawing.Color.DarkSlateGray;
-            string st = "Ngành " + dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            string st = "Ngành " + dataGridView1.Rows[Loca].Cells[1].Value.ToString();
             //this.chart1.Titles.Add(st);
             this.chart1.Titles["Title1"].Text = st;
             chart1.Series["Biểu Đồ"].Points.Clear();

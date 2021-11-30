@@ -1,0 +1,154 @@
+2021-09-08 12:11:05,533 ERROR Restaurant.Admin.Reports.ucReportRevenue - System.FormatException: Format String can be only "G", "g", "X", "x", "F", "f", "D" or "d".
+   at System.Enum.ToString(String format)
+   at Restaurant.Admin.Reports.ucReportRevenue.LoadData() in D:\KINHDOANH\Sources\Restaurant\Src\Restaurant.Admin\Reports\ucReportRevenue.cs:line 90
+   at Restaurant.Admin.Reports.ucReportRevenue.ucReportRevenue_Load(Object sender, EventArgs e) in D:\KINHDOANH\Sources\Restaurant\Src\Restaurant.Admin\Reports\ucReportRevenue.cs:line 29 
+2021-09-08 16:14:30,890 ERROR Restaurant.Admin.Bootstrapper - Error initializing application. 
+Castle.MicroKernel.SubSystems.Conversion.ConverterException: Could not convert from 'Restaurant.Core.Implements.FoodService, Restaurant.Core' to System.Type - Maybe type could not be found
+   at Castle.MicroKernel.SubSystems.Conversion.TypeNameConverter.PerformConversion(String value, Type targetType)
+   at Castle.MicroKernel.SubSystems.Conversion.DefaultConversionManager.PerformConversion(String value, Type targetType)
+   at Castle.MicroKernel.SubSystems.Conversion.DefaultConversionManager.PerformConversion[TTarget](String value)
+   at Castle.Windsor.Installer.DefaultComponentInstaller.SetUpComponents(IConfiguration[] configurations, IWindsorContainer container, IConversionManager converter)
+   at Castle.Windsor.Installer.DefaultComponentInstaller.SetUp(IWindsorContainer container, IConfigurationStore store)
+   at Castle.Windsor.WindsorContainer.RunInstaller()
+   at Castle.Windsor.WindsorContainer..ctor(IConfigurationInterpreter interpreter)
+   at Restaurant.Admin.Bootstrapper.InitializeContainer() in D:\KINHDOANH\Sources\Restaurant\Src\Restaurant.Admin\Bootstrapper.cs:line 20
+2021-09-08 16:17:00,926 ERROR NHibernate.Cfg.Configuration - Could not compile the mapping document: Restaurant.Core.Mapping.Product.hbm.xml 
+NHibernate.MappingException: Could not compile the mapping document: Restaurant.Core.Mapping.Product.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class Restaurant.Core.Domain.Product, Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: ProductImage ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'ProductImage' in class 'Restaurant.Core.Domain.Product'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.CreateProperty(IEntityPropertyMapping propertyMapping, String propertyOwnerClassName, IValue value, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2021-09-08 16:17:00,937 ERROR NHibernate.Cfg.Configuration - Problem parsing configuration 
+NHibernate.MappingException: Could not compile the mapping document: Restaurant.Core.Mapping.Product.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class Restaurant.Core.Domain.Product, Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: ProductImage ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'ProductImage' in class 'Restaurant.Core.Domain.Product'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.CreateProperty(IEntityPropertyMapping propertyMapping, String propertyOwnerClassName, IValue value, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   at NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   at NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   at NHibernate.Cfg.Configuration.AddResource(String path, Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   at NHibernate.Cfg.Configuration.DoConfigure(ISessionFactoryConfiguration factoryConfiguration)
+   at NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+2021-09-08 16:18:25,354 ERROR NHibernate.Util.ReflectHelper - Could not load type Restaurant.Core.Domain.TableFood, Restaurant.Core. 
+System.TypeLoadException: Could not load type 'Restaurant.Core.Domain.TableFood' from assembly 'Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2021-09-08 16:18:25,364 ERROR NHibernate.Cfg.Configuration - Could not compile the mapping document: Restaurant.Core.Mapping.TableOrder.hbm.xml 
+NHibernate.MappingException: Could not compile the mapping document: Restaurant.Core.Mapping.TableOrder.hbm.xml ---> NHibernate.MappingException: persistent class Restaurant.Core.Domain.TableFood, Restaurant.Core not found ---> System.TypeLoadException: Could not load type 'Restaurant.Core.Domain.TableFood' from assembly 'Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2021-09-08 16:18:25,365 ERROR NHibernate.Cfg.Configuration - Problem parsing configuration 
+NHibernate.MappingException: Could not compile the mapping document: Restaurant.Core.Mapping.TableOrder.hbm.xml ---> NHibernate.MappingException: persistent class Restaurant.Core.Domain.TableFood, Restaurant.Core not found ---> System.TypeLoadException: Could not load type 'Restaurant.Core.Domain.TableFood' from assembly 'Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   at NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   at NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   at NHibernate.Cfg.Configuration.AddResource(String path, Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   at NHibernate.Cfg.Configuration.DoConfigure(ISessionFactoryConfiguration factoryConfiguration)
+   at NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+2021-09-08 16:19:23,266 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select orderdetai0_.Id as Id1_14_, orderdetai0_.ComId as ComId2_14_, orderdetai0_.OrderID as Order3_14_, orderdetai0_.TableID as Table4_14_, orderdetai0_.TableName as Table5_14_, orderdetai0_.ProductID as Produ6_14_, orderdetai0_.ProductName as Produ7_14_, orderdetai0_.Quantity as Quant8_14_, orderdetai0_.Price as Price9_14_, orderdetai0_.Total as Tota10_14_, orderdetai0_.Discount as Disc11_14_, orderdetai0_.Amount as Amou12_14_, orderdetai0_.Notes as Note13_14_, orderdetai0_.isDelivered as isDe14_14_, orderdetai0_.isPaid as isPa15_14_, orderdetai0_.CreatedDate as Crea16_14_, orderdetai0_.CreatedBy as Crea17_14_, orderdetai0_.ModifiedDate as Modi18_14_, orderdetai0_.ModifiedBy as Modi19_14_ from OrderDetails orderdetai0_ where orderdetai0_.OrderID=@p0 
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ProductID'.
+Invalid column name 'ProductName'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:b189e76a-16ca-4845-9089-68f5a77fb72c
+Error Number:207,State:1,Class:16
+2021-09-08 16:19:23,281 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'ProductID'.
+Invalid column name 'ProductName'. 
+2021-09-08 16:19:23,283 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'ProductID'.
+Invalid column name 'ProductName'. 
+2021-09-08 16:19:23,284 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'ProductID'.
+Invalid column name 'ProductName'. 
+2021-09-08 16:21:40,240 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select orderdetai0_.Id as Id1_14_, orderdetai0_.ComId as ComId2_14_, orderdetai0_.OrderID as Order3_14_, orderdetai0_.TableID as Table4_14_, orderdetai0_.TableName as Table5_14_, orderdetai0_.ProductID as Produ6_14_, orderdetai0_.ProductName as Produ7_14_, orderdetai0_.Quantity as Quant8_14_, orderdetai0_.Price as Price9_14_, orderdetai0_.Total as Tota10_14_, orderdetai0_.Discount as Disc11_14_, orderdetai0_.Amount as Amou12_14_, orderdetai0_.Notes as Note13_14_, orderdetai0_.isDelivered as isDe14_14_, orderdetai0_.isPaid as isPa15_14_, orderdetai0_.CreatedDate as Crea16_14_, orderdetai0_.CreatedBy as Crea17_14_, orderdetai0_.ModifiedDate as Modi18_14_, orderdetai0_.ModifiedBy as Modi19_14_ from OrderDetails orderdetai0_ where orderdetai0_.OrderID=@p0 
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ProductID'.
+Invalid column name 'ProductName'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:eaebba4e-61d2-4887-b48f-1cd1240f15ab
+Error Number:207,State:1,Class:16
+2021-09-08 16:21:40,253 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'ProductID'.
+Invalid column name 'ProductName'. 
+2021-09-08 16:21:40,255 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'ProductID'.
+Invalid column name 'ProductName'. 
+2021-09-08 16:21:40,255 ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'ProductID'.
+Invalid column name 'ProductName'. 

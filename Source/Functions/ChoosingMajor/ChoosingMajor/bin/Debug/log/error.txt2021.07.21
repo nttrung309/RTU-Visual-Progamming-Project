@@ -1,0 +1,8 @@
+2021-07-21 09:27:30,067 ERROR Restaurant.Admin.GUID.frmFood - A generic error occurred in GDI+. 
+2021-07-21 09:30:49,380 ERROR Restaurant.Admin.GUID.frmFood - The process cannot access the file 'D:\KINHDOANH\Sources\Restaurant\Src\Restaurant.Admin\bin\Debug\FileUpload\ProductImages\F00000011.jpg' because it is being used by another process. 
+2021-07-21 09:44:16,139 ERROR Restaurant.Admin.GUID.frmFood - A generic error occurred in GDI+. 
+2021-07-21 09:45:01,127 ERROR Restaurant.Admin.GUID.frmFood - A generic error occurred in GDI+. 
+2021-07-21 09:49:18,159 ERROR Restaurant.Admin.GUID.frmFood - Parameter is not valid. 
+2021-07-21 09:49:53,854 ERROR Restaurant.Admin.GUID.frmFood - Parameter is not valid. 
+2021-07-21 09:51:07,689 ERROR Restaurant.Admin.GUID.frmFood - Parameter is not valid. 
+2021-07-21 09:51:30,107 ERROR Restaurant.Admin.GUID.frmFood - Parameter is not valid. 

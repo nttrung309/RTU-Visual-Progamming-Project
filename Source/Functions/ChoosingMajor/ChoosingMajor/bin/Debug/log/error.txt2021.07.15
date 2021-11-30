@@ -1,0 +1,160 @@
+2021-07-15 11:23:54,498 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select cast(count(*) as INT) as col_0_0_ from Table table0_ 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Table'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:e9812deb-3b25-46cb-ba5e-bb525601c3fa
+Error Number:156,State:1,Class:15
+2021-07-15 11:23:54,511 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:23:54,513 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:23:54,514 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:23:54,573 ERROR Restaurant.Admin.GUID.ucTable - could not execute query
+[ select cast(count(*) as INT) as col_0_0_ from Table table0_ ]
+[SQL: select cast(count(*) as INT) as col_0_0_ from Table table0_] 
+2021-07-15 11:28:32,313 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select cast(count(*) as INT) as col_0_0_ from Table table0_ 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Table'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:68148e02-b331-45db-b596-02003a5f4750
+Error Number:156,State:1,Class:15
+2021-07-15 11:28:32,325 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:28:32,326 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:28:32,327 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:28:32,378 ERROR Restaurant.Admin.GUID.ucTable - could not execute query
+[ select cast(count(*) as INT) as col_0_0_ from Table table0_ ]
+[SQL: select cast(count(*) as INT) as col_0_0_ from Table table0_] 
+2021-07-15 11:28:42,026 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select cast(count(*) as INT) as col_0_0_ from Table table0_ where table0_.TableName=@p0 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Table'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:68148e02-b331-45db-b596-02003a5f4750
+Error Number:156,State:1,Class:15
+2021-07-15 11:28:42,026 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:28:42,026 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:28:42,026 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:28:42,064 ERROR Restaurant.Admin.GUID.frmTable - could not execute query
+[ select cast(count(*) as INT) as col_0_0_ from Table table0_ where table0_.TableName=@p0 ]
+  Name:p1 - Value:BÀN 01
+[SQL: select cast(count(*) as INT) as col_0_0_ from Table table0_ where table0_.TableName=@p0] 
+2021-07-15 11:29:37,205 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select cast(count(*) as INT) as col_0_0_ from Table table0_ where table0_.TableName=@p0 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Table'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:68148e02-b331-45db-b596-02003a5f4750
+Error Number:156,State:1,Class:15
+2021-07-15 11:29:37,206 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:29:37,206 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:29:37,206 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:29:56,249 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select cast(count(*) as INT) as col_0_0_ from Table table0_ where table0_.TableName=@p0 
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Table'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:68148e02-b331-45db-b596-02003a5f4750
+Error Number:156,State:1,Class:15
+2021-07-15 11:29:56,250 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:29:56,250 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:29:56,250 ERROR NHibernate.Util.ADOExceptionReporter - Incorrect syntax near the keyword 'Table'. 
+2021-07-15 11:32:46,106 ERROR NHibernate.Util.ReflectHelper - Could not load type Restaurant.Core.Domain.Table, Restaurant.Core. 
+System.TypeLoadException: Could not load type 'Restaurant.Core.Domain.Table' from assembly 'Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2021-07-15 11:32:46,118 ERROR NHibernate.Cfg.Configuration - Could not compile the mapping document: Restaurant.Core.Mapping.Table.hbm.xml 
+NHibernate.MappingException: Could not compile the mapping document: Restaurant.Core.Mapping.Table.hbm.xml ---> NHibernate.MappingException: persistent class Restaurant.Core.Domain.Table, Restaurant.Core not found ---> System.TypeLoadException: Could not load type 'Restaurant.Core.Domain.Table' from assembly 'Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2021-07-15 11:32:46,119 ERROR NHibernate.Cfg.Configuration - Problem parsing configuration 
+NHibernate.MappingException: Could not compile the mapping document: Restaurant.Core.Mapping.Table.hbm.xml ---> NHibernate.MappingException: persistent class Restaurant.Core.Domain.Table, Restaurant.Core not found ---> System.TypeLoadException: Could not load type 'Restaurant.Core.Domain.Table' from assembly 'Restaurant.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   at NHibernate.Cfg.Configuration.ProcessMappingsQueue()
+   at NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   at NHibernate.Cfg.Configuration.AddResource(String path, Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   at NHibernate.Cfg.Configuration.DoConfigure(ISessionFactoryConfiguration factoryConfiguration)
+   at NHibernate.Cfg.Configuration.Configure(XmlReader textReader)

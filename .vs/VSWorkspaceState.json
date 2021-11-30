@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Source",
-    "\\Source\\Functions",
-    "\\Source\\Functions\\JobSearch",
-    "\\Source\\Functions\\JobSearch\\WinFormsApp1"
+    ""
   ],
-  "SelectedNode": "\\Source\\Functions\\JobSearch\\WinFormsApp1\\FirstUI.cs",
+  "SelectedNode": "\\Update.sln",
   "PreviewInSolutionExplorer": false
 }

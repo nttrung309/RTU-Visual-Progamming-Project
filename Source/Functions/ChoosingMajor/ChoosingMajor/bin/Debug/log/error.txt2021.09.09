@@ -1,0 +1,30 @@
+2021-09-09 09:56:22,554 ERROR Restaurant.Admin.Reports.ucReportRevenue - System.InvalidCastException: Unable to cast object of type 'DevExpress.DashboardCommon.GridDimensionColumn' to type 'DevExpress.DashboardCommon.GridMeasureColumn'.
+   at Restaurant.Admin.Reports.ucReportRevenue.CreateChart(List`1 datas)
+   at Restaurant.Admin.Reports.ucReportRevenue.LoadData()
+   at Restaurant.Admin.Reports.ucReportRevenue.ucReportRevenue_Load(Object sender, EventArgs e) 
+2021-09-09 15:24:57,422 ERROR Restaurant.Admin.GUID.ucBackup - Cannot open backup device 'C:\Users\Lenovo\Desktop\backup\database-20210909152457.bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally. 
+2021-09-09 15:33:04,065 ERROR Restaurant.Core.Implements.ProductCategoryService - Cannot open backup device 'C:\Users\Lenovo\Desktop\backup\database-20210909153304.bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally. 
+2021-09-09 15:36:16,704 ERROR Restaurant.Core.Implements.ProductCategoryService - Cannot open backup device 'C:\Users\Lenovo\Desktop\backup\database-20210909153616.bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally. 
+2021-09-09 15:43:48,191 ERROR NHibernate.Hql.Parser - NoViableAltException(55@[]) 
+2021-09-09 15:44:53,998 ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute command: BACKUP DATABASE [RestaurantDB] TO DISK= 'C:\Users\Lenovo\Desktop\backup\database-20210909154453.bak' 
+System.Data.SqlClient.SqlException (0x80131904): Cannot open backup device 'C:\Users\Lenovo\Desktop\backup\database-20210909154453.bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd)
+ClientConnectionId:29fcdfc5-7fec-4818-b46e-4dc0cbb063b9
+Error Number:3201,State:1,Class:16
+2021-09-09 15:44:54,017 ERROR NHibernate.Util.ADOExceptionReporter - Cannot open backup device 'C:\Users\Lenovo\Desktop\backup\database-20210909154453.bak'. Operating system error 5(Access is denied.).
+BACKUP DATABASE is terminating abnormally. 
+2021-09-09 15:47:56,326 ERROR NHibernate.Hql.Parser - NoViableAltException(55@[]) 
+2021-09-09 16:02:44,294 ERROR NHibernate.Hql.Parser - NoViableAltException(55@[]) 
+2021-09-09 17:09:27,159 ERROR Restaurant.Admin.GUID.ucRestore - Incorrect syntax near the keyword 'USER'. 
+2021-09-09 17:12:22,260 ERROR Restaurant.Admin.GUID.ucRestore - Incorrect syntax near the keyword 'USER'. 

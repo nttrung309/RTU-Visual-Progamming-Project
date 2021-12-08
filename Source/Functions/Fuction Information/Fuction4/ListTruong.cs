@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Fuction4
 {
@@ -17,6 +19,7 @@ namespace Fuction4
         private int boderRadius = 40;
         private Color boderColor = Color.DeepSkyBlue;
         List<string> listIcon = new List<string>();
+
         public Truong()
         {
             InitializeComponent();
@@ -129,7 +132,7 @@ namespace Fuction4
             TenTruong.ForeColor = Color.White;
         }
         public string[] schoolName = { "Đại học Bách Khoa TP.HCM", "Đại học Công nghệ Thông tin ĐHQG TP.HCM", "Trường Đại Học Kinh tế - Luật - ĐHQG TPHCM", "Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM", "Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TPHCM" };
-
+      
         void click()
         {
             UI.infSchoolForm.label1.Text = "Tên trường:  " + TuaDe;
@@ -304,8 +307,16 @@ namespace Fuction4
                 UI.infSchoolForm.label4.Text += "336 Nguyễn Trãi, Thanh Xuân Trung, Thanh Xuân, Hà Nội";
                 UI.infSchoolForm.label3.Text = "Trường Đại học Khoa học Xã hội và Nhân văn, Đại học Quốc gia Hà Nội (tiếng Anh: VNU University of Social Sciences and Humanities; viết tắt: VNU-USSH) là một trường đại học thành viên của Đại học Quốc gia Hà Nội. Trường ĐHKHXH&NV, ĐHQGHN có sứ mệnh đi đầu trong đào tạo nguồn nhân lực chất lượng cao, trình độ cao; nghiên cứu, sáng tạo và truyền bá tri thức về Khoa học xã hội và nhân văn, phục vụ sự nghiệp xây dựng, bảo vệ Tổ quốc và hội nhập quốc tế.Phát huy thế mạnh của một trường đại học khoa học cơ bản, tập trung nguồn lực xây dựng Trường ĐHKHXH&NV thành một trường đại học nghiên cứu, đa ngành và liên ngành với đội ngũ chuyên gia giỏi, đầu ngành; phát triển một số ngành, chuyên ngành đào tạo mới, tiên phong đóng vai trò nòng cốt trong đào tạo và nghiên cứu các ngành khoa học cơ bản của đất nước đạt trình độ khu vực và quốc tế; xếp vào nhóm 100 các trường đại học hàng đầu của khu vực châu Á và nhóm 500 đại học của thế giới.";
             }
+            UI.infSchoolForm.ChangeCheck();
             UI.infSchoolForm.Show();
         }
+
+        void fontcustom()
+        {
+            
+
+        }
+
         private void Truong_Click(object sender, EventArgs e)
         {
             click();
@@ -313,7 +324,12 @@ namespace Fuction4
 
         private void Truong_Load(object sender, EventArgs e)
         {
-            TenTruong.Text = TuaDe;
+
+            UI.FontCustom(TenTruong.Font,TenTruong,TuaDe);
+            
+
+            //pfc.Dispose();
+            //Marshal.FreeCoTaskMem(data);
             if (MaTruong != "")
             {
                 if (MaTruong == "QSK")

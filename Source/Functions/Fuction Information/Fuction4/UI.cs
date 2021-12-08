@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Fuction4
 {
     public partial class UI : Form
     {
+        static PrivateFontCollection pfc = new PrivateFontCollection();
         public static ThongtinTruong infSchoolForm = new ThongtinTruong();
         public static List<Truong> listTruong = new List<Truong>();
         public static List<Code> codes = new List<Code>();
@@ -50,7 +53,32 @@ namespace Fuction4
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            DanhsachIcon();
+            DanhsachIcon();            
+        }
+
+        static public void FontCustom(Font f,Label label,string j)
+        {
+            //Create your private font collection object.
+            
+
+            //Select your font from the resources.
+            //My font here is "Digireu.ttf"
+            int fontLength = Properties.Resources.SourceSansPro_Regular.Length;
+
+            // create a buffer to read in to
+            byte[] fontdata = Properties.Resources.SourceSansPro_Regular;
+
+            // create an unsafe memory block for the font data
+            System.IntPtr data = Marshal.AllocCoTaskMem(fontLength);
+
+            // copy the bytes to the unsafe memory block
+            Marshal.Copy(fontdata, 0, data, fontLength);
+
+            // pass the font to the font collection
+            pfc.AddMemoryFont(data, fontLength);
+
+            f = new Font(pfc.Families[0], 21);
+            label.Text = j;
         }
 
         private void flowLayoutPanel1_MouseEnter(object sender, EventArgs e)

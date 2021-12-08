@@ -37,7 +37,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Private\System.Data.SqlServerCe.dll</HintPath>
+      <HintPath>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,6 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ThongtinNganh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,14 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ListTruong.resx">
       <DependentUpon>ListTruong.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,13 +109,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\SourceSansPro-Regular.ttf" />
+    <None Include="SourceSansPro-Regular.otf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Text\QSC.text.txt" />
-    <None Include="Text\QSC.txt" />
     <None Include="Images\QSY.png" />
     <None Include="Images\DDQ.jpg" />
     <None Include="Images\QHE.png" />
@@ -128,6 +128,11 @@
     <None Include="Images\QHY.jpg" />
     <None Include="Images\QHT.jpg" />
     <None Include="Images\QHX.jpg" />
+    <None Include="Images\DDS.png" />
+    <None Include="Images\DDF.png" />
+    <None Include="Images\QHY.png" />
+    <None Include="Images\QHX.png" />
+    <None Include="Images\QHT.png" />
     <Content Include="Images\QSB.png" />
     <None Include="Images\QUF.png" />
     <Content Include="Images\UIT.png" />
@@ -139,6 +144,8 @@
   <ItemGroup>
     <None Include="Images\UEL.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Text\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

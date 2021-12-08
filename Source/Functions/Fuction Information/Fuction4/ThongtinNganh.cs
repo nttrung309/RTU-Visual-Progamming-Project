@@ -20,17 +20,17 @@ namespace Fuction4
             InitializeComponent();
         }
 
-        string str = @"Data Source=desktop-puo8cb7\minhpham;Initial Catalog=databaseNew;Integrated Security=True";
-        SqlConnection connection;
-        SqlCommand command1, command2;
+        string str = @"Data Source=D:\RTU.sdf";
+        SqlCeConnection connection;
+        SqlCeCommand command1, command2;
         DataTable table1 = new DataTable();
         DataTable table2 = new DataTable();
         DataTable tabble = new DataTable();
-        SqlDataAdapter adapter = new SqlDataAdapter();
+        SqlCeDataAdapter adapter = new SqlCeDataAdapter();
         int i, count = 0;
         private void ThongtinNganh_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(str);
+            connection = new SqlCeConnection(str);
             connection.Open();
             TakeData(Code);
             SetCol();

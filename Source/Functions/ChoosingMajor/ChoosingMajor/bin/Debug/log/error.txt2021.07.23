@@ -1,3 +1,0 @@
-2021-07-23 18:23:58,562 ERROR NHibernate.Hql.Parser - MismatchedTokenException(91!=-1) 
-2021-07-23 18:24:55,192 ERROR NHibernate.Hql.Parser - MismatchedTokenException(91!=-1) 
-2021-07-23 18:25:29,975 ERROR NHibernate.Hql.Parser - MismatchedTokenException(91!=-1) 

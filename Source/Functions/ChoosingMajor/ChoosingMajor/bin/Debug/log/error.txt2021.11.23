@@ -1,2 +1,0 @@
-2021-11-23 15:42:29,314 ERROR Schedule.Core.Implements.TaskCategoryService - No persister for: Schedule.Core.Domain.DocumentSeries 
-2021-11-23 16:16:12,693 ERROR Schedule.Admin.GUID.ucTaskCategory - ExecuteNonQuery requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized. 

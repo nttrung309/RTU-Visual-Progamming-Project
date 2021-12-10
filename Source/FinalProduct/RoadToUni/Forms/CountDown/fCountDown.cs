@@ -50,8 +50,8 @@ namespace RoadToUni.Forms.CountDown
             | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             topBackGround.BackColor = System.Drawing.Color.Transparent;
-            topBackGround.BackgroundImage = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\1.jpg");
-            backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\1.jpg");
+            backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\defaultBackGround.jpg");
+            topBackGround.BackgroundImage = backGround;
             topBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             topBackGround.Location = new System.Drawing.Point(12, 12);
             topBackGround.Name = "topBackGround";

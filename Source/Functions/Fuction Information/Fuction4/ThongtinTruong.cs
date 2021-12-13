@@ -28,7 +28,8 @@ namespace Fuction4
         public string schoolLink;
         private void ThongtinTruong_Load(object sender, EventArgs e)
         {
-
+            userControl31.Hide();
+            pictureBox1.SendToBack();
         }
 
         public void ChangeCheck()
@@ -48,6 +49,7 @@ namespace Fuction4
             
             checkVi = false;
             this.Hide();
+            userControl31.x = 0;
         }
         private void Timer1_Tick(object sender, EventArgs e)
         {
@@ -56,16 +58,17 @@ namespace Fuction4
             {
                 ImageNumber = 1;
             }
-            pictureBox1.Image = new Bitmap(Application.StartupPath + "\\Images\\" + schoolcode + ImageNumber + ".jpg");            
+            userControl21.pictureBox1.Image = new Bitmap(Application.StartupPath + "\\Images\\" + schoolcode + ImageNumber + ".jpg");            
         }
+
         private void ThongtinTruong_VisibleChanged(object sender, EventArgs e)
         {
-            label2.Text = "Mã trường:  " + schoolcode;
-            linkLabel2.Text = schoolLink;
+            userControl21.label2.Text = "Mã trường:  " + schoolcode;
+            userControl21.linkLabel2.Text = schoolLink;
             if (checkVi == true)
             {
                 ImageNumber = 1;
-                pictureBox1.Image = new Bitmap(Application.StartupPath + "\\Images\\" + schoolcode + ImageNumber + ".jpg");
+                userControl21.pictureBox1.Image = new Bitmap(Application.StartupPath + "\\Images\\" + schoolcode + ImageNumber + ".jpg");
                 LoadNextImage();
             }
             else
@@ -74,16 +77,58 @@ namespace Fuction4
             }    
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ThongtinNganh thongtinNganh = new ThongtinNganh();
-            thongtinNganh.Code = schoolcode;
-            thongtinNganh.Show();
-        }
-
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(schoolLink);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (userControl31.y == 0)
+            {
+                userControl31.y = 1;
+                userControl31.x = 1;
+            }
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
+            userControl31.Code = schoolcode;
+            userControl31.Show();
+            userControl31.BringToFront();
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            userControl31.y = 0;
+            userControl31.Hide();
+            userControl21.Show();
+            userControl21.BringToFront();
+            label3.ForeColor = Color.White;
+            label2.ForeColor = Color.Black;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            userControl31.y = 0;
+            userControl31.Hide();
+            userControl21.Show();
+            userControl21.BringToFront();
+            label3.ForeColor = Color.White;
+            label2.ForeColor = Color.Black;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            if (userControl31.y == 0)
+            {
+                userControl31.y = 1;
+                userControl31.x = 1;
+            }
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
+            userControl31.Code = schoolcode;
+            userControl31.Show();
+            userControl31.BringToFront();
         }
     }
 }

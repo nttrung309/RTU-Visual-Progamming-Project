@@ -63,9 +63,9 @@ namespace Fuction4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DDF {
+        internal static System.Drawing.Bitmap _100487 {
             get {
-                object obj = ResourceManager.GetObject("DDF", resourceCulture);
+                object obj = ResourceManager.GetObject("100487", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,39 @@ namespace Fuction4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DDK {
+        internal static System.Drawing.Bitmap _23_233762_clipart_yellow_folder_icon_png {
             get {
-                object obj = ResourceManager.GetObject("DDK", resourceCulture);
+                object obj = ResourceManager.GetObject("23-233762_clipart-yellow-folder-icon-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _23_233762_clipart_yellow_folder_icon_png3 {
+            get {
+                object obj = ResourceManager.GetObject("23-233762_clipart-yellow-folder-icon-png3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _23_233762_clipart_yellow_folder_icon_png3_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("23-233762_clipart-yellow-folder-icon-png3-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DDF {
+            get {
+                object obj = ResourceManager.GetObject("DDF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +153,16 @@ namespace Fuction4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DUT {
+            get {
+                object obj = ResourceManager.GetObject("DUT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HCMUS {
             get {
                 object obj = ResourceManager.GetObject("HCMUS", resourceCulture);
@@ -146,16 +186,6 @@ namespace Fuction4.Properties {
         internal static System.Drawing.Bitmap QHE {
             get {
                 object obj = ResourceManager.GetObject("QHE", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap QHF {
-            get {
-                object obj = ResourceManager.GetObject("QHF", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -231,12 +261,12 @@ namespace Fuction4.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] SourceSansPro_Regular {
+        internal static System.Drawing.Bitmap QUF {
             get {
-                object obj = ResourceManager.GetObject("SourceSansPro_Regular", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("QUF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

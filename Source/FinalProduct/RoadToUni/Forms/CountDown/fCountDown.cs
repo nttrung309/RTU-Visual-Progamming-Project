@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace RoadToUni.Forms.CountDown
 {
@@ -23,7 +24,6 @@ namespace RoadToUni.Forms.CountDown
         private int currentQuote = new Random().Next(0, Quotes.quotes.Count);
 
         public static System.Windows.Forms.PictureBox topBackGround;
-        public static Image backGround = null;
 
         public static string loadDate = "";
 
@@ -41,8 +41,15 @@ namespace RoadToUni.Forms.CountDown
         public fCountDown()
         {
             InitializeComponent();
+            LoadBackGround();
             CreateBackGround();
         }
+
+        private void LoadBackGround()
+        {
+            //if(File.Exists())
+        }
+
         private void CreateBackGround()
         {
             topBackGround = new System.Windows.Forms.PictureBox();
@@ -50,8 +57,7 @@ namespace RoadToUni.Forms.CountDown
             | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             topBackGround.BackColor = System.Drawing.Color.Transparent;
-            backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\defaultBackGround.jpg");
-            topBackGround.BackgroundImage = backGround;
+            topBackGround.BackgroundImage = RoadToUni.Forms.Login.fLogin.backGround;
             topBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             topBackGround.Location = new System.Drawing.Point(12, 12);
             topBackGround.Name = "topBackGround";

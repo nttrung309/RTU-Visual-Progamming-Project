@@ -18,6 +18,7 @@ namespace RoadToUni.Forms.Login
     {
         string appConfigPath = $@"{Application.StartupPath}\Data\Database\AppConfig.txt";
         public static string loginedUser = "";
+        public static Image backGround = null;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -166,7 +167,7 @@ namespace RoadToUni.Forms.Login
                 }
             }
 
-            string dataToWrite = "Username:" + txtUsername.Texts + "\nBackground:";
+            string dataToWrite = "Username:" + txtUsername.Texts + "\nBackground:\nPos:";
             File.WriteAllText(appConfigPath, dataToWrite);
         }
 
@@ -221,7 +222,35 @@ namespace RoadToUni.Forms.Login
             string data = File.ReadAllText(appConfigPath);
             string[] config = data.Split('\n');
             string userName = config[0].Substring(9,config[0].Length - 9);
-            if(userName != "")
+            string countDownBackGround = config[1].Substring(11, config[1].Length - 11);
+            string pos = config[2].Substring(4, config[2].Length - 4);
+            if (pos == "0")
+            {
+                if (File.Exists($@"{Application.StartupPath}\Data\Images\Countdown_Background\customBackGround" + countDownBackGround))
+                {
+                    backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\customBackGround" + countDownBackGround);
+                }
+                else
+                {
+                    backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\defaultBackGround.jpg");
+                }
+            }
+            else if (pos == "1")
+            {
+                if (File.Exists($@"{Application.StartupPath}\Data\Images\Countdown_Background\customBackGround1" + countDownBackGround))
+                {
+                    backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\customBackGround1" + countDownBackGround);
+                }
+                else
+                {
+                    backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\defaultBackGround.jpg");
+                }
+            }
+            else
+            {
+                backGround = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\defaultBackGround.jpg");
+            }
+            if (userName != "")
             {
                 OpenLoadingUI(userName);
             }

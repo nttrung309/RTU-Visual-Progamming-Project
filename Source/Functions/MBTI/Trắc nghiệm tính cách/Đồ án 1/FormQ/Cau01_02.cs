@@ -54,5 +54,10 @@ namespace Đồ_án_1
             }
             
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

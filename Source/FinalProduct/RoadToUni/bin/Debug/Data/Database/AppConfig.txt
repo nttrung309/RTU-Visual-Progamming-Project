@@ -1,3 +1,3 @@
 Username:MEOW
-Background:.jpg
-Pos:0
+Background:
+Pos:

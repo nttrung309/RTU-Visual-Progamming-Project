@@ -59,6 +59,10 @@ namespace RoadToUni.Forms.UI.Setting
             this.picCountDown.BackgroundImage = new Bitmap($@"{Application.StartupPath}\Data\Images\Countdown_Background\defaultBackGround.jpg");
             RoadToUni.Forms.CountDown.fCountDown.topBackGround.BackgroundImage = this.picCountDown.BackgroundImage;
             RoadToUni.Forms.CountDown.fCountDown.topBackGround.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
+            string data = File.ReadAllText(appConfigPath);
+            string[] config = data.Split('\n');
+            File.WriteAllText(appConfigPath, config[0] + "\nBackground:\nPos:");
         }
 
         private void btnChangeBackGround_Click(object sender, EventArgs e)

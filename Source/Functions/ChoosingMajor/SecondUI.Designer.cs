@@ -101,7 +101,7 @@ namespace ChoosingMajor
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SecondUI";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SecondUI";
             this.Load += new System.EventHandler(this.SecondUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxTitle)).EndInit();

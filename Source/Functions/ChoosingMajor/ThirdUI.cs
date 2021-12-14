@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.SqlServerCe;
 
 namespace ChoosingMajor
 {
@@ -47,6 +48,11 @@ namespace ChoosingMajor
 
                 con.Close();
             }
+            dgvNganh.Columns[0].Width = 100; 
+            dgvNganh.Columns[1].Width = 300;
+            dgvNganh.Columns[2].Width = 150;
+            dgvNganh.Columns[3].Width = 150;
+            dgvNganh.ColumnHeadersDefaultCellStyle.BackColor = Color.MediumTurquoise;
         }
         private void btnBack_Click(object sender, EventArgs e)
         {

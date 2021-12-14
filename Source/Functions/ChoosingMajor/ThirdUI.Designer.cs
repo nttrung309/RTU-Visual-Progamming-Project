@@ -30,6 +30,8 @@ namespace ChoosingMajor
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThirdUI));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pbxTitle = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.dgvNganh = new System.Windows.Forms.DataGridView();
@@ -74,12 +76,25 @@ namespace ChoosingMajor
             this.dgvNganh.AllowUserToDeleteRows = false;
             this.dgvNganh.AllowUserToResizeColumns = false;
             this.dgvNganh.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Yellow;
+            this.dgvNganh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNganh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNganh.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumTurquoise;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvNganh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvNganh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNganh.Location = new System.Drawing.Point(154, 298);
+            this.dgvNganh.EnableHeadersVisualStyles = false;
+            this.dgvNganh.GridColor = System.Drawing.Color.Black;
+            this.dgvNganh.Location = new System.Drawing.Point(154, 268);
             this.dgvNganh.Name = "dgvNganh";
             this.dgvNganh.RowHeadersVisible = false;
-            this.dgvNganh.Size = new System.Drawing.Size(800, 301);
+            this.dgvNganh.Size = new System.Drawing.Size(800, 331);
             this.dgvNganh.TabIndex = 7;
             // 
             // dataGridView1
@@ -100,7 +115,7 @@ namespace ChoosingMajor
             "2021",
             "2020",
             "2019"});
-            this.comboBox1.Location = new System.Drawing.Point(856, 266);
+            this.comboBox1.Location = new System.Drawing.Point(842, 236);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(98, 26);
             this.comboBox1.TabIndex = 8;
@@ -112,7 +127,7 @@ namespace ChoosingMajor
             this.customLabel2.BackColor = System.Drawing.Color.Transparent;
             this.customLabel2.Font = new System.Drawing.Font("Arial", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabel2.ForeColor = System.Drawing.Color.Red;
-            this.customLabel2.Location = new System.Drawing.Point(226, 244);
+            this.customLabel2.Location = new System.Drawing.Point(224, 214);
             this.customLabel2.Name = "customLabel2";
             this.customLabel2.OutlineForeColor = System.Drawing.Color.Black;
             this.customLabel2.OutlineWidth = 2F;
@@ -127,7 +142,7 @@ namespace ChoosingMajor
             this.customLabel1.BackColor = System.Drawing.Color.Transparent;
             this.customLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customLabel1.ForeColor = System.Drawing.Color.White;
-            this.customLabel1.Location = new System.Drawing.Point(860, 244);
+            this.customLabel1.Location = new System.Drawing.Point(848, 214);
             this.customLabel1.Name = "customLabel1";
             this.customLabel1.OutlineForeColor = System.Drawing.Color.Black;
             this.customLabel1.OutlineWidth = 2F;
@@ -169,7 +184,7 @@ namespace ChoosingMajor
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ThirdUI";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ThirdUI";
             this.Load += new System.EventHandler(this.ThirdUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxTitle)).EndInit();

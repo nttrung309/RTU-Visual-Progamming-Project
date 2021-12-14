@@ -25,3 +25,5 @@ C:\Users\ADMIN\Documents\VS Projects\LoginForm\LoginForm\LoginForm\bin\Debug\net
 C:\Users\ADMIN\Documents\VS Projects\LoginForm\LoginForm\LoginForm\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ADMIN\Documents\VS Projects\LoginForm\LoginForm\LoginForm\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ADMIN\Documents\VS Projects\LoginForm\LoginForm\LoginForm\obj\Debug\netcoreapp3.1\LoginForm.csproj.CopyComplete
+C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Login\LoginForm\obj\Debug\netcoreapp3.1\LoginForm.dll
+C:\Users\Admin\Desktop\RTU-Visual-Progamming-Project\Source\Functions\Login\LoginForm\obj\Debug\netcoreapp3.1\LoginForm.pdb

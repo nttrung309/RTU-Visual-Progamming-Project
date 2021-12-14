@@ -23,11 +23,11 @@ namespace Searching
         DataTable table3 = new DataTable();
         DataTable tabe = new DataTable();
     
-        string str = @"Data Source=C:\Users\Admin\Desktop\f\RTU.sdf";
+        string str = @"Data Source=C:\Users\Admin\Desktop\Công Việc Học Tập\f\RTU.sdf";
 
         SqlCeDataAdapter adapter = new SqlCeDataAdapter();
 
-        int i,count=0,Loca=0,check=0,Check2=0;
+        int i,count=0,Loca=0,check=0,Check2=-5;
         void loaddata()
         {
             //load dữ liệu từ Database
@@ -50,6 +50,7 @@ namespace Searching
             tabe.Columns.Add("Mã Ngành");
             tabe.Columns.Add("Tổ Hợp");
             tabe.Columns.Add("Điểm");
+            tabe.Columns.Add("So Sánh");
             dataGridView1.DataSource = tabe;
             
             
@@ -113,10 +114,11 @@ namespace Searching
                 this.pictureBox2.Location = new System.Drawing.Point(430, 80);
                     this.pictureBox3.Location = new System.Drawing.Point(900, 55);
                 dataGridView1.Columns[0].Width = 60 + 90;
-                dataGridView1.Columns[1].Width = 400 + 90;
+                dataGridView1.Columns[1].Width = 350 + 90;
                 dataGridView1.Columns[2].Width = 110 + 90;
-                dataGridView1.Columns[3].Width = 140 + 70;
-                dataGridView1.Columns[4].Width = 60 + 70;
+                dataGridView1.Columns[3].Width = 135 + 60;
+                dataGridView1.Columns[4].Width = 50 +40;
+                dataGridView1.Columns[5].Width = 75+35;
                 dataGridView1.Font = new Font(" time new roman", 13.2f);
 
 
@@ -126,11 +128,14 @@ namespace Searching
 
                 this.pictureBox2.Location = new System.Drawing.Point(289, 64);
                 this.pictureBox3.Location = new System.Drawing.Point(591, 57);
+               
+
                 dataGridView1.Columns[0].Width = 60;
-                dataGridView1.Columns[1].Width = 400;
+                dataGridView1.Columns[1].Width = 350;
                 dataGridView1.Columns[2].Width = 110;
-                dataGridView1.Columns[3].Width = 140;
-                dataGridView1.Columns[4].Width = 60;
+                dataGridView1.Columns[3].Width = 135;
+                dataGridView1.Columns[4].Width = 50;
+                dataGridView1.Columns[5].Width = 75;
                 dataGridView1.Font = new Font(" time new roman", 10.2f);
             }
         
@@ -194,7 +199,7 @@ namespace Searching
                     {
 
                         count++;
-                        string[] a = new string[5];
+                        string[] a = new string[6];
                         a[0] = count.ToString();
                         a[2] = table1.Rows[i].ItemArray[1].ToString();
                         for (int j = 0; j < table2.Rows.Count; j++)
@@ -208,7 +213,7 @@ namespace Searching
 
                         a[3] = table1.Rows[i].ItemArray[2].ToString();
                         a[4] = table1.Rows[i].ItemArray[4].ToString();
-                      
+                        a[5] = "xem thêm";
                         tabe.Rows.Add(a);
                        
                     }
@@ -292,11 +297,12 @@ namespace Searching
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.ReadOnly = true;
             dataGridView1.Columns[0].Width = 60;
-            dataGridView1.Columns[1].Width = 400;
+            dataGridView1.Columns[1].Width = 350;
             dataGridView1.Columns[2].Width = 110;
-            dataGridView1.Columns[3].Width = 140;
-            dataGridView1.Columns[4].Width = 60;
-       
+            dataGridView1.Columns[3].Width = 135;
+            dataGridView1.Columns[4].Width = 50;
+            dataGridView1.Columns[5].Width = 75;
+
         }
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -366,6 +372,82 @@ namespace Searching
 
         }
 
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+           // MessageBox.Show(e.RowIndex.ToString());
+        //   MessageBox.Show(e.ColumnIndex.ToString());
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 5)
+            {
+                if (e.RowIndex == Check2)
+                {
+                    this.chart1.Titles["Title1"].Text ="";
+                    chart1.Series["Biểu Đồ"].Points.Clear();
+                    Check2 = -5;
+                }
+                else
+                {
+                    Loca = 0;
+
+                    Loca = int.Parse(dataGridView1.SelectedRows[0].Index.ToString());
+                    command3 = connection.CreateCommand();
+
+                    command3.CommandText = "select * from XET";
+                    adapter.SelectCommand = command3;
+
+                    table3.Clear();
+                    adapter.Fill(table3);
+
+                    float a = 0, b = 0, c = 0;
+
+                    for (int j = 0; j < table3.Rows.Count; j++)
+                    {
+                        if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2019" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
+                        {
+                            a = float.Parse(table3.Rows[j].ItemArray[4].ToString());
+                        }
+                        if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2020" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
+                        {
+                            b = float.Parse(table3.Rows[j].ItemArray[4].ToString());
+                        }
+                        if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2021" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
+                        {
+                            c = float.Parse(table3.Rows[j].ItemArray[4].ToString());
+                        }
+                        if (a != 0 && b != 0 && c != 0)
+                            break;
+                    }
+                    //   dataGridView1.DataSource = table3;
+                    //   int a = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[1].ToString());
+                    //   MessageBox.Show(a.ToString() + " " + b.ToString() + " " + c.ToString());
+
+                    //this.chart1.Titles.Clear();
+                    //chart1.Titles["Biểu Đồ"].Alignment = System.Drawing.ContentAlignment.TopLeft;
+                    //chart1.Titles["title1"].Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    //chart1.Titles["title1"].ForeColor = System.Drawing.Color.DarkSlateGray;
+                    string st = "Ngành " + dataGridView1.Rows[Loca].Cells[1].Value.ToString();
+                    //this.chart1.Titles.Add(st);
+                    this.chart1.Titles["Title1"].Text = st;
+                    chart1.Series["Biểu Đồ"].Points.Clear();
+                    chart1.Series["Biểu Đồ"].Points.AddXY("2019", a);
+                    chart1.Series["Biểu Đồ"].Points[0].Label = a.ToString();
+                    chart1.Series["Biểu Đồ"].LabelForeColor = Color.Blue;
+                    //   chart1.Series["Biểu Đồ"].Points[0].Color = Color.Red;
+                    chart1.Series["Biểu Đồ"].Points.AddXY("2020", b);
+                    chart1.Series["Biểu Đồ"].Points[1].Label = b.ToString();
+                    chart1.Series["Biểu Đồ"].Points.AddXY("2021", c);
+                    chart1.Series["Biểu Đồ"].Points[2].Label = c.ToString();
+                    Check2 = e.RowIndex;
+                }
+
+                
+            }
+         
+        }
+
         private void dataGridView1_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
         {
            
@@ -378,69 +460,20 @@ namespace Searching
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            
-            if (check > 1||Check2==1)
+
+            if (check > 1 || Check2 == 1)
             {
-                Loca = 0;
-               
-                    Loca = int.Parse(dataGridView1.SelectedRows[0].Index.ToString());
-                command3 = connection.CreateCommand();
 
-                command3.CommandText = "select * from XET";
-                adapter.SelectCommand = command3;
-
-                table3.Clear();
-                adapter.Fill(table3);
-
-                float a = 0, b = 0, c = 0;
-
-                for (int j = 0; j < table3.Rows.Count; j++)
-                {
-                    if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2019" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
-                    {
-                        a = float.Parse(table3.Rows[j].ItemArray[4].ToString());
-                    }
-                    if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2020" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
-                    {
-                        b = float.Parse(table3.Rows[j].ItemArray[4].ToString());
-                    }
-                    if (table3.Rows[j].ItemArray[0].ToString() == comboBox1.SelectedValue.ToString() && table3.Rows[j].ItemArray[3].ToString() == "2021" && table3.Rows[j].ItemArray[1].ToString() == dataGridView1.Rows[Loca].Cells[2].Value.ToString())
-                    {
-                        c = float.Parse(table3.Rows[j].ItemArray[4].ToString());
-                    }
-                    if (a != 0 && b != 0 && c != 0)
-                        break;
-                }
-                //   dataGridView1.DataSource = table3;
-                //   int a = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[1].ToString());
-                //   MessageBox.Show(a.ToString() + " " + b.ToString() + " " + c.ToString());
-
-                //this.chart1.Titles.Clear();
-                //chart1.Titles["Biểu Đồ"].Alignment = System.Drawing.ContentAlignment.TopLeft;
-                //chart1.Titles["title1"].Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                //chart1.Titles["title1"].ForeColor = System.Drawing.Color.DarkSlateGray;
-                string st = "Ngành " + dataGridView1.Rows[Loca].Cells[1].Value.ToString();
-                //this.chart1.Titles.Add(st);
-                this.chart1.Titles["Title1"].Text = st;
-                chart1.Series["Biểu Đồ"].Points.Clear();
-                chart1.Series["Biểu Đồ"].Points.AddXY("2019", a);
-                chart1.Series["Biểu Đồ"].Points[0].Label = a.ToString();
-                chart1.Series["Biểu Đồ"].LabelForeColor = Color.Blue;
-                //   chart1.Series["Biểu Đồ"].Points[0].Color = Color.Red;
-                chart1.Series["Biểu Đồ"].Points.AddXY("2020", b);
-                chart1.Series["Biểu Đồ"].Points[1].Label = b.ToString();
-                chart1.Series["Biểu Đồ"].Points.AddXY("2021", c);
-                chart1.Series["Biểu Đồ"].Points[2].Label = c.ToString();
+             //   check++;
             }
-            check++;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+          
 
-            
-
-        }
+        
+    }
 
         void loadComboBoxNorth()
         {

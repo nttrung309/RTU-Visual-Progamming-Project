@@ -45,15 +45,18 @@ namespace Searching
             adapter.SelectCommand = command2;
             table2.Clear();
             adapter.Fill(table2);
-            //Load data bảng Ngành để tra tên ngành luôn
+          //  Load data bảng Ngành để tra tên ngành luôn
             tabe.Columns.Add("STT");
             tabe.Columns.Add("Tên Ngành");
             tabe.Columns.Add("Mã Ngành");
             tabe.Columns.Add("Tổ Hợp");
             tabe.Columns.Add("Điểm");
             tabe.Columns.Add("So Sánh");
+ 
+
             dataGridView1.DataSource = tabe;
             
+
             
         }
         public Form1()
@@ -215,8 +218,11 @@ namespace Searching
                         a[3] = table1.Rows[i].ItemArray[2].ToString();
                         a[4] = table1.Rows[i].ItemArray[4].ToString();
                         a[5] = "xem thêm";
-                        tabe.Rows.Add(a);
-                       
+                      
+                       tabe.Rows.Add(a);
+
+                      
+                   
                     }
                     i++;
                 }
@@ -224,8 +230,13 @@ namespace Searching
 
            
                 dataGridView1.DataSource = tabe;
+
                 SetColorRowDT();
-                
+
+                for (int Diem = 0; Diem < dataGridView1.RowCount; Diem++)
+                {
+                    dataGridView1.AutoResizeRow(Diem);
+                }
 
             }
 
@@ -296,7 +307,7 @@ namespace Searching
         {
             // điều chỉnh độ rộng cột cho datagrid
             dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.ReadOnly = true;
+           dataGridView1.ReadOnly = true;
             dataGridView1.Columns[0].Width = 60;
             dataGridView1.Columns[1].Width = 350;
             dataGridView1.Columns[2].Width = 110;
@@ -490,6 +501,13 @@ namespace Searching
 
         
     }
+        private void disableSortHeader()
+        {
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }    
+        }
         void loadComboboxYear()
         {
             command4 = connection.CreateCommand();
@@ -538,7 +556,7 @@ namespace Searching
             loaddata();
             dezignDataGridView();
             loadComboboxYear();
-          
+            disableSortHeader();
         }
        
     }

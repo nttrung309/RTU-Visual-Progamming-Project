@@ -42,3 +42,55 @@ C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.CoreCompileInputs.cache
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
 C:\Users\ACER\source\repos\CLONE_GIT\clone\RTU-Visual-Progamming-Project\Source\Functions\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe.config
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.pdb
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.AssemblyReference.cache
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau03_04.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau05_06.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau07_08.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau09_10.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau11_12.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau13_14.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau15_16.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau17_18.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau19_20.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.FormUI.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau01_02.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.KetQua.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Meow.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Properties.Resources.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.GenerateResource.cache
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.CoreCompileInputs.cache
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl1.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl2.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl3.resources
+D:\programer\đồ an năm hai\New folder\MBTI\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl4.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe.config
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.pdb
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.AssemblyReference.cache
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau03_04.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau05_06.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau07_08.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau09_10.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau11_12.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau13_14.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau15_16.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau17_18.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau19_20.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.FormUI.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau01_02.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.KetQua.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Meow.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Properties.Resources.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl1.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl2.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl3.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl4.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.GenerateResource.cache
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.CoreCompileInputs.cache
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
+C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb

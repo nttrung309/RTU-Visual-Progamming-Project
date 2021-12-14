@@ -264,7 +264,7 @@ namespace RoadToUni.Forms.Search.FindSchool
 
         private void cbNameUni_Enter(object sender, EventArgs e)
         {
-            if (cbNameUni.Text == "Chọn ngành/nhóm ngành") ;
+            if (cbNameUni.Text == "Chọn ngành/nhóm ngành");
             {
                 cbNameUni.Text = "";
                 cbNameUni.ForeColor = Color.Black;

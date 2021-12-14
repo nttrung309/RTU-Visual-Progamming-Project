@@ -23,4 +23,6 @@ D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.ThongtinT
 D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.AssemblyReference.cache
 D:\Thử nghiệm\Code\Fuction Information\Fuction4\bin\Debug\System.Data.SqlServerCe.dll
 D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.csproj.CopyComplete
-D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.ThongtinNganh.resources
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.UserControl1.resources
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.UserControl2.resources
+D:\Thử nghiệm\Code\Fuction Information\Fuction4\obj\Debug\Fuction4.UserControl3.resources

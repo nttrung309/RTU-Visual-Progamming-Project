@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Fuction4
 {
     public partial class UI : Form
     {
+        static PrivateFontCollection pfc = new PrivateFontCollection();
         public static ThongtinTruong infSchoolForm = new ThongtinTruong();
         public static List<Truong> listTruong = new List<Truong>();
         public static List<Code> codes = new List<Code>();
@@ -50,7 +53,13 @@ namespace Fuction4
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            DanhsachIcon();
+            DanhsachIcon();            
+        }
+
+        static public void FontCustom(Font f, Label label, string j)
+        {
+            
+            label.Text = j;
         }
 
         private void flowLayoutPanel1_MouseEnter(object sender, EventArgs e)
@@ -60,6 +69,43 @@ namespace Fuction4
                 tr.BackColor = Color.White;
                 tr.pictureBox1.BackColor = Color.White;
             }
+        }
+
+        private void bb1_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            
+            for(int j = 0; j < schoolCode.Length; j++)
+            {
+                if (listTruong[j].TuaDe.Contains(userControl11.textBox1.Text))
+                {                    
+                    i++;
+                }
+            }    
+            if(i == 0)
+            {
+                MessageBox.Show("Không tìm thấy trường khớp với tên đã nhập.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                flowLayoutPanel1.Controls.Clear();
+                for (int j = 0; j < schoolCode.Length; j++)
+                {
+                    if (listTruong[j].TuaDe.Contains(userControl11.textBox1.Text))
+                    {
+                        flowLayoutPanel1.Controls.Add(listTruong[j]);
+                    }
+                }
+            }    
+        }
+
+        private void bb2_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            for (int j = 0; j < schoolCode.Length; j++)
+            {                
+                flowLayoutPanel1.Controls.Add(listTruong[j]);
+            }    
         }
     }
 }

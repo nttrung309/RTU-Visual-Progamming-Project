@@ -37,7 +37,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Private\System.Data.SqlServerCe.dll</HintPath>
+      <HintPath>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,13 +50,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Code.cs" />
-    <Compile Include="ThongtinNganh.cs">
-      <SubType>Form</SubType>
+    <Compile Include="panelS.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ThongtinNganh.Designer.cs">
-      <DependentUpon>ThongtinNganh.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RoundBT.cs" />
     <Compile Include="UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,9 +84,24 @@
     <Compile Include="ThongtinTruong.Designer.cs">
       <DependentUpon>ThongtinTruong.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ThongtinNganh.resx">
-      <DependentUpon>ThongtinNganh.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ThongtinTruong.resx">
       <DependentUpon>ThongtinTruong.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -89,16 +111,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ListTruong.resx">
       <DependentUpon>ListTruong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,31 +140,33 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Text\QSC.text.txt" />
-    <None Include="Text\QSC.txt" />
-    <None Include="Images\QSY.png" />
-    <None Include="Images\DDQ.jpg" />
-    <None Include="Images\QHE.png" />
-    <None Include="Images\DDF.jpg" />
-    <None Include="Images\DDS.jpg" />
-    <None Include="Images\QHI.png" />
-    <None Include="Images\DSK.png" />
-    <None Include="Images\QHS.png" />
-    <None Include="Images\DDY.png" />
-    <None Include="Images\QHY.jpg" />
-    <None Include="Images\QHT.jpg" />
-    <None Include="Images\QHX.jpg" />
-    <Content Include="Images\QSB.png" />
-    <None Include="Images\QUF.png" />
-    <Content Include="Images\UIT.png" />
-    <Content Include="Images\HCMUS.png" />
-    <Content Include="Images\USSH.png" />
-    <Content Include="Images\IU.png" />
-    <Content Include="Images\DUT.png" />
+    <Folder Include="Text\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\UEL.png" />
+    <Content Include="images\DDF.png" />
+    <Content Include="images\DDQ.jpg" />
+    <Content Include="images\DDS.png" />
+    <Content Include="images\DDY.png" />
+    <Content Include="images\DSK.png" />
+    <Content Include="images\DUT.png" />
+    <Content Include="images\HCMUS.png" />
+    <Content Include="images\IU.png" />
+    <Content Include="images\QHE.png" />
+    <Content Include="images\QHI.png" />
+    <Content Include="images\QHS.png" />
+    <Content Include="images\QHT.png" />
+    <Content Include="images\QHX.png" />
+    <Content Include="images\QHY.png" />
+    <Content Include="images\QSB.png" />
+    <Content Include="images\QSY.png" />
+    <Content Include="images\QUF.png" />
+    <Content Include="images\UEL.png" />
+    <Content Include="images\UIT.png" />
+    <Content Include="images\USSH.png" />
+    <None Include="Resources\23-233762_clipart-yellow-folder-icon-png3-removebg-preview.png" />
+    <None Include="Resources\23-233762_clipart-yellow-folder-icon-png3.png" />
+    <None Include="Resources\23-233762_clipart-yellow-folder-icon-png.png" />
+    <None Include="Resources\100487.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,6 +36,7 @@ namespace Đồ_án_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1108, 611);
             this.ControlBox = false;
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Meow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

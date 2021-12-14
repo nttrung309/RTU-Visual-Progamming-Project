@@ -150,7 +150,7 @@ namespace Searching
             // comboBox1
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.BackColor = System.Drawing.Color.SeaShell;
             this.comboBox1.DropDownWidth = 629;
             this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
@@ -159,25 +159,23 @@ namespace Searching
             this.comboBox1.Size = new System.Drawing.Size(676, 34);
             this.comboBox1.TabIndex = 21;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
             // 
             // comboBox2
             // 
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.BackColor = System.Drawing.Color.SeaShell;
             this.comboBox2.DropDownWidth = 159;
             this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox2.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021"});
             this.comboBox2.Location = new System.Drawing.Point(867, 95);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(159, 34);
             this.comboBox2.TabIndex = 8;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox2_KeyPress);
             // 
             // groupBox2
             // 
@@ -287,13 +285,13 @@ namespace Searching
             // 
             this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.BackColor = System.Drawing.Color.SeaShell;
             this.comboBox3.DropDownWidth = 159;
             this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.comboBox3.Items.AddRange(new object[] {
-            "",
+            "Tất Cả",
             "Miền Bắc",
             "Miền Trung",
             "Miền Nam"});
@@ -303,6 +301,7 @@ namespace Searching
             this.comboBox3.TabIndex = 38;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             this.comboBox3.SelectedValueChanged += new System.EventHandler(this.comboBox3_SelectedValueChanged);
+            this.comboBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox3_KeyPress);
             // 
             // label3
             // 

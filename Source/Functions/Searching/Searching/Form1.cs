@@ -16,11 +16,12 @@ namespace Searching
     {     
   
         SqlCeConnection connection;
-        SqlCeCommand  command, command1, command2,command3;
+        SqlCeCommand  command, command1, command2,command3,command4;
         DataTable table = new DataTable();
         DataTable table1 = new DataTable();
         DataTable table2 = new DataTable();
         DataTable table3 = new DataTable();
+        DataTable table4 = new DataTable();
         DataTable tabe = new DataTable();
     
         string str = @"Data Source=C:\Users\Admin\Desktop\Công Việc Học Tập\f\RTU.sdf";
@@ -448,6 +449,21 @@ namespace Searching
          
         }
 
+        private void comboBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void comboBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
         private void dataGridView1_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
         {
            
@@ -474,7 +490,19 @@ namespace Searching
 
         
     }
+        void loadComboboxYear()
+        {
+            command4 = connection.CreateCommand();
+            command4.CommandText = "select DISTINCT(NAM) from XET";
+            adapter.SelectCommand = command4;
+            table4.Clear();
+            adapter.Fill(table4);
 
+            comboBox2.DataSource = table4;
+            //comboBox2.ValueMember = "NAM";
+            comboBox2.DisplayMember = "NAM";
+            comboBox2.SelectedIndex = -1;
+        }
         void loadComboBoxNorth()
         {
             command = connection.CreateCommand();
@@ -509,7 +537,8 @@ namespace Searching
            addColumn_Name();
             loaddata();
             dezignDataGridView();
-            
+            loadComboboxYear();
+          
         }
        
     }

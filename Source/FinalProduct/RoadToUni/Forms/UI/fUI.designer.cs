@@ -33,7 +33,6 @@ namespace RoadToUni.Forms.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUI));
             this.pnlTitleBar = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnMaximize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnSchoolInfo = new CustomControls.RJControls.RJButton();
@@ -58,7 +57,6 @@ namespace RoadToUni.Forms.UI
             this.pnlTitleBar.BackColor = System.Drawing.Color.Snow;
             this.pnlTitleBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTitleBar.Controls.Add(this.btnMinimize);
-            this.pnlTitleBar.Controls.Add(this.btnMaximize);
             this.pnlTitleBar.Controls.Add(this.btnExit);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitleBar.Location = new System.Drawing.Point(187, 0);
@@ -76,27 +74,12 @@ namespace RoadToUni.Forms.UI
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Image = global::RoadToUni.Properties.Resources.minimize;
             this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMinimize.Location = new System.Drawing.Point(846, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(891, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(45, 26);
             this.btnMinimize.TabIndex = 2;
             this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Image = global::RoadToUni.Properties.Resources.maximize;
-            this.btnMaximize.Location = new System.Drawing.Point(891, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(45, 26);
-            this.btnMaximize.TabIndex = 1;
-            this.btnMaximize.UseVisualStyleBackColor = false;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnExit
             // 
@@ -427,7 +410,6 @@ namespace RoadToUni.Forms.UI
         private System.Windows.Forms.Panel pnlTitleBar;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnMinimize;
-        private System.Windows.Forms.Button btnMaximize;
         private CustomControls.RJControls.RJButton btnHome;
         private CustomControls.RJControls.RJButton btnSchool;
         private Label lbUser;

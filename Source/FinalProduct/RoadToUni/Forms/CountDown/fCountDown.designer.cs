@@ -414,7 +414,7 @@ namespace RoadToUni.Forms.CountDown
             // 
             // tmSupport
             // 
-            this.tmSupport.Interval = 4000;
+            this.tmSupport.Interval = 6000;
             this.tmSupport.Tick += new System.EventHandler(this.tmSupport_Tick);
             // 
             // fCountDown

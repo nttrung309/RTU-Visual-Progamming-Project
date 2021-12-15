@@ -361,4 +361,16 @@
   <data name="ui_gen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ui_gen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="countdown_infoSchool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\countdown_infoSchool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="countdown_jobsearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\countdown_jobsearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="countdown_schoolSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\countdown_schoolSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="countdown_score" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\countdown_score.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

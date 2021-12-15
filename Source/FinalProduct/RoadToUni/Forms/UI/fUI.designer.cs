@@ -36,17 +36,17 @@ namespace RoadToUni.Forms.UI
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.lbUser = new System.Windows.Forms.Label();
-            this.ptBUser = new System.Windows.Forms.PictureBox();
-            this.lbMenu = new System.Windows.Forms.Label();
             this.btnSchoolInfo = new CustomControls.RJControls.RJButton();
             this.btnScore = new CustomControls.RJControls.RJButton();
+            this.lbUser = new System.Windows.Forms.Label();
+            this.ptBUser = new System.Windows.Forms.PictureBox();
             this.btnSchool = new CustomControls.RJControls.RJButton();
             this.btnHome = new CustomControls.RJControls.RJButton();
             this.btnLogout = new CustomControls.RJControls.RJButton();
             this.btnSetting = new CustomControls.RJControls.RJButton();
             this.btnChoice = new CustomControls.RJControls.RJButton();
             this.btnMajor = new CustomControls.RJControls.RJButton();
+            this.lbMenu = new System.Windows.Forms.Label();
             this.btnMenu = new CustomControls.RJControls.RJButton();
             this.pnlTitleBar.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -136,39 +136,6 @@ namespace RoadToUni.Forms.UI
             this.pnlMenu.Size = new System.Drawing.Size(187, 637);
             this.pnlMenu.TabIndex = 0;
             // 
-            // lbUser
-            // 
-            this.lbUser.AutoSize = true;
-            this.lbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.ForeColor = System.Drawing.Color.White;
-            this.lbUser.Location = new System.Drawing.Point(58, 106);
-            this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(0, 25);
-            this.lbUser.TabIndex = 3;
-            // 
-            // ptBUser
-            // 
-            this.ptBUser.BackColor = System.Drawing.Color.Transparent;
-            this.ptBUser.Image = global::RoadToUni.Properties.Resources.user;
-            this.ptBUser.Location = new System.Drawing.Point(6, 68);
-            this.ptBUser.Name = "ptBUser";
-            this.ptBUser.Size = new System.Drawing.Size(49, 47);
-            this.ptBUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptBUser.TabIndex = 2;
-            this.ptBUser.TabStop = false;
-            // 
-            // lbMenu
-            // 
-            this.lbMenu.AutoSize = true;
-            this.lbMenu.BackColor = System.Drawing.Color.Transparent;
-            this.lbMenu.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMenu.ForeColor = System.Drawing.Color.White;
-            this.lbMenu.Location = new System.Drawing.Point(39, 19);
-            this.lbMenu.Name = "lbMenu";
-            this.lbMenu.Size = new System.Drawing.Size(75, 30);
-            this.lbMenu.TabIndex = 1;
-            this.lbMenu.Text = "MENU";
-            // 
             // btnSchoolInfo
             // 
             this.btnSchoolInfo.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -187,7 +154,7 @@ namespace RoadToUni.Forms.UI
             this.btnSchoolInfo.Name = "btnSchoolInfo";
             this.btnSchoolInfo.Size = new System.Drawing.Size(184, 60);
             this.btnSchoolInfo.TabIndex = 11;
-            this.btnSchoolInfo.Tag = "Điểm chuẩn các năm";
+            this.btnSchoolInfo.Tag = "Thông tin trường";
             this.btnSchoolInfo.Text = "Thông tin trường";
             this.btnSchoolInfo.TextColor = System.Drawing.Color.White;
             this.btnSchoolInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -218,6 +185,27 @@ namespace RoadToUni.Forms.UI
             this.btnScore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnScore.UseVisualStyleBackColor = false;
             this.btnScore.Click += new System.EventHandler(this.btnScore_Click);
+            // 
+            // lbUser
+            // 
+            this.lbUser.AutoSize = true;
+            this.lbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.ForeColor = System.Drawing.Color.White;
+            this.lbUser.Location = new System.Drawing.Point(58, 106);
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(0, 25);
+            this.lbUser.TabIndex = 3;
+            // 
+            // ptBUser
+            // 
+            this.ptBUser.BackColor = System.Drawing.Color.Transparent;
+            this.ptBUser.Image = global::RoadToUni.Properties.Resources.user;
+            this.ptBUser.Location = new System.Drawing.Point(6, 68);
+            this.ptBUser.Name = "ptBUser";
+            this.ptBUser.Size = new System.Drawing.Size(49, 47);
+            this.ptBUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptBUser.TabIndex = 2;
+            this.ptBUser.TabStop = false;
             // 
             // btnSchool
             // 
@@ -368,6 +356,18 @@ namespace RoadToUni.Forms.UI
             this.btnMajor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMajor.UseVisualStyleBackColor = false;
             this.btnMajor.Click += new System.EventHandler(this.btnMajor_Click);
+            // 
+            // lbMenu
+            // 
+            this.lbMenu.AutoSize = true;
+            this.lbMenu.BackColor = System.Drawing.Color.Transparent;
+            this.lbMenu.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMenu.ForeColor = System.Drawing.Color.White;
+            this.lbMenu.Location = new System.Drawing.Point(39, 19);
+            this.lbMenu.Name = "lbMenu";
+            this.lbMenu.Size = new System.Drawing.Size(75, 30);
+            this.lbMenu.TabIndex = 1;
+            this.lbMenu.Text = "MENU";
             // 
             // btnMenu
             // 

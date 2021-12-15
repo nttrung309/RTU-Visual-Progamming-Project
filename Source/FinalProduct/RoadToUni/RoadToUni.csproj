@@ -548,9 +548,6 @@
     <None Include="Resources\red_panel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MBTI.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\green_panel.png" />
   </ItemGroup>
   <ItemGroup>
@@ -594,6 +591,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ui_gen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_infoSchool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_jobsearch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_schoolSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countdown_jobsearch.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

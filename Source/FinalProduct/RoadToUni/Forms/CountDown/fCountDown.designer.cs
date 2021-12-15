@@ -42,23 +42,24 @@ namespace RoadToUni.Forms.CountDown
             this.label4 = new System.Windows.Forms.Label();
             this.lbHours = new System.Windows.Forms.Label();
             this.lbSec = new System.Windows.Forms.Label();
+            this.lbQuote = new System.Windows.Forms.Label();
+            this.lbAuthor = new System.Windows.Forms.Label();
+            this.timerNextQuote = new System.Windows.Forms.Timer(this.components);
+            this.rbtn1 = new System.Windows.Forms.RadioButton();
+            this.rbtn2 = new System.Windows.Forms.RadioButton();
+            this.rbtn4 = new System.Windows.Forms.RadioButton();
+            this.rbtn3 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMBTI = new CustomControls.RJControls.RJButton();
-            this.picMBTI = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnPomo = new CustomControls.RJControls.RJButton();
-            this.picPomo = new System.Windows.Forms.PictureBox();
+            this.btnDeskTools = new CustomControls.RJControls.RJButton();
+            this.btnDeskSearch = new CustomControls.RJControls.RJButton();
+            this.btnSupport = new CustomControls.RJControls.RJButton();
             this.picRoundedRec1 = new System.Windows.Forms.PictureBox();
             this.picRoundedRec2 = new System.Windows.Forms.PictureBox();
             this.picRoundedRec3 = new System.Windows.Forms.PictureBox();
             this.picRoundedRec4 = new System.Windows.Forms.PictureBox();
-            this.lbQuote = new System.Windows.Forms.Label();
-            this.lbAuthor = new System.Windows.Forms.Label();
-            this.timerNextQuote = new System.Windows.Forms.Timer(this.components);
+            this.tmSearch = new System.Windows.Forms.Timer(this.components);
+            this.tmSupport = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMBTI)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPomo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec3)).BeginInit();
@@ -203,93 +204,160 @@ namespace RoadToUni.Forms.CountDown
             this.lbSec.TabIndex = 2;
             this.lbSec.Text = "60";
             // 
+            // lbQuote
+            // 
+            this.lbQuote.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbQuote.AutoSize = true;
+            this.lbQuote.BackColor = System.Drawing.Color.White;
+            this.lbQuote.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuote.ForeColor = System.Drawing.Color.White;
+            this.lbQuote.Location = new System.Drawing.Point(359, 204);
+            this.lbQuote.Name = "lbQuote";
+            this.lbQuote.Size = new System.Drawing.Size(617, 46);
+            this.lbQuote.TabIndex = 13;
+            this.lbQuote.Text = "Chỉ những người dám thất bại lớn mới đạt được thành công lớn";
+            this.lbQuote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbQuote.Click += new System.EventHandler(this.lbQuote_Click);
+            // 
+            // lbAuthor
+            // 
+            this.lbAuthor.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbAuthor.AutoSize = true;
+            this.lbAuthor.BackColor = System.Drawing.Color.White;
+            this.lbAuthor.Font = new System.Drawing.Font("Lobster", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAuthor.ForeColor = System.Drawing.Color.White;
+            this.lbAuthor.Location = new System.Drawing.Point(704, 267);
+            this.lbAuthor.Name = "lbAuthor";
+            this.lbAuthor.Size = new System.Drawing.Size(144, 28);
+            this.lbAuthor.TabIndex = 14;
+            this.lbAuthor.Text = "Robert F. Kennedy";
+            this.lbAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbAuthor.Click += new System.EventHandler(this.lbAuthor_Click);
+            // 
+            // timerNextQuote
+            // 
+            this.timerNextQuote.Interval = 20000;
+            this.timerNextQuote.Tick += new System.EventHandler(this.timerNextQuote_Tick);
+            // 
+            // rbtn1
+            // 
+            this.rbtn1.AutoSize = true;
+            this.rbtn1.Checked = true;
+            this.rbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn1.Location = new System.Drawing.Point(3, 3);
+            this.rbtn1.Name = "rbtn1";
+            this.rbtn1.Size = new System.Drawing.Size(14, 13);
+            this.rbtn1.TabIndex = 18;
+            this.rbtn1.TabStop = true;
+            this.rbtn1.UseVisualStyleBackColor = true;
+            this.rbtn1.CheckedChanged += new System.EventHandler(this.rbtn1_CheckedChanged);
+            // 
+            // rbtn2
+            // 
+            this.rbtn2.AutoSize = true;
+            this.rbtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn2.Location = new System.Drawing.Point(23, 3);
+            this.rbtn2.Name = "rbtn2";
+            this.rbtn2.Size = new System.Drawing.Size(14, 13);
+            this.rbtn2.TabIndex = 19;
+            this.rbtn2.UseVisualStyleBackColor = true;
+            // 
+            // rbtn4
+            // 
+            this.rbtn4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rbtn4.AutoSize = true;
+            this.rbtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn4.Location = new System.Drawing.Point(573, 590);
+            this.rbtn4.Name = "rbtn4";
+            this.rbtn4.Size = new System.Drawing.Size(14, 13);
+            this.rbtn4.TabIndex = 21;
+            this.rbtn4.UseVisualStyleBackColor = true;
+            // 
+            // rbtn3
+            // 
+            this.rbtn3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rbtn3.AutoSize = true;
+            this.rbtn3.Checked = true;
+            this.rbtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn3.Location = new System.Drawing.Point(553, 590);
+            this.rbtn3.Name = "rbtn3";
+            this.rbtn3.Size = new System.Drawing.Size(14, 13);
+            this.rbtn3.TabIndex = 20;
+            this.rbtn3.TabStop = true;
+            this.rbtn3.UseVisualStyleBackColor = true;
+            this.rbtn3.CheckedChanged += new System.EventHandler(this.btn3_CheckedChanged);
+            // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::RoadToUni.Properties.Resources.green_panel;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.btnMBTI);
-            this.panel1.Controls.Add(this.picMBTI);
-            this.panel1.Location = new System.Drawing.Point(914, 387);
+            this.panel1.Controls.Add(this.rbtn2);
+            this.panel1.Controls.Add(this.rbtn1);
+            this.panel1.Location = new System.Drawing.Point(93, 588);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 192);
-            this.panel1.TabIndex = 12;
+            this.panel1.Size = new System.Drawing.Size(42, 31);
+            this.panel1.TabIndex = 26;
             // 
-            // btnMBTI
+            // btnDeskTools
             // 
-            this.btnMBTI.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.btnMBTI.BackgroundColor = System.Drawing.Color.MediumAquamarine;
-            this.btnMBTI.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnMBTI.BorderRadius = 10;
-            this.btnMBTI.BorderSize = 0;
-            this.btnMBTI.FlatAppearance.BorderSize = 0;
-            this.btnMBTI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMBTI.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMBTI.ForeColor = System.Drawing.Color.White;
-            this.btnMBTI.Location = new System.Drawing.Point(18, 135);
-            this.btnMBTI.Name = "btnMBTI";
-            this.btnMBTI.Size = new System.Drawing.Size(144, 40);
-            this.btnMBTI.TabIndex = 0;
-            this.btnMBTI.Text = "MBTI";
-            this.btnMBTI.TextColor = System.Drawing.Color.White;
-            this.btnMBTI.UseVisualStyleBackColor = false;
-            this.btnMBTI.Click += new System.EventHandler(this.btnMBTI_Click);
+            this.btnDeskTools.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeskTools.BackColor = System.Drawing.Color.Snow;
+            this.btnDeskTools.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnDeskTools.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeskTools.BackgroundImage")));
+            this.btnDeskTools.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeskTools.BorderColor = System.Drawing.Color.MediumPurple;
+            this.btnDeskTools.BorderRadius = 20;
+            this.btnDeskTools.BorderSize = 2;
+            this.btnDeskTools.FlatAppearance.BorderSize = 0;
+            this.btnDeskTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeskTools.ForeColor = System.Drawing.Color.White;
+            this.btnDeskTools.Location = new System.Drawing.Point(900, 377);
+            this.btnDeskTools.Name = "btnDeskTools";
+            this.btnDeskTools.Size = new System.Drawing.Size(196, 202);
+            this.btnDeskTools.TabIndex = 17;
+            this.btnDeskTools.TextColor = System.Drawing.Color.White;
+            this.btnDeskTools.UseVisualStyleBackColor = false;
+            this.btnDeskTools.Click += new System.EventHandler(this.btnDeskTools_Click);
             // 
-            // picMBTI
+            // btnDeskSearch
             // 
-            this.picMBTI.BackColor = System.Drawing.Color.Transparent;
-            this.picMBTI.Image = ((System.Drawing.Image)(resources.GetObject("picMBTI.Image")));
-            this.picMBTI.Location = new System.Drawing.Point(-17, 11);
-            this.picMBTI.Name = "picMBTI";
-            this.picMBTI.Size = new System.Drawing.Size(201, 125);
-            this.picMBTI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMBTI.TabIndex = 11;
-            this.picMBTI.TabStop = false;
+            this.btnDeskSearch.BackColor = System.Drawing.Color.Snow;
+            this.btnDeskSearch.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnDeskSearch.BackgroundImage = global::RoadToUni.Properties.Resources.countdown_score;
+            this.btnDeskSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeskSearch.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnDeskSearch.BorderRadius = 20;
+            this.btnDeskSearch.BorderSize = 0;
+            this.btnDeskSearch.FlatAppearance.BorderSize = 0;
+            this.btnDeskSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeskSearch.ForeColor = System.Drawing.Color.White;
+            this.btnDeskSearch.Location = new System.Drawing.Point(12, 377);
+            this.btnDeskSearch.Name = "btnDeskSearch";
+            this.btnDeskSearch.Size = new System.Drawing.Size(211, 202);
+            this.btnDeskSearch.TabIndex = 16;
+            this.btnDeskSearch.TextColor = System.Drawing.Color.White;
+            this.btnDeskSearch.UseVisualStyleBackColor = false;
+            this.btnDeskSearch.Click += new System.EventHandler(this.btnDeskSearch_Click);
             // 
-            // panel2
+            // btnSupport
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.btnPomo);
-            this.panel2.Controls.Add(this.picPomo);
-            this.panel2.Location = new System.Drawing.Point(744, 387);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(182, 192);
-            this.panel2.TabIndex = 11;
-            // 
-            // btnPomo
-            // 
-            this.btnPomo.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPomo.BackgroundColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPomo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPomo.BorderRadius = 10;
-            this.btnPomo.BorderSize = 0;
-            this.btnPomo.FlatAppearance.BorderSize = 0;
-            this.btnPomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPomo.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPomo.ForeColor = System.Drawing.Color.White;
-            this.btnPomo.Location = new System.Drawing.Point(18, 135);
-            this.btnPomo.Name = "btnPomo";
-            this.btnPomo.Size = new System.Drawing.Size(144, 40);
-            this.btnPomo.TabIndex = 0;
-            this.btnPomo.Text = "Pomodoro";
-            this.btnPomo.TextColor = System.Drawing.Color.White;
-            this.btnPomo.UseVisualStyleBackColor = false;
-            this.btnPomo.Click += new System.EventHandler(this.btnPomo_Click);
-            // 
-            // picPomo
-            // 
-            this.picPomo.BackColor = System.Drawing.Color.Transparent;
-            this.picPomo.Image = ((System.Drawing.Image)(resources.GetObject("picPomo.Image")));
-            this.picPomo.Location = new System.Drawing.Point(-11, 13);
-            this.picPomo.Name = "picPomo";
-            this.picPomo.Size = new System.Drawing.Size(201, 125);
-            this.picPomo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPomo.TabIndex = 11;
-            this.picPomo.TabStop = false;
+            this.btnSupport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSupport.BackColor = System.Drawing.Color.Snow;
+            this.btnSupport.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnSupport.BackgroundImage = global::RoadToUni.Properties.Resources.countdown_schoolSearch;
+            this.btnSupport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSupport.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSupport.BorderRadius = 20;
+            this.btnSupport.BorderSize = 0;
+            this.btnSupport.FlatAppearance.BorderSize = 0;
+            this.btnSupport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupport.ForeColor = System.Drawing.Color.White;
+            this.btnSupport.Location = new System.Drawing.Point(236, 377);
+            this.btnSupport.Name = "btnSupport";
+            this.btnSupport.Size = new System.Drawing.Size(658, 202);
+            this.btnSupport.TabIndex = 15;
+            this.btnSupport.TextColor = System.Drawing.Color.White;
+            this.btnSupport.UseVisualStyleBackColor = false;
+            this.btnSupport.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // picRoundedRec1
             // 
@@ -339,40 +407,15 @@ namespace RoadToUni.Forms.CountDown
             this.picRoundedRec4.TabIndex = 8;
             this.picRoundedRec4.TabStop = false;
             // 
-            // lbQuote
+            // tmSearch
             // 
-            this.lbQuote.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbQuote.AutoSize = true;
-            this.lbQuote.BackColor = System.Drawing.Color.White;
-            this.lbQuote.Font = new System.Drawing.Font("Pacifico", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuote.ForeColor = System.Drawing.Color.White;
-            this.lbQuote.Location = new System.Drawing.Point(359, 204);
-            this.lbQuote.Name = "lbQuote";
-            this.lbQuote.Size = new System.Drawing.Size(617, 46);
-            this.lbQuote.TabIndex = 13;
-            this.lbQuote.Text = "Chỉ những người dám thất bại lớn mới đạt được thành công lớn";
-            this.lbQuote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbQuote.Click += new System.EventHandler(this.lbQuote_Click);
+            this.tmSearch.Interval = 4000;
+            this.tmSearch.Tick += new System.EventHandler(this.tmSearch_Tick);
             // 
-            // lbAuthor
+            // tmSupport
             // 
-            this.lbAuthor.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbAuthor.AutoSize = true;
-            this.lbAuthor.BackColor = System.Drawing.Color.White;
-            this.lbAuthor.Font = new System.Drawing.Font("Lobster", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAuthor.ForeColor = System.Drawing.Color.White;
-            this.lbAuthor.Location = new System.Drawing.Point(704, 267);
-            this.lbAuthor.Name = "lbAuthor";
-            this.lbAuthor.Size = new System.Drawing.Size(144, 28);
-            this.lbAuthor.TabIndex = 14;
-            this.lbAuthor.Text = "Robert F. Kennedy";
-            this.lbAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbAuthor.Click += new System.EventHandler(this.lbAuthor_Click);
-            // 
-            // timerNextQuote
-            // 
-            this.timerNextQuote.Interval = 20000;
-            this.timerNextQuote.Tick += new System.EventHandler(this.timerNextQuote_Tick);
+            this.tmSupport.Interval = 4000;
+            this.tmSupport.Tick += new System.EventHandler(this.tmSupport_Tick);
             // 
             // fCountDown
             // 
@@ -382,10 +425,14 @@ namespace RoadToUni.Forms.CountDown
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1108, 611);
             this.ControlBox = false;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.rbtn4);
+            this.Controls.Add(this.rbtn3);
+            this.Controls.Add(this.btnDeskTools);
+            this.Controls.Add(this.btnDeskSearch);
+            this.Controls.Add(this.btnSupport);
             this.Controls.Add(this.lbAuthor);
             this.Controls.Add(this.lbQuote);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lbSec);
             this.Controls.Add(this.lbHours);
             this.Controls.Add(this.label4);
@@ -408,9 +455,7 @@ namespace RoadToUni.Forms.CountDown
             this.Load += new System.EventHandler(this.fCountDown_Load);
             this.SizeChanged += new System.EventHandler(this.fCountDown_SizeChanged);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picMBTI)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picPomo)).EndInit();
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoundedRec3)).EndInit();
@@ -437,14 +482,18 @@ namespace RoadToUni.Forms.CountDown
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbHours;
         private System.Windows.Forms.Label lbSec;
-        private CustomControls.RJControls.RJButton btnPomo;
-        private System.Windows.Forms.PictureBox picPomo;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private CustomControls.RJControls.RJButton btnMBTI;
-        private System.Windows.Forms.PictureBox picMBTI;
         private System.Windows.Forms.Label lbQuote;
         private System.Windows.Forms.Label lbAuthor;
         private System.Windows.Forms.Timer timerNextQuote;
+        private CustomControls.RJControls.RJButton btnSupport;
+        private CustomControls.RJControls.RJButton btnDeskSearch;
+        private CustomControls.RJControls.RJButton btnDeskTools;
+        private System.Windows.Forms.RadioButton rbtn1;
+        private System.Windows.Forms.RadioButton rbtn2;
+        private System.Windows.Forms.RadioButton rbtn4;
+        private System.Windows.Forms.RadioButton rbtn3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer tmSearch;
+        private System.Windows.Forms.Timer tmSupport;
     }
 }

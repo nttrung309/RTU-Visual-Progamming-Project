@@ -27,6 +27,9 @@ namespace RoadToUni.Forms.CountDown
 
         public static string loadDate = "";
 
+        private int search = -1;
+        private int support = -1;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -70,6 +73,12 @@ namespace RoadToUni.Forms.CountDown
 
         private void fCountDown_Load(object sender, EventArgs e)
         {
+            search = 1;
+            support = 1;
+
+            tmSearch.Start();
+            tmSupport.Start();
+
             topBackGround.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, topBackGround.Width, topBackGround.Height, 20, 20));
             ToFront();
 
@@ -268,6 +277,89 @@ namespace RoadToUni.Forms.CountDown
         private void timerNextQuote_Tick(object sender, EventArgs e)
         {
             NextQuote();
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            if(support == 1)
+            {
+                RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.FindSchool.fSearch());
+            }
+            else if (support == 2)
+            {
+                //Go to majors search (Cuong's function)
+            }
+        }
+
+        private void btnDeskSearch_Click(object sender, EventArgs e)
+        {
+            if (search == 1)
+            {
+                //Call view score (Khoi's function)
+            }
+            else if (search == 2)
+            {
+                //Call scholl info (Min's function)
+            }
+        }
+
+        private void btnDeskTools_Click(object sender, EventArgs e)
+        {
+            //Call MBTI
+        }
+
+        private void rbtn1_CheckedChanged(object sender, EventArgs e)
+        {
+            search = (search == 1) ? 2 : 1;
+            if(search == 1)
+            {
+                btnDeskSearch.BackgroundImage = Properties.Resources.countdown_score;
+            }
+            else if (search == 2)
+            {
+                btnDeskSearch.BackgroundImage = Properties.Resources.countdown_infoSchool;
+            }
+            tmSearch.Stop();
+            tmSearch.Start();
+        }
+
+        private void btn3_CheckedChanged(object sender, EventArgs e)
+        {
+            support = (support == 1) ? 2 : 1;
+            if (support == 1)
+            {
+                btnSupport.BackgroundImage = Properties.Resources.countdown_schoolSearch;
+            }
+            else if (support == 2)
+            {
+                btnSupport.BackgroundImage = Properties.Resources.countdown_jobsearch;
+            }
+            tmSupport.Stop();
+            tmSupport.Start();
+        }
+
+        private void tmSearch_Tick(object sender, EventArgs e)
+        {
+            if(search == 1)
+            {
+                rbtn2.Checked = true;
+            }
+            else if (search == 2)
+            {
+                rbtn1.Checked = true;
+            }
+        }
+
+        private void tmSupport_Tick(object sender, EventArgs e)
+        {
+            if (support == 1)
+            {
+                rbtn4.Checked = true;
+            }
+            else if (support == 2)
+            {
+                rbtn3.Checked = true;
+            }
         }
     }
 }

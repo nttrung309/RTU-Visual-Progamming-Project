@@ -29,13 +29,12 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txbGrade = new System.Windows.Forms.TextBox();
             this.lbGrade = new System.Windows.Forms.Label();
             this.cbCombination = new System.Windows.Forms.ComboBox();
             this.lbComb = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.dataGridViewResult = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.cbNameUni = new System.Windows.Forms.ComboBox();
@@ -44,6 +43,7 @@ namespace WindowsFormsApp1
             this.lbTextNote = new System.Windows.Forms.Label();
             this.lbTHPT = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSearch = new WindowsFormsApp1.customButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -311,40 +311,24 @@ namespace WindowsFormsApp1
             this.lbComb.TabIndex = 5;
             this.lbComb.Text = "Chọn tổ hợp";
             // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Tomato;
-            this.btnSearch.Image = global::WindowsFormsApp1.Properties.Resources.btnSearch__1_;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(795, 44);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(206, 68);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.Text = "    Tìm kiếm";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.button1_Click);
-            // 
             // dataGridViewResult
             // 
             this.dataGridViewResult.AllowUserToAddRows = false;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewResult.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.dataGridViewResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewResult.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewResult.Location = new System.Drawing.Point(43, 254);
             this.dataGridViewResult.Name = "dataGridViewResult";
             this.dataGridViewResult.RowHeadersWidth = 62;
@@ -586,7 +570,7 @@ namespace WindowsFormsApp1
             this.cbNameUni.MaxDropDownItems = 10;
             this.cbNameUni.Name = "cbNameUni";
             this.cbNameUni.Size = new System.Drawing.Size(470, 44);
-            this.cbNameUni.TabIndex = 8;
+            this.cbNameUni.TabIndex = 20;
             this.cbNameUni.Text = "Chọn trường";
             this.cbNameUni.Enter += new System.EventHandler(this.cbNameUni_Enter);
             this.cbNameUni.Leave += new System.EventHandler(this.cbNameUni_Leave);
@@ -597,7 +581,7 @@ namespace WindowsFormsApp1
             this.lbNameUni.BackColor = System.Drawing.Color.Gold;
             this.lbNameUni.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameUni.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lbNameUni.Location = new System.Drawing.Point(12, 13);
+            this.lbNameUni.Location = new System.Drawing.Point(14, 15);
             this.lbNameUni.Name = "lbNameUni";
             this.lbNameUni.Size = new System.Drawing.Size(424, 46);
             this.lbNameUni.TabIndex = 3;
@@ -644,17 +628,40 @@ namespace WindowsFormsApp1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.lbComb);
             this.panel1.Controls.Add(this.lbGrade);
             this.panel1.Controls.Add(this.lbNameUni);
             this.panel1.Controls.Add(this.cbNameUni);
             this.panel1.Controls.Add(this.txbGrade);
             this.panel1.Controls.Add(this.cbCombination);
-            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Location = new System.Drawing.Point(43, 229);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1031, 157);
             this.panel1.TabIndex = 13;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Snow;
+            this.btnSearch.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnSearch.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSearch.BorderRadius = 20;
+            this.btnSearch.BorderSize = 0;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Tomato;
+            this.btnSearch.Image = global::WindowsFormsApp1.Properties.Resources.btnSearch__1_;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(813, 49);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(201, 70);
+            this.btnSearch.TabIndex = 14;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearch.TextColor = System.Drawing.Color.Tomato;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // fsearch
             // 
@@ -684,7 +691,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label lbGrade;
         private System.Windows.Forms.ComboBox cbCombination;
         private System.Windows.Forms.Label lbComb;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dataGridViewResult;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbNameUni;
@@ -693,6 +699,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label lbTextNote;
         private System.Windows.Forms.Label lbTHPT;
         private System.Windows.Forms.Panel panel1;
+        private customButton btnSearch;
     }
 }
 

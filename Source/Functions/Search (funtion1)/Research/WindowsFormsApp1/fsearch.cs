@@ -17,13 +17,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             LoadNameMajor();
-            //lbNameUni.Location = new Point(57, 210);
-            //cbNameUni.Location = new Point(350, 210);
-            //lbGrade.Location = new Point(57, 266);
-            //txbGrade.Location = new Point(350, 266);
-            //lbComb.Location = new Point(57, 322);
-            //cbCombination.Location = new Point(350, 322);
-            //btnSearch.Location = new Point(861, 240);
             lbNote.Location = new Point(228, 95);
             lbTextNote.Location = new Point(228, 103);
             lbTHPT.Location = new Point(752, 127);
@@ -81,13 +74,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Vui lòng chọn tổ hợp xét tuyển", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            //lbNameUni.Location = new Point(57, 93);
-            //cbNameUni.Location = new Point(350, 93);
-            //lbGrade.Location = new Point(57, 149);
-            //txbGrade.Location = new Point(350, 150);
-            //lbComb.Location = new Point(57, 204);
-            //cbCombination.Location = new Point(350, 204);
-            //btnSearch.Location = new Point(861, 104);
             lbNote.Visible = false;
             lbTHPT.Visible = false;
             lbTextNote.Visible = false;
@@ -219,7 +205,8 @@ namespace WindowsFormsApp1
             string IDUni = nameAndID.Substring(0, 3);   
             if(dataGridViewResult.Rows.Count == 0)
             {
-                MessageBox.Show(String.Format("Không có ngành nào thuộc nhóm ngành {0} có điểm chuẩn nhỏ hơn điểm dự kiến của bạn",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridViewResult.Hide();
+                MessageBox.Show(String.Format("Không có ngành nào thuộc nhóm ngành {0} phù hợp với thông tin bạn cung cấp",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }  
         }
@@ -268,15 +255,7 @@ namespace WindowsFormsApp1
                 cbNameUni.ForeColor = Color.Black;
             }
         }
-        //private int dgvHeight()
-        //{
-        //    int sum = this.dataGridViewResult.ColumnHeadersHeight;
-
-        //    foreach (DataGridViewRow row in this.dataGridViewResult.Rows)
-        //        sum += row.Height + 1; // I dont think the height property includes the cell border size, so + 1
-
-        //    return sum;
-        //}
+       
         private int dgvHeight()
         {
             int sum = this.dataGridViewResult.ColumnHeadersHeight;
@@ -313,5 +292,65 @@ namespace WindowsFormsApp1
             f2.Show();
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (cbNameUni.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txbGrade.Text.Equals("Điểm xét tuyển dự kiến"))
+            {
+                MessageBox.Show("Vui lòng nhập số điểm dự kiến", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!IsNumeric(txbGrade.Text))
+            {
+                MessageBox.Show("Vui lòng chỉ nhập ký tự số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (double.Parse(txbGrade.Text) <= 0)
+            {
+                MessageBox.Show("Vui lòng nhập số điểm lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (double.Parse(txbGrade.Text) > 40)
+            {
+                MessageBox.Show("Điểm xét tuyển tối đa 40! Vui lòng nhập số điểm nhỏ hơn 40", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cbCombination.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn tổ hợp xét tuyển", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            lbNote.Visible = false;
+            lbTHPT.Visible = false;
+            lbTextNote.Visible = false;
+            panel1.Location = new Point(57, 93);
+            dataGridViewResult.Show();
+
+            dataGridViewResult.DataSource = this.LoadDB();
+            SetColName();
+            SetWidthDataTable();
+            SetColorRowDT();
+            DisableClickHeader();
+            SetMiddleCol();
+            for (int i = 0; i < dataGridViewResult.Rows.Count; i++)
+            {
+                dataGridViewResult.Rows[i].Cells[0].Value = i + 1;
+            }
+            CheckResult();
+            int totalRowHeight = dataGridViewResult.ColumnHeadersHeight;
+
+            foreach (DataGridViewRow row in dataGridViewResult.Rows)
+                totalRowHeight += row.Height;
+            if (totalRowHeight < 350)
+                dataGridViewResult.Height = totalRowHeight;
+            else
+                dataGridViewResult.Height = 350;
+
+        }
     }
 }

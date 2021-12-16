@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassCrud.cs" />
+    <Compile Include="customButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="fdetail.cs">
       <SubType>Form</SubType>
     </Compile>

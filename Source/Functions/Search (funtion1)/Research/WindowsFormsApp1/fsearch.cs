@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             LoadNameMajor();
             lbNote.Location = new Point(228, 95);
-            lbTextNote.Location = new Point(228, 103);
+            lbTextNote.Location = new Point(228, 95);
             lbTHPT.Location = new Point(752, 127);
             panel1.Location = new Point(57, 210);
             panel1.Show();

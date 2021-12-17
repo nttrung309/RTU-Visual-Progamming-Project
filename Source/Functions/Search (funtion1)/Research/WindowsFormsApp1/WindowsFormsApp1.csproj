@@ -50,6 +50,9 @@
     <Compile Include="customButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="customCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="customLabel.cs">
       <SubType>Component</SubType>
     </Compile>

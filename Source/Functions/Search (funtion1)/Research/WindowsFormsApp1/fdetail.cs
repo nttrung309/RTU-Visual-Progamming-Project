@@ -101,7 +101,7 @@ namespace WindowsFormsApp1
         {
             DataGridViewCellStyle style1 = new DataGridViewCellStyle();
             DataGridViewCellStyle style2 = new DataGridViewCellStyle();
-            style1.BackColor = Color.Yellow;
+            style1.BackColor = Color.LemonChiffon;
             style2.BackColor = Color.LightCyan;
             for (int i = dgvShow.RowCount - 1; i >= 0; i--)
             {
@@ -114,9 +114,9 @@ namespace WindowsFormsApp1
         private void SetSizeCol()
         {
             dgvShow.Columns[0].Width = 30;
-            dgvShow.Columns[1].Width = 60;
+            dgvShow.Columns[1].Width = 65;
             dgvShow.Columns[2].Width = 175;
-            dgvShow.Columns[3].Width = 100;
+            dgvShow.Columns[3].Width = 95;
         }
         private void SetMiddleCol()
         {
@@ -146,7 +146,7 @@ namespace WindowsFormsApp1
             if (totalRowHeight < 200)
                 dgvShow.Height = totalRowHeight; 
             else
-                dgvShow.Height = 200;
+                dgvShow.Height = 205;
         }
     }
 }

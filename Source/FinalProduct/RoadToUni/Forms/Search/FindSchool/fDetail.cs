@@ -7,15 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime;
-using System.Runtime.InteropServices;
 
 namespace RoadToUni.Forms.Search.FindSchool
 {
-    public partial class fDetail : Form
+    public partial class fdetail : Form
     {
 
-        public fDetail()
+        public fdetail()
         {
             InitializeComponent();
         }
@@ -25,7 +23,7 @@ namespace RoadToUni.Forms.Search.FindSchool
         string major = null;
         string bench = null;
         float grade;
-        public fDetail(string idUni,string nameUni, string major, string bench, float grade): this()
+        public fdetail(string idUni,string nameUni, string major, string bench, float grade): this()
         {
             this.idUni = idUni;
             this.major = major;
@@ -33,13 +31,6 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.grade = grade;
             this.nameUni = nameUni;
         }
-
-        //Drag Form
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        
         DataTable LoadDB()
         {
             DataTable dt = new DataTable();
@@ -110,7 +101,7 @@ namespace RoadToUni.Forms.Search.FindSchool
         {
             DataGridViewCellStyle style1 = new DataGridViewCellStyle();
             DataGridViewCellStyle style2 = new DataGridViewCellStyle();
-            style1.BackColor = Color.Yellow;
+            style1.BackColor = Color.LemonChiffon;
             style2.BackColor = Color.LightCyan;
             for (int i = dgvShow.RowCount - 1; i >= 0; i--)
             {
@@ -123,9 +114,9 @@ namespace RoadToUni.Forms.Search.FindSchool
         private void SetSizeCol()
         {
             dgvShow.Columns[0].Width = 30;
-            dgvShow.Columns[1].Width = 60;
+            dgvShow.Columns[1].Width = 65;
             dgvShow.Columns[2].Width = 175;
-            dgvShow.Columns[3].Width = 100;
+            dgvShow.Columns[3].Width = 95;
         }
         private void SetMiddleCol()
         {
@@ -144,7 +135,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             
             lbNameUni.Text = nameUni;
             lbMajor.Text = major;
-            pictureBox1.BackgroundImage = new Bitmap(Application.StartupPath + "\\Data\\Images\\FindSchool\\LogoUni\\" + bm);
+            pictureBox1.BackgroundImage = new Bitmap($@"{Application.StartupPath}\Data\Images\FindSchool\LogoUni\{bm}");
             for (int i = 0; i < dgvShow.Rows.Count; i++)
             {
                 dgvShow.Rows[i].Cells[0].Value = i + 1;
@@ -155,18 +146,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             if (totalRowHeight < 200)
                 dgvShow.Height = totalRowHeight; 
             else
-                dgvShow.Height = 200;
-        }
-
-        private void fDetail_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
+                dgvShow.Height = 205;
         }
     }
 }

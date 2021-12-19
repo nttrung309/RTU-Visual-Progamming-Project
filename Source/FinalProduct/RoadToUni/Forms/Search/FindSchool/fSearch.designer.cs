@@ -1,7 +1,7 @@
 ﻿
 namespace RoadToUni.Forms.Search.FindSchool
 {
-    partial class fSearch
+    partial class fsearch
     {
         /// <summary>
         /// Required designer variable.
@@ -29,65 +29,49 @@ namespace RoadToUni.Forms.Search.FindSchool
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txbGrade = new System.Windows.Forms.TextBox();
-            this.lbGrade = new System.Windows.Forms.Label();
             this.cbCombination = new System.Windows.Forms.ComboBox();
-            this.lbComb = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.dataGridViewResult = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.cbNameUni = new System.Windows.Forms.ComboBox();
-            this.lbNameUni = new System.Windows.Forms.Label();
             this.lbNote = new System.Windows.Forms.Label();
-            this.lbTextNote = new System.Windows.Forms.Label();
             this.lbTHPT = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.customLabel3 = new RoadToUni.Forms.Search.FindSchool.customLabel();
+            this.customLabel2 = new RoadToUni.Forms.Search.FindSchool.customLabel();
+            this.customLabel1 = new RoadToUni.Forms.Search.FindSchool.customLabel();
+            this.btnSearch = new RoadToUni.Forms.Search.FindSchool.customButton();
+            this.lbTextNote = new RoadToUni.Forms.Search.FindSchool.customLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txbGrade
             // 
-            this.txbGrade.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbGrade.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbGrade.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbGrade.ForeColor = System.Drawing.Color.DarkGray;
             this.txbGrade.Location = new System.Drawing.Point(311, 64);
             this.txbGrade.Name = "txbGrade";
-            this.txbGrade.Size = new System.Drawing.Size(277, 32);
+            this.txbGrade.Size = new System.Drawing.Size(277, 35);
             this.txbGrade.TabIndex = 0;
             this.txbGrade.TabStop = false;
             this.txbGrade.Text = "Điểm xét tuyển dự kiến";
             this.txbGrade.Enter += new System.EventHandler(this.txbGrade_Enter);
             this.txbGrade.Leave += new System.EventHandler(this.txbGrade_Leave);
             // 
-            // lbGrade
-            // 
-            this.lbGrade.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbGrade.AutoSize = true;
-            this.lbGrade.BackColor = System.Drawing.Color.Gold;
-            this.lbGrade.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbGrade.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGrade.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lbGrade.Location = new System.Drawing.Point(13, 64);
-            this.lbGrade.Name = "lbGrade";
-            this.lbGrade.Size = new System.Drawing.Size(286, 33);
-            this.lbGrade.TabIndex = 2;
-            this.lbGrade.Text = "Nhập tổng điểm dự kiến \r\n";
-            // 
             // cbCombination
             // 
-            this.cbCombination.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbCombination.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbCombination.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbCombination.DropDownHeight = 185;
+            this.cbCombination.DropDownHeight = 190;
             this.cbCombination.DropDownWidth = 120;
-            this.cbCombination.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCombination.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCombination.ForeColor = System.Drawing.Color.DarkGray;
             this.cbCombination.FormattingEnabled = true;
             this.cbCombination.IntegralHeight = false;
-            this.cbCombination.ItemHeight = 23;
+            this.cbCombination.ItemHeight = 27;
             this.cbCombination.Items.AddRange(new object[] {
             "A00 -- Toán, Vật lý, Hóa học",
             "A01 -- Toán, Vật lý, Tiếng Anh",
@@ -292,68 +276,36 @@ namespace RoadToUni.Forms.Search.FindSchool
             "S00 -- Văn, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             "S01 -- Toán, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             ""});
-            this.cbCombination.Location = new System.Drawing.Point(311, 118);
+            this.cbCombination.Location = new System.Drawing.Point(311, 116);
             this.cbCombination.MaxDropDownItems = 10;
             this.cbCombination.Name = "cbCombination";
-            this.cbCombination.Size = new System.Drawing.Size(470, 31);
+            this.cbCombination.Size = new System.Drawing.Size(470, 35);
             this.cbCombination.TabIndex = 0;
             this.cbCombination.TabStop = false;
             this.cbCombination.Text = "Chọn tổ hợp xét tuyển";
             this.cbCombination.Enter += new System.EventHandler(this.cbCombination_Enter);
             this.cbCombination.Leave += new System.EventHandler(this.cbCombination_Leave);
             // 
-            // lbComb
-            // 
-            this.lbComb.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbComb.AutoSize = true;
-            this.lbComb.BackColor = System.Drawing.Color.Gold;
-            this.lbComb.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbComb.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lbComb.Location = new System.Drawing.Point(14, 118);
-            this.lbComb.Name = "lbComb";
-            this.lbComb.Size = new System.Drawing.Size(152, 31);
-            this.lbComb.TabIndex = 5;
-            this.lbComb.Text = "Chọn tổ hợp";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSearch.BackColor = System.Drawing.Color.GreenYellow;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Tomato;
-            this.btnSearch.Image = global::RoadToUni.Properties.Resources.btnSearch__1_;
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(795, 46);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(186, 71);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.Text = "Tìm kiếm";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.button1_Click);
-            // 
             // dataGridViewResult
             // 
             this.dataGridViewResult.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewResult.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewResult.BackgroundColor = System.Drawing.Color.LavenderBlush;
             this.dataGridViewResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewResult.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewResult.Location = new System.Drawing.Point(58, 249);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewResult.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewResult.Location = new System.Drawing.Point(43, 254);
             this.dataGridViewResult.Name = "dataGridViewResult";
             this.dataGridViewResult.RowHeadersWidth = 62;
             this.dataGridViewResult.RowTemplate.Height = 28;
@@ -373,21 +325,20 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(620, 74);
             this.label1.TabIndex = 9;
-            this.label1.Text = "     CHÀO MỪNG CÁC BẠN ĐẾN VỚI TƯ VẤN CHỌN TRƯỜNG 2022";
+            this.label1.Text = "     CHÀO MỪNG CÁC BẠN ĐẾN VỚI TƯ VẤN CHỌN TRƯỜNG ĐẠI HỌC 2022";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbNameUni
             // 
-            this.cbNameUni.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbNameUni.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbNameUni.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbNameUni.DropDownHeight = 183;
+            this.cbNameUni.DropDownHeight = 190;
             this.cbNameUni.DropDownWidth = 120;
-            this.cbNameUni.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbNameUni.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNameUni.ForeColor = System.Drawing.Color.DarkGray;
             this.cbNameUni.FormattingEnabled = true;
             this.cbNameUni.IntegralHeight = false;
-            this.cbNameUni.ItemHeight = 23;
+            this.cbNameUni.ItemHeight = 27;
             this.cbNameUni.Items.AddRange(new object[] {
             "A00 -- Toán, Vật lý, Hóa học",
             "A01 -- Toán, Vật lý, Tiếng Anh",
@@ -592,27 +543,14 @@ namespace RoadToUni.Forms.Search.FindSchool
             "S00 -- Văn, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             "S01 -- Toán, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2",
             ""});
-            this.cbNameUni.Location = new System.Drawing.Point(311, 13);
+            this.cbNameUni.Location = new System.Drawing.Point(311, 10);
             this.cbNameUni.MaxDropDownItems = 10;
             this.cbNameUni.Name = "cbNameUni";
-            this.cbNameUni.Size = new System.Drawing.Size(470, 31);
-            this.cbNameUni.TabIndex = 8;
+            this.cbNameUni.Size = new System.Drawing.Size(470, 35);
+            this.cbNameUni.TabIndex = 20;
             this.cbNameUni.Text = "Chọn trường";
             this.cbNameUni.Enter += new System.EventHandler(this.cbNameUni_Enter);
             this.cbNameUni.Leave += new System.EventHandler(this.cbNameUni_Leave);
-            // 
-            // lbNameUni
-            // 
-            this.lbNameUni.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbNameUni.AutoSize = true;
-            this.lbNameUni.BackColor = System.Drawing.Color.Gold;
-            this.lbNameUni.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameUni.ForeColor = System.Drawing.Color.MediumBlue;
-            this.lbNameUni.Location = new System.Drawing.Point(12, 13);
-            this.lbNameUni.Name = "lbNameUni";
-            this.lbNameUni.Size = new System.Drawing.Size(290, 31);
-            this.lbNameUni.TabIndex = 3;
-            this.lbNameUni.Text = "Chọn ngành/nhóm ngành";
             // 
             // lbNote
             // 
@@ -629,19 +567,6 @@ namespace RoadToUni.Forms.Search.FindSchool
     "g trúng tuyển Đại học.";
             this.lbNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbTextNote
-            // 
-            this.lbTextNote.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbTextNote.AutoSize = true;
-            this.lbTextNote.BackColor = System.Drawing.Color.White;
-            this.lbTextNote.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTextNote.ForeColor = System.Drawing.Color.Red;
-            this.lbTextNote.Location = new System.Drawing.Point(231, 99);
-            this.lbTextNote.Name = "lbTextNote";
-            this.lbTextNote.Size = new System.Drawing.Size(82, 23);
-            this.lbTextNote.TabIndex = 11;
-            this.lbTextNote.Text = "LƯU Ý:";
-            // 
             // lbTHPT
             // 
             this.lbTHPT.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -649,7 +574,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.lbTHPT.BackColor = System.Drawing.Color.White;
             this.lbTHPT.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTHPT.ForeColor = System.Drawing.Color.Red;
-            this.lbTHPT.Location = new System.Drawing.Point(755, 123);
+            this.lbTHPT.Location = new System.Drawing.Point(687, 149);
             this.lbTHPT.Name = "lbTHPT";
             this.lbTHPT.Size = new System.Drawing.Size(142, 23);
             this.lbTHPT.TabIndex = 12;
@@ -659,35 +584,125 @@ namespace RoadToUni.Forms.Search.FindSchool
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.lbComb);
-            this.panel1.Controls.Add(this.lbGrade);
-            this.panel1.Controls.Add(this.lbNameUni);
+            this.panel1.Controls.Add(this.customLabel3);
+            this.panel1.Controls.Add(this.customLabel2);
+            this.panel1.Controls.Add(this.customLabel1);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.cbNameUni);
             this.panel1.Controls.Add(this.txbGrade);
             this.panel1.Controls.Add(this.cbCombination);
-            this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Location = new System.Drawing.Point(58, 229);
+            this.panel1.Location = new System.Drawing.Point(43, 229);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1031, 157);
             this.panel1.TabIndex = 13;
             // 
-            // fSearch
+            // customLabel3
+            // 
+            this.customLabel3.BackColor = System.Drawing.Color.MediumBlue;
+            this.customLabel3.BackgroundColor = System.Drawing.Color.MediumBlue;
+            this.customLabel3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customLabel3.BorderRadius = 20;
+            this.customLabel3.BorderSize = 0;
+            this.customLabel3.Font = new System.Drawing.Font("Courier New", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customLabel3.ForeColor = System.Drawing.Color.White;
+            this.customLabel3.Location = new System.Drawing.Point(2, 112);
+            this.customLabel3.Name = "customLabel3";
+            this.customLabel3.Size = new System.Drawing.Size(227, 40);
+            this.customLabel3.TabIndex = 21;
+            this.customLabel3.Text = "Chọn tổ hợp";
+            this.customLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customLabel3.TextColor = System.Drawing.Color.White;
+            // 
+            // customLabel2
+            // 
+            this.customLabel2.BackColor = System.Drawing.Color.MediumBlue;
+            this.customLabel2.BackgroundColor = System.Drawing.Color.MediumBlue;
+            this.customLabel2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customLabel2.BorderRadius = 20;
+            this.customLabel2.BorderSize = 0;
+            this.customLabel2.Font = new System.Drawing.Font("Courier New", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customLabel2.ForeColor = System.Drawing.Color.White;
+            this.customLabel2.Location = new System.Drawing.Point(1, 59);
+            this.customLabel2.Name = "customLabel2";
+            this.customLabel2.Size = new System.Drawing.Size(304, 40);
+            this.customLabel2.TabIndex = 15;
+            this.customLabel2.Text = "Nhập tổng điểm dự kiến";
+            this.customLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customLabel2.TextColor = System.Drawing.Color.White;
+            // 
+            // customLabel1
+            // 
+            this.customLabel1.BackColor = System.Drawing.Color.MediumBlue;
+            this.customLabel1.BackgroundColor = System.Drawing.Color.MediumBlue;
+            this.customLabel1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customLabel1.BorderRadius = 20;
+            this.customLabel1.BorderSize = 0;
+            this.customLabel1.Font = new System.Drawing.Font("Courier New", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customLabel1.ForeColor = System.Drawing.Color.White;
+            this.customLabel1.Location = new System.Drawing.Point(2, 8);
+            this.customLabel1.Name = "customLabel1";
+            this.customLabel1.Size = new System.Drawing.Size(303, 40);
+            this.customLabel1.TabIndex = 14;
+            this.customLabel1.Text = "Chọn ngành/nhóm ngành";
+            this.customLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customLabel1.TextColor = System.Drawing.Color.White;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Snow;
+            this.btnSearch.BackgroundColor = System.Drawing.Color.Snow;
+            this.btnSearch.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSearch.BorderRadius = 20;
+            this.btnSearch.BorderSize = 0;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Tomato;
+            this.btnSearch.Image = global::RoadToUni.Properties.Resources.btnSearch__1_;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(775, 49);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(201, 70);
+            this.btnSearch.TabIndex = 14;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearch.TextColor = System.Drawing.Color.Tomato;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // lbTextNote
+            // 
+            this.lbTextNote.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbTextNote.BackColor = System.Drawing.Color.White;
+            this.lbTextNote.BackgroundColor = System.Drawing.Color.White;
+            this.lbTextNote.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.lbTextNote.BorderRadius = 20;
+            this.lbTextNote.BorderSize = 0;
+            this.lbTextNote.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTextNote.ForeColor = System.Drawing.Color.Red;
+            this.lbTextNote.Location = new System.Drawing.Point(231, 86);
+            this.lbTextNote.Name = "lbTextNote";
+            this.lbTextNote.Size = new System.Drawing.Size(85, 36);
+            this.lbTextNote.TabIndex = 14;
+            this.lbTextNote.Text = "LƯU Ý: ";
+            this.lbTextNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTextNote.TextColor = System.Drawing.Color.Red;
+            // 
+            // fsearch
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackgroundImage = global::RoadToUni.Properties.Resources.bkgr_Researching;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1108, 611);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1086, 555);
+            this.Controls.Add(this.lbTextNote);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbTHPT);
-            this.Controls.Add(this.lbTextNote);
             this.Controls.Add(this.lbNote);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewResult);
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fSearch";
+            this.Name = "fsearch";
+            this.Text = "Tư vấn chọn trường";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -698,18 +713,18 @@ namespace RoadToUni.Forms.Search.FindSchool
 
         #endregion
         private System.Windows.Forms.TextBox txbGrade;
-        private System.Windows.Forms.Label lbGrade;
         private System.Windows.Forms.ComboBox cbCombination;
-        private System.Windows.Forms.Label lbComb;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dataGridViewResult;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbNameUni;
-        private System.Windows.Forms.Label lbNameUni;
         private System.Windows.Forms.Label lbNote;
-        private System.Windows.Forms.Label lbTextNote;
         private System.Windows.Forms.Label lbTHPT;
         private System.Windows.Forms.Panel panel1;
+        private customButton btnSearch;
+        private customLabel customLabel1;
+        private customLabel customLabel2;
+        private customLabel customLabel3;
+        private customLabel lbTextNote;
     }
 }
 

@@ -10,24 +10,17 @@ using System.Windows.Forms;
 
 namespace RoadToUni.Forms.Search.FindSchool
 {
-    public partial class fSearch : Form
+    public partial class fsearch : Form
     {
         ClassCrud crud = new ClassCrud();
-        public fSearch()
+        public fsearch()
         {
             InitializeComponent();
             LoadNameMajor();
-            //lbNameUni.Location = new Point(57, 210);
-            //cbNameUni.Location = new Point(350, 210);
-            //lbGrade.Location = new Point(57, 266);
-            //txbGrade.Location = new Point(350, 266);
-            //lbComb.Location = new Point(57, 322);
-            //cbCombination.Location = new Point(350, 322);
-            //btnSearch.Location = new Point(861, 240);
-            //lbNote.Location = new Point(228, 95);
-            //lbTextNote.Location = new Point(228, 103);
-            //lbTHPT.Location = new Point(752, 127);
-            //panel1.Location = new Point(57, 210);
+            lbNote.Location = new Point(228, 95);
+            lbTextNote.Location = new Point(228, 95);
+            lbTHPT.Location = new Point(752, 127);
+            panel1.Location = new Point(57, 210);
             panel1.Show();
             dataGridViewResult.Hide();
         }
@@ -81,19 +74,10 @@ namespace RoadToUni.Forms.Search.FindSchool
                 MessageBox.Show("Vui lòng chọn tổ hợp xét tuyển", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            //lbNameUni.Location = new Point(57, 93);
-            //cbNameUni.Location = new Point(350, 93);
-            //lbGrade.Location = new Point(57, 149);
-            //txbGrade.Location = new Point(350, 150);
-            //lbComb.Location = new Point(57, 204);
-            //cbCombination.Location = new Point(350, 204);
-            //btnSearch.Location = new Point(861, 104);
             lbNote.Visible = false;
             lbTHPT.Visible = false;
             lbTextNote.Visible = false;
-            panel1.Visible = false;
-            panel1.Location = new Point(panel1.Location.X, 93);
-            panel1.Visible = true;
+            panel1.Location = new Point(57, 93);
             dataGridViewResult.Show();
 
             dataGridViewResult.DataSource = this.LoadDB();
@@ -221,7 +205,8 @@ namespace RoadToUni.Forms.Search.FindSchool
             string IDUni = nameAndID.Substring(0, 3);   
             if(dataGridViewResult.Rows.Count == 0)
             {
-                MessageBox.Show(String.Format("Không có ngành nào thuộc nhóm ngành {0} có điểm chuẩn nhỏ hơn điểm dự kiến của bạn",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataGridViewResult.Hide();
+                MessageBox.Show(String.Format("Không có ngành nào thuộc nhóm ngành {0} phù hợp với thông tin bạn cung cấp",nameAndID),"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }  
         }
@@ -264,21 +249,13 @@ namespace RoadToUni.Forms.Search.FindSchool
 
         private void cbNameUni_Enter(object sender, EventArgs e)
         {
-            if (cbNameUni.Text == "Chọn ngành/nhóm ngành");
+            if (cbNameUni.Text == "Chọn ngành/nhóm ngành") ;
             {
                 cbNameUni.Text = "";
                 cbNameUni.ForeColor = Color.Black;
             }
         }
-        //private int dgvHeight()
-        //{
-        //    int sum = this.dataGridViewResult.ColumnHeadersHeight;
-
-        //    foreach (DataGridViewRow row in this.dataGridViewResult.Rows)
-        //        sum += row.Height + 1; // I dont think the height property includes the cell border size, so + 1
-
-        //    return sum;
-        //}
+       
         private int dgvHeight()
         {
             int sum = this.dataGridViewResult.ColumnHeadersHeight;
@@ -305,17 +282,75 @@ namespace RoadToUni.Forms.Search.FindSchool
 
         private void dataGridViewResult_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex != -1)
+            string idUni = dataGridViewResult.Rows[e.RowIndex].Cells[1].Value.ToString();
+            string nameUni = dataGridViewResult.Rows[e.RowIndex].Cells[2].Value.ToString();
+            string major = cbNameUni.Text;
+            string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
+            string comb = subjectComb.Substring(0, 3);
+            float grade = float.Parse(txbGrade.Text);
+            fdetail f2 = new fdetail(idUni,nameUni, major, comb, grade);
+            f2.Show();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (cbNameUni.SelectedIndex == -1)
             {
-                string idUni = dataGridViewResult.Rows[e.RowIndex].Cells[1].Value.ToString();
-                string nameUni = dataGridViewResult.Rows[e.RowIndex].Cells[2].Value.ToString();
-                string major = cbNameUni.Text;
-                string subjectComb = cbCombination.GetItemText(cbCombination.SelectedItem);
-                string comb = subjectComb.Substring(0, 3);
-                float grade = float.Parse(txbGrade.Text);
-                fDetail f2 = new fDetail(idUni, nameUni, major, comb, grade);
-                f2.ShowDialog();
+                MessageBox.Show("Vui lòng chọn đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+            if (txbGrade.Text.Equals("Điểm xét tuyển dự kiến"))
+            {
+                MessageBox.Show("Vui lòng nhập số điểm dự kiến", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!IsNumeric(txbGrade.Text))
+            {
+                MessageBox.Show("Vui lòng chỉ nhập ký tự số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (double.Parse(txbGrade.Text) <= 0)
+            {
+                MessageBox.Show("Vui lòng nhập số điểm lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (double.Parse(txbGrade.Text) > 40)
+            {
+                MessageBox.Show("Điểm xét tuyển tối đa 40! Vui lòng nhập số điểm nhỏ hơn 40", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (cbCombination.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng chọn tổ hợp xét tuyển", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            lbNote.Visible = false;
+            lbTHPT.Visible = false;
+            lbTextNote.Visible = false;
+            panel1.Location = new Point(57, 93);
+            dataGridViewResult.Show();
+
+            dataGridViewResult.DataSource = this.LoadDB();
+            SetColName();
+            SetWidthDataTable();
+            SetColorRowDT();
+            DisableClickHeader();
+            SetMiddleCol();
+            for (int i = 0; i < dataGridViewResult.Rows.Count; i++)
+            {
+                dataGridViewResult.Rows[i].Cells[0].Value = i + 1;
+            }
+            CheckResult();
+            int totalRowHeight = dataGridViewResult.ColumnHeadersHeight;
+
+            foreach (DataGridViewRow row in dataGridViewResult.Rows)
+                totalRowHeight += row.Height;
+            if (totalRowHeight < 350)
+                dataGridViewResult.Height = totalRowHeight;
+            else
+                dataGridViewResult.Height = 350;
+
         }
     }
 }

@@ -5,14 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.SqlServerCe;
-using System.Windows.Forms;
 
 namespace RoadToUni.Forms.Search.FindSchool
 {
     class ClassCrud
     {
-        SqlCeConnection con = new SqlCeConnection($@"Data Source={Application.StartupPath}\Data\Database\RTU.sdf");
+        SqlConnection con = new SqlConnection(@"Data Source=TRUNGNGUYEN\SQLEXPRESS;Initial Catalog=RTU;Integrated Security=True");
         private void OpenConnect()
         {
             if(con.State ==ConnectionState.Closed)
@@ -33,7 +31,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             Boolean check = false;
             try
             {
-                SqlCeCommand cmds = new SqlCeCommand(cmd, con);
+                SqlCommand cmds = new SqlCommand(cmd, con);
                 cmds.ExecuteNonQuery();
                 check = true;
             }
@@ -50,8 +48,8 @@ namespace RoadToUni.Forms.Search.FindSchool
             DataTable dt = new DataTable();
             try
             {
-                SqlCeCommand cmds = new SqlCeCommand(cmd, con);
-                SqlCeDataAdapter da = new SqlCeDataAdapter(cmds);
+                SqlCommand cmds = new SqlCommand(cmd, con);
+                SqlDataAdapter da = new SqlDataAdapter(cmds);
                 da.Fill(dt);
             }
             catch (Exception)

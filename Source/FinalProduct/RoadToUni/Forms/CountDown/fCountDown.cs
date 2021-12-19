@@ -283,7 +283,7 @@ namespace RoadToUni.Forms.CountDown
         {
             if(support == 1)
             {
-                RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.FindSchool.fSearch());
+                RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.FindSchool.fsearch());
             }
             else if (support == 2)
             {

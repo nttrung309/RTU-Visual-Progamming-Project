@@ -165,17 +165,26 @@
       <DependentUpon>fChoice.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Search\FindSchool\ClassCrud.cs" />
-    <Compile Include="Forms\Search\FindSchool\fDetail.cs">
+    <Compile Include="Forms\Search\FindSchool\customButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\FindSchool\customCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\FindSchool\customLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\FindSchool\fdetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Search\FindSchool\fDetail.designer.cs">
-      <DependentUpon>fDetail.cs</DependentUpon>
+    <Compile Include="Forms\Search\FindSchool\fdetail.designer.cs">
+      <DependentUpon>fdetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Search\FindSchool\fSearch.cs">
+    <Compile Include="Forms\Search\FindSchool\fsearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Search\FindSchool\fSearch.designer.cs">
-      <DependentUpon>fSearch.cs</DependentUpon>
+    <Compile Include="Forms\Search\FindSchool\fsearch.designer.cs">
+      <DependentUpon>fsearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Search\ViewScore\CirclePicture.cs">
       <SubType>Component</SubType>
@@ -296,11 +305,11 @@
     <EmbeddedResource Include="Forms\Search\fChoice.resx">
       <DependentUpon>fChoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Search\FindSchool\fDetail.resx">
-      <DependentUpon>fDetail.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Search\FindSchool\fdetail.resx">
+      <DependentUpon>fdetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Search\FindSchool\fSearch.resx">
-      <DependentUpon>fSearch.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Search\FindSchool\fsearch.resx">
+      <DependentUpon>fsearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search\ViewScore\fViewScore.resx">
       <DependentUpon>fViewScore.cs</DependentUpon>

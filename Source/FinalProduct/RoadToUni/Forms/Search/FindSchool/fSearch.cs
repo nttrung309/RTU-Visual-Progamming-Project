@@ -289,7 +289,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             string comb = subjectComb.Substring(0, 3);
             float grade = float.Parse(txbGrade.Text);
             fdetail f2 = new fdetail(idUni,nameUni, major, comb, grade);
-            f2.Show();
+            f2.ShowDialog();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

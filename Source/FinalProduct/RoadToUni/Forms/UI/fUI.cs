@@ -130,9 +130,9 @@ namespace RoadToUni.Forms.UI
         private void btnMajor_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            if (childForm == null || childForm.Name != "btnMajor")
+            if (childForm == null || childForm.Name != "MajorUI")
             {
-                //SwitchForm(new Forms.Pomodoro.fPomodoro());
+                SwitchForm(new Forms.Search.Major.ChoosingMajor.MajorUI());
             }
         }
         private void btnChoice_Click(object sender, EventArgs e)

@@ -109,3 +109,9 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\bin\Debug\RoadToUni.exe
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\bin\Debug\RoadToUni.pdb
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\bin\Debug\System.Data.SqlServerCe.dll
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.csproj.CopyComplete
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.FirstUI.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.JobTile.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.MajorTile.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.SecondUI.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.ThirdUI.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.MajorUI.resources

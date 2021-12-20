@@ -48,8 +48,11 @@ namespace RoadToUni.Forms.UI.Setting
 
                 }
             }
-
-            string dataToWrite = "Username:" + this.txbChangeName.Texts.ToUpper() + "\nBackground:";
+            string data = File.ReadAllText(appConfigPath);
+            string[] config = data.Split('\n');
+            string countDownBackGround = config[1].Substring(11, config[1].Length - 11);
+            string pos = config[2].Substring(4, config[2].Length - 4);
+            string dataToWrite = "Username:" + this.txbChangeName.Texts.ToUpper() + "\nBackground:" + countDownBackGround + "\nPos:" + pos;
             File.WriteAllText(appConfigPath, dataToWrite);
         }
 

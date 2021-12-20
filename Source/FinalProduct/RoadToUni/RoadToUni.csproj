@@ -186,6 +186,46 @@
     <Compile Include="Forms\Search\FindSchool\fsearch.designer.cs">
       <DependentUpon>fsearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Search\Major\ConnectionString.cs" />
+    <Compile Include="Forms\Search\Major\CustomLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\Major\FirstUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\Major\FirstUI.designer.cs">
+      <DependentUpon>FirstUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\Major\JobTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\Major\JobTile.designer.cs">
+      <DependentUpon>JobTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\Major\MajorTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\Major\MajorTile.designer.cs">
+      <DependentUpon>MajorTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\Major\MajorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\Major\MajorUI.Designer.cs">
+      <DependentUpon>MajorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\Major\SecondUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\Major\SecondUI.designer.cs">
+      <DependentUpon>SecondUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\Major\ThirdUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\Major\ThirdUI.designer.cs">
+      <DependentUpon>ThirdUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Search\ViewScore\CirclePicture.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -310,6 +350,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search\FindSchool\fsearch.resx">
       <DependentUpon>fsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\Major\FirstUI.resx">
+      <DependentUpon>FirstUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\Major\JobTile.resx">
+      <DependentUpon>JobTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\Major\MajorTile.resx">
+      <DependentUpon>MajorTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\Major\MajorUI.resx">
+      <DependentUpon>MajorUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\Major\SecondUI.resx">
+      <DependentUpon>SecondUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\Major\ThirdUI.resx">
+      <DependentUpon>ThirdUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search\ViewScore\fViewScore.resx">
       <DependentUpon>fViewScore.cs</DependentUpon>
@@ -618,6 +676,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\countdown_jobsearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluebg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JobTile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

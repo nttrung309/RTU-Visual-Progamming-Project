@@ -32,12 +32,13 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FirstUI));
             this.pbxTitle = new System.Windows.Forms.PictureBox();
             this.fpnlNhomNganh = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblTitle = new ChoosingMajor.CustomLabel();
+            this.lblTitle = new RoadToUni.Forms.Search.Major.ChoosingMajor.CustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTitle)).BeginInit();
             this.SuspendLayout();
             // 
             // pbxTitle
             // 
+            this.pbxTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbxTitle.BackColor = System.Drawing.Color.Transparent;
             this.pbxTitle.Image = ((System.Drawing.Image)(resources.GetObject("pbxTitle.Image")));
             this.pbxTitle.Location = new System.Drawing.Point(192, -105);
@@ -49,9 +50,9 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // fpnlNhomNganh
             // 
+            this.fpnlNhomNganh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fpnlNhomNganh.AutoScroll = true;
             this.fpnlNhomNganh.BackColor = System.Drawing.Color.Transparent;
-            this.fpnlNhomNganh.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.fpnlNhomNganh.Location = new System.Drawing.Point(0, 134);
             this.fpnlNhomNganh.Margin = new System.Windows.Forms.Padding(0);
             this.fpnlNhomNganh.Name = "fpnlNhomNganh";
@@ -60,6 +61,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // lblTitle
             // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

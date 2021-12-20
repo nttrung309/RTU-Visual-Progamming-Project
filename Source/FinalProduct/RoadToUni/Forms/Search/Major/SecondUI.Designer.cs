@@ -39,6 +39,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // pbxTitle
             // 
+            this.pbxTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbxTitle.BackColor = System.Drawing.Color.Transparent;
             this.pbxTitle.Image = ((System.Drawing.Image)(resources.GetObject("pbxTitle.Image")));
             this.pbxTitle.Location = new System.Drawing.Point(192, -105);
@@ -50,6 +51,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // lblTitle
             // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,6 +67,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // fpnlNganh
             // 
+            this.fpnlNganh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fpnlNganh.AutoScroll = true;
             this.fpnlNganh.BackColor = System.Drawing.Color.Transparent;
             this.fpnlNganh.Location = new System.Drawing.Point(147, 134);

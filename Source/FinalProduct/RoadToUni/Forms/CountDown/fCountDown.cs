@@ -287,7 +287,7 @@ namespace RoadToUni.Forms.CountDown
             }
             else if (support == 2)
             {
-                //Go to majors search (Cuong's function)
+                RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.Major.ChoosingMajor.MajorUI());
             }
         }
 

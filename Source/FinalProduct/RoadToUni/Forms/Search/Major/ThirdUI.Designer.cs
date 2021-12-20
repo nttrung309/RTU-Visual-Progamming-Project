@@ -37,9 +37,9 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             this.dgvNganh = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.customLabel2 = new ChoosingMajor.CustomLabel();
-            this.customLabel1 = new ChoosingMajor.CustomLabel();
-            this.lblTitle = new ChoosingMajor.CustomLabel();
+            this.customLabel2 = new RoadToUni.Forms.Search.Major.ChoosingMajor.CustomLabel();
+            this.customLabel1 = new RoadToUni.Forms.Search.Major.ChoosingMajor.CustomLabel();
+            this.lblTitle = new RoadToUni.Forms.Search.Major.ChoosingMajor.CustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNganh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -47,6 +47,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // pbxTitle
             // 
+            this.pbxTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbxTitle.BackColor = System.Drawing.Color.Transparent;
             this.pbxTitle.Image = ((System.Drawing.Image)(resources.GetObject("pbxTitle.Image")));
             this.pbxTitle.Location = new System.Drawing.Point(192, -105);
@@ -78,6 +79,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             this.dgvNganh.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Yellow;
             this.dgvNganh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvNganh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvNganh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvNganh.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -107,6 +109,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,6 +126,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // customLabel2
             // 
+            this.customLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.customLabel2.AutoSize = true;
             this.customLabel2.BackColor = System.Drawing.Color.Transparent;
             this.customLabel2.Font = new System.Drawing.Font("Arial", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,6 +142,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // customLabel1
             // 
+            this.customLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.customLabel1.AutoSize = true;
             this.customLabel1.BackColor = System.Drawing.Color.Transparent;
             this.customLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,6 +158,7 @@ namespace RoadToUni.Forms.Search.Major.ChoosingMajor
             // 
             // lblTitle
             // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -138,7 +138,8 @@ namespace Fuction4
             UI.infSchoolForm.label1.Text = "Tên trường:  " + TuaDe;
             //UI.infSchoolForm.label2.Text = "Mã trường:  " + MaTruong;
             UI.infSchoolForm.userControl21.label4.Text = "Địa chỉ:  ";
-            UI.infSchoolForm.schoolcode = MaTruong;             
+            UI.infSchoolForm.schoolcode = MaTruong;
+            UI.infSchoolForm.userControl31.Code = MaTruong;
             //UI.infSchoolForm.panel1.BackgroundImage = Properties.Resources.UEL;
             //1
             if (UI.infSchoolForm.schoolcode == "QSK")

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="userControl31.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="userControl21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAsUAAAHcCAYAAAA++tfWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAE4JJREFUeF7t3XmsnlWBx/GLcZnJuDujZsCoA8qMC46ME2Mm4Q9NJhERQdk3UVkE
@@ -207,7 +207,7 @@
         rS1bo7i27axZs0Zat66MqGFcG7i28PLly8v/A2+3keaEAQDHAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="userControl21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="userControl31.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAsUAAAHcCAYAAAA++tfWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAE4JJREFUeF7t3XmsnlWBx/GLcZnJuDujZsCoA8qMC46ME2Mm4Q9NJhERQdk3UVkE

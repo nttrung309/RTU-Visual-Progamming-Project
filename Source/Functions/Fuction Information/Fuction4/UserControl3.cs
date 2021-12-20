@@ -29,13 +29,27 @@ namespace Fuction4
         int i, count = 0;
         public int y = 0;
         public int x = 0;
+        public int z = 0;
         private void ThongtinNganh_Load(object sender, EventArgs e)
         {
-            
+            //columeget();
         }
+        void columeget()
+        {
 
+            if (z == 0)
+            {
+                tabble.Columns.Add("STT");
+                tabble.Columns.Add("Tên Ngành");
+                tabble.Columns.Add("Mã Ngành");
+                tabble.Columns.Add("Tổ Hợp");
+                //dataGridView1.DataSource = tabble;
+                z++;
+            }
+        }
         void TakeData(string a)
         {
+
             command1 = connection.CreateCommand();
             command1.CommandText = "select * from XET";
             adapter.SelectCommand = command1;
@@ -48,56 +62,54 @@ namespace Fuction4
             table2.Clear();
             adapter.Fill(table2);
 
-            tabble.Columns.Add("STT");
-            tabble.Columns.Add("Tên Ngành");
-            tabble.Columns.Add("Mã Ngành");
-            tabble.Columns.Add("Tổ Hợp");
-            //groupBox2.Show();
             tabble.Clear();
-
-            i = 0;
-            while ((table1.Rows[i].ItemArray[0].ToString() != a)/*&& (table1.Rows[i].ItemArray[4].ToString() == "2021")*/)
+            if (this.Visible == true)
             {
-                i++;
-            }
-            count = 0;
-
-            while ((i != table1.Rows.Count) && (table1.Rows[i].ItemArray[0].ToString() == a)/*&& (table1.Rows[i].ItemArray[4].ToString() == "2021")*/)
-            {
-
-                string[] b = new string[4];
-                //MessageBox.Show(table1.Rows[i].ItemArray[3].ToString());
-                if (table1.Rows[i].ItemArray[3].ToString() == "2021")
+                i = 0;
+                while ((table1.Rows[i].ItemArray[0].ToString() != a)/*&& (table1.Rows[i].ItemArray[4].ToString() == "2021")*/)
                 {
-                    count++;
-                    b[0] = count.ToString();
-                    b[2] = table1.Rows[i].ItemArray[1].ToString();
-                    for (int j = 0; j < table2.Rows.Count; j++)
-                    {
-                        if (table2.Rows[j].ItemArray[0].ToString() == b[2])
-                        {
-                            b[1] = table2.Rows[j].ItemArray[1].ToString();
-                            break;
-                        }
-                    }
-                    b[3] = table1.Rows[i].ItemArray[2].ToString();
-                    tabble.Rows.Add(b);
+                    i++;                    
                 }
-                i++;
+                count = 0;
 
+                while ((i != table1.Rows.Count) && (table1.Rows[i].ItemArray[0].ToString() == a)/*&& (table1.Rows[i].ItemArray[4].ToString() == "2021")*/)
+                {
+
+                    string[] b = new string[4];
+                    //MessageBox.Show(table1.Rows[i].ItemArray[3].ToString());
+                    if (table1.Rows[i].ItemArray[3].ToString() == "2021")
+                    {
+                        count++;
+                        b[0] = count.ToString();
+                        b[2] = table1.Rows[i].ItemArray[1].ToString();
+                        for (int j = 0; j < table2.Rows.Count; j++)
+                        {
+                            if (table2.Rows[j].ItemArray[0].ToString() == b[2])
+                            {
+                                b[1] = table2.Rows[j].ItemArray[1].ToString();
+                                break;
+                            }
+                        }
+                        b[3] = table1.Rows[i].ItemArray[2].ToString();
+                        tabble.Rows.Add(b);
+                    }
+                    i++;
+
+                }
+                dataGridView1.DataSource = tabble;
+                SetColorRowDT();
             }
-            dataGridView1.DataSource = tabble;
-            SetColorRowDT();
         }
 
         private void UserControl3_VisibleChanged(object sender, EventArgs e)
         {
-            if((y != 0)&&(x != 0))
+            if(this.Visible == true)
             {
                 connection = new SqlCeConnection(str);
                 connection.Open();
+                columeget();
                 TakeData(Code);
-                SetCol();
+                SetCol();                
             }
             
         }

@@ -49,7 +49,7 @@ namespace Fuction4
             
             checkVi = false;
             this.Hide();
-            userControl31.x = 0;
+            userControl31.Hide();
         }
         private void Timer1_Tick(object sender, EventArgs e)
         {
@@ -84,51 +84,50 @@ namespace Fuction4
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (userControl31.y == 0)
+            if (userControl31.Visible == false)
             {
-                userControl31.y = 1;
-                userControl31.x = 1;
+                label2.ForeColor = Color.White;
+                label3.ForeColor = Color.Black;
+                //userControl31.Code = schoolcode;
+                userControl31.Show();
+                userControl31.BringToFront();
             }
-            label2.ForeColor = Color.White;
-            label3.ForeColor = Color.Black;
-            userControl31.Code = schoolcode;
-            userControl31.Show();
-            userControl31.BringToFront();
-            
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            userControl31.y = 0;
-            userControl31.Hide();
-            userControl21.Show();
-            userControl21.BringToFront();
-            label3.ForeColor = Color.White;
-            label2.ForeColor = Color.Black;
+            if (userControl31.Visible == true)
+            {
+                userControl31.Hide();
+                userControl21.Show();
+                userControl21.BringToFront();
+                label3.ForeColor = Color.White;
+                label2.ForeColor = Color.Black;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            userControl31.y = 0;
-            userControl31.Hide();
-            userControl21.Show();
-            userControl21.BringToFront();
-            label3.ForeColor = Color.White;
-            label2.ForeColor = Color.Black;
+            if (userControl31.Visible == true)
+            {
+                userControl31.Hide();
+                userControl21.Show();
+                userControl21.BringToFront();
+                label3.ForeColor = Color.White;
+                label2.ForeColor = Color.Black;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            if (userControl31.y == 0)
+            if (userControl31.Visible == false)
             {
-                userControl31.y = 1;
-                userControl31.x = 1;
+                label2.ForeColor = Color.White;
+                label3.ForeColor = Color.Black;
+                userControl31.Code = schoolcode;
+                userControl31.Show();
+                userControl31.BringToFront();
             }
-            label2.ForeColor = Color.White;
-            label3.ForeColor = Color.Black;
-            userControl31.Code = schoolcode;
-            userControl31.Show();
-            userControl31.BringToFront();
         }
     }
 }

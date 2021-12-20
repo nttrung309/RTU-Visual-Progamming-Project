@@ -94,3 +94,20 @@ C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ 
 C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.CoreCompileInputs.cache
 C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
 C:\Users\minhp\OneDrive\Máy tính\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe.config
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.exe
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\bin\Debug\Đồ án 1.pdb
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.AssemblyReference.cache
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.FormUI.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Cau01_02.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.KetQua.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Meow.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.Properties.Resources.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl1.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl2.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl3.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ_án_1.UserControl4.resources
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.GenerateResource.cache
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.csproj.CoreCompileInputs.cache
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.exe
+C:\Users\minhp\OneDrive\Máy tính\New folder\New folder\Trắc nghiệm tính cách\Đồ án 1\obj\Debug\Đồ án 1.pdb

@@ -50,60 +50,6 @@
     <Compile Include="PanelS.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FormQ\Cau11_12.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau11_12.Designer.cs">
-      <DependentUpon>Cau11_12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau13_14.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau13_14.Designer.cs">
-      <DependentUpon>Cau13_14.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau03_04.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau03_04.Designer.cs">
-      <DependentUpon>Cau03_04.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau07_08.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau07_08.Designer.cs">
-      <DependentUpon>Cau07_08.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau09_10.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau09_10.Designer.cs">
-      <DependentUpon>Cau09_10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau15_16.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau15_16.Designer.cs">
-      <DependentUpon>Cau15_16.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau17_18.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau17_18.Designer.cs">
-      <DependentUpon>Cau17_18.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau19_20.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau19_20.Designer.cs">
-      <DependentUpon>Cau19_20.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormQ\Cau05_06.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormQ\Cau05_06.Designer.cs">
-      <DependentUpon>Cau05_06.cs</DependentUpon>
-    </Compile>
     <Compile Include="PanelWhite.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -113,11 +59,11 @@
     <Compile Include="UI\FormUI.Designer.cs">
       <DependentUpon>FormUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormQ\Cau01_02.cs">
+    <Compile Include="FormQ\Questions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormQ\Cau01_02.Designer.cs">
-      <DependentUpon>Cau01_02.cs</DependentUpon>
+    <Compile Include="FormQ\Questions.Designer.cs">
+      <DependentUpon>Questions.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\KetQua.cs">
       <SubType>Form</SubType>
@@ -157,38 +103,11 @@
     <Compile Include="UserControl4.Designer.cs">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormQ\Cau03_04.resx">
-      <DependentUpon>Cau03_04.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau05_06.resx">
-      <DependentUpon>Cau05_06.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau07_08.resx">
-      <DependentUpon>Cau07_08.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau09_10.resx">
-      <DependentUpon>Cau09_10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau11_12.resx">
-      <DependentUpon>Cau11_12.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau13_14.resx">
-      <DependentUpon>Cau13_14.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau15_16.resx">
-      <DependentUpon>Cau15_16.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau17_18.resx">
-      <DependentUpon>Cau17_18.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau19_20.resx">
-      <DependentUpon>Cau19_20.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\FormUI.resx">
       <DependentUpon>FormUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormQ\Cau01_02.resx">
-      <DependentUpon>Cau01_02.cs</DependentUpon>
+    <EmbeddedResource Include="FormQ\Questions.resx">
+      <DependentUpon>Questions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\KetQua.resx">
       <DependentUpon>KetQua.cs</DependentUpon>

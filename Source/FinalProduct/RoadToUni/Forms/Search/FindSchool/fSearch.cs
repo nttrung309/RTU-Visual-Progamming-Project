@@ -328,7 +328,7 @@ namespace RoadToUni.Forms.Search.FindSchool
             lbNote.Visible = false;
             lbTHPT.Visible = false;
             lbTextNote.Visible = false;
-            panel1.Location = new Point(57, 93);
+            panel1.Location = new Point(panel1.Location.X, panel1.Location.Y - 136);
             dataGridViewResult.Show();
 
             dataGridViewResult.DataSource = this.LoadDB();

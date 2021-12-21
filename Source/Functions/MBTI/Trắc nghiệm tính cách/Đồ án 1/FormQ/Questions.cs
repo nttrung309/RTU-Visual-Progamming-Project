@@ -13,23 +13,21 @@ namespace Đồ_án_1
 {
     public partial class Cau01_02 : Form
     {
-        static public int a { get; set; }
-        static public int b { get; set; }
-        static public int c { get; set; }
-        static public int d { get; set; }
-        static public int e { get; set; }
-        static public int f { get; set; }
-        static public int g { get; set; }
-        static public int h { get; set; }
+         static public int a { get; set; }
+         static public int b { get; set; }
+         static public int c { get; set; }
+         static public int d { get; set; }
+         static public int e { get; set; }
+         static public int f { get; set; }
+         static public int g { get; set; }
+         static public int h { get; set; }
 
-        static int QuestionNumber = 1;
+         public int QuestionNumber = 1;
 
 
         public Cau01_02()
         {
-            InitializeComponent();
-
-            
+            InitializeComponent();           
         }
 
         void changeText()
@@ -132,40 +130,67 @@ namespace Đồ_án_1
                 radioButton2.Text = "Bị thuyết phục bởi cảm giác của bản thân.";
                 radioButton3.Text = "Chỉ cảm thấy thoải mái khi mọi việc đã có kế hoạch rõ ràng.";
                 radioButton4.Text = "Thích tự do và ứng biến tùy lúc.";
-                Meow.SwitchForm(new KetQua());
+                //Meow.SwitchForm(new KetQua());
             }
         }
-        private void Next1_Click(object sender, EventArgs e)
+        private void Next1_Click(object sender, EventArgs z)
         {
             if (((radioButton1.Checked == false) && (radioButton2.Checked == false)) || ((radioButton3.Checked == false) && (radioButton4.Checked == false)))
             {
                 MessageBox.Show("Có câu hỏi chưa được chọn","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
-            { 
-                if (radioButton1.Checked == true)
+            {
+                QuestionNumber += 2;
+                if ((QuestionNumber == 1) || (QuestionNumber == 5) || (QuestionNumber == 9) || (QuestionNumber == 13) || (QuestionNumber == 17))
                 {
-                    a++;
+                    if (radioButton1.Checked == true)
+                    {
+                        a++;
+                    }
+                    if (radioButton2.Checked == true)
+                    {
+                        b++;
+                    }
+                    if (radioButton3.Checked == true)
+                    {
+                        c++;
+                    }
+                    if (radioButton4.Checked == true)
+                    {
+                        d++;
+                    }
                 }
-                if (radioButton2.Checked == true)
+                else
                 {
-                    b++;
-                }
-                if (radioButton3.Checked == true)
-                {
-                    c++;
-                }
-                if (radioButton4.Checked == true)
-                {
-                    d++;
+                    if (radioButton1.Checked == true)
+                    {
+                        e++;
+                    }
+                    if (radioButton2.Checked == true)
+                    {
+                        f++;
+                    }
+                    if (radioButton3.Checked == true)
+                    {
+                        g++;
+                    }
+                    if (radioButton4.Checked == true)
+                    {
+                        h++;
+                    }
                 }
                 //Meow.SwitchForm();
-                QuestionNumber += 2;
+                
                 radioButton1.Checked = false;
                 radioButton2.Checked = false;
                 radioButton3.Checked = false;
                 radioButton4.Checked = false;
                 changeText();
+                if(QuestionNumber == 21)
+                {
+                    Meow.SwitchForm(new KetQua());
+                }
             }
             
         }

@@ -90,7 +90,7 @@ namespace Fuction4
             }
         }
 
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public Color BorderColor
         {
             get { return borderColor; }
@@ -100,13 +100,13 @@ namespace Fuction4
                 this.Invalidate();
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public Color BorderFocusColor
         {
             get { return borderFocusColor; }
             set { borderFocusColor = value; }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public int BorderSize
         {
             get { return borderSize; }
@@ -119,7 +119,7 @@ namespace Fuction4
                 }
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public bool UnderlinedStyle
         {
             get { return underlinedStyle; }
@@ -129,7 +129,7 @@ namespace Fuction4
                 this.Invalidate();
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public bool PasswordChar
         {
             get { return isPasswordChar; }
@@ -140,13 +140,13 @@ namespace Fuction4
                     textBox1.UseSystemPasswordChar = value;
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public bool Multiline
         {
             get { return textBox1.Multiline; }
             set { textBox1.Multiline = value; }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public override Color BackColor
         {
             get { return base.BackColor; }
@@ -156,7 +156,7 @@ namespace Fuction4
                 textBox1.BackColor = value;
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public override Color ForeColor
         {
             get { return base.ForeColor; }
@@ -166,7 +166,7 @@ namespace Fuction4
                 textBox1.ForeColor = value;
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public override Font Font
         {
             get { return base.Font; }
@@ -178,7 +178,7 @@ namespace Fuction4
                     UpdateControlHeight();
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public string Texts
         {
             get
@@ -192,7 +192,7 @@ namespace Fuction4
                 SetPlaceholder();
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public int BorderRadius
         {
             get { return borderRadius; }
@@ -205,7 +205,7 @@ namespace Fuction4
                 }
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public Color PlaceholderColor
         {
             get { return placeholderColor; }
@@ -216,7 +216,7 @@ namespace Fuction4
                     textBox1.ForeColor = value;
             }
         }
-        [Category("RJ Code Advance")]
+        [Category("Code Advance")]
         public string PlaceholderText
         {
             get { return placeholderText; }
@@ -328,12 +328,13 @@ namespace Fuction4
         
         
             //Default Event
-            public event EventHandler _TextChanged;
-            //TextBox-> TextChanged event
-            private void textBox1_TextChanged(object sender, EventArgs e)
+            public event EventHandler TextChanged;
+        //TextBox-> TextChanged event
+        [Category("Code Advance")]
+        private void textBox1_TextChanged(object sender, EventArgs e)
             {
-                if (_TextChanged != null)
-                    _TextChanged.Invoke(sender, e);
+                if (TextChanged != null)
+                    TextChanged.Invoke(sender, e);
             }
         
     }

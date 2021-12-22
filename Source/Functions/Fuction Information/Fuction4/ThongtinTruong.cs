@@ -50,6 +50,9 @@ namespace Fuction4
             checkVi = false;
             this.Hide();
             userControl31.Hide();
+            label2.ForeColor = Color.Black;
+            label3.ForeColor = Color.White;
+
         }
         private void Timer1_Tick(object sender, EventArgs e)
         {

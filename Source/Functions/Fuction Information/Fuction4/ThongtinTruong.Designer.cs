@@ -55,7 +55,7 @@ namespace Fuction4
             this.pictureBox3.Location = new System.Drawing.Point(1411, 92);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(245, 112);
+            this.pictureBox3.Size = new System.Drawing.Size(247, 112);
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -194,11 +194,11 @@ namespace Fuction4
             this.Controls.Add(this.bb1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.userControl21);
             this.Controls.Add(this.userControl31);
             this.Controls.Add(this.panelS1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "ThongtinTruong";
             this.Size = new System.Drawing.Size(1662, 940);
             this.Load += new System.EventHandler(this.ThongtinTruong_Load);

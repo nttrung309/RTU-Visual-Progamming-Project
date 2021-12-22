@@ -29,7 +29,7 @@ namespace RoadToUni.Forms.Search
         {
             if (RoadToUni.Forms.UI.fUI.childForm == null || RoadToUni.Forms.UI.fUI.childForm.Name != "fViewScore")
             {
-                RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.ViewScore.fViewScore());
+                //RoadToUni.Forms.UI.fUI.SwitchForm(new Forms.Search.ViewScore.fViewScore());
             }
         }
     }

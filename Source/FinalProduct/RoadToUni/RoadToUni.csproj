@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -229,17 +230,17 @@
     <Compile Include="Forms\Search\ViewScore\CirclePicture.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\Search\ViewScore\fViewScore.cs">
+    <Compile Include="Forms\Search\ViewScore\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Search\ViewScore\fViewScore.designer.cs">
-      <DependentUpon>fViewScore.cs</DependentUpon>
+    <Compile Include="Forms\Search\ViewScore\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Search\ViewScore\fVSManual.cs">
+    <Compile Include="Forms\Search\ViewScore\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Search\ViewScore\fVSManual.designer.cs">
-      <DependentUpon>fVSManual.cs</DependentUpon>
+    <Compile Include="Forms\Search\ViewScore\Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UI\Custom_Button.cs">
       <SubType>Component</SubType>
@@ -369,11 +370,11 @@
     <EmbeddedResource Include="Forms\Search\Major\ThirdUI.resx">
       <DependentUpon>ThirdUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Search\ViewScore\fViewScore.resx">
-      <DependentUpon>fViewScore.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Search\ViewScore\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Search\ViewScore\fVSManual.resx">
-      <DependentUpon>fVSManual.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Search\ViewScore\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UI\fLoading.resx">
       <DependentUpon>fLoading.cs</DependentUpon>
@@ -685,6 +686,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd3.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

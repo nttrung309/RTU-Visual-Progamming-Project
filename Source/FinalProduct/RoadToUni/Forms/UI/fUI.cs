@@ -362,7 +362,7 @@ namespace RoadToUni.Forms.UI
             ActiveButton(sender);
             if (childForm == null || childForm.Name != "btnScore")
             {
-                //SwitchForm(new Forms.CountDown.fCountDown());
+                SwitchForm(new Searching.Form1());
             }
         }
 

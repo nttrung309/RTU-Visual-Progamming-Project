@@ -89,8 +89,6 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.M
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Pomodoro.fPomodoro.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.fChoice.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.FindSchool.fsearch.resources
-D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.ViewScore.fViewScore.resources
-D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.ViewScore.fVSManual.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.UI.fLoading.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.UI.Setting.fManageAccount.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.UI.Setting.fRespond.resources
@@ -115,3 +113,5 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.S
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.SecondUI.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.ThirdUI.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Search.Major.ChoosingMajor.MajorUI.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Searching.Form1.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Searching.Form2.resources

@@ -295,7 +295,7 @@ namespace RoadToUni.Forms.CountDown
         {
             if (search == 1)
             {
-                //Call view score (Khoi's function)
+                RoadToUni.Forms.UI.fUI.SwitchForm(new Searching.Form1());
             }
             else if (search == 2)
             {

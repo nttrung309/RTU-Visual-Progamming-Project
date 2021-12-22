@@ -133,7 +133,7 @@ namespace RoadToUni.Forms.UI
             this.btnSchoolInfo.ForeColor = System.Drawing.Color.White;
             this.btnSchoolInfo.Image = global::RoadToUni.Properties.Resources.ui_explore;
             this.btnSchoolInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSchoolInfo.Location = new System.Drawing.Point(1, 374);
+            this.btnSchoolInfo.Location = new System.Drawing.Point(1, 434);
             this.btnSchoolInfo.Name = "btnSchoolInfo";
             this.btnSchoolInfo.Size = new System.Drawing.Size(184, 60);
             this.btnSchoolInfo.TabIndex = 11;
@@ -158,7 +158,7 @@ namespace RoadToUni.Forms.UI
             this.btnScore.ForeColor = System.Drawing.Color.White;
             this.btnScore.Image = global::RoadToUni.Properties.Resources.ui_search;
             this.btnScore.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnScore.Location = new System.Drawing.Point(1, 314);
+            this.btnScore.Location = new System.Drawing.Point(1, 374);
             this.btnScore.Name = "btnScore";
             this.btnScore.Size = new System.Drawing.Size(184, 60);
             this.btnScore.TabIndex = 10;
@@ -204,7 +204,7 @@ namespace RoadToUni.Forms.UI
             this.btnSchool.ForeColor = System.Drawing.Color.White;
             this.btnSchool.Image = global::RoadToUni.Properties.Resources.ui_school;
             this.btnSchool.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSchool.Location = new System.Drawing.Point(1, 194);
+            this.btnSchool.Location = new System.Drawing.Point(1, 314);
             this.btnSchool.Name = "btnSchool";
             this.btnSchool.Size = new System.Drawing.Size(184, 60);
             this.btnSchool.TabIndex = 9;
@@ -304,7 +304,7 @@ namespace RoadToUni.Forms.UI
             this.btnChoice.ForeColor = System.Drawing.Color.White;
             this.btnChoice.Image = global::RoadToUni.Properties.Resources.ui_MBTI;
             this.btnChoice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChoice.Location = new System.Drawing.Point(1, 434);
+            this.btnChoice.Location = new System.Drawing.Point(1, 194);
             this.btnChoice.Name = "btnChoice";
             this.btnChoice.Size = new System.Drawing.Size(184, 60);
             this.btnChoice.TabIndex = 6;

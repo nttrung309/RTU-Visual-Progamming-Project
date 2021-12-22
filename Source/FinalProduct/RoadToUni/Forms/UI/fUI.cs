@@ -140,7 +140,7 @@ namespace RoadToUni.Forms.UI
             ActiveButton(sender);
             if (childForm == null || childForm.Name != "fMBTIMain")
             {
-                SwitchForm(new Forms.MBTI.fMBTIMain());
+                SwitchForm(new Đồ_án_1.Meow());
             }
         }
         private void btnSetting_Click(object sender, EventArgs e)

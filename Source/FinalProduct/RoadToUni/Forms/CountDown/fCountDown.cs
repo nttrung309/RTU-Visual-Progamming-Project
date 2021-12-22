@@ -231,7 +231,7 @@ namespace RoadToUni.Forms.CountDown
 
         private void btnMBTI_Click(object sender, EventArgs e)
         {
-            RoadToUni.Forms.UI.fUI.SwitchForm(new RoadToUni.Forms.MBTI.fMBTIMain());
+            RoadToUni.Forms.UI.fUI.SwitchForm(new Đồ_án_1.Meow());
         }
 
         private void NextQuote()

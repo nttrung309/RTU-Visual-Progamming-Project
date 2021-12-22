@@ -72,83 +72,78 @@
     <Compile Include="Forms\Login\fLogin.designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MBTI\fMBTIMain.cs">
+    <Compile Include="Forms\MBTI\Class1.cs" />
+    <Compile Include="Forms\MBTI\Link\JobTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Link\JobTile.designer.cs">
+      <DependentUpon>JobTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\Link\SecondUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MBTI\fMBTIMain.designer.cs">
-      <DependentUpon>fMBTIMain.cs</DependentUpon>
+    <Compile Include="Forms\MBTI\Link\SecondUI.designer.cs">
+      <DependentUpon>SecondUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau01_02.cs">
+    <Compile Include="Forms\MBTI\Link\ThirdUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau01_02.designer.cs">
-      <DependentUpon>Cau01_02.cs</DependentUpon>
+    <Compile Include="Forms\MBTI\Link\ThirdUI.designer.cs">
+      <DependentUpon>ThirdUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau03_04.cs">
+    <Compile Include="Forms\MBTI\Meow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau03_04.designer.cs">
-      <DependentUpon>Cau03_04.cs</DependentUpon>
+    <Compile Include="Forms\MBTI\Meow.designer.cs">
+      <DependentUpon>Meow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau05_06.cs">
+    <Compile Include="Forms\MBTI\PanelS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\PanelWhite.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\Questions\Questions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau05_06.designer.cs">
-      <DependentUpon>Cau05_06.cs</DependentUpon>
+    <Compile Include="Forms\MBTI\Questions\Questions.designer.cs">
+      <DependentUpon>Questions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau07_08.cs">
+    <Compile Include="Forms\MBTI\UI\FormUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau07_08.designer.cs">
-      <DependentUpon>Cau07_08.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau09_10.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau09_10.designer.cs">
-      <DependentUpon>Cau09_10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau11_12.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau11_12.designer.cs">
-      <DependentUpon>Cau11_12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau13_14.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau13_14.designer.cs">
-      <DependentUpon>Cau13_14.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau15_16.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau15_16.designer.cs">
-      <DependentUpon>Cau15_16.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau17_18.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau17_18.designer.cs">
-      <DependentUpon>Cau17_18.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau19_20.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MBTI\Questions\Cau19_20.designer.cs">
-      <DependentUpon>Cau19_20.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\MBTI\UI\fOpen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MBTI\UI\fOpen.designer.cs">
-      <DependentUpon>fOpen.cs</DependentUpon>
+    <Compile Include="Forms\MBTI\UI\FormUI.designer.cs">
+      <DependentUpon>FormUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MBTI\UI\KetQua.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MBTI\UI\KetQua.designer.cs">
       <DependentUpon>KetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl1.designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl2.designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl3.designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MBTI\UserControl4.designer.cs">
+      <DependentUpon>UserControl4.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Pomodoro\CircleButton.cs">
       <SubType>Component</SubType>
@@ -301,44 +296,38 @@
     <EmbeddedResource Include="Forms\Login\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\fMBTIMain.resx">
-      <DependentUpon>fMBTIMain.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MBTI\Link\JobTile.resx">
+      <DependentUpon>JobTile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau01_02.resx">
-      <DependentUpon>Cau01_02.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MBTI\Link\SecondUI.resx">
+      <DependentUpon>SecondUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau03_04.resx">
-      <DependentUpon>Cau03_04.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MBTI\Link\ThirdUI.resx">
+      <DependentUpon>ThirdUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau05_06.resx">
-      <DependentUpon>Cau05_06.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MBTI\Meow.resx">
+      <DependentUpon>Meow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau07_08.resx">
-      <DependentUpon>Cau07_08.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MBTI\Questions\Questions.resx">
+      <DependentUpon>Questions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau09_10.resx">
-      <DependentUpon>Cau09_10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau11_12.resx">
-      <DependentUpon>Cau11_12.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau13_14.resx">
-      <DependentUpon>Cau13_14.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau15_16.resx">
-      <DependentUpon>Cau15_16.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau17_18.resx">
-      <DependentUpon>Cau17_18.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\Questions\Cau19_20.resx">
-      <DependentUpon>Cau19_20.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MBTI\UI\fOpen.resx">
-      <DependentUpon>fOpen.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MBTI\UI\FormUI.resx">
+      <DependentUpon>FormUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MBTI\UI\KetQua.resx">
       <DependentUpon>KetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MBTI\UserControl4.resx">
+      <DependentUpon>UserControl4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pomodoro\fPomodoro.resx">
       <DependentUpon>fPomodoro.cs</DependentUpon>
@@ -696,5 +685,6 @@
   <ItemGroup>
     <None Include="Resources\hd3.PNG" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

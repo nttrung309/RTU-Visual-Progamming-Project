@@ -299,13 +299,13 @@ namespace RoadToUni.Forms.CountDown
             }
             else if (search == 2)
             {
-                //Call scholl info (Min's function)
+                RoadToUni.Forms.UI.fUI.SwitchForm(new Fuction4.UI());
             }
         }
 
         private void btnDeskTools_Click(object sender, EventArgs e)
         {
-            //Call MBTI
+            RoadToUni.Forms.UI.fUI.SwitchForm(new Đồ_án_1.Meow());
         }
 
         private void rbtn1_CheckedChanged(object sender, EventArgs e)

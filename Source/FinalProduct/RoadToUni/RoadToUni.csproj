@@ -222,6 +222,63 @@
     <Compile Include="Forms\Search\Major\ThirdUI.designer.cs">
       <DependentUpon>ThirdUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\BB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\Class1.cs" />
+    <Compile Include="Forms\Search\SchoolInfo\Code.cs" />
+    <Compile Include="Forms\Search\SchoolInfo\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\ListTruong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\ListTruong.designer.cs">
+      <DependentUpon>ListTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\panelS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\RoundBT.cs" />
+    <Compile Include="Forms\Search\SchoolInfo\ThongtinNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\ThongtinNganh.designer.cs">
+      <DependentUpon>ThongtinNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\ThongtinTruong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\ThongtinTruong.designer.cs">
+      <DependentUpon>ThongtinTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UI.designer.cs">
+      <DependentUpon>UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UserControl1.designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UserControl2.designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Search\SchoolInfo\UserControl3.designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Search\ViewScore\CirclePicture.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -358,6 +415,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search\Major\ThirdUI.resx">
       <DependentUpon>ThirdUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\ListTruong.resx">
+      <DependentUpon>ListTruong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\ThongtinNganh.resx">
+      <DependentUpon>ThongtinNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\ThongtinTruong.resx">
+      <DependentUpon>ThongtinTruong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\UI.resx">
+      <DependentUpon>UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search\SchoolInfo\UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search\ViewScore\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -684,6 +765,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hd3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DUT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HCMUS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QHE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QHI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QHT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QHX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QHY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QSB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QSY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QUF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UEL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USSH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23-233762_clipart-yellow-folder-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23-233762_clipart-yellow-folder-icon-png3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23-233762_clipart-yellow-folder-icon-png3-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100487.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

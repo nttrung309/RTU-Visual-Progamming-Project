@@ -391,4 +391,76 @@
   <data name="hd3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hd3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DDF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DDQ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DDS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DDY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DDY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DSK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DSK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DUT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DUT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HCMUS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HCMUS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QHE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QHI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QHS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QHT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QHX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QHY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QHY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QSB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QSB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QSY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QSY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QUF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QUF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UIT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UIT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USSH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USSH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_100487" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\100487.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_23_233762_clipart_yellow_folder_icon_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\23-233762_clipart-yellow-folder-icon-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_23_233762_clipart_yellow_folder_icon_png3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\23-233762_clipart-yellow-folder-icon-png3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_23_233762_clipart_yellow_folder_icon_png3_removebg_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\23-233762_clipart-yellow-folder-icon-png3-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -138,7 +138,7 @@ namespace RoadToUni.Forms.UI
         private void btnChoice_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            if (childForm == null || childForm.Name != "fMBTIMain")
+            if (childForm == null || childForm.Name != "Meow")
             {
                 SwitchForm(new Đồ_án_1.Meow());
             }
@@ -360,7 +360,7 @@ namespace RoadToUni.Forms.UI
         private void btnScore_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            if (childForm == null || childForm.Name != "btnScore")
+            if (childForm == null || childForm.Name != "Form1")
             {
                 SwitchForm(new Searching.Form1());
             }
@@ -369,9 +369,9 @@ namespace RoadToUni.Forms.UI
         private void btnSchoolInfo_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            if (childForm == null || childForm.Name != "btnSchoolInfo")
+            if (childForm == null || childForm.Name != "UI")
             {
-                //SwitchForm(new Forms.CountDown.fCountDown());
+                SwitchForm(new Fuction4.UI());
             }
         }
     }

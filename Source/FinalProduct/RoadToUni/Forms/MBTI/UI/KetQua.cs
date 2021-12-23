@@ -35,6 +35,10 @@ namespace Đồ_án_1
             //user.BringToFront();
             //user.Show();
             InitializeComponent();
+            user = new UserControl1();
+            user2 = new UserControl2();
+            user3 = new UserControl3();
+            user4 = new UserControl4();
             flowLayoutPanel1.Controls.Add(user);
             flowLayoutPanel1.Controls.Add(user2);
             flowLayoutPanel1.Controls.Add(user3);

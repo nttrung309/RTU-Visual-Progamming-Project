@@ -23,6 +23,7 @@ namespace Đồ_án_1
             ForSwitch = new Panel();
             this.Controls.Add(ForSwitch);
             ForSwitch.Dock = DockStyle.Fill;
+            ForSwitch.Controls.Clear();
             SwitchForm(new FormUI());
         }
         public static void SwitchForm(Form f)
@@ -43,10 +44,6 @@ namespace Đồ_án_1
             catch
             {
                 KetQua kq = new KetQua();
-                if(kq == null)
-                {
-                    MessageBox.Show(":)))");
-                }
                 kq.TopLevel = false;
                 kq.FormBorderStyle = FormBorderStyle.None;
                 kq.Dock = DockStyle.Fill;

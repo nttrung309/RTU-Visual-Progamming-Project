@@ -32,6 +32,8 @@ namespace RoadToUni.Forms.UI.Setting
             this.lbTitle = new System.Windows.Forms.Label();
             this.lbVersion = new System.Windows.Forms.Label();
             this.btnCheckUpdate = new CustomControls.RJControls.RJButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbTitle
@@ -78,6 +80,28 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnCheckUpdate.UseVisualStyleBackColor = false;
             this.btnCheckUpdate.Click += new System.EventHandler(this.btnCheckUpdate_Click);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Yanone Kaffeesatz", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 234);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(381, 121);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Ứng dụng hỗ trợ chọn trường cùng với một số công cụ liên quan, giúp cho việc định" +
+    " hướng tương lai dễ dàng hơn";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Anton", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label2.Location = new System.Drawing.Point(135, 188);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 51);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Giới thiệu";
+            // 
             // fSettingInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -85,6 +109,8 @@ namespace RoadToUni.Forms.UI.Setting
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(405, 610);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCheckUpdate);
             this.Controls.Add(this.lbVersion);
             this.Controls.Add(this.lbTitle);
@@ -100,5 +126,7 @@ namespace RoadToUni.Forms.UI.Setting
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbVersion;
         private CustomControls.RJControls.RJButton btnCheckUpdate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

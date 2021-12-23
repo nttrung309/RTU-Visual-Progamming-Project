@@ -69,7 +69,6 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.Forms.Search.FindSchool.fsearch.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\bin\Debug\System.Data.SqlServerCe.dll
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\RoadToUni\obj\Debug\RoadToUni.csproj.CopyComplete
-D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.csproj.AssemblyReference.cache
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\CustomControls.RJControls.RJTextBox.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.CountDown.fCountDown.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.Login.fLogin.resources
@@ -113,3 +112,12 @@ D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Đồ_án_1.UserC
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Đồ_án_1.FormUI.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Đồ_án_1.KetQua.resources
 D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.Forms.MBTI.Link.JobTile.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.Form1.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.Truong.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.ThongtinNganh.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.ThongtinTruong.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.UI.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.UserControl1.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.UserControl2.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\Fuction4.UserControl3.resources
+D:\Trung\#Study\CODE\LTTQ\Do_An\Mine\Final\RoadToUni\obj\Debug\RoadToUni.csproj.AssemblyReference.cache

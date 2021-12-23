@@ -31,16 +31,14 @@ namespace RoadToUni.Forms.UI.Setting
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlMenuBar = new System.Windows.Forms.Panel();
-            this.lbSetting = new System.Windows.Forms.Label();
-            this.pnlTitleBar = new System.Windows.Forms.Panel();
-            this.pnlDesktop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnGeneral = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
-            this.btnPomo = new System.Windows.Forms.Button();
-            this.btnAccountManage = new System.Windows.Forms.Button();
+            this.lbSetting = new System.Windows.Forms.Label();
+            this.pnlTitleBar = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.pnlDesktop = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,8 +51,6 @@ namespace RoadToUni.Forms.UI.Setting
             this.pnlMenu.Controls.Add(this.btnGeneral);
             this.pnlMenu.Controls.Add(this.btnReport);
             this.pnlMenu.Controls.Add(this.btnInfo);
-            this.pnlMenu.Controls.Add(this.btnPomo);
-            this.pnlMenu.Controls.Add(this.btnAccountManage);
             this.pnlMenu.Location = new System.Drawing.Point(0, 26);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(188, 610);
@@ -68,6 +64,65 @@ namespace RoadToUni.Forms.UI.Setting
             this.pnlMenuBar.Size = new System.Drawing.Size(4, 65);
             this.pnlMenuBar.TabIndex = 1;
             this.pnlMenuBar.Visible = false;
+            // 
+            // btnGeneral
+            // 
+            this.btnGeneral.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnGeneral.FlatAppearance.BorderSize = 0;
+            this.btnGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGeneral.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGeneral.ForeColor = System.Drawing.Color.White;
+            this.btnGeneral.Image = global::RoadToUni.Properties.Resources.ui_gen;
+            this.btnGeneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGeneral.Location = new System.Drawing.Point(1, 199);
+            this.btnGeneral.Name = "btnGeneral";
+            this.btnGeneral.Size = new System.Drawing.Size(188, 65);
+            this.btnGeneral.TabIndex = 10;
+            this.btnGeneral.Tag = "Home";
+            this.btnGeneral.Text = "Chung";
+            this.btnGeneral.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGeneral.UseVisualStyleBackColor = false;
+            this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
+            // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnReport.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.ForeColor = System.Drawing.Color.White;
+            this.btnReport.Image = global::RoadToUni.Properties.Resources.ui_report;
+            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReport.Location = new System.Drawing.Point(0, 480);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(188, 65);
+            this.btnReport.TabIndex = 8;
+            this.btnReport.Tag = "";
+            this.btnReport.Text = "Phản hồi";
+            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnInfo.FlatAppearance.BorderSize = 0;
+            this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo.ForeColor = System.Drawing.Color.White;
+            this.btnInfo.Image = global::RoadToUni.Properties.Resources.ui_info;
+            this.btnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfo.Location = new System.Drawing.Point(0, 545);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(188, 65);
+            this.btnInfo.TabIndex = 6;
+            this.btnInfo.Tag = "";
+            this.btnInfo.Text = "Thông tin";
+            this.btnInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInfo.UseVisualStyleBackColor = false;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
             // lbSetting
             // 
@@ -92,14 +147,6 @@ namespace RoadToUni.Forms.UI.Setting
             this.pnlTitleBar.Size = new System.Drawing.Size(593, 26);
             this.pnlTitleBar.TabIndex = 1;
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
-            // 
-            // pnlDesktop
-            // 
-            this.pnlDesktop.BackColor = System.Drawing.Color.White;
-            this.pnlDesktop.Location = new System.Drawing.Point(188, 26);
-            this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(405, 610);
-            this.pnlDesktop.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -127,101 +174,13 @@ namespace RoadToUni.Forms.UI.Setting
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnGeneral
+            // pnlDesktop
             // 
-            this.btnGeneral.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnGeneral.FlatAppearance.BorderSize = 0;
-            this.btnGeneral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGeneral.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGeneral.ForeColor = System.Drawing.Color.White;
-            this.btnGeneral.Image = global::RoadToUni.Properties.Resources.ui_gen;
-            this.btnGeneral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGeneral.Location = new System.Drawing.Point(1, 149);
-            this.btnGeneral.Name = "btnGeneral";
-            this.btnGeneral.Size = new System.Drawing.Size(188, 65);
-            this.btnGeneral.TabIndex = 10;
-            this.btnGeneral.Tag = "Home";
-            this.btnGeneral.Text = "Chung";
-            this.btnGeneral.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGeneral.UseVisualStyleBackColor = false;
-            this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
-            // 
-            // btnReport
-            // 
-            this.btnReport.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnReport.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnReport.FlatAppearance.BorderSize = 0;
-            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.Image = global::RoadToUni.Properties.Resources.ui_report;
-            this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(0, 545);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(188, 65);
-            this.btnReport.TabIndex = 8;
-            this.btnReport.Tag = "";
-            this.btnReport.Text = "Phản hồi";
-            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReport.UseVisualStyleBackColor = false;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
-            // 
-            // btnInfo
-            // 
-            this.btnInfo.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnInfo.FlatAppearance.BorderSize = 0;
-            this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfo.ForeColor = System.Drawing.Color.White;
-            this.btnInfo.Image = global::RoadToUni.Properties.Resources.ui_info;
-            this.btnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfo.Location = new System.Drawing.Point(1, 344);
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(202, 65);
-            this.btnInfo.TabIndex = 6;
-            this.btnInfo.Tag = "";
-            this.btnInfo.Text = "Thông tin";
-            this.btnInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnInfo.UseVisualStyleBackColor = false;
-            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
-            // 
-            // btnPomo
-            // 
-            this.btnPomo.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnPomo.FlatAppearance.BorderSize = 0;
-            this.btnPomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPomo.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPomo.ForeColor = System.Drawing.Color.White;
-            this.btnPomo.Image = global::RoadToUni.Properties.Resources.alarm;
-            this.btnPomo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPomo.Location = new System.Drawing.Point(1, 279);
-            this.btnPomo.Name = "btnPomo";
-            this.btnPomo.Size = new System.Drawing.Size(202, 65);
-            this.btnPomo.TabIndex = 5;
-            this.btnPomo.Tag = "Pomodoro";
-            this.btnPomo.Text = "Chưa biết";
-            this.btnPomo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPomo.UseVisualStyleBackColor = false;
-            this.btnPomo.Click += new System.EventHandler(this.btnPomo_Click);
-            // 
-            // btnAccountManage
-            // 
-            this.btnAccountManage.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnAccountManage.FlatAppearance.BorderSize = 0;
-            this.btnAccountManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountManage.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccountManage.ForeColor = System.Drawing.Color.White;
-            this.btnAccountManage.Image = global::RoadToUni.Properties.Resources.ManageAccount;
-            this.btnAccountManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccountManage.Location = new System.Drawing.Point(1, 214);
-            this.btnAccountManage.Name = "btnAccountManage";
-            this.btnAccountManage.Size = new System.Drawing.Size(202, 65);
-            this.btnAccountManage.TabIndex = 4;
-            this.btnAccountManage.Tag = "Tra cứu";
-            this.btnAccountManage.Text = "Tài khoản";
-            this.btnAccountManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAccountManage.UseVisualStyleBackColor = false;
-            this.btnAccountManage.Click += new System.EventHandler(this.btnManageAccount_Click);
+            this.pnlDesktop.BackColor = System.Drawing.Color.White;
+            this.pnlDesktop.Location = new System.Drawing.Point(188, 26);
+            this.pnlDesktop.Name = "pnlDesktop";
+            this.pnlDesktop.Size = new System.Drawing.Size(405, 610);
+            this.pnlDesktop.TabIndex = 2;
             // 
             // fSetting
             // 
@@ -249,8 +208,6 @@ namespace RoadToUni.Forms.UI.Setting
         #endregion
 
         private System.Windows.Forms.Panel pnlMenu;
-        private System.Windows.Forms.Button btnAccountManage;
-        private System.Windows.Forms.Button btnPomo;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Panel pnlMenuBar;
         private System.Windows.Forms.Button btnReport;

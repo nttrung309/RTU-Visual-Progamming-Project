@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Runtime;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace RoadToUni.Forms.UI.Setting
 {
@@ -58,7 +59,8 @@ namespace RoadToUni.Forms.UI.Setting
                         DialogResult dg = MessageBox.Show("Đã có phiên bản mới, bạn có muốn cập nhật không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         if (dg == DialogResult.Yes)
                         {
-                            Process.Start(@".\Data\Updater\Updater.exe");
+                            File.Copy(@".\Data\Updater\Updater.exe", @".\Updater.exe",true);
+                            Process.Start(@".\Updater.exe");
                             Application.Exit();
                         }
                         return 1;

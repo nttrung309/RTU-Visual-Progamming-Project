@@ -54,7 +54,7 @@ namespace RoadToUni.Forms.UI.Setting
             {
                 if (IsConnectedToInternet())
                 {
-                    if (!webClient.DownloadString("https://pastebin.com/raw/zd98TVkq").Contains("1.0"))
+                    if (!webClient.DownloadString("https://pastebin.com/raw/7NMPnLU2").Contains("1.0"))
                     {
                         DialogResult dg = MessageBox.Show("Đã có phiên bản mới, bạn có muốn cập nhật không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         if (dg == DialogResult.Yes)
@@ -76,6 +76,12 @@ namespace RoadToUni.Forms.UI.Setting
         private void SetPosition()
         {
             this.lbTitle.Location = new Point((this.Width-lbTitle.Width)/2,this.lbTitle.Location.Y);
+        }
+
+        private void fSettingInfo_Load(object sender, EventArgs e)
+        {
+            label1.Font = new System.Drawing.Font(RoadToUni.Fonts.CustomFont.pfc.Families[4], 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.Font = new System.Drawing.Font(RoadToUni.Fonts.CustomFont.pfc.Families[0], 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         }
     }
 }

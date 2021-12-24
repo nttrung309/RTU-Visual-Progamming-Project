@@ -110,7 +110,7 @@ namespace RoadToUni.Forms.UI.Setting
             client.EnableSsl = true;
             client.Credentials = new NetworkCredential("roadtouni2021@gmail.com", "meowmeow1234");
             client.Send(mess);
-            MessageBox.Show("Gửi thành công, cảm ơn phản hồi của bạn");
+            MessageBox.Show("Gửi thành công, cảm ơn phản hồi của bạn","Thành công",MessageBoxButtons.OK,MessageBoxIcon.Information);
             ckboxPic.Checked = false;
             pictureBox1.Image = null;
             //this.button1.Location = new System.Drawing.Point(160, 260);

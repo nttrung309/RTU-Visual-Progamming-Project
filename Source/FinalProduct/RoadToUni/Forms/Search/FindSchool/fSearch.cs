@@ -13,6 +13,7 @@ namespace RoadToUni.Forms.Search.FindSchool
     public partial class fsearch : Form
     {
         ClassCrud crud = new ClassCrud();
+        bool first = true;
         public fsearch()
         {
             InitializeComponent();
@@ -328,7 +329,11 @@ namespace RoadToUni.Forms.Search.FindSchool
             lbNote.Visible = false;
             lbTHPT.Visible = false;
             lbTextNote.Visible = false;
-            panel1.Location = new Point(panel1.Location.X, panel1.Location.Y - 136);
+            if (first)
+            {
+                panel1.Location = new Point(panel1.Location.X, panel1.Location.Y - 136);
+                first = false;
+            }
             dataGridViewResult.Show();
 
             dataGridViewResult.DataSource = this.LoadDB();

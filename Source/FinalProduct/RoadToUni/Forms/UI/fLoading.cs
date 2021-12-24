@@ -43,6 +43,7 @@ namespace RoadToUni.Forms.UI
 
         private void fLoading_Load(object sender, EventArgs e)
         {
+            Fonts.CustomFont.LoadFont();
             ts = new ThreadStart(Loading);
             td = new Thread(ts);
             td.Start();
@@ -72,7 +73,7 @@ namespace RoadToUni.Forms.UI
             {
                 if (IsConnectedToInternet())
                 {
-                    RoadToUni.Forms.CountDown.fCountDown.loadDate = webClient.DownloadString("https://pastebin.com/raw/M2yDB6tT");
+                    RoadToUni.Forms.CountDown.fCountDown.loadDate = webClient.DownloadString("https://pastebin.com/raw/9QuXmUJf");
                 }
                 else
                 {

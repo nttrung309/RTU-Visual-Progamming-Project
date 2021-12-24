@@ -25,8 +25,13 @@ namespace Fuction4
             InitializeComponent();
             //this.boderColor = Color.Blue;
             this.boderSize = 1;
-            
+            LoadFont();
             //pictureBox1.Image = Properties.Resources
+        }
+
+        private void LoadFont()
+        {
+            TenTruong.Font = new System.Drawing.Font(RoadToUni.Fonts.CustomFont.pfc.Families[3], 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         }
 
         private GraphicsPath graphicD(Rectangle rect, float radius)

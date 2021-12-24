@@ -116,6 +116,7 @@ namespace RoadToUni.Forms.UI.Setting
             this.Controls.Add(this.lbTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fSettingInfo";
+            this.Load += new System.EventHandler(this.fSettingInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

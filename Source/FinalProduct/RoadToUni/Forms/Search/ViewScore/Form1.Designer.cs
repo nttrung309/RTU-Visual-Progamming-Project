@@ -73,8 +73,6 @@ namespace Searching
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::RoadToUni.Properties.Resources._5;
             this.pictureBox1.Location = new System.Drawing.Point(-20, 58);
@@ -87,7 +85,7 @@ namespace Searching
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Image = global::RoadToUni.Properties.Resources._6;
             this.pictureBox2.Location = new System.Drawing.Point(279, 64);
@@ -113,8 +111,7 @@ namespace Searching
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox5.Image = global::RoadToUni.Properties.Resources._9;
             this.pictureBox5.Location = new System.Drawing.Point(185, -15);
             this.pictureBox5.Name = "pictureBox5";
@@ -125,11 +122,11 @@ namespace Searching
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(514, 64);
+            this.label1.Location = new System.Drawing.Point(449, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 22);
             this.label1.TabIndex = 5;
@@ -142,7 +139,7 @@ namespace Searching
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(865, 64);
+            this.label2.Location = new System.Drawing.Point(880, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 22);
             this.label2.TabIndex = 6;
@@ -309,8 +306,6 @@ namespace Searching
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.ForeColor = System.Drawing.Color.Black;
@@ -322,8 +317,7 @@ namespace Searching
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Image = global::RoadToUni.Properties.Resources._7;
             this.pictureBox3.Location = new System.Drawing.Point(570, 57);
@@ -336,7 +330,7 @@ namespace Searching
             // 
             // circlePicture1
             // 
-            this.circlePicture1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.circlePicture1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.circlePicture1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.circlePicture1.Image = global::RoadToUni.Properties.Resources._11;
             this.circlePicture1.Location = new System.Drawing.Point(448, 337);

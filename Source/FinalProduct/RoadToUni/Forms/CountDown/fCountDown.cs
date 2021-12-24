@@ -78,7 +78,7 @@ namespace RoadToUni.Forms.CountDown
 
             tmSearch.Start();
             tmSupport.Start();
-
+            ChangeFont();
             topBackGround.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, topBackGround.Width, topBackGround.Height, 20, 20));
             ToFront();
 
@@ -111,6 +111,13 @@ namespace RoadToUni.Forms.CountDown
             tmCountDown.Start();
             timerNextQuote.Start();
         }
+
+        private void ChangeFont()
+        {
+            lbQuote.Font = new System.Drawing.Font(RoadToUni.Fonts.CustomFont.pfc.Families[2], 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lbAuthor.Font = new System.Drawing.Font(RoadToUni.Fonts.CustomFont.pfc.Families[1], 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+        }
+
         private void ToFront()
         {
             picRoundedRec1.BringToFront();

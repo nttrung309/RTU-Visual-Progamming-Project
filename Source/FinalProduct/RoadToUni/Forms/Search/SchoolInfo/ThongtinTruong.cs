@@ -28,8 +28,15 @@ namespace Fuction4
         public string schoolLink;
         private void ThongtinTruong_Load(object sender, EventArgs e)
         {
+            LoadFont();
             userControl31.Hide();
             pictureBox1.SendToBack();
+        }
+
+        private void LoadFont()
+        {
+            label2.Font = new System.Drawing.Font(RoadToUni.Fonts.CustomFont.pfc.Families[4], 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.Font = new System.Drawing.Font(RoadToUni.Fonts.CustomFont.pfc.Families[4], 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
         }
 
         public void ChangeCheck()
@@ -61,7 +68,14 @@ namespace Fuction4
             {
                 ImageNumber = 1;
             }
-            userControl21.pictureBox1.Image = new Bitmap(Application.StartupPath + "\\Data\\Images\\SchoolInfo\\" + schoolcode + ImageNumber + ".jpg");            
+            try
+            {
+                userControl21.pictureBox1.Image = new Bitmap(Application.StartupPath + "\\Data\\Images\\SchoolInfo\\" + schoolcode + ImageNumber + ".jpg");
+            }
+            catch
+            {
+
+            }
         }
 
         private void ThongtinTruong_VisibleChanged(object sender, EventArgs e)

@@ -150,7 +150,7 @@ namespace RoadToUni.Forms.UI
             f.StartPosition = FormStartPosition.Manual;
             f.Location = new Point((this.Location.X + ((this.Width - f.Width) / 2)), this.Location.Y + 40);
             f.ShowDialog();
-            this.lbUser.Text = RoadToUni.Forms.Login.fLogin.loginedUser;
+            this.lbUser.Text = RoadToUni.Forms.Login.fLogin.loginedUser.ToUpper();
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {

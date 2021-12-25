@@ -72,7 +72,7 @@ namespace Đồ_án_1
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(172, 109);
+            this.label5.Location = new System.Drawing.Point(172, 108);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(476, 24);
@@ -101,23 +101,24 @@ namespace Đồ_án_1
             this.panelWhite1.BorderColor = System.Drawing.Color.White;
             this.panelWhite1.Controls.Add(this.label3);
             this.panelWhite1.Edge = 20;
-            this.panelWhite1.Location = new System.Drawing.Point(95, 238);
+            this.panelWhite1.Location = new System.Drawing.Point(90, 238);
             this.panelWhite1.Name = "panelWhite1";
             this.panelWhite1.Size = new System.Drawing.Size(954, 223);
             this.panelWhite1.TabIndex = 6;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 15);
+            this.label3.Location = new System.Drawing.Point(-183, -26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1288, 236);
             this.label3.TabIndex = 3;
             this.label3.Text = "Bạn vẫn đang phân vân về công việc tương lai mà không biết nên\r\nhỏi ai, hay đơn g" +
-    "iản chỉ đang tìm kiếm bản thân mình. \r\n\r\nHãy trả lời các câu hỏi MBTI sau đây để" +
-    " tìm thấy câu trả lời.";
+    "iản chỉ đang tìm kiếm bản thân mình.\r\n\r\nHãy trả lời các câu hỏi MBTI sau đây để " +
+    "tìm thấy câu trả lời.";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormUI
             // 

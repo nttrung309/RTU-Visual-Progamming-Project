@@ -233,7 +233,7 @@ namespace Đồ_án_1
             this.panelWhite1.Controls.Add(this.Cau1);
             this.panelWhite1.Controls.Add(this.label5);
             this.panelWhite1.Edge = 20;
-            this.panelWhite1.Location = new System.Drawing.Point(162, 159);
+            this.panelWhite1.Location = new System.Drawing.Point(154, 159);
             this.panelWhite1.Name = "panelWhite1";
             this.panelWhite1.Size = new System.Drawing.Size(827, 483);
             this.panelWhite1.TabIndex = 20;
@@ -246,7 +246,7 @@ namespace Đồ_án_1
             this.panelWhite2.Controls.Add(this.label2);
             this.panelWhite2.Controls.Add(this.label1);
             this.panelWhite2.Edge = 20;
-            this.panelWhite2.Location = new System.Drawing.Point(162, 1);
+            this.panelWhite2.Location = new System.Drawing.Point(154, 1);
             this.panelWhite2.Name = "panelWhite2";
             this.panelWhite2.Size = new System.Drawing.Size(827, 202);
             this.panelWhite2.TabIndex = 0;

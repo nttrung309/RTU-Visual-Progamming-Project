@@ -39,11 +39,11 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.lbNote = new System.Windows.Forms.Label();
             this.lbTHPT = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbTextNote = new RoadToUni.Forms.Search.FindSchool.customLabel();
             this.customLabel3 = new RoadToUni.Forms.Search.FindSchool.customLabel();
             this.customLabel2 = new RoadToUni.Forms.Search.FindSchool.customLabel();
             this.customLabel1 = new RoadToUni.Forms.Search.FindSchool.customLabel();
             this.btnSearch = new RoadToUni.Forms.Search.FindSchool.customButton();
+            this.lbTextNote = new RoadToUni.Forms.Search.FindSchool.customLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -596,24 +596,6 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.panel1.Size = new System.Drawing.Size(1031, 157);
             this.panel1.TabIndex = 13;
             // 
-            // lbTextNote
-            // 
-            this.lbTextNote.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbTextNote.BackColor = System.Drawing.Color.White;
-            this.lbTextNote.BackgroundColor = System.Drawing.Color.White;
-            this.lbTextNote.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.lbTextNote.BorderRadius = 20;
-            this.lbTextNote.BorderSize = 0;
-            this.lbTextNote.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTextNote.ForeColor = System.Drawing.Color.Red;
-            this.lbTextNote.Location = new System.Drawing.Point(231, 86);
-            this.lbTextNote.Name = "lbTextNote";
-            this.lbTextNote.Size = new System.Drawing.Size(85, 36);
-            this.lbTextNote.TabIndex = 14;
-            this.lbTextNote.Text = "LƯU Ý: ";
-            this.lbTextNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbTextNote.TextColor = System.Drawing.Color.Red;
-            // 
             // customLabel3
             // 
             this.customLabel3.BackColor = System.Drawing.Color.MediumBlue;
@@ -687,6 +669,24 @@ namespace RoadToUni.Forms.Search.FindSchool
             this.btnSearch.TextColor = System.Drawing.Color.Tomato;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // lbTextNote
+            // 
+            this.lbTextNote.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbTextNote.BackColor = System.Drawing.Color.White;
+            this.lbTextNote.BackgroundColor = System.Drawing.Color.White;
+            this.lbTextNote.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.lbTextNote.BorderRadius = 20;
+            this.lbTextNote.BorderSize = 0;
+            this.lbTextNote.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTextNote.ForeColor = System.Drawing.Color.Red;
+            this.lbTextNote.Location = new System.Drawing.Point(231, 86);
+            this.lbTextNote.Name = "lbTextNote";
+            this.lbTextNote.Size = new System.Drawing.Size(85, 36);
+            this.lbTextNote.TabIndex = 14;
+            this.lbTextNote.Text = "LƯU Ý: ";
+            this.lbTextNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTextNote.TextColor = System.Drawing.Color.Red;
             // 
             // fsearch
             // 

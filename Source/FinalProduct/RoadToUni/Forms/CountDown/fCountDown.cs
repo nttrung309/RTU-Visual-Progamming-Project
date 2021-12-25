@@ -86,6 +86,8 @@ namespace RoadToUni.Forms.CountDown
 
             NextQuote();
 
+            loadDate = RoadToUni.Forms.CountDown.LoadDate.loadDate;
+
             if (loadDate == "")
             {
                 int year;

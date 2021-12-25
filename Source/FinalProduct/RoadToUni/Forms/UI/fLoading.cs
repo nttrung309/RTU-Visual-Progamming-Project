@@ -73,7 +73,7 @@ namespace RoadToUni.Forms.UI
             {
                 if (IsConnectedToInternet())
                 {
-                    RoadToUni.Forms.CountDown.fCountDown.loadDate = webClient.DownloadString("https://pastebin.com/raw/9QuXmUJf");
+                    RoadToUni.Forms.CountDown.LoadDate.loadDate = webClient.DownloadString("https://pastebin.com/raw/9QuXmUJf");
                 }
                 else
                 {

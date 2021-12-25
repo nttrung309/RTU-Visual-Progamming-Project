@@ -69,6 +69,7 @@
     <Compile Include="Forms\CountDown\fCountDown.designer.cs">
       <DependentUpon>fCountDown.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CountDown\LoadDate.cs" />
     <Compile Include="Forms\CountDown\Quotes.cs" />
     <Compile Include="Forms\Login\fLogin.cs">
       <SubType>Form</SubType>

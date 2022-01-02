@@ -85,6 +85,3 @@ Link download:
 [Tải SQL Compact 4.0 tại đây](https://www.microsoft.com/en-us/download/details.aspx?id=30709)
 
 Mở file solution(.sln) trong source code và tiến hành build như bình thường.
-
-[Tải script database tại đây]()\
-[Tải source code tại đây]()
